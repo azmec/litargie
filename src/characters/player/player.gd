@@ -36,7 +36,6 @@ var max_jumps: int = 2
 var _hook_pull_force: Vector2 = Vector2.ZERO
 var _hook_target_position: Vector2 = Vector2.ZERO
 
-var foo = 0
 
 onready var sprite: Sprite = $Sprite
 onready var animationPlayer: AnimationPlayer = $AnimationPlayer
@@ -156,7 +155,8 @@ func _physics_process(delta: float) -> void:
 			if !jumpTimer.is_stopped():
 				state = change_state_to(STATES.JUMP)
 
-	sprite.flip_h = x_input < 0
+	if x_input != 0:
+		sprite.flip_h = x_input < 0
 	velocity = move_and_slide(velocity, Vector2.UP)
 
 # Return 1 if player is pressing left, -1 if right, 0 if neither

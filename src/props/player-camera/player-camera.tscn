@@ -6,6 +6,9 @@
 current = true
 process_mode = 0
 smoothing_enabled = true
+drag_margin_left = 0.1
+drag_margin_top = 0.5
+drag_margin_right = 0.1
 editor_draw_drag_margin = true
 script = ExtResource( 1 )
 
@@ -16,3 +19,5 @@ position = Vector2( -168, -96 )
 
 [node name="BottomRight" type="Position2D" parent="Limits"]
 position = Vector2( 168, 96 )
+
+[node name="ShiftTween" type="Tween" parent="."]
