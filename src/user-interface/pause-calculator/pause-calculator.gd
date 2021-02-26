@@ -7,7 +7,9 @@ signal pause_requested(duration)
 const PAUSE_PATTERN: = "({p=\\d([.]\\d+)?[}])"
 
 # Other regular expressions to clean up the source
-const CUSTOM_TAG_PATTERN: = ("({(.*?)})")
+const CUSTOM_TAG_PATTERN: = "({(.*?)})"
+const BBCODE_I_PATTERN: = "\\[(?!\\/)(.*?)\\]"
+const BBCODE_E_PATTERN: = "\\[\\/(.*?)\\]"
 
 var _pause_regex: = RegEx.new()
 var _pauses: = []
@@ -39,6 +41,7 @@ func _extract_tags(source: String) -> String:
 	return _custom_regex.sub(source, "", true)
 
 func _adjust_position(position: int, source: String) -> int:
+	# Checking previous tags and adjusting based on them 
 	var _custom_tag_regex: = RegEx.new()
 	_custom_tag_regex.compile(CUSTOM_TAG_PATTERN)
 
@@ -48,5 +51,20 @@ func _adjust_position(position: int, source: String) -> int:
 
 	for _tag in _all_previous_tags:
 		_new_position -= _tag.get_string().length()
+
+	# Checking previous bbcodes and adjusting based on them
+	var _bb_code_i_regex: = RegEx.new()
+	var _bb_code_e_regex: = RegEx.new()
+
+	_bb_code_i_regex.compile(BBCODE_I_PATTERN)
+	_bb_code_e_regex.compile(BBCODE_E_PATTERN)
+
+	var _all_previous_start_bbcodes: = _bb_code_i_regex.search_all(_left_of_position)
+	for _bbcode in _all_previous_start_bbcodes:
+		_new_position -= _bbcode.get_string().length()
+		
+	var _all_previous_end_bbcodes: = _bb_code_e_regex.search_all(_left_of_position)
+	for _bbcode in _all_previous_end_bbcodes:
+		_new_position -= _bbcode.get_string().length()
 
 	return _new_position

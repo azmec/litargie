@@ -14,7 +14,7 @@ func _ready() -> void:
 	pauseCalculator.connect("pause_requested", self, "_on_pauseCalculator_pause_requested")
 	pauseTimer.connect("timeout", self, "_on_pauseTimer_timeout")
 	yield(get_tree().create_timer(1.0), "timeout")
-	update_text("Hi!{p=0.5} Nice pause... {p=0.5}right?")
+	update_text("[wave]hello[/wave]{p=0.5} I am the text!")
 
 # Update the content and type out the provided text..
 func update_text(text: String) -> void:
