@@ -1,0 +1,25 @@
+extends Node2D
+
+var _cycles: = 0
+
+onready var player: = $Player
+onready var enemy: = $Enemy
+onready var boringTileMap: = $BoringTileMap
+
+func _ready() -> void:
+	AStarPathfinder.foster_tilemap(boringTileMap)
+	#print(enemy.global_position)
+	#print(player.global_position)
+	
+	#print("FROM: " + str(from))
+	#print("TO: " + str(to))
+	#print("MAP LIMITS: " + str(boringTileMap.map_size))
+	#AStarPathfinder.get_valid_path(boringTileMap, from, to)
+
+func _physics_process(delta: float) -> void:
+	var from = boringTileMap.global_to_tile(enemy.global_position)
+	var to = boringTileMap.global_to_tile(player.global_position)
+	_cycles += 1
+	if _cycles >= 75:
+		AStarPathfinder.get_valid_path(boringTileMap, from, to)
+		_cycles = 0

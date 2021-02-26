@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/environment/path-findable-tilemap/path-findable-tilemap.gd" type="Script" id=1]
+
+[node name="PathFindableTilemap" type="TileMap"]
+format = 1
+script = ExtResource( 1 )
