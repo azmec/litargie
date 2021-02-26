@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Control",
+"class": "Dialogue",
+"language": "GDScript",
+"path": "res://src/user-interface/dialogue-box/dialogue-box.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Enemy",
 "language": "GDScript",
@@ -29,6 +34,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/environment/path-findable-tilemap/path-findable-tilemap.gd"
 }, {
+"base": "Reference",
+"class": "Pause",
+"language": "GDScript",
+"path": "res://src/user-interface/pause.gd"
+}, {
+"base": "Node",
+"class": "PauseCalculator",
+"language": "GDScript",
+"path": "res://src/user-interface/pause-calculator/pause-calculator.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
@@ -45,10 +60,13 @@ _global_script_classes=[ {
 "path": "res://src/props/state-class/state-class.gd"
 } ]
 _global_script_class_icons={
+"Dialogue": "",
 "Enemy": "",
 "GitAPI": "",
 "Meathook": "",
 "PathFindableTileMap": "",
+"Pause": "",
+"PauseCalculator": "",
 "Player": "",
 "PlayerCamera": "",
 "State": ""

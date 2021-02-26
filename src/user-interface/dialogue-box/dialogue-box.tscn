@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/user-interface/fonts/default-font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://src/user-interface/dialogue-box/dialogue-box.gd" type="Script" id=3]
+[ext_resource path="res://assets/user-interface/dialogue_background.png" type="Texture" id=4]
+[ext_resource path="res://src/user-interface/pause-calculator/pause-calculator.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
@@ -33,9 +35,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Background" type="Panel" parent="."]
+[node name="PauseCalculator" parent="." instance=ExtResource( 5 )]
+
+[node name="Background" type="NinePatchRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+texture = ExtResource( 4 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,18 +56,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -102.0
-margin_top = -34.0
-margin_right = 102.0
-margin_bottom = -2.0
+margin_left = -101.0
+margin_top = -33.0
+margin_right = 101.0
+margin_bottom = -3.0
 custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Tween" type="Tween" parent="."]
 
 [node name="NextIndicator" type="TextureRect" parent="."]
 margin_left = 192.0
@@ -72,8 +82,7 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="NextIndicator"]
 anims/idle = SubResource( 1 )
 
-[node name="WaitTimer" type="Timer" parent="."]
-one_shot = true
+[node name="TypeTimer" type="Timer" parent="."]
 
-[node name="TextTimer" type="Timer" parent="."]
+[node name="PauseTimer" type="Timer" parent="."]
 one_shot = true
