@@ -12,3 +12,4 @@ func _init(_position: int, _tag_string: String) -> void:
 
 	duration = float(_duration_regex.search(_tag_string).get_string())
 	position = int(clamp(_position - 1, 0, abs(_position)))
+
