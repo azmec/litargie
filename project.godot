@@ -87,7 +87,7 @@ config/icon="res://icon.png"
 [autoload]
 
 AStarPathfinder="*res://src/autoloads/a-star-pathfinder/a-star-pathfinder.tscn"
-DialogueManager="*res://src/autoloads/dialogue-manager/dialogue-manager.tscn"
+DialogueGod="*res://src/autoloads/dialogue-manager/dialogue-manager.tscn"
 
 [display]
 

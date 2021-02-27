@@ -19,22 +19,14 @@ var _active_dialogue_offset: = 0
 var _is_active: = false 
 var _current_dialogue_instance: Dialogue
 
-func _input(event: InputEvent) -> void:
-    if (
-        event.is_pressed() and 
-        !event.is_echo() and 
-        event in InputEventKey and (
-        event as InputEventKey).scancode == KEY_ENTER and
-        _is_active and 
-        _current_dialogue_instance.message_is_fully_visible()
-        ):
+func _process(_delta: float) -> void:
+    if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogue_instance._message_is_fully_visible():
         if _active_dialogue_offset < _messages.size() - 1:
             _active_dialogue_offset += 1 
             _show_current()
         else: 
-            _hide() 
-
-
+            _hide()
+        
 func show_messages(message_list: Array, position: Vector2) -> void:
     if _is_active:
         return

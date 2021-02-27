@@ -39,6 +39,18 @@ position = Vector2( 1696, 312 )
 position = Vector2( 936, 192 )
 collision_layer = 32
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Main" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogueSpot" type="Position2D" parent="CanvasLayer/Main"]
+position = Vector2( 56, 128 )
+
 [editable path="Player"]
 
 [editable path="Player/PlayerCamera"]
