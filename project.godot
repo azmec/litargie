@@ -14,7 +14,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/user-interface/dialogue/dialogue.gd"
 }, {
-"base": "Reference",
+"base": "Node",
 "class": "DialogueManager",
 "language": "GDScript",
 "path": "res://src/autoloads/dialogue-manager/dialogue-manager.gd"
