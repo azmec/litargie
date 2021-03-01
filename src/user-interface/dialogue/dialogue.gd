@@ -2,6 +2,7 @@ class_name Dialogue
 extends Control
 
 signal message_completed()
+
 const TYPING_SPEED: = 0.04 # the rate at which characters appear
 
 onready var pauseCalculator: PauseCalculator = $PauseCalculator
