@@ -27,7 +27,7 @@ func _process(_delta: float) -> void:
         else: 
             _hide()
         
-func show_messages(message_list: Array, position: Vector2) -> void:
+func show_messages(message_list: Array, parent: Control) -> void:
     if _is_active:
         return
     _is_active = true
@@ -37,7 +37,7 @@ func show_messages(message_list: Array, position: Vector2) -> void:
 
     var _dialogue: = DIALOGUE_SCENE.instance() 
     _dialogue.connect("message_completed", self, "_on_message_completed")
-    get_tree().get_root().add_child(_dialogue)
+    parent.add_child(_dialogue)
     
     _current_dialogue_instance = _dialogue
 
