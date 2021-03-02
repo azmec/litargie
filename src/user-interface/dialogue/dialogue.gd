@@ -4,20 +4,29 @@ extends Control
 signal message_completed()
 
 const TYPING_SPEED: = 0.04 # the rate at which characters appear
+const BLINKING_SPEED: = 0.5 # rate at which the indicator blinks 
 
 onready var pauseCalculator: PauseCalculator = $PauseCalculator
+
 onready var content: RichTextLabel = $Text
+onready var blinker: TextureRect = $Blinker
+
 onready var typeTimer: Timer = $TypeTimer
 onready var pauseTimer: Timer = $PauseTimer
+onready var blinkerTimer: Timer = $BlinkerTimer
 
 # remove later
 func _ready() -> void:
 	typeTimer.connect("timeout", self, "_on_typeTimer_timeout")
 	pauseCalculator.connect("pause_requested", self, "_on_pauseCalculator_pause_requested")
 	pauseTimer.connect("timeout", self, "_on_pauseTimer_timeout")
+	blinkerTimer.connect("timeout", self, "_on_blinkerTimer_timeout")
 
 # Update the content and type out the provided text..
 func update_text(text: String) -> void:
+	blinkerTimer.stop()
+	blinker.visible = false
+
 	content.bbcode_text = pauseCalculator.parse_pauses(text)
 	content.visible_characters = 0
 	typeTimer.start(TYPING_SPEED)
@@ -30,6 +39,8 @@ func _on_typeTimer_timeout() -> void:
 	if content.visible_characters < content.text.length():
 		content.visible_characters += 1
 	else:
+		blinker.visible = true
+		blinkerTimer.start(BLINKING_SPEED)
 		typeTimer.stop()
 
 func _on_pauseCalculator_pause_requested(duration: float) -> void:
@@ -41,3 +52,6 @@ func _on_pauseCalculator_pause_requested(duration: float) -> void:
 func _on_pauseTimer_timeout() -> void:
 	#something about a voice here
 	typeTimer.start(TYPING_SPEED)
+
+func _on_blinkerTimer_timeout() -> void:
+	blinker.visible = not blinker.visible
