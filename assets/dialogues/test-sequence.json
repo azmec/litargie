@@ -1,14 +1,48 @@
 {
     "001": {
-        "name": "Ego", 
-        "text": "We're just...{p=0.5} coasting."
+        "character": "Ego",
+        "condition": "", 
+        "root": {
+            "ENG": "Foo",
+            "SPN": "Bar"
+        },
+        "branches": {
+            "001": {
+                "character": "Ego",
+                "condition": "Choice A",
+                "root": {
+                    "ENG": "You picked choice A!",
+                    "SPN": "Elegiste la opción A!"
+                },
+                "branches": {}
+            },
+            "002": {
+                "character": "Ego",
+                "condition": "Choice B",
+                "root": {
+                    "ENG": "You picked choice B!",
+                    "SPN": "Elegiste la opción B!"
+                },
+                "branches": {}
+            },
+            "003": {
+                "character": "Ego",
+                "condition": "Choice C",
+                "root": {
+                    "ENG": "You picked choice C!",
+                    "SPN": "Elegiste la opción C!"
+                },
+                "branches": {}
+            }
+        }
     },
     "002": {
-        "name": "Ego",
-        "text": "We can't even act in a way that matters."
-    },
-    "003": {
-        "name": "Id",
-        "text": "Look in the mirror."
+        "character": "Id",
+        "condition": "",
+        "root": {
+            "ENG": "You've made your choice!",
+            "SPN": "Has hecho tu elección."
+        },
+        "branches": {}
     }
 }

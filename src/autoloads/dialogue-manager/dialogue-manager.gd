@@ -11,8 +11,9 @@ signal message_completed()
 signal finished() 
 
 const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
-
 const CHARACTER_LIMIT: = 140
+
+const LANGUAGE: = "ENG" 
 
 onready var opacityTween: Tween = $OpacityTween
 
@@ -38,6 +39,7 @@ func show_messages(sequence_string: String, parent: Control) -> void:
 	_messages = _load_dialogue(sequence_string)
 	_keys = _messages.keys()
 	_active_dialogue_offset = 0
+	assert(_dialogue_below_character_limit(_messages) == true)
 
 	var _dialogue: = DIALOGUE_SCENE.instance() 
 	_dialogue.connect("message_completed", self, "_on_message_completed")
@@ -60,7 +62,6 @@ func _load_dialogue(file_path: String) -> Dictionary:
 	file.open(file_path, file.READ)
 	var dialogue: Dictionary = parse_json(file.get_as_text())
 	assert(dialogue.size() > 0)
-	assert(_dialogue_below_character_limit(dialogue) == true)
 	
 	return dialogue
 
