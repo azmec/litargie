@@ -1,12 +1,12 @@
 {
   "Version": "0.6.1-3",
   "LockProject": false,
-  "BoardIndex": 1,
+  "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -3087.433349609375,
-  "Pan.Y": 387.6842041015625,
-  "ZoomLevel": 3,
+  "Pan.X": -712,
+  "Pan.Y": -408,
+  "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -374,7 +374,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 368,
+      "Position.Y": 432,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -485,7 +485,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 384,
+      "Position.Y": 448,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -510,7 +510,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 352,
+      "Position.Y": 416,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -529,7 +529,8 @@
       "Description": "use JSON file format and parsing?",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 26 2021 18:20:19"
+      "CreationTime": "Feb 26 2021 18:20:19",
+      "CompletionTime": "Mar 1 2021 18:25:34"
     }, 
     {
       "BoardIndex": 0,
@@ -801,7 +802,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 480,
-      "Position.Y": 400,
+      "Position.Y": 464,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -813,7 +814,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 416,
+      "Position.Y": 480,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -833,6 +834,58 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Feb 27 2021 20:54:27"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 512,
+      "Position.Y": 352,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Store the keys in an array",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 1 2021 17:34:23",
+      "CompletionTime": "Mar 1 2021 18:25:08"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 512,
+      "Position.Y": 368,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "iterate over the array to progress the conversation",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 1 2021 17:34:43",
+      "CompletionTime": "Mar 1 2021 18:25:14"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 512,
+      "Position.Y": 400,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "check array index vs dict.size() to check if conversation is over",
+      "Selected": true,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 1 2021 17:34:52",
+      "CompletionTime": "Mar 1 2021 18:25:34"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 512,
+      "Position.Y": 384,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "get \"text\" property based on that",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 1 2021 17:35:18",
+      "CompletionTime": "Mar 1 2021 18:25:17"
     }
   ]
 }

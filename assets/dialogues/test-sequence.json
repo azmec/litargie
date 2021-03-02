@@ -1,0 +1,14 @@
+{
+    "001": {
+        "name": "Ego", 
+        "text": "We're just...{p=0.5} coasting."
+    },
+    "002": {
+        "name": "Ego",
+        "text": "We can't even act in a way that matters."
+    },
+    "003": {
+        "name": "Id",
+        "text": "Look in the mirror."
+    }
+}
