@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/user-interface/dialogue/dialogue.gd"
 }, {
+"base": "Button",
+"class": "DialogueButton",
+"language": "GDScript",
+"path": "res://src/user-interface/dialogue-button/dialogue-button.gd"
+}, {
 "base": "Node",
 "class": "DialogueManager",
 "language": "GDScript",
@@ -60,12 +65,18 @@ _global_script_classes=[ {
 "path": "res://src/props/player-camera/player-camera.gd"
 }, {
 "base": "Node",
+"class": "SequenceParser",
+"language": "GDScript",
+"path": "res://src/helpers/sequence-parser/sequence-parser.gd"
+}, {
+"base": "Node",
 "class": "State",
 "language": "GDScript",
 "path": "res://src/props/state-class/state-class.gd"
 } ]
 _global_script_class_icons={
 "Dialogue": "",
+"DialogueButton": "",
 "DialogueManager": "",
 "Enemy": "",
 "GitAPI": "",
@@ -75,6 +86,7 @@ _global_script_class_icons={
 "PauseCalculator": "",
 "Player": "",
 "PlayerCamera": "",
+"SequenceParser": "",
 "State": ""
 }
 
@@ -88,6 +100,7 @@ config/icon="res://icon.png"
 
 AStarPathfinder="*res://src/autoloads/a-star-pathfinder/a-star-pathfinder.tscn"
 DialogueGod="*res://src/autoloads/dialogue-manager/dialogue-manager.tscn"
+Settings="*res://src/autoloads/settings/settings.tscn"
 
 [display]
 

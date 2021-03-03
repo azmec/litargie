@@ -10,18 +10,22 @@ signal message_completed()
 
 signal finished() 
 
+const TEST_SEQUENCE_PATH: = "res://assets/dialogues/test-sequence.json"
 const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
 const CHARACTER_LIMIT: = 140
-
-const LANGUAGE: = "ENG" 
-
-onready var opacityTween: Tween = $OpacityTween
 
 var _messages: = {}
 var _keys: = []
 var _active_dialogue_offset: = 0
 var _is_active: = false 
 var _current_dialogue_instance: Dialogue
+
+onready var sequenceParser: SequenceParser = $SequenceParser
+onready var opacityTween: Tween = $OpacityTween
+
+func _ready() -> void:
+	var _test_dialogue: = sequenceParser._load_dialogue(TEST_SEQUENCE_PATH)
+
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogue_instance._message_is_fully_visible():
@@ -54,16 +58,6 @@ func _show_current() -> void:
 	var _message: String = _messages[_keys[_active_dialogue_offset]].text
 	_current_dialogue_instance.update_text(_message)
 
-# Parses the given JSON file path and converts it into a Godot-friendly dictionary.
-func _load_dialogue(file_path: String) -> Dictionary:
-	var file = File.new() 
-	assert(file.file_exists(file_path))
-
-	file.open(file_path, file.READ)
-	var dialogue: Dictionary = parse_json(file.get_as_text())
-	assert(dialogue.size() > 0)
-	
-	return dialogue
 
 func _dialogue_below_character_limit(dialogue: Dictionary) -> bool:
 	var _res: = true

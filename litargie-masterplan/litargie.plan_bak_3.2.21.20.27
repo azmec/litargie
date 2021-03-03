@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -615.4312133789062,
-  "Pan.Y": -450.568115234375,
+  "Pan.X": -692.4312133789062,
+  "Pan.Y": -445.568115234375,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -916,13 +916,14 @@
       "BoardIndex": 0,
       "Position.X": 512,
       "Position.Y": 448,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "reformat JSON tree to proposed structure",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 1 2021 19:29:23"
+      "CreationTime": "Mar 1 2021 19:29:23",
+      "CompletionTime": "Mar 2 2021 20:12:20"
     }, 
     {
       "BoardIndex": 0,

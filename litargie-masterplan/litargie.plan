@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -615.4312133789062,
-  "Pan.Y": -450.568115234375,
+  "Pan.X": -892.9312133789062,
+  "Pan.Y": -456.568115234375,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -916,25 +916,27 @@
       "BoardIndex": 0,
       "Position.X": 512,
       "Position.Y": 448,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "reformat JSON tree to proposed structure",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 1 2021 19:29:23"
+      "CreationTime": "Mar 1 2021 19:29:23",
+      "CompletionTime": "Mar 2 2021 20:12:20"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 512,
       "Position.Y": 464,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "determine whether a branch in \"deviant\"",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 1 2021 19:29:44"
+      "CreationTime": "Mar 1 2021 19:29:44",
+      "CompletionTime": "Mar 2 2021 20:28:27"
     }, 
     {
       "BoardIndex": 0,
@@ -983,6 +985,18 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 1 2021 19:30:22"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 944,
+      "Position.Y": 448,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Here's the plan:\n1. We extract the branches and their conditions.\n2. We map the conditons to buttons.\n3. Within those buttons, we connect a signal to the DialogueManager\n    which sends the next piece of dialogue and the possible branches.\n4. DialogueManager wipes itself and repeats whatever process it used \n    in the first place.\n",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 2 2021 20:28:58"
     }
   ]
 }

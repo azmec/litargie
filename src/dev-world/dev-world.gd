@@ -1,7 +1,5 @@
 extends Node2D
 
-const TEST_SEQUENCE_PATH: = "res://assets/dialogues/test-sequence.json"
-
 var _cycles: = 0
 
 onready var player: = $Player
@@ -13,7 +11,7 @@ onready var fpsLabel: Label = $CanvasLayer/Main/FPSLabel
 
 func _ready() -> void:
 	yield(get_tree().create_timer(0.5), "timeout")
-	DialogueGod.show_messages(TEST_SEQUENCE_PATH, dialogueSpot)
+	#DialogueGod.show_messages(TEST_SEQUENCE_PATH, dialogueSpot)
 
 	AStarPathfinder.foster_tilemap(boringTileMap)
 	#print(enemy.global_position)
