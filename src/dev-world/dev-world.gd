@@ -10,7 +10,11 @@ onready var dialogueSpot: Control = $CanvasLayer/Main/DialogueSpot
 onready var fpsLabel: Label = $CanvasLayer/Main/FPSLabel
 
 func _ready() -> void:
+<<<<<<< HEAD
 	yield(get_tree().create_timer(0.5), "timeout")
+=======
+	#yield(get_tree().create_timer(0.5), "timeout")
+>>>>>>> 4f94ea5... please god 2
 	#DialogueGod.show_messages(TEST_SEQUENCE_PATH, dialogueSpot)
 
 	AStarPathfinder.foster_tilemap(boringTileMap)
