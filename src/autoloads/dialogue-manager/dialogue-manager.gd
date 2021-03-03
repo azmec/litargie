@@ -20,6 +20,7 @@ var _active_dialogue_offset: = 0
 var _is_active: = false 
 var _current_dialogue_instance: Dialogue
 
+<<<<<<< HEAD
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var opacityTween: Tween = $OpacityTween
 
@@ -27,6 +28,10 @@ func _ready() -> void:
 	var _test_dialogue: = sequenceParser._load_dialogue(TEST_SEQUENCE_PATH)
 
 
+=======
+func _ready() -> void:
+	_load_dialogue(TEST_
+>>>>>>> 870f606... required commit
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogue_instance._message_is_fully_visible():
 		if _active_dialogue_offset < _messages.size() - 1:
@@ -74,6 +79,13 @@ func _hide() -> void:
 	_current_dialogue_instance = null
 	_is_active = false
 	emit_signal("finished") 
+
+func _extract_messages(sequence_set: Dictionary) -> void:
+	for sequence in sequence_set:
+		if sequence.branches:
+			print("This sequence has branches!")
+		else:
+			print("This sequence has no branches.")
 
 func _on_message_completed() -> void:
 	emit_signal("message_completed") 
