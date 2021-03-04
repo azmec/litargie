@@ -25,6 +25,8 @@ onready var sequenceParser: SequenceParser = $SequenceParser
 onready var opacityTween: Tween = $OpacityTween
 
 func _ready() -> void:
+	sequenceParser.connect("deviance_detected", self, "_on_sequenceParser_deviance_detected")
+
 	yield(get_tree().create_timer(0.5), "timeout")
 
 	var _test_dialogue: Dictionary = sequenceParser.load_dialogue(TEST_SEQUENCE_PATH)
@@ -81,7 +83,10 @@ func _hide() -> void:
 	emit_signal("finished") 
 
 func _on_message_completed() -> void:
-	# Button shit here.
+	# Button stuff here.
 
 	emit_signal("message_completed") 
 	
+func _on_sequenceParser_deviance_detected(root_text: String, conditions: Array) -> void:
+	print("Message is: " + root_text)
+	print("Choices are: " + str(conditions))

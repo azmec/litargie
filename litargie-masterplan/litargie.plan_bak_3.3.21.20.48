@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -1755.5201416015625,
-  "Pan.Y": -375.2095947265625,
+  "Pan.X": -734.2537841796875,
+  "Pan.Y": -420.7586364746094,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -485,7 +485,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 544,
+      "Position.Y": 560,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -803,7 +803,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 480,
-      "Position.Y": 560,
+      "Position.Y": 576,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -815,11 +815,11 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 576,
+      "Position.Y": 592,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "fuck if i know maybe it's an atmospheric game",
+      "Description": "idk maybe it's an atmospheric game",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Feb 27 2021 20:53:57"
@@ -941,31 +941,33 @@
     {
       "BoardIndex": 0,
       "Position.X": 512,
-      "Position.Y": 480,
-      "Checkbox.Checked": false,
+      "Position.Y": 496,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "parse and return [data] based on root branch",
+      "Description": "parse data",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 1 2021 19:29:57"
+      "CreationTime": "Mar 1 2021 19:29:57",
+      "CompletionTime": "Mar 3 2021 20:29:38"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 512,
-      "Position.Y": 496,
-      "Checkbox.Checked": false,
+      "Position.Y": 480,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "print out data",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 1 2021 19:30:11"
+      "CreationTime": "Mar 1 2021 19:30:11",
+      "CompletionTime": "Mar 3 2021 20:29:41"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 512,
-      "Position.Y": 512,
+      "Position.Y": 528,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -977,7 +979,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 512,
-      "Position.Y": 528,
+      "Position.Y": 544,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1175,6 +1177,18 @@
       "Selected": false,
       "TaskType.CurrentChoice": 2,
       "CreationTime": "Mar 3 2021 18:39:17"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 512,
+      "Position.Y": 512,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "signal that the branch is deviant",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 3 2021 20:30:05"
     }, 
     {
       "BoardIndex": 0,

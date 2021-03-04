@@ -5,6 +5,9 @@
 class_name SequenceParser
 extends Node
 
+# root_text: String, conditions: Array
+signal deviance_detected(root_text, conditions)
+
 # Parses the given JSON file path and converts it into a Godot-friendly dictionary.
 func load_dialogue(file_path: String) -> Dictionary:
 	var file = File.new() 
@@ -24,10 +27,11 @@ func get_messages(sequence: Dictionary) -> Array:
 		var _message: = get_root_text(sequence[root])
 		_message_list.push_back(_message)
 
-		# We only check after because we want the text anyway. From here,
-		# we [find a way] to signal that this message is deviant and requires
-		# choices. 
 		if _root_is_deviant(sequence[root]):
+			var _branches: = get_branches(sequence[root])
+			var _conditions: = get_conditions(_branches)
+			emit_signal("deviance_detected", _message, _conditions)
+		
 			break
 
 	return _message_list
@@ -40,8 +44,8 @@ func get_branches(deviant_branch: Dictionary) -> Dictionary:
 # Returns the conditions required to reach a particular root.
 func get_conditions(branch_set: Dictionary) -> Array:
 	var _res: = []
-	for sequence in branch_set:
-		_res.append(sequence.condition)
+	for branch in branch_set:
+		_res.append(branch_set[branch].condition)
 
 	return _res
 
