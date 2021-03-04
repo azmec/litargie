@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -734.2537841796875,
-  "Pan.Y": -404.7586364746094,
+  "Pan.X": -704.3824462890625,
+  "Pan.Y": -508.2060546875,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -485,7 +485,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 560,
+      "Position.Y": 640,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -803,7 +803,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 480,
-      "Position.Y": 576,
+      "Position.Y": 656,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -815,7 +815,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 592,
+      "Position.Y": 672,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -979,7 +979,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 512,
-      "Position.Y": 544,
+      "Position.Y": 624,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1230,4 +1230,65 @@
       "BezierLines": true,
       "LineEndings": [1792, 256]
     }, 
-    
+    {
+      "BoardIndex": 0,
+      "Position.X": 528,
+      "Position.Y": 544,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "for each choice, set condition and spawn button",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 3 2021 20:50:03"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 528,
+      "Position.Y": 560,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "place button below dialogue box, properly aligned",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 3 2021 20:50:25"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 528,
+      "Position.Y": 608,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "wait for input",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 3 2021 20:50:42"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 544,
+      "Position.Y": 576,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "place hbox and vbox sorter section below(?) dialogueSpot",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 3 2021 20:52:55"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 544,
+      "Position.Y": 592,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "align buttons accordingly",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 3 2021 20:53:16"
+    }
+  ]
+}
