@@ -14,17 +14,23 @@ const TEST_SEQUENCE_PATH: = "res://assets/dialogues/test-sequence.json"
 const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
 const CHARACTER_LIMIT: = 140
 
-var _messages: = {}
-var _keys: = []
-var _active_dialogue_offset: = 0
-var _is_active: = false 
-var _current_dialogue_instance: Dialogue
+var _messages: = [] # contains only ROOT text
+var _keys: = [] # keys to text 
+var _active_dialogue_offset: = 0 # current step of a sequence
+var _is_active: = false # if we are displaying messages
+var _current_dialogue_instance: Dialogue # the current diplayed piece of dialogue
+var _current_sequence: Dictionary 
 
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var opacityTween: Tween = $OpacityTween
 
 func _ready() -> void:
-	var _test_dialogue: = sequenceParser._load_dialogue(TEST_SEQUENCE_PATH)
+	yield(get_tree().create_timer(0.5), "timeout")
+
+	var _test_dialogue: Dictionary = sequenceParser.load_dialogue(TEST_SEQUENCE_PATH)
+	var _test_message_list: Array = sequenceParser.get_messages(_test_dialogue)
+
+	_show_messages(_test_message_list, get_parent().get_node("DevWorld").dialogueSpot)
 
 
 func _process(_delta: float) -> void:
@@ -35,13 +41,12 @@ func _process(_delta: float) -> void:
 		else: 
 			_hide()
 		
-func show_messages(sequence_string: String, parent: Control) -> void:
+func _show_messages(_message_list: Array, parent: Control) -> void:
 	if _is_active:
 		return
 	_is_active = true
-
-	_messages = _load_dialogue(sequence_string)
-	_keys = _messages.keys()
+	
+	_messages = _message_list
 	_active_dialogue_offset = 0
 	assert(_dialogue_below_character_limit(_messages) == true)
 
@@ -55,14 +60,14 @@ func show_messages(sequence_string: String, parent: Control) -> void:
 
 func _show_current() -> void:
 	emit_signal("message_requested")
-	var _message: String = _messages[_keys[_active_dialogue_offset]].text
+	var _message: String = _messages[_active_dialogue_offset]
 	_current_dialogue_instance.update_text(_message)
 
 
-func _dialogue_below_character_limit(dialogue: Dictionary) -> bool:
+func _dialogue_below_character_limit(dialogue: Array) -> bool:
 	var _res: = true
-	for _k in dialogue:
-		if dialogue[_k].text.length() > 140:
+	for message in dialogue:
+		if message.length() > 140:
 			print_debug("Given dialogue is greater than 140 characters!")
 			_res = false
 	
@@ -76,5 +81,7 @@ func _hide() -> void:
 	emit_signal("finished") 
 
 func _on_message_completed() -> void:
+	# Button shit here.
+
 	emit_signal("message_completed") 
 	
