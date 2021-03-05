@@ -15,18 +15,15 @@ const DIALOGUE_BUTTON_SCENCE: = preload("res://src/user-interface/dialogue-butto
 
 const CHARACTER_LIMIT: = 140
 
-var _dialogue_container = null
-var _button_container = null
-
-var _messages: = [] 
-var _keys: = []  
+var _dialogue_container: Control
+var _button_container: Control
 
 var _is_active: = false 
 var _is_waiting_for_choice: = false
 
+var _message_stack: = []
 var _working_sequence: = {}
-var _active_dialogue_offset: = 0 # current step of a sequence
-var _current_dialogue_instance
+var _current_dialogue_instance: Dialogue
 
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var opacityTween: Tween = $OpacityTween
@@ -44,56 +41,46 @@ func set_dialogue_container(dContainer: Control, bContainer: Control) -> void:
 	_dialogue_container = dContainer
 	_button_container = bContainer
 
-func start_dialogue(json_path: String) -> void:
-	# Resetting
-	_messages = []
-	_active_dialogue_offset = 0 
+# Translates the given JSON into a Dictionary, breaks it into roots, and queues
+# them to the message stack. 
+func queue_sequence_to_message_stack(json_path: String) -> void:
+	_working_sequence = sequenceParser.load_dialogue(json_path)
+	var _stack: Array = sequenceParser.split_sequence(_working_sequence)
+	for root in _stack:
+		_queue_root_to_message_stack(root)
 
-	_working_sequence = sequenceParser.load_dialogue(json_path) 
-	_keys = _working_sequence.keys()
+	_show_dialogue(_message_stack)
 
-	for root in _working_sequence:
-		var _text: String = sequenceParser.get_root_text(_working_sequence[root])
-		_messages.append(_text)
+# Queues the given root to the message stack.
+func _queue_root_to_message_stack(root: Dictionary) -> void:
+	var _message: = sequenceParser.get_root_text(root)
+	if _is_above_character_limit(_message):
+		print_debug('Message: "' + _message + '" is above the character limit!') 
+		return
 	
-	_show_dialogue(_messages) 
+	_message_stack.push_back(root)
 
 func _show_dialogue(_message_list: Array) -> void:
 	if _is_active:
 		return
 	_is_active = true
 
-	if !_dialogue_below_character_limit(_messages):
-		print_debug("Given message is above the character limit and will not display correctly!") 
-	
-	var _dialogue: = DIALOGUE_SCENE.instance()
-	_dialogue.connect("message_completed", self, "_on_message_completed")
-	_dialogue_container.add_child(_dialogue)
+	for message in _message_list:
+		var _text: = sequenceParser.get_root_text(message)
+		var _branches: = sequenceParser.get_branches(message) 
+		var _conditions: = sequenceParser.get_conditions(_branches)
 
-	_current_dialogue_instance = _dialogue
-
-	_show_current()
+		print('Message: "' + _text + '"')
+		print('Conditions: ' + str(_conditions))
 
 func _show_current() -> void:
-	emit_signal("message_requested")
-	var _message: String = _messages[_active_dialogue_offset]
-	_current_dialogue_instance.update_text(_message)
+	pass
 
-func _dialogue_below_character_limit(dialogue: Array) -> bool:
-	var _res: = true
-	for message in dialogue:
-		if message.length() > 140:
-			print_debug("Given dialogue is greater than 140 characters!")
-			_res = false
-	
-	return _res
+func _is_above_character_limit(message: String) -> bool:
+	return message.length() > CHARACTER_LIMIT
 
 func _advance_dialogue():
-	if _active_dialogue_offset < _messages.size() - 1:
-		_active_dialogue_offset += 1 
-		_show_current()
-	else: 
-		_hide()
+	pass
 
 func _hide() -> void:
 	_current_dialogue_instance.disconnect("message_completed", self, "_on_message_completed")
@@ -103,31 +90,9 @@ func _hide() -> void:
 	emit_signal("finished") 
 
 func _on_message_completed() -> void:
-	var _current_root: Dictionary = _working_sequence[_keys[_active_dialogue_offset]]
-	var _branches: = sequenceParser.get_branches(_current_root) 
-	var _branch_keys: = _branches.keys() 
-
-	if sequenceParser.root_is_deviant(_current_root):
-		var _conditions: Array = sequenceParser.get_conditions(_current_root.branches)
-		
-		for condition in _conditions:
-			for key in _branch_keys:
-				var _button: = DIALOGUE_BUTTON_SCENCE.instance()
-
-				var _current_deviant_branch: Dictionary = _branches[key]
-				_button.initialize(_current_deviant_branch)
-
-				_button.connect("condition_choosen", self, "_on_condition_choosen")
-				_button_container.add_child(_button)
-
-
-		_is_waiting_for_choice = true
-
+	pass 
 
 	emit_signal("message_completed") 
 	
 func _on_condition_choosen(condition: String, text: String, branch: Dictionary) -> void: 
-	_is_waiting_for_choice = false
-	print(branch)
-	_messages.insert(_active_dialogue_offset + 1, text)
-	_advance_dialogue()
+	pass

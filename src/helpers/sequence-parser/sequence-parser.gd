@@ -16,6 +16,14 @@ func load_dialogue(file_path: String) -> Dictionary:
 	
 	return dialogue
 
+# Splits the trunks of a sequence into an array.
+func split_sequence(sequence: Dictionary) -> Array:
+	var _res: = []
+	
+	for trunk in sequence:
+		_res.push_back(sequence[trunk])
+
+	return _res
 # Returns all branches of a root.
 func get_branches(deviant_branch: Dictionary) -> Dictionary:
 	return deviant_branch.branches
