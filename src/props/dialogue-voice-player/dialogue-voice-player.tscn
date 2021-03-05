@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/sounds-music/working-sound-blurb.wav" type="AudioStream" id=1]
+[ext_resource path="res://src/props/dialogue-voice-player/dialogue-voice-player.gd" type="Script" id=2]
+
+[node name="DialogueVoicePlayer" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+script = ExtResource( 2 )

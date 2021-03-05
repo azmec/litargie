@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/user-interface/blinker.png" type="Texture" id=3]
 [ext_resource path="res://src/user-interface/dialogue/dialogue.gd" type="Script" id=4]
 [ext_resource path="res://assets/user-interface/dialogue_background.png" type="Texture" id=5]
-[ext_resource path="res://assets/sounds-music/working-sound-blurb.wav" type="AudioStream" id=6]
+[ext_resource path="res://src/props/dialogue-voice-player/dialogue-voice-player.tscn" type="PackedScene" id=6]
 
 [node name="Dialogue" type="Control"]
 anchor_right = 1.0
@@ -74,5 +74,4 @@ one_shot = true
 
 [node name="BlinkerTimer" type="Timer" parent="."]
 
-[node name="DialogueVoicePlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+[node name="DialogueVoicePlayer" parent="." instance=ExtResource( 6 )]
