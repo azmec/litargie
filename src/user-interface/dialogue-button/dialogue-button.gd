@@ -21,9 +21,6 @@ func initialize(branched_sequence: Dictionary) -> void:
 	self.text = _condition
 	#_set_child_rect_sizes()
 
-func set_condition(text: String) -> void: 
-	self.text = text 
-
 func _set_child_rect_sizes() -> void:
 	patchRect.rect_size = self.rect_size
 

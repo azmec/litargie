@@ -100,7 +100,6 @@ func _show_dialogue_options(branches: Dictionary) -> void:
 func _clear_button_container() -> void:
 	var _buttons: = _button_container.get_children()
 	for button in _buttons:
-		print(button.name)
 		button.disconnect("condition_choosen", self, "_on_condition_choosen")
 		button.queue_free()
 
