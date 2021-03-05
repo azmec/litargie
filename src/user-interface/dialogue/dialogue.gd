@@ -22,6 +22,8 @@ func _ready() -> void:
 	pauseTimer.connect("timeout", self, "_on_pauseTimer_timeout")
 	blinkerTimer.connect("timeout", self, "_on_blinkerTimer_timeout")
 
+	self.rect_size = Vector2(208, 36)
+
 # Update the content and type out the provided text..
 func update_text(text: String) -> void:
 	blinkerTimer.stop()
@@ -31,7 +33,7 @@ func update_text(text: String) -> void:
 	content.visible_characters = 0
 	typeTimer.start(TYPING_SPEED)
 
-func _message_is_fully_visible() -> bool:
+func message_is_fully_visible() -> bool:
 	return content.visible_characters == content.text.length() 
 
 func _on_typeTimer_timeout() -> void:
@@ -39,6 +41,7 @@ func _on_typeTimer_timeout() -> void:
 	if content.visible_characters < content.text.length():
 		content.visible_characters += 1
 	else:
+		emit_signal("message_completed")
 		blinker.visible = true
 		blinkerTimer.start(BLINKING_SPEED)
 		typeTimer.stop()

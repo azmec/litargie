@@ -3,8 +3,8 @@
         "character": "Ego",
         "condition": "", 
         "root": {
-            "ENG": "Foo",
-            "SPN": "Bar"
+            "ENG": "Make a choice.",
+            "SPN": "Hace un opción."
         },
         "branches": {
             "001": {
