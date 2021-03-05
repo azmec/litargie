@@ -81,12 +81,8 @@ func _show_dialogue(_message_list: Array) -> void:
 # Iterate along the message_stack and display the text and applicable choices.
 func _show_current() -> void:
 	emit_signal("message_requested")
+
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
-
-	if sequenceParser.root_is_deviant(_current_trunk):
-		var _branches: = sequenceParser.get_branches(_current_trunk)
-		_show_dialogue_options(_branches)
-
 	var _message: = sequenceParser.get_root_text(_current_trunk)
 	_current_dialogue_instance.update_text(_message)
 
@@ -104,25 +100,51 @@ func _show_dialogue_options(branches: Dictionary) -> void:
 func _clear_button_container() -> void:
 	var _buttons: = _button_container.get_children()
 	for button in _buttons:
+		print(button.name)
+		button.disconnect("condition_choosen", self, "_on_condition_choosen")
 		button.queue_free()
 
 func _is_above_character_limit(message: String) -> bool:
 	return message.length() > CHARACTER_LIMIT
 
 func _advance_dialogue():
-	pass
+	if _active_dialogue_offset < _message_stack.size() - 1:
+		_active_dialogue_offset += 1
+		_show_current()
+	else:
+		_hide()
 
 func _hide() -> void:
 	_current_dialogue_instance.disconnect("message_completed", self, "_on_message_completed")
 	_current_dialogue_instance.queue_free() 
 	_current_dialogue_instance = null
+
+	_clear_button_container()
+
 	_is_active = false
+
 	emit_signal("finished") 
 
 func _on_message_completed() -> void:
-	pass 
+	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
+
+	if sequenceParser.root_is_deviant(_current_trunk):
+		_is_waiting_for_choice = true
+	
+		var _branches: = sequenceParser.get_branches(_current_trunk)
+		_show_dialogue_options(_branches)
 
 	emit_signal("message_completed") 
 	
-func _on_condition_choosen(condition: String, text: String, branch: Dictionary) -> void: 
-	pass
+func _on_condition_choosen(branch: Dictionary) -> void: 
+	_is_waiting_for_choice = false
+	
+	var _message: = sequenceParser.get_root_text(branch)
+	if _is_above_character_limit(_message):
+		print_debug('Message: "' + _message + '" is above the character limit!') 
+		return
+	
+	_clear_button_container() 
+
+	_message_stack.insert(_active_dialogue_offset + 1, branch)
+	_advance_dialogue()

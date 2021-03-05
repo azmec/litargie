@@ -1,11 +1,11 @@
 class_name DialogueButton
 extends Button
 
-signal condition_choosen(condition, text, branch)
+signal condition_choosen(branch)
 
 var _condition: String = ""
 var _root_text: String = ""
-var _branches: Dictionary = {}
+var _branch: Dictionary = {}
 
 onready var patchRect: NinePatchRect = $Background
 
@@ -16,7 +16,7 @@ func _ready() -> void:
 func initialize(branched_sequence: Dictionary) -> void:
 	_condition = branched_sequence.condition
 	_root_text = branched_sequence.root[Settings.language]
-	_branches = branched_sequence.branches
+	_branch = branched_sequence
 
 	self.text = _condition
 	#_set_child_rect_sizes()
@@ -28,4 +28,4 @@ func _set_child_rect_sizes() -> void:
 	patchRect.rect_size = self.rect_size
 
 func _on_pressed() -> void:
-	emit_signal("condition_choosen", _condition, _root_text, _branches)
+	emit_signal("condition_choosen", _branch)
