@@ -18,12 +18,14 @@ const CHARACTER_LIMIT: = 140
 var _dialogue_container: Control
 var _button_container: Control
 
-var _is_active: = false 
-var _is_waiting_for_choice: = false
+var _is_active: bool = false 
+var _is_waiting_for_choice: bool = false
 
-var _message_stack: = []
-var _working_sequence: = {}
+var _message_stack: Array = []
+var _working_sequence: Dictionary = {}
+
 var _current_dialogue_instance: Dialogue
+var _active_dialogue_offset: int = 0
 
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var opacityTween: Tween = $OpacityTween
@@ -60,21 +62,49 @@ func _queue_root_to_message_stack(root: Dictionary) -> void:
 	
 	_message_stack.push_back(root)
 
+# Start the dialogue process and spawn the dialogue instance. 
 func _show_dialogue(_message_list: Array) -> void:
 	if _is_active:
 		return
 	_is_active = true
 
-	for message in _message_list:
-		var _text: = sequenceParser.get_root_text(message)
-		var _branches: = sequenceParser.get_branches(message) 
-		var _conditions: = sequenceParser.get_conditions(_branches)
+	_active_dialogue_offset = 0
 
-		print('Message: "' + _text + '"')
-		print('Conditions: ' + str(_conditions))
+	var _dialogue: = DIALOGUE_SCENE.instance()
+	_dialogue.connect("message_completed", self, "_on_message_completed")
+	_dialogue_container.add_child(_dialogue)
 
+	_current_dialogue_instance = _dialogue
+
+	_show_current()
+
+# Iterate along the message_stack and display the text and applicable choices.
 func _show_current() -> void:
-	pass
+	emit_signal("message_requested")
+	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
+
+	if sequenceParser.root_is_deviant(_current_trunk):
+		var _branches: = sequenceParser.get_branches(_current_trunk)
+		_show_dialogue_options(_branches)
+
+	var _message: = sequenceParser.get_root_text(_current_trunk)
+	_current_dialogue_instance.update_text(_message)
+
+func _show_dialogue_options(branches: Dictionary) -> void:
+	_clear_button_container() 
+
+	var _branches: Array = sequenceParser.split_sequence(branches)
+	for branch in _branches:
+		var _button: = DIALOGUE_BUTTON_SCENCE.instance()
+		_button.initialize(branch)
+		_button.connect("condition_choosen", self, "_on_condition_choosen")
+
+		_button_container.add_child(_button)
+
+func _clear_button_container() -> void:
+	var _buttons: = _button_container.get_children()
+	for button in _buttons:
+		button.queue_free()
 
 func _is_above_character_limit(message: String) -> bool:
 	return message.length() > CHARACTER_LIMIT
