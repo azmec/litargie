@@ -7,6 +7,7 @@ const TYPING_SPEED: = 0.04 # the rate at which characters appear
 const BLINKING_SPEED: = 0.5 # rate at which the indicator blinks 
 
 var _playing_voice: bool = false
+var _sync_voice_to_text: bool = true
 
 onready var pauseCalculator: PauseCalculator = $PauseCalculator
 
@@ -47,6 +48,9 @@ func message_is_fully_visible() -> bool:
 func _on_typeTimer_timeout() -> void:
 	pauseCalculator.check_at_position(content.visible_characters)
 	if content.visible_characters < content.text.length():
+		if _sync_voice_to_text:
+			voicePlayer.play(0.0) 
+		
 		content.visible_characters += 1
 	else:
 		emit_signal("message_completed")
@@ -69,5 +73,5 @@ func _on_blinkerTimer_timeout() -> void:
 	blinker.visible = not blinker.visible
 
 func _on_voicePlayer_finished() -> void:
-	if _playing_voice:
+	if _playing_voice and not _sync_voice_to_text:
 		voicePlayer.play(0)
