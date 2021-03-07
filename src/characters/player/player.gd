@@ -180,20 +180,27 @@ func change_state_to(new_state: int) -> int:
 
 		STATES.JUMP:
 			stateText.text = "jump"
+			animationPlayer.play("jump") 
+
 			jumpTimer.stop()
 			velocity.y = -JUMP_STRENGTH
 			current_jumps -= 1
 
 		STATES.FALL:
 			stateText.text = "fall"
+			animationPlayer.play("fall")
 
 		STATES.DASH:
 			stateText.text = "dash"
+			animationPlayer.play("dash") 
+			
 			dashTimer.start(DASH_TIME)
 			velocity.x = 400 * x_input
 		
 		STATES.WALL_JUMP:
 			stateText.text = "wall slide"
+			animationPlayer.play("wallSlide") 
+
 			velocity.y = 0
 
 		STATES.HOOKED:
