@@ -85,6 +85,7 @@ func _show_current() -> void:
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
 	var _message: = sequenceParser.get_root_text(_current_trunk)
 	_current_dialogue_instance.update_text(_message)
+	_current_dialogue_instance.set_name(_current_trunk.character)
 
 func _show_dialogue_options(branches: Dictionary) -> void:
 	_clear_button_container() 

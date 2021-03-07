@@ -19,6 +19,7 @@ onready var pauseTimer: Timer = $PauseTimer
 onready var blinkerTimer: Timer = $BlinkerTimer
 
 onready var voicePlayer: AudioStreamPlayer = $DialogueVoicePlayer
+onready var nameHandle: DialogueNameHandle = $DialogueNameHandle
 
 # remove later
 func _ready() -> void:
@@ -30,7 +31,7 @@ func _ready() -> void:
 
 	self.rect_size = Vector2(208, 36)
 
-# Update the content and type out the provided text..
+# Update the content and type out the provided text.
 func update_text(text: String) -> void:
 	blinkerTimer.stop()
 	blinker.visible = false
@@ -41,6 +42,9 @@ func update_text(text: String) -> void:
 
 	voicePlayer.play(0.0)
 	_playing_voice = true
+
+func set_name(new_name: String) -> void:
+	nameHandle.character_name = new_name
 
 func message_is_fully_visible() -> bool:
 	return content.visible_characters == content.text.length() 

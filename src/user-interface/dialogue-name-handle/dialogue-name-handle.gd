@@ -30,7 +30,7 @@ func _correct_rect_length() -> void:
 	var _proper_rect_size: = rectButton.rect_size
 
 	self.rect_size = _proper_rect_size
-	background.rect_size = _proper_rect_size
+	#background.rect_size = _proper_rect_size
 	nameLabel.rect_size = _proper_rect_size
 
 func _is_above_character_limit(name: String) -> bool:

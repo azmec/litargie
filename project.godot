@@ -29,6 +29,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/autoloads/dialogue-manager/dialogue-manager.gd"
 }, {
+"base": "Control",
+"class": "DialogueNameHandle",
+"language": "GDScript",
+"path": "res://src/user-interface/dialogue-name-handle/dialogue-name-handle.gd"
+}, {
+"base": "AudioStreamPlayer",
+"class": "DialogueVoicePlayer",
+"language": "GDScript",
+"path": "res://src/props/dialogue-voice-player/dialogue-voice-player.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Enemy",
 "language": "GDScript",
@@ -84,6 +94,8 @@ _global_script_class_icons={
 "DialogueButton": "",
 "DialogueContainer": "",
 "DialogueManager": "",
+"DialogueNameHandle": "",
+"DialogueVoicePlayer": "",
 "Enemy": "",
 "GitAPI": "",
 "Meathook": "",

@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -633.6039428710938,
-  "Pan.Y": -438.4840087890625,
+  "Pan.X": -831.1053466796875,
+  "Pan.Y": -1008.866455078125,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -356,7 +356,8 @@
       "Description": "dialogue system",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:17:54"
+      "CreationTime": "Feb 24 2021 20:17:54",
+      "CompletionTime": "Mar 5 2021 16:16:13"
     }, 
     {
       "BoardIndex": 0,
@@ -487,13 +488,14 @@
       "BoardIndex": 0,
       "Position.X": 496,
       "Position.Y": 640,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "sound blurbs?",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 26 2021 16:11:39"
+      "CreationTime": "Feb 26 2021 16:11:39",
+      "CompletionTime": "Mar 5 2021 16:07:03"
     }, 
     {
       "BoardIndex": 0,
@@ -1301,8 +1303,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 512,
-      "Position.Y": 784,
+      "Position.X": 80,
+      "Position.Y": 736,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1667,8 +1669,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -48,
-      "Position.Y": 768,
+      "Position.X": -80,
+      "Position.Y": 896,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1679,8 +1681,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 496,
-      "Position.Y": 656,
+      "Position.X": 624,
+      "Position.Y": 976,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1700,6 +1702,78 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 5 2021 15:23:32"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 992,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "create button",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:11"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1008,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "create richTextLabel",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:19"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1024,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Make a method that sets both the button text and label text",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:27"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1040,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "hide the button but copy its rect size",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:40"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1056,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "???",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:46"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1072,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "profit!!!",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:48"
     }
   ]
 }

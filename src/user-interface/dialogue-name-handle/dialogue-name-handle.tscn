@@ -22,9 +22,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="RectButton" type="Button" parent="."]
+margin_right = 52.0
+margin_bottom = 17.0
+mouse_filter = 2
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 0 )
+custom_colors/font_color = Color( 1, 0.941176, 0.839216, 1 )
+disabled = true
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Background" type="NinePatchRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 69.0
+margin_bottom = 10.0
 size_flags_horizontal = 3
 texture = ExtResource( 1 )
 patch_margin_left = 5
@@ -36,30 +50,18 @@ __meta__ = {
 }
 
 [node name="NameLabel" type="RichTextLabel" parent="."]
-margin_left = 6.0
-margin_top = 3.0
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 5.0
+margin_top = -1.0
+margin_right = 69.0
+margin_bottom = 23.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 0.941176, 0.839216, 1 )
 bbcode_enabled = true
-bbcode_text = "udifhadsiuf"
-text = "udifhadsiuf"
+bbcode_text = "dfs
+"
+text = "dfs
+"
 scroll_active = false
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="RectButton" type="Button" parent="."]
-margin_right = 12.0
-margin_bottom = 17.0
-mouse_filter = 2
-custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color_disabled = Color( 0, 0, 0, 0 )
-custom_colors/font_color = Color( 1, 0.941176, 0.839216, 1 )
-disabled = true
-flat = true
-align = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }

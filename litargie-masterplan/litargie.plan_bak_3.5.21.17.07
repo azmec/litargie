@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -780.6053466796875,
-  "Pan.Y": -1023.8665161132812,
+  "Pan.X": -831.1053466796875,
+  "Pan.Y": -1008.866455078125,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -1710,10 +1710,10 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "create node similar to dialogue but without \"dialogue-specific\" functionality",
+      "Description": "create button",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 5 2021 16:16:16"
+      "CreationTime": "Mar 5 2021 16:37:11"
     }, 
     {
       "BoardIndex": 0,
@@ -1722,10 +1722,10 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "give it basic checks (like name being under a character limit)",
+      "Description": "create richTextLabel",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 5 2021 16:16:39"
+      "CreationTime": "Mar 5 2021 16:37:19"
     }, 
     {
       "BoardIndex": 0,
@@ -1734,22 +1734,10 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "it should process bb_code",
+      "Description": "Make a method that sets both the button text and label text",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 5 2021 16:16:55"
-    }, 
-    {
-      "BoardIndex": 0,
-      "Position.X": 640,
-      "Position.Y": 1056,
-      "Checkbox.Checked": false,
-      "Progression.Current": 0,
-      "Progression.Max": 0,
-      "Description": "set it and forget it",
-      "Selected": false,
-      "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 5 2021 16:17:10"
+      "CreationTime": "Mar 5 2021 16:37:27"
     }, 
     {
       "BoardIndex": 0,
@@ -1758,10 +1746,34 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "set rect size according to length of text",
+      "Description": "hide the button but copy its rect size",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 5 2021 16:22:19"
+      "CreationTime": "Mar 5 2021 16:37:40"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1056,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "???",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:46"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 640,
+      "Position.Y": 1072,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "profit!!!",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 5 2021 16:37:48"
     }
   ]
 }
