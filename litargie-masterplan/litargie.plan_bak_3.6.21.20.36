@@ -1,12 +1,12 @@
 {
   "Version": "0.6.1-3",
   "LockProject": false,
-  "BoardIndex": 0,
+  "BoardIndex": 1,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -403.0626220703125,
-  "Pan.Y": -452.1793212890625,
-  "ZoomLevel": 3,
+  "Pan.X": -2264.1953125,
+  "Pan.Y": -103.01705932617188,
+  "ZoomLevel": 2,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -156,49 +156,53 @@
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 160,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "jump anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:26"
+      "CreationTime": "Feb 24 2021 20:15:26",
+      "CompletionTime": "Mar 6 2021 20:18:25"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 176,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "fall anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:29"
+      "CreationTime": "Feb 24 2021 20:15:29",
+      "CompletionTime": "Mar 6 2021 20:18:28"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 192,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "wall slide anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:32"
+      "CreationTime": "Feb 24 2021 20:15:32",
+      "CompletionTime": "Mar 6 2021 20:18:35"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 208,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "wall jump anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:35"
+      "CreationTime": "Feb 24 2021 20:15:35",
+      "CompletionTime": "Mar 6 2021 20:21:49"
     }, 
     {
       "BoardIndex": 0,
@@ -1773,6 +1777,35 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 5 2021 16:37:48"
+    }, 
+    {
+      "BoardIndex": 1,
+      "Position.X": 480,
+      "Position.Y": 272,
+      "ImageDisplaySize.X": 1523,
+      "ImageDisplaySize.Y": 1009,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "",
+      "FilePath": ["images", "wandering-souls.png"],
+      "Selected": false,
+      "TaskType.CurrentChoice": 3,
+      "CreationTime": "Mar 6 2021 20:22:35"
+    }, 
+    {
+      "BoardIndex": 1,
+      "Position.X": 2208,
+      "Position.Y": 560,
+      "ImageDisplaySize.X": 0,
+      "ImageDisplaySize.Y": 0,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "",
+      "Selected": false,
+      "TaskType.CurrentChoice": 3,
+      "CreationTime": "Mar 6 2021 20:22:58"
     }
   ]
 }
