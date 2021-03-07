@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -831.1053466796875,
-  "Pan.Y": -1008.866455078125,
+  "Pan.X": -593.693359375,
+  "Pan.Y": -478.95745849609375,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -356,8 +356,7 @@
       "Description": "dialogue system",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:17:54",
-      "CompletionTime": "Mar 5 2021 16:16:13"
+      "CreationTime": "Feb 24 2021 20:17:54"
     }, 
     {
       "BoardIndex": 0,
@@ -806,7 +805,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 480,
-      "Position.Y": 688,
+      "Position.Y": 672,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -818,7 +817,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 704,
+      "Position.Y": 688,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1694,7 +1693,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 672,
+      "Position.Y": 656,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
