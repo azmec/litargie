@@ -7,7 +7,7 @@ enum STATES {
 	JUMP,
 	FALL,
 	DASH,
-	WALL_JUMP,
+	WALL_SLIDE,
 	HOOKED
 }
 
@@ -21,7 +21,7 @@ const COYOTE_TIME: float = 0.1
 const JUMP_TIME: float = 0.1
 const DASH_TIME: float = 0.2
 const DASH_COOLDOWN: float = 2.0
-const WALL_JUMP_COOLDOWN: float = 0.2
+const WALL_SLIDE_COOLDOWN: float = 0.2
 const WALL_STICKINESS: float = 0.2
 
 var velocity: Vector2 = Vector2.ZERO
@@ -120,14 +120,14 @@ func _physics_process(delta: float) -> void:
 					state = change_state_to(STATES.RUN)
 			
 			if wall_direction != 0 and wallJumpCooldownTimer.is_stopped():
-				state = change_state_to(STATES.WALL_JUMP) 
+				state = change_state_to(STATES.WALL_SLIDE) 
 	
 			velocity.y = _set_gravity(velocity.y, delta)
 			
 		STATES.DASH:
 			velocity.y = 0
 
-		STATES.WALL_JUMP:
+		STATES.WALL_SLIDE:
 			velocity.y += 200 * delta
 			velocity.y = clamp(velocity.y, -GRAVITY, GRAVITY)
 
@@ -165,10 +165,9 @@ func get_input() -> int:
 
 # perform logic that runs only when we enter a state
 func change_state_to(new_state: int) -> int:
-	if previous_state == STATES.WALL_JUMP:
-		wallJumpCooldownTimer.start(WALL_JUMP_COOLDOWN) 
+	if previous_state == STATES.WALL_SLIDE:
+		wallJumpCooldownTimer.start(WALL_SLIDE_COOLDOWN) 
 
-	previous_state = state
 	match new_state:
 		STATES.IDLE:
 			stateText.text = "idle"
@@ -180,8 +179,12 @@ func change_state_to(new_state: int) -> int:
 
 		STATES.JUMP:
 			stateText.text = "jump"
-			animationPlayer.play("jump") 
-
+			
+			if previous_state == STATES.WALL_SLIDE:
+				animationPlayer.play("dash")
+			else:
+				animationPlayer.play("jump") 
+		
 			jumpTimer.stop()
 			velocity.y = -JUMP_STRENGTH
 			current_jumps -= 1
@@ -193,11 +196,11 @@ func change_state_to(new_state: int) -> int:
 		STATES.DASH:
 			stateText.text = "dash"
 			animationPlayer.play("dash") 
-			
+
 			dashTimer.start(DASH_TIME)
 			velocity.x = 400 * x_input
 		
-		STATES.WALL_JUMP:
+		STATES.WALL_SLIDE:
 			stateText.text = "wall slide"
 			animationPlayer.play("wallSlide") 
 
@@ -206,6 +209,7 @@ func change_state_to(new_state: int) -> int:
 		STATES.HOOKED:
 			stateText.text = "hooked"
 
+	previous_state = state
 	return new_state
 
 # accelerates the given value according to GRAVITY
@@ -232,6 +236,6 @@ func _on_dashTimer_timeout() -> void:
 	state = change_state_to(previous_state)
 
 func _on_wallJumpStickyTimer_timeout() -> void:
-	if state == STATES.WALL_JUMP:
+	if state == STATES.WALL_SLIDE:
 		state = change_state_to(STATES.FALL)
 

@@ -4,9 +4,9 @@
   "BoardIndex": 0,
   "BoardCount": 2,
   "AutoSave": false,
-  "Pan.X": -831.1053466796875,
-  "Pan.Y": -1008.866455078125,
-  "ZoomLevel": 4,
+  "Pan.X": 233.00009155273438,
+  "Pan.Y": -241.33326721191406,
+  "ZoomLevel": 5,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -156,49 +156,53 @@
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 160,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "jump anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:26"
+      "CreationTime": "Feb 24 2021 20:15:26",
+      "CompletionTime": "Mar 6 2021 20:18:25"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 176,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "fall anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:29"
+      "CreationTime": "Feb 24 2021 20:15:29",
+      "CompletionTime": "Mar 6 2021 20:18:28"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 192,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "wall slide anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:32"
+      "CreationTime": "Feb 24 2021 20:15:32",
+      "CompletionTime": "Mar 6 2021 20:18:35"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -352,
       "Position.Y": 208,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "wall jump anim",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:15:35"
+      "CreationTime": "Feb 24 2021 20:15:35",
+      "CompletionTime": "Mar 6 2021 20:21:49"
     }, 
     {
       "BoardIndex": 0,
@@ -356,8 +360,7 @@
       "Description": "dialogue system",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Feb 24 2021 20:17:54",
-      "CompletionTime": "Mar 5 2021 16:16:13"
+      "CreationTime": "Feb 24 2021 20:17:54"
     }, 
     {
       "BoardIndex": 0,
@@ -806,7 +809,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 480,
-      "Position.Y": 688,
+      "Position.Y": 672,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -818,7 +821,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 704,
+      "Position.Y": 688,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1694,7 +1697,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 496,
-      "Position.Y": 672,
+      "Position.Y": 656,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
