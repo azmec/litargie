@@ -19,7 +19,6 @@ const DEVIANT_POSTIION: = Vector2(16, 128)
 const CHARACTER_LIMIT: = 140
 
 var show_panel: bool = true setget _set_show_panel
-var show_name: bool = true setget _set_show_name
 
 var _dialogue_container: Control
 var _button_container: Control
@@ -81,6 +80,7 @@ func _show_dialogue(_message_list: Array) -> void:
 	_dialogue_container.add_child(_dialogue)
 
 	_current_dialogue_instance = _dialogue
+	_current_dialogue_instance.toggle_panel(show_panel)
 
 	_show_current()
 
@@ -168,11 +168,10 @@ func _hide() -> void:
 # SETTERS
 # =========================================================
 func _set_show_panel(value: bool) -> void:
+	if _current_dialogue_instance != null:
+		_current_dialogue_instance.toggle_panel(value)
 
 	show_panel = value
-
-func _set_show_name(value: bool) -> void:
-	show_name = value
 
 # =========================================================
 # SIGNALS

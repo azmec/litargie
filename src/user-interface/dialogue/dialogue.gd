@@ -18,6 +18,7 @@ onready var typeTimer: Timer = $TypeTimer
 onready var pauseTimer: Timer = $PauseTimer
 onready var blinkerTimer: Timer = $BlinkerTimer
 
+onready var background: NinePatchRect = $Background
 onready var voicePlayer: AudioStreamPlayer = $DialogueVoicePlayer
 onready var nameHandle: DialogueNameHandle = $DialogueNameHandle
 
@@ -48,6 +49,11 @@ func set_name(new_name: String) -> void:
 
 func message_is_fully_visible() -> bool:
 	return content.visible_characters == content.text.length() 
+
+func toggle_panel(value: bool) -> void:
+	blinker.visible = value
+	nameHandle.visible = value 
+	background.visible = value
 
 func _on_typeTimer_timeout() -> void:
 	pauseCalculator.check_at_position(content.visible_characters)
