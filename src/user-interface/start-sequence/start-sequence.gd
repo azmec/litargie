@@ -14,4 +14,5 @@ func _ready() -> void:
 		dialogueContainer.get_buttonContainer()
 	)
 
+	DialogueGod.normal_dialogue_position = Vector2(56, 20)
 	DialogueGod.queue_sequence_to_message_stack(START_SEQUENCE)

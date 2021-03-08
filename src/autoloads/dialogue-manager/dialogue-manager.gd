@@ -13,12 +13,13 @@ signal finished()
 const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
 const DIALOGUE_BUTTON_SCENCE: = preload("res://src/user-interface/dialogue-button/dialogue-button.tscn")
 
-const NORMAL_POSITION: = Vector2(56, 128)
-const DEVIANT_POSTIION: = Vector2(16, 128)
+const DEFAULT_DIALOGUE_POSITION: Vector2 = Vector2(56, 128)
+const DEVIANT_OFFSET: = -40
 
 const CHARACTER_LIMIT: = 140
 
 var show_panel: bool = true setget _set_show_panel
+var normal_dialogue_position: Vector2 = DEFAULT_DIALOGUE_POSITION setget _set_normal_dialogue_position
 
 var _dialogue_container: Control
 var _button_container: Control
@@ -58,6 +59,9 @@ func queue_sequence_to_message_stack(json_path: String) -> void:
 
 	_show_dialogue(_message_stack)
 
+func reset_dialogue_position() -> void:
+	self.normal_dialogue_position = DEFAULT_DIALOGUE_POSITION
+
 # Queues the given root to the message stack.
 func _queue_root_to_message_stack(root: Dictionary) -> void:
 	var _message: = sequenceParser.get_root_text(root)
@@ -81,6 +85,7 @@ func _show_dialogue(_message_list: Array) -> void:
 
 	_current_dialogue_instance = _dialogue
 	_current_dialogue_instance.toggle_panel(show_panel)
+	_current_dialogue_instance.rect_position = normal_dialogue_position
 
 	_show_current()
 
@@ -91,9 +96,9 @@ func _show_current() -> void:
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
 
 	if sequenceParser.root_is_deviant(_current_trunk):
-		_move_dialogue_instance(DEVIANT_POSTIION)
+		_adjust_for_deviancy()
 	else:
-		_move_dialogue_instance(NORMAL_POSITION)
+		_move_dialogue_instance(normal_dialogue_position)
 	
 	var _message: = sequenceParser.get_root_text(_current_trunk)
 	_current_dialogue_instance.update_text(_message)
@@ -122,19 +127,21 @@ func _advance_dialogue():
 	else:
 		_hide()
 
-# Loops through and deletes all children in the current
-# button container.
-func _clear_button_container() -> void:
-	var _buttons: = _button_container.get_children()
-	for button in _buttons:
-		button.disconnect("condition_choosen", self, "_on_condition_choosen")
-		button.queue_free()
+func _adjust_for_deviancy() -> void:
+	if _current_dialogue_instance == null:
+		return
 
-# Returns if the given message is above the character limit.
-# Note, this is meant to be *after* filtering any BBCode or
-# custom tags.
-func _is_above_character_limit(message: String) -> bool:
-	return message.length() > CHARACTER_LIMIT
+	var _current_position: = _current_dialogue_instance.rect_position
+
+	# Checking if we've already moved the dialogue instance
+	# to the deviant position and stopping if it is.
+	if _current_position.x == normal_dialogue_position.x + DEVIANT_OFFSET:
+		return 
+	
+	var _deviant_position = Vector2(_current_position.x + DEVIANT_OFFSET,
+									_current_position.y)
+
+	_move_dialogue_instance(_deviant_position)
 
 # Tweens the position of the current dialogue instance from 
 # its current position to the given position.
@@ -148,8 +155,20 @@ func _move_dialogue_instance(position: Vector2) -> void:
 									position,
 									0.5, Tween.TRANS_QUART, Tween.EASE_OUT)
 	moveTween.start()
-									
+							
+# Loops through and deletes all children in the current
+# button container.
+func _clear_button_container() -> void:
+	var _buttons: = _button_container.get_children()
+	for button in _buttons:
+		button.disconnect("condition_choosen", self, "_on_condition_choosen")
+		button.queue_free()
 
+# Returns if the given message is above the character limit.
+# Note, this is meant to be *after* filtering any BBCode or
+# custom tags.
+func _is_above_character_limit(message: String) -> bool:
+	return message.length() > CHARACTER_LIMIT
 
 # Hides the current dialogue instance and resets private
 # properties for the next sequence.
@@ -172,6 +191,13 @@ func _set_show_panel(value: bool) -> void:
 		_current_dialogue_instance.toggle_panel(value)
 
 	show_panel = value
+
+func _set_normal_dialogue_position(value: Vector2) -> void:
+	if _current_dialogue_instance != null:
+		var _current_position = _current_dialogue_instance.rect_position
+		_move_dialogue_instance(value)
+
+	normal_dialogue_position = value
 
 # =========================================================
 # SIGNALS

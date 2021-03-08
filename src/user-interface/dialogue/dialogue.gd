@@ -31,6 +31,7 @@ func _ready() -> void:
 	voicePlayer.connect("finished", self, "_on_voicePlayer_finished") 
 
 	self.rect_size = Vector2(208, 36)
+	background.rect_size = self.rect_size
 
 # Update the content and type out the provided text.
 func update_text(text: String) -> void:
