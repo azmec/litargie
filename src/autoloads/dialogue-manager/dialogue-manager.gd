@@ -99,6 +99,9 @@ func _show_current() -> void:
 	_current_dialogue_instance.update_text(_message)
 	_current_dialogue_instance.set_name(_current_trunk.character)
 
+# Loops through the branches of the current root and
+# spawns the correlated amount of buttons with the
+# appropiate "conditions."
 func _show_dialogue_options(branches: Dictionary) -> void:
 	_clear_button_container() 
 
@@ -110,6 +113,8 @@ func _show_dialogue_options(branches: Dictionary) -> void:
 
 		_button_container.add_child(_button)
 
+# Iterates the dialogues stack and shows the next piece of
+# dialogue.
 func _advance_dialogue():
 	if _active_dialogue_offset < _message_stack.size() - 1:
 		_active_dialogue_offset += 1
@@ -117,15 +122,22 @@ func _advance_dialogue():
 	else:
 		_hide()
 
+# Loops through and deletes all children in the current
+# button container.
 func _clear_button_container() -> void:
 	var _buttons: = _button_container.get_children()
 	for button in _buttons:
 		button.disconnect("condition_choosen", self, "_on_condition_choosen")
 		button.queue_free()
 
+# Returns if the given message is above the character limit.
+# Note, this is meant to be *after* filtering any BBCode or
+# custom tags.
 func _is_above_character_limit(message: String) -> bool:
 	return message.length() > CHARACTER_LIMIT
 
+# Tweens the position of the current dialogue instance from 
+# its current position to the given position.
 func _move_dialogue_instance(position: Vector2) -> void:
 	if _current_dialogue_instance == null:
 		return
@@ -139,6 +151,8 @@ func _move_dialogue_instance(position: Vector2) -> void:
 									
 
 
+# Hides the current dialogue instance and resets private
+# properties for the next sequence.
 func _hide() -> void:
 	_current_dialogue_instance.disconnect("message_completed", self, "_on_message_completed")
 	_current_dialogue_instance.queue_free() 
@@ -154,6 +168,7 @@ func _hide() -> void:
 # SETTERS
 # =========================================================
 func _set_show_panel(value: bool) -> void:
+
 	show_panel = value
 
 func _set_show_name(value: bool) -> void:
