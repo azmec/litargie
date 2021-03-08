@@ -13,6 +13,9 @@ signal finished()
 const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
 const DIALOGUE_BUTTON_SCENCE: = preload("res://src/user-interface/dialogue-button/dialogue-button.tscn")
 
+const NORMAL_POSITION: = Vector2(56, 128)
+const DEVIANT_POSTIION: = Vector2(16, 128)
+
 const CHARACTER_LIMIT: = 140
 
 var _dialogue_container: Control
@@ -28,7 +31,7 @@ var _current_dialogue_instance: Dialogue
 var _active_dialogue_offset: int = 0
 
 onready var sequenceParser: SequenceParser = $SequenceParser
-onready var opacityTween: Tween = $OpacityTween
+onready var moveTween: Tween = $MoveTween
 
 func _ready() -> void:
 	pass 
@@ -83,6 +86,12 @@ func _show_current() -> void:
 	emit_signal("message_requested")
 
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
+
+	if sequenceParser.root_is_deviant(_current_trunk):
+		_current_dialogue_instance.rect_position = DEVIANT_POSTIION 
+	else:
+		_current_dialogue_instance.rect_position = NORMAL_POSITION 
+	
 	var _message: = sequenceParser.get_root_text(_current_trunk)
 	_current_dialogue_instance.update_text(_message)
 	_current_dialogue_instance.set_name(_current_trunk.character)
@@ -98,6 +107,13 @@ func _show_dialogue_options(branches: Dictionary) -> void:
 
 		_button_container.add_child(_button)
 
+func _advance_dialogue():
+	if _active_dialogue_offset < _message_stack.size() - 1:
+		_active_dialogue_offset += 1
+		_show_current()
+	else:
+		_hide()
+
 func _clear_button_container() -> void:
 	var _buttons: = _button_container.get_children()
 	for button in _buttons:
@@ -107,12 +123,14 @@ func _clear_button_container() -> void:
 func _is_above_character_limit(message: String) -> bool:
 	return message.length() > CHARACTER_LIMIT
 
-func _advance_dialogue():
-	if _active_dialogue_offset < _message_stack.size() - 1:
-		_active_dialogue_offset += 1
-		_show_current()
-	else:
-		_hide()
+func _move_dialogue_instance(position: Vector2) -> void:
+	moveTween.interpolate_property(_current_dialogue_instance,
+									"rect_position",
+									_current_dialogue_instance.rect_position,
+									position,
+									0.5,
+									
+
 
 func _hide() -> void:
 	_current_dialogue_instance.disconnect("message_completed", self, "_on_message_completed")
@@ -124,6 +142,11 @@ func _hide() -> void:
 	_is_active = false
 
 	emit_signal("finished") 
+
+
+# ---------------------------------------------------------
+# SIGNALS 
+# ---------------------------------------------------------
 
 func _on_message_completed() -> void:
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]

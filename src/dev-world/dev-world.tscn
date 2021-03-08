@@ -83,3 +83,5 @@ __meta__ = {
 [editable path="Player"]
 
 [editable path="Player/PlayerCamera"]
+
+[editable path="CanvasLayer/Main/DialogueContainer"]
