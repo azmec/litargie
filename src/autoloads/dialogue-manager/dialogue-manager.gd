@@ -18,6 +18,9 @@ const DEVIANT_POSTIION: = Vector2(16, 128)
 
 const CHARACTER_LIMIT: = 140
 
+var show_panel: bool = true setget _set_show_panel
+var show_name: bool = true setget _set_show_name
+
 var _dialogue_container: Control
 var _button_container: Control
 
@@ -88,9 +91,9 @@ func _show_current() -> void:
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
 
 	if sequenceParser.root_is_deviant(_current_trunk):
-		_current_dialogue_instance.rect_position = DEVIANT_POSTIION 
+		_move_dialogue_instance(DEVIANT_POSTIION)
 	else:
-		_current_dialogue_instance.rect_position = NORMAL_POSITION 
+		_move_dialogue_instance(NORMAL_POSITION)
 	
 	var _message: = sequenceParser.get_root_text(_current_trunk)
 	_current_dialogue_instance.update_text(_message)
@@ -124,11 +127,15 @@ func _is_above_character_limit(message: String) -> bool:
 	return message.length() > CHARACTER_LIMIT
 
 func _move_dialogue_instance(position: Vector2) -> void:
+	if _current_dialogue_instance == null:
+		return
+
 	moveTween.interpolate_property(_current_dialogue_instance,
 									"rect_position",
 									_current_dialogue_instance.rect_position,
 									position,
-									0.5,
+									0.5, Tween.TRANS_QUART, Tween.EASE_OUT)
+	moveTween.start()
 									
 
 
@@ -143,10 +150,18 @@ func _hide() -> void:
 
 	emit_signal("finished") 
 
+# =========================================================
+# SETTERS
+# =========================================================
+func _set_show_panel(value: bool) -> void:
+	show_panel = value
 
-# ---------------------------------------------------------
-# SIGNALS 
-# ---------------------------------------------------------
+func _set_show_name(value: bool) -> void:
+	show_name = value
+
+# =========================================================
+# SIGNALS
+# =========================================================
 
 func _on_message_completed() -> void:
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
