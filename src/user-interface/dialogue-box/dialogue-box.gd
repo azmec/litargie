@@ -8,10 +8,10 @@ extends Control
 
 signal message_completed 
 
-const DEVIANT_OFFSET: int = -40
+const DEVIANT_OFFSET: int = -56
 const MOVE_SPEED: float = 0.5
 
-var normal_dialogue_position: Vector2 = Vector2.ZERO setget _set_normal_dialogue_position
+var normal_dialogue_position: Vector2 = Vector2(56, 0) setget _set_normal_dialogue_position
 
 onready var dialogue: Dialogue = $Dialogue
 onready var buttonContainer: Control = $ButtonsContainer
@@ -37,10 +37,10 @@ func move_dialogue(new_position: Vector2) -> void:
 
 	moveTween.interpolate_property(dialogue, "rect_position",
 									_current_position, new_position,
-									MOVE_SPEED, Tween.TRANS.QUART, Tween.EASE_OUT)
+									MOVE_SPEED, Tween.TRANS_QUART, Tween.EASE_OUT)
 	moveTween.start()
 
-func _adjust_for_devaincy() -> void:
+func adjust_for_devaincy() -> void:
 	var _deviant_position = Vector2(normal_dialogue_position.x + DEVIANT_OFFSET,
 									normal_dialogue_position.y)
 	var _current_position = dialogue.rect_position

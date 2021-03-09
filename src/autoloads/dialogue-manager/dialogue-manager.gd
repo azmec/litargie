@@ -79,6 +79,11 @@ func _show_current() -> void:
 
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
 
+	if sequenceParser.root_is_deviant(_current_trunk):
+		_current_dialogueBox_instance.adjust_for_devaincy()
+	else:
+		_current_dialogueBox_instance.move_dialogue(_current_dialogueBox_instance.normal_dialogue_position)
+
 	var _message: = sequenceParser.get_root_text(_current_trunk)
 	_current_dialogueBox_instance.update_dialogue_text(_current_trunk.character, _message)
 
