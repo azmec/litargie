@@ -9,10 +9,20 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "VBoxContainer",
+"class": "ButtonContainer",
+"language": "GDScript",
+"path": "res://src/user-interface/buttons-container/buttons-container.gd"
+}, {
 "base": "Control",
 "class": "Dialogue",
 "language": "GDScript",
 "path": "res://src/user-interface/dialogue/dialogue.gd"
+}, {
+"base": "Control",
+"class": "DialogueBox",
+"language": "GDScript",
+"path": "res://src/user-interface/dialogue-box/dialogue-box.gd"
 }, {
 "base": "Button",
 "class": "DialogueButton",
@@ -100,7 +110,9 @@ _global_script_classes=[ {
 "path": "res://src/props/state-class/state-class.gd"
 } ]
 _global_script_class_icons={
+"ButtonContainer": "",
 "Dialogue": "",
+"DialogueBox": "",
 "DialogueButton": "",
 "DialogueContainer": "",
 "DialogueManager": "",

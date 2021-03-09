@@ -8,13 +8,11 @@ onready var player: = $Player
 onready var enemy: = $Enemy
 onready var boringTileMap: = $BoringTileMap
 
-onready var dialogueContainer: = $CanvasLayer/Main/DialogueContainer
-onready var buttonContainer: = $CanvasLayer/Main/DialogueContainer/HBoxContainer/ButtonContainer
-
+onready var mainUI: Control = $CanvasLayer/Main
 onready var fpsLabel: Label = $CanvasLayer/Main/FPSLabel
 
 func _ready() -> void:
-	DialogueGod.set_dialogue_container(dialogueContainer, buttonContainer)
+	DialogueGod.set_parent(mainUI)
 
 	yield(get_tree().create_timer(0.5), "timeout")
 	DialogueGod.queue_sequence_to_message_stack(TEST_SEQUENCE_PATH)

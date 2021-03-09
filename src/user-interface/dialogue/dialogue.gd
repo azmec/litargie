@@ -22,7 +22,6 @@ onready var background: NinePatchRect = $Background
 onready var voicePlayer: AudioStreamPlayer = $DialogueVoicePlayer
 onready var nameHandle: DialogueNameHandle = $DialogueNameHandle
 
-# remove later
 func _ready() -> void:
 	typeTimer.connect("timeout", self, "_on_typeTimer_timeout")
 	pauseCalculator.connect("pause_requested", self, "_on_pauseCalculator_pause_requested")
@@ -30,6 +29,7 @@ func _ready() -> void:
 	blinkerTimer.connect("timeout", self, "_on_blinkerTimer_timeout")
 	voicePlayer.connect("finished", self, "_on_voicePlayer_finished") 
 
+func _process(_delta: float) -> void: 
 	self.rect_size = Vector2(208, 36)
 	background.rect_size = self.rect_size
 
