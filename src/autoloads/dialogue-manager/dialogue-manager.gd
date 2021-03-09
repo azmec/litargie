@@ -10,6 +10,7 @@ signal message_completed()
 
 signal finished() 
 
+const DIALOGUE_BOX_SCENE: = preload("res://src/user-interface/dialogue-box/dialogue-box.tscn")
 const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
 const DIALOGUE_BUTTON_SCENCE: = preload("res://src/user-interface/dialogue-button/dialogue-button.tscn")
 
