@@ -14,7 +14,8 @@ func _ready() -> void:
 	_set_child_rect_sizes()
 
 func initialize(branched_sequence: Dictionary) -> void:
-	_condition = branched_sequence.condition
+	print(branched_sequence)
+	_condition = branched_sequence.condition[Settings.language]
 	_root_text = branched_sequence.root[Settings.language]
 	_branch = branched_sequence
 
