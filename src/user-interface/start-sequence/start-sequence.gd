@@ -9,7 +9,7 @@ const REWORK_SEQUENCE: String = "res://assets/dialogues/rework-sequence.json"
 
 func _ready() -> void:
 	DialogueGod.set_parent(self)
-	DialogueGod.queue_sequence_to_message_stack(START_SEQUENCE)
+	DialogueGod.queue_sequence_to_message_stack(REWORK_SEQUENCE)
 
 	var _dialogueBox: DialogueBox = DialogueGod.get_dialogueBox()
 	_dialogueBox.toggle_panel(false)

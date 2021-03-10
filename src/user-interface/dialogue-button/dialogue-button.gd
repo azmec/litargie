@@ -1,6 +1,8 @@
 class_name DialogueButton
 extends Button
 
+const CHARACTER_LIMIT: = 18
+
 signal condition_choosen(branch)
 
 var _condition: String = ""
@@ -14,13 +16,18 @@ func _ready() -> void:
 	_set_child_rect_sizes()
 
 func initialize(branched_sequence: Dictionary) -> void:
-	print(branched_sequence)
 	_condition = branched_sequence.condition[Settings.language]
 	_root_text = branched_sequence.root[Settings.language]
 	_branch = branched_sequence
 
+	if _is_above_character_limit(_condition):
+		print_debug('Condition "' + _condition + '" is above the character limit!')
+
 	self.text = _condition
 	#_set_child_rect_sizes()
+
+func _is_above_character_limit(condition: String) -> bool:
+	return condition.length() > CHARACTER_LIMIT
 
 func _set_child_rect_sizes() -> void:
 	patchRect.rect_size = self.rect_size

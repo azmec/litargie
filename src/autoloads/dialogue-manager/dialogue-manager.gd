@@ -12,8 +12,6 @@ signal finished()
 
 const DIALOGUE_BOX_SCENE: = preload("res://src/user-interface/dialogue-box/dialogue-box.tscn")
 
-const CHARACTER_LIMIT: = 140
-
 var _parent: Control
 
 var _is_active: bool = false 
@@ -54,10 +52,6 @@ func get_dialogueBox() -> DialogueBox:
 # Queues the given root to the message stack.
 func _queue_root_to_message_stack(root: Dictionary) -> void:
 	var _message: = sequenceParser.get_root_text(root)
-	if _is_above_character_limit(_message):
-		print_debug('Message: "' + _message + '" is above the character limit!') 
-		return
-	
 	_message_stack.push_back(root)
 
 # Start the dialogue process and spawn the dialogue instance. 
@@ -99,12 +93,6 @@ func _advance_dialogue():
 	else:
 		_hide()
 
-# Returns if the given message is above the character limit.
-# Note, this is meant to be *after* filtering any BBCode or
-# custom tags.
-func _is_above_character_limit(message: String) -> bool:
-	return message.length() > CHARACTER_LIMIT
-
 # Hides the current dialogue instance and resets private
 # properties for the next sequence.
 func _hide() -> void:
@@ -135,13 +123,7 @@ func _on_message_completed() -> void:
 	emit_signal("message_completed") 
 	
 func _on_condition_choosen(branch: Dictionary) -> void: 
-	_is_waiting_for_choice = false
-	
-	var _message: = sequenceParser.get_root_text(branch)
-	if _is_above_character_limit(_message):
-		print_debug('Message: "' + _message + '" is above the character limit!') 
-		return
-	
+	_is_waiting_for_choice = false	
 	_current_dialogueBox_instance.buttonContainer.clear_buttons()
 
 	_message_stack.insert(_active_dialogue_offset + 1, branch)

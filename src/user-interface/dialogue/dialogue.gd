@@ -3,6 +3,7 @@ extends Control
 
 signal message_completed()
 
+const CHARACTER_LIMIT: = 140
 const TYPING_SPEED: = 0.04 # the rate at which characters appear
 const BLINKING_SPEED: = 0.5 # rate at which the indicator blinks 
 
@@ -39,6 +40,10 @@ func update_text(text: String) -> void:
 	blinker.visible = false
 
 	content.bbcode_text = pauseCalculator.parse_pauses(text)
+
+	if _is_above_character_limit(content.text):
+		print_debug('Message "' + content.text + '" is above the character limit!')
+	
 	content.visible_characters = 0
 	typeTimer.start(TYPING_SPEED)
 
@@ -55,6 +60,9 @@ func toggle_panel(value: bool) -> void:
 	blinker.visible = value
 	nameHandle.visible = value 
 	background.visible = value
+
+func _is_above_character_limit(message: String) -> bool:
+	return message.length() > CHARACTER_LIMIT
 
 func _on_typeTimer_timeout() -> void:
 	pauseCalculator.check_at_position(content.visible_characters)
