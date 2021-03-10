@@ -1,26 +1,22 @@
 {
     "001": {
         "character": "",
-        "condition": "",
-        "root": {
-            "ENG": "Made with {p=0.5} the Godot Engine.",
-            "SPN": "Made with {p=0.5} the Godot Engine."
+        "condition": {
+            "ENG": "",
+            "SPN": ""
         },
-        "branches": {
-            "001": {
-                "character": "",
-                "condition": "test",
-                "root": {
-                    "ENG": "a",
-                    "SPN": "b"
-                },
-                "branches": {}
-            }
-        }
+        "root": {
+            "ENG": "Made with{p=0.5} the Godot Engine.",
+            "SPN": "Made with{p=0.5} the Godot Engine."
+        },
+        "branches": {}
     },
     "002": {
         "character": "",
-        "condition": "", 
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        }, 
         "root": {
             "ENG": "Made for the Games for Change 2021 Competition.",
             "SPN" : "Made for the Games for Change 2021 Competition."
@@ -29,7 +25,10 @@
     },
     "003": {
         "character": "",
-        "condition": "", 
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        }, 
         "root": {
             "ENG": "This game deals with themes dealing with mental health. Would you like to continue?",
             "SPN": "This game deals with themes dealing with mental health. Would you like to continue?"
@@ -37,7 +36,10 @@
         "branches": {
             "001": {
                 "character": "", 
-                "condition": "Yes",
+                "condition": {
+                    "ENG": "Yes",
+                    "SPN": "Si"
+                },
                 "root": {
                     "ENG": "",
                     "SPN": ""
@@ -46,7 +48,10 @@
             },
             "002": {
                 "character": "",
-                "condition": "No",
+                "condition": {
+                    "ENG": "No",
+                    "SPN": "No"
+                },
                 "root": {
                     "ENG": "Please leave the game.",
                     "SPN": "Please leave the game."
