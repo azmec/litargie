@@ -48,6 +48,9 @@ func queue_sequence_to_message_stack(json_path: String) -> void:
 
 	_show_dialogue(_message_stack)
 
+func get_dialogueBox() -> DialogueBox:
+	return _current_dialogueBox_instance 
+
 # Queues the given root to the message stack.
 func _queue_root_to_message_stack(root: Dictionary) -> void:
 	var _message: = sequenceParser.get_root_text(root)

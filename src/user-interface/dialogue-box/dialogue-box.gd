@@ -32,6 +32,9 @@ func update_dialogue_options(branches: Array) -> void:
 	for branch in branches:
 		buttonContainer.add_button(branch)
 
+func toggle_panel(value: bool) -> void:
+	dialogue.toggle_panel(value) 
+
 func move_dialogue(new_position: Vector2) -> void:
 	var _current_position = dialogue.rect_position 
 
