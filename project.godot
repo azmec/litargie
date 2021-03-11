@@ -219,6 +219,10 @@ dash={
 2d_physics/layer_5="hookable"
 2d_physics/layer_6="enemy-collision"
 
+[locale]
+
+translations=PoolStringArray( "res://src/localizations.es.translation", "res://src/localizations.en.translation" )
+
 [rendering]
 
 environment/default_clear_color=Color( 0.160784, 0.156863, 0.192157, 1 )
