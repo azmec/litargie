@@ -36,7 +36,6 @@ var max_jumps: int = 2
 var _hook_pull_force: Vector2 = Vector2.ZERO
 var _hook_target_position: Vector2 = Vector2.ZERO
 
-
 onready var sprite: Sprite = $Sprite
 onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 onready var meathook: Meathook = $Meathook
@@ -55,6 +54,8 @@ func _ready():
 	dashTimer.connect("timeout", self, "_on_dashTimer_timeout")
 	wallJumpStickyTimer.connect("timeout", self, "_on_wallJumpStickyTimer_timeout")
 	state = change_state_to(STATES.IDLE)
+	meathook.enabled = false
+	meathook.visible = false
 
 func _physics_process(delta: float) -> void:
 	x_input = get_input()

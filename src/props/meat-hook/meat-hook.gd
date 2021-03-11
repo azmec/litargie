@@ -14,13 +14,13 @@ const HOOK_DISTANCE: int = 75
 const IDLE_HOOK_POSITION_X: int = 12
 const FORCE_MULTIPLIER: int = 400
 
+var enabled: bool = true
 var state: int = 0
 var flip_h: bool = false setget _set_flip_h
 var flip_v: bool = false setget _set_flip_v
 
 var _target_position: Vector2 = Vector2.ZERO
 
-onready var label: Label = $Node/Label 
 onready var hook: Area2D = $Hook
 
 func _ready() -> void:
@@ -29,7 +29,9 @@ func _ready() -> void:
 	state = change_state_to(STATES.IDLE)
 
 func _physics_process(delta: float) -> void:
-	label.text = "rotation_degrees: " + str(self.rotation_degrees)
+	if not enabled: 
+		return
+	
 	match state:
 		STATES.IDLE:
 			_look_to_mouse()
