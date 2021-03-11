@@ -7,7 +7,7 @@
 
 [node name="BaseLevel" type="Node2D"]
 
-[node name="PathFindableTileMap" type="TileMap" parent="."]
+[node name="NormalGround" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 16, 16 )
 format = 1
