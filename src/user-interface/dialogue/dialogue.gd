@@ -20,7 +20,7 @@ onready var pauseTimer: Timer = $PauseTimer
 onready var blinkerTimer: Timer = $BlinkerTimer
 
 onready var background: NinePatchRect = $Background
-onready var voicePlayer: AudioStreamPlayer = $DialogueVoicePlayer
+onready var voicePlayer: VariableSFXPlayer = $DialogueVoicePlayer
 onready var nameHandle: DialogueNameHandle = $DialogueNameHandle
 
 func _ready() -> void:
