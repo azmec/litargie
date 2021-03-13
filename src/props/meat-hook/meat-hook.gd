@@ -14,7 +14,7 @@ const HOOK_DISTANCE: int = 75
 const IDLE_HOOK_POSITION_X: int = 12
 const FORCE_MULTIPLIER: int = 400
 
-var enabled: bool = true
+var enabled: bool = true setget _set_enabled
 var state: int = 0
 var flip_h: bool = false setget _set_flip_h
 var flip_v: bool = false setget _set_flip_v
@@ -57,6 +57,10 @@ func change_state_to(new_state: int) -> int:
 			pass
 	
 	return new_state
+
+func _set_enabled(value: bool) -> void:
+	self.visible = value
+	enabled = value
 
 # Mimic Sprite.flip_h with Node2D.scale.x 
 func _set_flip_h(value: bool) -> void:

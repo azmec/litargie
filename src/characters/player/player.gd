@@ -11,6 +11,9 @@ enum STATES {
 	HOOKED
 }
 
+const MH_ANIMS: = preload("res://assets/actors/player/player-mh-anims.png")
+const BASE_ANIMS: = preload("res://assets/actors/player/player-anims.png")
+
 const MAX_SPEED: int = 150
 const TERMINAL_VELOCITY: int = 600
 const ACCELERATION: int = 350
@@ -23,6 +26,8 @@ const DASH_TIME: float = 0.2
 const DASH_COOLDOWN: float = 2.0
 const WALL_SLIDE_COOLDOWN: float = 0.2
 const WALL_STICKINESS: float = 0.2
+
+export var has_meathook: bool = true 
 
 var velocity: Vector2 = Vector2.ZERO
 var x_input: int = 0
@@ -54,8 +59,13 @@ func _ready():
 	dashTimer.connect("timeout", self, "_on_dashTimer_timeout")
 	wallJumpStickyTimer.connect("timeout", self, "_on_wallJumpStickyTimer_timeout")
 	state = change_state_to(STATES.IDLE)
-	meathook.enabled = false
-	meathook.visible = false
+
+	if has_meathook:
+		meathook.enabled = true
+		sprite.texture = MH_ANIMS
+	else:
+		meathook.enabled = false
+		sprite.textrue = BASE_ANIMS
 
 func _physics_process(delta: float) -> void:
 	x_input = get_input()
