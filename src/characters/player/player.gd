@@ -65,7 +65,7 @@ func _ready():
 		sprite.texture = MH_ANIMS
 	else:
 		meathook.enabled = false
-		sprite.textrue = BASE_ANIMS
+		sprite.texture = BASE_ANIMS
 
 func _physics_process(delta: float) -> void:
 	x_input = get_input()

@@ -51,6 +51,7 @@ tile_data = PoolIntArray( -655371, 0, 0, -655370, 0, 1, -655369, 0, 1, -655368, 
 
 [node name="Player" parent="." index="2"]
 position = Vector2( 176, 176 )
+has_meathook = false
 
 [node name="TopLeft" parent="Player/PlayerCamera/Limits" index="0"]
 position = Vector2( 0, 0 )
