@@ -166,7 +166,7 @@ func _physics_process(delta: float) -> void:
 			if !jumpTimer.is_stopped():
 				state = change_state_to(STATES.JUMP)
 
-	if x_input != 0:
+	if x_input != 0 and state != STATES.WALL_SLIDE:
 		sprite.flip_h = x_input < 0
 	velocity = move_and_slide(velocity, Vector2.UP)
 
