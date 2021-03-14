@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://src/helpers/detector/detector.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/environment/connection-point/connection-point.gd" type="Script" id=3]
+
+[node name="ConnectionPoint" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -32 )
+
+[node name="PlayerDetector" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -8 )
+collision_layer = 0
+collision_mask = 2

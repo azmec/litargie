@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -661.139892578125,
-  "Pan.Y": -43.65081024169922,
+  "Pan.X": -726.7598876953125,
+  "Pan.Y": 10.097030639648438,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -490,7 +490,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 656,
-      "Position.Y": -80,
+      "Position.Y": 64,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -502,7 +502,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": -64,
+      "Position.Y": 80,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -515,7 +515,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": -32,
+      "Position.Y": 112,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -527,7 +527,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": -48,
+      "Position.Y": 96,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -539,7 +539,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": -16,
+      "Position.Y": 128,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -551,7 +551,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 656,
-      "Position.Y": 0,
+      "Position.Y": 144,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -563,7 +563,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": 16,
+      "Position.Y": 160,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -575,7 +575,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": 32,
+      "Position.Y": 176,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -587,7 +587,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 48,
+      "Position.Y": 192,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -600,7 +600,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 64,
+      "Position.Y": 208,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -613,7 +613,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 80,
+      "Position.Y": 224,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -625,7 +625,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 96,
+      "Position.Y": 240,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -637,7 +637,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 112,
+      "Position.Y": 256,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -650,7 +650,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 128,
+      "Position.Y": 272,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -663,7 +663,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 144,
+      "Position.Y": 288,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -675,7 +675,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 688,
-      "Position.Y": 160,
+      "Position.Y": 304,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -688,7 +688,7 @@
     {
       "BoardIndex": 0,
       "Position.X": 672,
-      "Position.Y": 176,
+      "Position.Y": 320,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1731,6 +1731,115 @@
       "Selected": false,
       "TaskType.CurrentChoice": 2,
       "CreationTime": "Mar 10 2021 19:41:10"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 656,
+      "Position.Y": -80,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "OH YEAH THAT MEMORY CONNECTION BIT",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:52:42"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": -64,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Player & Meathook Detector",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:52:56",
+      "CompletionTime": "Mar 13 2021 19:51:16"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": -48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Spawn rope and set it to point A",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:53:09"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": -32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Drag it along point B",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:54:06"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": -16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Set point B",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:54:10"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": 0,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Trigger event to handler(?)",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:54:13"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": 16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Simulate rope along collisions w/ vertex integration?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:54:20"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": 32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Trigger dialogue?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:54:37"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": 48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Create sprite art",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 13 2021 18:54:54"
     }
   ]
 }
