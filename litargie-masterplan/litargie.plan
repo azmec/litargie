@@ -1,11 +1,11 @@
 {
   "Version": "0.6.1-3",
   "LockProject": false,
-  "BoardIndex": 1,
+  "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -1416.30908203125,
-  "Pan.Y": -97.7070541381836,
+  "Pan.X": -661.139892578125,
+  "Pan.Y": -43.65081024169922,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -503,13 +503,14 @@
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -64,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Make art for the meathook",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:15:35"
+      "CreationTime": "Mar 13 2021 12:15:35",
+      "CompletionTime": "Mar 13 2021 16:41:27"
     }, 
     {
       "BoardIndex": 0,
@@ -587,25 +588,27 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Walking",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:16:51"
+      "CreationTime": "Mar 13 2021 12:16:51",
+      "CompletionTime": "Mar 13 2021 16:57:07"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 64,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Jumping",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:16:54"
+      "CreationTime": "Mar 13 2021 12:16:54",
+      "CompletionTime": "Mar 13 2021 17:42:02"
     }, 
     {
       "BoardIndex": 0,
@@ -635,25 +638,27 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 112,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Dashing",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:13"
+      "CreationTime": "Mar 13 2021 12:17:13",
+      "CompletionTime": "Mar 13 2021 18:17:29"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 128,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Falling",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:18"
+      "CreationTime": "Mar 13 2021 12:17:18",
+      "CompletionTime": "Mar 13 2021 17:42:04"
     }, 
     {
       "BoardIndex": 0,
@@ -671,13 +676,14 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 160,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Wallsliding",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:29"
+      "CreationTime": "Mar 13 2021 12:17:29",
+      "CompletionTime": "Mar 13 2021 18:17:32"
     }, 
     {
       "BoardIndex": 0,

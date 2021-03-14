@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -675.30908203125,
-  "Pan.Y": -73.70706176757812,
+  "Pan.X": -604.139892578125,
+  "Pan.Y": -71.15081024169922,
   "ZoomLevel": 4,
   "ColorTheme": "Black Tie",
   "TaskTransparency": 5,
@@ -588,25 +588,27 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Walking",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:16:51"
+      "CreationTime": "Mar 13 2021 12:16:51",
+      "CompletionTime": "Mar 13 2021 16:57:07"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 64,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Jumping",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:16:54"
+      "CreationTime": "Mar 13 2021 12:16:54",
+      "CompletionTime": "Mar 13 2021 17:42:02"
     }, 
     {
       "BoardIndex": 0,
@@ -636,25 +638,27 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 112,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Dashing",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:13"
+      "CreationTime": "Mar 13 2021 12:17:13",
+      "CompletionTime": "Mar 13 2021 18:17:29"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 128,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Falling",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:18"
+      "CreationTime": "Mar 13 2021 12:17:18",
+      "CompletionTime": "Mar 13 2021 17:42:04"
     }, 
     {
       "BoardIndex": 0,
@@ -672,13 +676,14 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 160,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Wallsliding",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:29"
+      "CreationTime": "Mar 13 2021 12:17:29",
+      "CompletionTime": "Mar 13 2021 18:17:32"
     }, 
     {
       "BoardIndex": 0,

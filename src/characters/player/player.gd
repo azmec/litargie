@@ -46,6 +46,7 @@ onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 onready var meathook: Meathook = $Meathook
 onready var wallRaycasts: Node2D = $WallRaycasts
 onready var stateText: Label = $StateText
+onready var sounds: = $Sounds
 
 onready var coyoteTimer: Timer = $Timers/CoyoteTimer
 onready var jumpTimer: Timer = $Timers/JumpTimer
@@ -125,6 +126,7 @@ func _physics_process(delta: float) -> void:
 			if !jumpTimer.is_stopped() and current_jumps > 0:
 				state = change_state_to(STATES.JUMP)
 			if is_on_floor():
+				sounds.library.Fall.play() 
 				if x_input == 0:
 					state = change_state_to(STATES.IDLE)
 				else:
@@ -176,6 +178,7 @@ func get_input() -> int:
 
 # perform logic that runs only when we enter a state
 func change_state_to(new_state: int) -> int:
+	sounds.library.WallSlide.stop()
 	if previous_state == STATES.WALL_SLIDE:
 		wallJumpCooldownTimer.start(WALL_SLIDE_COOLDOWN) 
 
@@ -213,7 +216,8 @@ func change_state_to(new_state: int) -> int:
 		
 		STATES.WALL_SLIDE:
 			stateText.text = "wall slide"
-			animationPlayer.play("wallSlide") 
+			animationPlayer.play("wallSlide")
+			sounds.library.WallSlide.play() 
 
 			velocity.y = 0
 

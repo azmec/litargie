@@ -53,6 +53,9 @@ tile_data = PoolIntArray( -655371, 0, 0, -655370, 0, 1, -655369, 0, 1, -655368, 
 position = Vector2( 176, 176 )
 has_meathook = false
 
+[node name="Sprite" parent="Player" index="0"]
+frame = 17
+
 [node name="TopLeft" parent="Player/PlayerCamera/Limits" index="0"]
 position = Vector2( 0, 0 )
 
@@ -61,6 +64,9 @@ position = Vector2( 1488, 224 )
 
 [node name="StateText" parent="Player" index="5"]
 custom_fonts/font = SubResource( 2 )
+
+[node name="WallSlide" parent="Player/Sounds" index="4"]
+stream = null
 
 [editable path="Player"]
 

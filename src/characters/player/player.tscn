@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/characters/player/player.gd" type="Script" id=1]
 [ext_resource path="res://src/props/player-camera/player-camera.tscn" type="PackedScene" id=2]
@@ -6,6 +6,13 @@
 [ext_resource path="res://src/props/wall-raycasts/wall-raycasts.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/props/meat-hook/meat-hook.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/actors/player/player-mh-anims.png" type="Texture" id=6]
+[ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=7]
+[ext_resource path="res://assets/sounds-music/working-step.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds-music/working-fall.wav" type="AudioStream" id=9]
+[ext_resource path="res://src/helpers/sounds.gd" type="Script" id=10]
+[ext_resource path="res://assets/sounds-music/working-jump.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/sounds-music/working-dash.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/sounds-music/working-wallslide.wav" type="AudioStream" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4, 7 )
@@ -24,6 +31,20 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ 17 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("Sounds/Dash")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -73,6 +94,20 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 7, 8, 9 ]
 }
+tracks/1/type = "method"
+tracks/1/path = NodePath("Sounds/Jump")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
 
 [sub_resource type="Animation" id=6]
 length = 0.6
@@ -88,6 +123,23 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 1, 2, 3, 4, 5, 6 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("Sounds/Step")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+}, {
+"args": [ 0.0 ],
+"method": "play"
+} ]
 }
 
 [sub_resource type="Animation" id=7]
@@ -176,5 +228,34 @@ anims/idle = SubResource( 4 )
 anims/jump = SubResource( 5 )
 anims/run = SubResource( 6 )
 anims/wallSlide = SubResource( 7 )
+
+[node name="Sounds" type="Node" parent="."]
+script = ExtResource( 10 )
+
+[node name="Step" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 8 )
+bus = "SFX"
+script = ExtResource( 7 )
+maximum_pitch = 1.5
+
+[node name="Fall" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 9 )
+bus = "SFX"
+script = ExtResource( 7 )
+
+[node name="Jump" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 11 )
+bus = "SFX"
+script = ExtResource( 7 )
+
+[node name="Dash" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 12 )
+bus = "SFX"
+script = ExtResource( 7 )
+
+[node name="WallSlide" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 13 )
+bus = "SFX"
+script = ExtResource( 7 )
 
 [editable path="WallRaycasts"]
