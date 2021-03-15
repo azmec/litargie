@@ -19,6 +19,6 @@ func _on_body_entered(body) -> void:
 	_body = body
 	emit_signal("object_entered_zone")
 
-func _on_body_exited(_body) -> void:
+func _on_body_exited(_b) -> void:
 	_body = null
 	emit_signal("object_left_zone")

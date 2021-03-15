@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/user-interface/buttons-container/buttons-container.gd"
 }, {
+"base": "Node2D",
+"class": "ConnectionPoint",
+"language": "GDScript",
+"path": "res://src/environment/connection-point/connection-point.gd"
+}, {
 "base": "Control",
 "class": "Dialogue",
 "language": "GDScript",
@@ -84,6 +89,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/props/player-camera/player-camera.gd"
 }, {
+"base": "Button",
+"class": "SceneButton",
+"language": "GDScript",
+"path": "res://src/user-interface/scene-button/scene-button.gd"
+}, {
 "base": "Node",
 "class": "SequenceParser",
 "language": "GDScript",
@@ -106,6 +116,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "ButtonContainer": "",
+"ConnectionPoint": "",
 "Dialogue": "",
 "DialogueBox": "",
 "DialogueButton": "",
@@ -120,6 +131,7 @@ _global_script_class_icons={
 "PauseCalculator": "",
 "Player": "",
 "PlayerCamera": "",
+"SceneButton": "",
 "SequenceParser": "",
 "StartSequence": "",
 "State": "",
