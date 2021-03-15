@@ -3,7 +3,7 @@ extends Node2D
 
 const LINK_SCENCE: = preload("res://src/props/link/link.tscn")
 
-var _current_link: Line2D = null 
+var _current_link_instance: Line2D = null 
 
 onready var playerDetector: = $PlayerDetector
 
@@ -16,8 +16,13 @@ func _process(_delta: float) -> void:
 		_create_link()
 
 func _create_link() -> void:
-	if not _current_link:
+	if _current_link_instance:
 		return
 	
-	# do stuff
+	var _link: = LINK_SCENCE.instance()
+	get_parent().add_child(_link)
+	
+	_link.global_position = self.global_position
+	_link.starting_point_parent = self
+	_link.ending_point_parent = playerDetector.get_body()
 
