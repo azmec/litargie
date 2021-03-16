@@ -46,6 +46,11 @@ script = ExtResource( 4 )
 
 [node name="ConnectionPoint" parent="." instance=ExtResource( 9 )]
 position = Vector2( 608, 256 )
+sequence_path = "res://assets/dialogues/start-sequence.json"
+
+[node name="ConnectionPoint2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 720, 240 )
+sequence_path = "res://assets/dialogues/start-sequence.json"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 520, 256 )

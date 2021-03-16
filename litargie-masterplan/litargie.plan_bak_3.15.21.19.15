@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -1327.4930419921875,
-  "Pan.Y": -47.8711051940918,
+  "Pan.X": -887.378662109375,
+  "Pan.Y": -55.852474212646484,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -1761,37 +1761,40 @@
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Spawn rope and set it to point A",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:53:09"
+      "CreationTime": "Mar 13 2021 18:53:09",
+      "CompletionTime": "Mar 15 2021 17:59:57"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Drag it along point B",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:06"
+      "CreationTime": "Mar 13 2021 18:54:06",
+      "CompletionTime": "Mar 15 2021 17:59:59"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -16,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Set point B",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:10"
+      "CreationTime": "Mar 13 2021 18:54:10",
+      "CompletionTime": "Mar 15 2021 19:14:28"
     }, 
     {
       "BoardIndex": 0,
@@ -1843,8 +1846,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1072,
-      "Position.Y": -32,
+      "Position.X": 1056,
+      "Position.Y": -160,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1855,8 +1858,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1072,
-      "Position.Y": 0,
+      "Position.X": 1056,
+      "Position.Y": -128,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1877,12 +1880,12 @@
       "TaskType.CurrentChoice": 6,
       "CreationTime": "Mar 15 2021 16:59:13",
       "BezierLines": true,
-      "LineEndings": [1056, -32]
+      "LineEndings": [1040, -160]
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1040,
-      "Position.Y": -128,
+      "Position.X": 1024,
+      "Position.Y": -256,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1893,8 +1896,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1120,
-      "Position.Y": 96,
+      "Position.X": 1072,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1905,8 +1908,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1408,
-      "Position.Y": 96,
+      "Position.X": 1360,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1915,12 +1918,12 @@
       "TaskType.CurrentChoice": 6,
       "CreationTime": "Mar 15 2021 17:38:53",
       "BezierLines": true,
-      "LineEndings": [1488, 16]
+      "LineEndings": [1440, -48]
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1504,
-      "Position.Y": -16,
+      "Position.X": 1456,
+      "Position.Y": -80,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1931,8 +1934,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1408,
-      "Position.Y": 96,
+      "Position.X": 1360,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1941,12 +1944,12 @@
       "TaskType.CurrentChoice": 6,
       "CreationTime": "Mar 15 2021 17:40:19",
       "BezierLines": false,
-      "LineEndings": [1488, 96]
+      "LineEndings": [1440, 32]
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1504,
-      "Position.Y": 96,
+      "Position.X": 1456,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1957,8 +1960,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1408,
-      "Position.Y": 96,
+      "Position.X": 1360,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1967,12 +1970,12 @@
       "TaskType.CurrentChoice": 6,
       "CreationTime": "Mar 15 2021 17:41:34",
       "BezierLines": true,
-      "LineEndings": [1488, 208]
+      "LineEndings": [1440, 144]
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": 1504,
-      "Position.Y": 192,
+      "Position.X": 1456,
+      "Position.Y": 128,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -1980,6 +1983,106 @@
       "Selected": false,
       "TaskType.CurrentChoice": 2,
       "CreationTime": "Mar 15 2021 17:41:41"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 1936,
+      "Position.Y": 48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "",
+      "Selected": false,
+      "TaskType.CurrentChoice": 6,
+      "CreationTime": "Mar 15 2021 17:44:14",
+      "BezierLines": true,
+      "LineEndings": [2048, -80]
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 2064,
+      "Position.Y": -80,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "How do we tell that player has a link?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 17:44:22"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 912,
+      "Position.Y": -48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "",
+      "Selected": false,
+      "TaskType.CurrentChoice": 6,
+      "CreationTime": "Mar 15 2021 17:45:05",
+      "BezierLines": true,
+      "LineEndings": [1056, 32]
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 2080,
+      "Position.Y": -64,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "I don't want this to be a player property, so we can just check\nthat there is:",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 17:45:36"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 2096,
+      "Position.Y": -32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "A. An unconnected link within the zone.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 17:46:13"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 2096,
+      "Position.Y": -16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "B: That the working end of the link is within the zone.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 17:46:26"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 2096,
+      "Position.Y": 0,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "This probably comes with a few caveats \nthat shouldn't really be issues, most notably\nthat we can't put connection points in close proximity\nto each other.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 17:46:44"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 1136,
+      "Position.Y": 48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Be able to move and readjust them?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 19:14:31"
     }
   ]
 }

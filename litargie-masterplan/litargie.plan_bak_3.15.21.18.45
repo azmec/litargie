@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -1940.114013671875,
-  "Pan.Y": -39.09403991699219,
+  "Pan.X": -2059.128662109375,
+  "Pan.Y": -33.362823486328125,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -1761,25 +1761,27 @@
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Spawn rope and set it to point A",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:53:09"
+      "CreationTime": "Mar 13 2021 18:53:09",
+      "CompletionTime": "Mar 15 2021 17:59:57"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Drag it along point B",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:06"
+      "CreationTime": "Mar 13 2021 18:54:06",
+      "CompletionTime": "Mar 15 2021 17:59:59"
     }, 
     {
       "BoardIndex": 0,

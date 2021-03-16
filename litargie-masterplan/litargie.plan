@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -865.114013671875,
-  "Pan.Y": 8.905960083007812,
+  "Pan.X": -872.3004150390625,
+  "Pan.Y": -102.24563598632812,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -1787,25 +1787,27 @@
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": -16,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Set point B",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:10"
+      "CreationTime": "Mar 13 2021 18:54:10",
+      "CompletionTime": "Mar 15 2021 19:14:28"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": 0,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Trigger event to handler(?)",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:13"
+      "CreationTime": "Mar 13 2021 18:54:13",
+      "CompletionTime": "Mar 15 2021 19:28:48"
     }, 
     {
       "BoardIndex": 0,
@@ -1823,13 +1825,14 @@
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": 32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Trigger dialogue?",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:37"
+      "CreationTime": "Mar 13 2021 18:54:37",
+      "CompletionTime": "Mar 15 2021 19:28:42"
     }, 
     {
       "BoardIndex": 0,
@@ -2070,6 +2073,42 @@
       "Selected": false,
       "TaskType.CurrentChoice": 2,
       "CreationTime": "Mar 15 2021 17:46:44"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 1136,
+      "Position.Y": 48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Be able to move and readjust them?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 19:14:31"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 656,
+      "Position.Y": 336,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Event -> Dialogue System",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 15 2021 19:28:54"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 672,
+      "Position.Y": 352,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Basically we want to make a cutscene event system, \ndisabling player input and moving the camera around\nwhile displaying dialogue.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 15 2021 19:29:04"
     }
   ]
 }
