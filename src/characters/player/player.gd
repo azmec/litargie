@@ -44,6 +44,7 @@ var max_jumps: int = 2
 var _hook_pull_force: Vector2 = Vector2.ZERO
 var _hook_target_position: Vector2 = Vector2.ZERO
 
+onready var camera: = $PlayerCamera
 onready var sprite: Sprite = $Sprite
 onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 onready var meathook: Meathook = $Meathook
@@ -64,6 +65,7 @@ func _ready():
 	dashTimer.connect("timeout", self, "_on_dashTimer_timeout")
 	wallJumpStickyTimer.connect("timeout", self, "_on_wallJumpStickyTimer_timeout")
 	hurtbox.connect("area_entered", self, "_on_hurtbox_area_entered")
+	hurtbox.connect("body_entered", self, "_on_hurtbox_body_entered")
 	state = change_state_to(STATES.IDLE)
 
 	if has_meathook:
@@ -265,4 +267,7 @@ func _on_wallJumpStickyTimer_timeout() -> void:
 func _on_hurtbox_area_entered(_area) -> void:
 	emit_signal("died")
 	sounds.library.Fall.play()
-	self.active = false
+
+func _on_hurtbox_body_entered(_body) -> void:
+	emit_signal("died")
+	sounds.library.Fall.play()

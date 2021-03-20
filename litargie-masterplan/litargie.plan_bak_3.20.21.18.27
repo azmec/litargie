@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 421.6234130859375,
-  "Pan.Y": -45.29912567138672,
+  "Pan.X": 377.6234130859375,
+  "Pan.Y": -135.29913330078125,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2267,7 +2267,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": 112,
+      "Position.Y": 176,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2279,7 +2279,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": 128,
+      "Position.Y": 192,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2287,6 +2287,56 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 20 2021 13:45:45"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 112,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Player Death",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:35"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 160,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Player Death Effect",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:45"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 144,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Transition Effect like Celeste",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:56",
+      "CompletionTime": "Mar 20 2021 18:07:23"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 128,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Set player at \"respawn\" position",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:43:04",
+      "CompletionTime": "Mar 20 2021 18:07:15"
     }
   ]
 }

@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 334.59521484375,
-  "Pan.Y": -39.96905517578125,
+  "Pan.X": 322.6234130859375,
+  "Pan.Y": -92.79913330078125,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2166,13 +2166,14 @@
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": 48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Hover SFX",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:30:23"
+      "CreationTime": "Mar 20 2021 13:30:23",
+      "CompletionTime": "Mar 20 2021 13:41:15"
     }, 
     {
       "BoardIndex": 0,
@@ -2234,10 +2235,22 @@
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Select SFX",
-      "Selected": true,
+      "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 20 2021 13:30:33",
       "CompletionTime": "Mar 20 2021 13:36:05"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": 96,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Level Mechanics",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:28"
     }, 
     {
       "BoardIndex": 0,
@@ -2246,22 +2259,82 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "Selecting Options with Keyboard?",
-      "Selected": false,
-      "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:30:36"
-    }, 
-    {
-      "BoardIndex": 0,
-      "Position.X": -576,
-      "Position.Y": 96,
-      "Checkbox.Checked": false,
-      "Progression.Current": 0,
-      "Progression.Max": 0,
       "Description": "LITARGIE Logo Stand-in",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 20 2021 13:30:50"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 176,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Spikes",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:38"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 192,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Bottomless Abyss",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:45"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 112,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Player Death",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:35"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 160,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Player Death Effect",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:45"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 144,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Transition Effect like Celeste",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:56"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 128,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Set player at \"respawn\" position",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:43:04"
     }
   ]
 }

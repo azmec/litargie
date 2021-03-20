@@ -4,9 +4,9 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 426.6234130859375,
-  "Pan.Y": -71.29912567138672,
-  "ZoomLevel": 4,
+  "Pan.X": 10.927070617675781,
+  "Pan.Y": -86.78658294677734,
+  "ZoomLevel": 3,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -2122,7 +2122,8 @@
       "Description": "TODO TODAY - 03-20-21",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 11:40:02"
+      "CreationTime": "Mar 20 2021 11:40:02",
+      "CompletionTime": "Mar 20 2021 18:27:28"
     }, 
     {
       "BoardIndex": 0,
@@ -2147,7 +2148,8 @@
       "Description": "Main Menu Polish",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:30:16"
+      "CreationTime": "Mar 20 2021 13:30:16",
+      "CompletionTime": "Mar 20 2021 18:27:23"
     }, 
     {
       "BoardIndex": 0,
@@ -2243,50 +2245,80 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 96,
+      "Position.Y": 80,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Level Mechanics",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:45:28"
+      "CreationTime": "Mar 20 2021 13:45:28",
+      "CompletionTime": "Mar 20 2021 18:27:28"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": 80,
-      "Checkbox.Checked": false,
-      "Progression.Current": 0,
-      "Progression.Max": 0,
-      "Description": "LITARGIE Logo Stand-in",
-      "Selected": false,
-      "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:30:50"
-    }, 
-    {
-      "BoardIndex": 0,
-      "Position.X": -576,
-      "Position.Y": 112,
-      "Checkbox.Checked": false,
+      "Position.Y": 144,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Spikes",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:45:38"
+      "CreationTime": "Mar 20 2021 13:45:38",
+      "CompletionTime": "Mar 20 2021 18:27:18"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": 128,
-      "Checkbox.Checked": false,
+      "Position.Y": 160,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Bottomless Abyss",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:45:45"
+      "CreationTime": "Mar 20 2021 13:45:45",
+      "CompletionTime": "Mar 20 2021 18:27:21"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 96,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Player Death",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:35",
+      "CompletionTime": "Mar 20 2021 18:27:28"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 128,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Transition Effect like Celeste",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:42:56",
+      "CompletionTime": "Mar 20 2021 18:07:23"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 112,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Set player at \"respawn\" position",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 16:43:04",
+      "CompletionTime": "Mar 20 2021 18:07:15"
     }
   ]
 }
