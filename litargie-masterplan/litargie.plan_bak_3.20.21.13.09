@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 367.881103515625,
-  "Pan.Y": 0.5643081665039062,
+  "Pan.X": 333.381103515625,
+  "Pan.Y": 11.564308166503906,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2163,13 +2163,14 @@
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": -48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Move things off screen REGARDLESS of size and position",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 12:44:42"
+      "CreationTime": "Mar 20 2021 12:44:42",
+      "CompletionTime": "Mar 20 2021 13:00:52"
     }, 
     {
       "BoardIndex": 0,

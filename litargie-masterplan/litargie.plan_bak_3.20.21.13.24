@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 453.381103515625,
-  "Pan.Y": 47.064308166503906,
+  "Pan.X": 333.381103515625,
+  "Pan.Y": 11.564308166503906,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2150,14 +2150,27 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -48,
+      "Position.Y": 0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "\"play game\"",
+      "Description": "Transition into settings on \"Settings\"",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 11:41:41"
+      "CreationTime": "Mar 20 2021 12:45:17"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -48,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Move things off screen REGARDLESS of size and position",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 12:44:42",
+      "CompletionTime": "Mar 20 2021 13:00:52"
     }, 
     {
       "BoardIndex": 0,
@@ -2166,10 +2179,34 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "\"settings\"",
+      "Description": "Move things in screen REGARDLESS of size and position",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 11:41:50"
+      "CreationTime": "Mar 20 2021 12:44:53"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Transition into game state on \"Play Game\"",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 12:45:00"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Transition back into Menu on \"Back\"",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 12:45:23"
     }
   ]
 }

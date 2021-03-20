@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/user-interface/main-theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/user-interface/main-menu/main-menu.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds-music/ui-select.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds-music/ui-hover.wav" type="AudioStream" id=4]
+[ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=5]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -34,4 +37,38 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Language" type="OptionButton" parent="."]
+margin_left = 320.0
+margin_top = 79.0
+margin_right = 388.0
+margin_bottom = 99.0
+text = "LANGUAGE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Language"]
+margin_top = -15.0
+margin_right = 53.0
+margin_bottom = 4.0
+text = "LANGUAGE"
+
+[node name="Back" type="Button" parent="."]
+margin_left = 320.0
+margin_top = 104.0
+margin_right = 352.0
+margin_bottom = 123.0
+text = "BACK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="MoveTween" type="Tween" parent="."]
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="SelectSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+script = ExtResource( 5 )

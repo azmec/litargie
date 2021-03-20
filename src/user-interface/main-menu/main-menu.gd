@@ -9,20 +9,47 @@ onready var HORIZONTAL_CONSTANT: = get_viewport_rect().size.x * .6
 
 onready var playGameButton: = $PlayGame
 onready var settingsButton: = $Settings
+onready var main_buttons: = [playGameButton, settingsButton]
+
+onready var languageOptions: = $Language
+onready var backButton: = $Back
+onready var settings_buttons: = [languageOptions, backButton]
  
 onready var tween: = $MoveTween 
 
+onready var hoverSFX: = $HoverSFX 
+onready var selectSFX: = $SelectSFX
+
+
 func _ready() -> void:
 	playGameButton.connect("pressed", self, "_on_playGameButton_pressed")
+	settingsButton.connect("pressed", self, "_on_settingsButton_pressed")
+
+	languageOptions.connect("item_selected", self, "_on_languageOptions_item_selected")
+	backButton.connect("pressed", self, "_on_backButton_pressed") 
+
+	for button in main_buttons:
+		button.connect("mouse_entered", self, "_on_button_mouse_entered")
+	for button in settings_buttons:
+		button.connect("mouse_entered", self, "_on_button_mouse_entered")
+	
+	languageOptions.add_item("LAN_EN")
+	languageOptions.add_item("LAN_ES")
 
 	playGameButton.rect_position.x = HORIZONTAL_CONSTANT
 
-func _on_playGameButton_pressed() -> void: 
-	emit_signal("game_started")
+func _move_button_set_offscreen(button_set: Array) -> void:
+	var _delay: = 0.0
+	for button in button_set: 
+		_move_offscreen(button, _delay)
+		_delay += 0.05 
 
-	_move_offscreen(playGameButton)
-	_move_offscreen(settingsButton, 0.05)
-
+func _move_button_set_inscreen(button_set: Array) -> void:
+	var _delay = 0.0
+	for button in button_set:
+		_move_inscreen(button, _delay)
+		_delay += 0.05 
+	
 # Move the given Control to the minimum position 
 # offscreen *to the right*.
 func _move_offscreen(rect: Control, delay: float = 0.0) -> void: 
@@ -41,3 +68,32 @@ func _move_inscreen(rect: Control, delay: float = 0.0) -> void:
 
 	tween.interpolate_property(rect, "rect_position", _current_position, _new_position, 0.5, Tween.TRANS_CUBIC, Tween.EASE_OUT, delay)
 	tween.start()
+
+func _on_playGameButton_pressed() -> void: 
+	selectSFX.play()
+	emit_signal("game_started")
+
+	_move_button_set_offscreen(main_buttons)
+
+func _on_settingsButton_pressed() -> void:
+	selectSFX.play()
+
+	_move_button_set_offscreen(main_buttons)
+	_move_button_set_inscreen(settings_buttons)
+
+func _on_languageOptions_item_selected(index: int) -> void:
+	selectSFX.play()
+
+	if index == 0:
+		TranslationServer.set_locale("en")
+	elif index == 1:
+		TranslationServer.set_locale("es")
+
+func _on_backButton_pressed() -> void:
+	selectSFX.play()
+
+	_move_button_set_offscreen(settings_buttons)
+	_move_button_set_inscreen(main_buttons)
+
+func _on_button_mouse_entered() -> void:
+	hoverSFX.play()
