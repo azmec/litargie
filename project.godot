@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Area2D",
+"class": "AreaDetector",
+"language": "GDScript",
+"path": "res://src/helpers/area-detector/area-detector.gd"
+}, {
 "base": "VBoxContainer",
 "class": "ButtonContainer",
 "language": "GDScript",
@@ -94,6 +99,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/props/player-camera/player-camera.gd"
 }, {
+"base": "Node2D",
+"class": "RisingPrompt",
+"language": "GDScript",
+"path": "res://src/props/rising-prompt/rising-prompt.gd"
+}, {
 "base": "Button",
 "class": "SceneButton",
 "language": "GDScript",
@@ -120,6 +130,7 @@ _global_script_classes=[ {
 "path": "res://src/props/variable-sfx-player/variable-sfx-player.gd"
 } ]
 _global_script_class_icons={
+"AreaDetector": "",
 "ButtonContainer": "",
 "ConnectionPoint": "",
 "Dialogue": "",
@@ -137,6 +148,7 @@ _global_script_class_icons={
 "PauseCalculator": "",
 "Player": "",
 "PlayerCamera": "",
+"RisingPrompt": "",
 "SceneButton": "",
 "SequenceParser": "",
 "StartSequence": "",

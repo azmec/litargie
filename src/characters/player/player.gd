@@ -29,6 +29,7 @@ const WALL_STICKINESS: float = 0.2
 
 export var has_meathook: bool = true 
 
+var active: = true
 var velocity: Vector2 = Vector2.ZERO
 var x_input: int = 0
 var wall_direction: int = 0
@@ -69,6 +70,9 @@ func _ready():
 		sprite.texture = BASE_ANIMS
 
 func _physics_process(delta: float) -> void:
+	if not active: 
+		return
+		
 	x_input = get_input()
 	wall_direction = wallRaycasts.get_wall_direction(x_input) 
 
