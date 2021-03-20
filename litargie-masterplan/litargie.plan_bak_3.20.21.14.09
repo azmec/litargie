@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 333.381103515625,
-  "Pan.Y": 11.564308166503906,
+  "Pan.X": 421.6234130859375,
+  "Pan.Y": -45.29912567138672,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -738,13 +738,14 @@
       "BoardIndex": 0,
       "Position.X": 352,
       "Position.Y": 208,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Settings Menu",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:18:56"
+      "CreationTime": "Mar 13 2021 12:18:56",
+      "CompletionTime": "Mar 20 2021 13:31:22"
     }, 
     {
       "BoardIndex": 0,
@@ -2130,34 +2131,49 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "Main Menu",
+      "Description": "Main Menu Functionality",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 11:40:16"
+      "CreationTime": "Mar 20 2021 11:40:16",
+      "CompletionTime": "Mar 20 2021 13:30:02"
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -928,
-      "Position.Y": -64,
+      "Position.X": -592,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "We want the main menu to blend in with the first level",
+      "Description": "Main Menu Polish",
       "Selected": false,
-      "TaskType.CurrentChoice": 2,
-      "CreationTime": "Mar 20 2021 11:40:32"
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:30:16"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": 0,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Transition into settings on \"Settings\"",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 12:45:17"
+      "CreationTime": "Mar 20 2021 12:45:17",
+      "CompletionTime": "Mar 20 2021 13:29:59"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 48,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Hover SFX",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:30:23",
+      "CompletionTime": "Mar 20 2021 13:41:15"
     }, 
     {
       "BoardIndex": 0,
@@ -2176,37 +2192,101 @@
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Move things in screen REGARDLESS of size and position",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 12:44:53"
+      "CreationTime": "Mar 20 2021 12:44:53",
+      "CompletionTime": "Mar 20 2021 13:26:15"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": -16,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Transition into game state on \"Play Game\"",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 12:45:00"
+      "CreationTime": "Mar 20 2021 12:45:00",
+      "CompletionTime": "Mar 20 2021 13:29:57"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": 16,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Transition back into Menu on \"Back\"",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 12:45:23"
+      "CreationTime": "Mar 20 2021 12:45:23",
+      "CompletionTime": "Mar 20 2021 13:30:02"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 64,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Select SFX",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:30:33",
+      "CompletionTime": "Mar 20 2021 13:36:05"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": 96,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Level Mechanics",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:28"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 80,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "LITARGIE Logo Stand-in",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:30:50"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 112,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Spikes",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:38"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 128,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Bottomless Abyss",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:45"
     }
   ]
 }

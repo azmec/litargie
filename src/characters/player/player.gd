@@ -11,6 +11,8 @@ enum STATES {
 	HOOKED
 }
 
+signal died 
+
 const MH_ANIMS: = preload("res://assets/actors/player/player-mh-anims.png")
 const BASE_ANIMS: = preload("res://assets/actors/player/player-anims.png")
 
@@ -46,6 +48,7 @@ onready var sprite: Sprite = $Sprite
 onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 onready var meathook: Meathook = $Meathook
 onready var wallRaycasts: Node2D = $WallRaycasts
+onready var hurtbox: Area2D = $Hurtbox
 onready var stateText: Label = $StateText
 onready var sounds: = $Sounds
 
@@ -60,6 +63,7 @@ func _ready():
 	meathook.connect("hooked_onto_something", self, "_on_meathook_hooked_onto_something")
 	dashTimer.connect("timeout", self, "_on_dashTimer_timeout")
 	wallJumpStickyTimer.connect("timeout", self, "_on_wallJumpStickyTimer_timeout")
+	hurtbox.connect("area_entered", self, "_on_hurtbox_area_entered")
 	state = change_state_to(STATES.IDLE)
 
 	if has_meathook:
@@ -72,7 +76,7 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	if not active: 
 		return
-		
+
 	x_input = get_input()
 	wall_direction = wallRaycasts.get_wall_direction(x_input) 
 
@@ -258,3 +262,7 @@ func _on_wallJumpStickyTimer_timeout() -> void:
 	if state == STATES.WALL_SLIDE:
 		state = change_state_to(STATES.FALL)
 
+func _on_hurtbox_area_entered(_area) -> void:
+	emit_signal("died")
+	sounds.library.Fall.play()
+	self.active = false

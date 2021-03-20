@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 387.09521484375,
-  "Pan.Y": -46.46905517578125,
+  "Pan.X": 426.6234130859375,
+  "Pan.Y": -71.29912567138672,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2242,20 +2242,20 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -576,
-      "Position.Y": 80,
+      "Position.X": -592,
+      "Position.Y": 96,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "Selecting Options with Keyboard?",
+      "Description": "Level Mechanics",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 20 2021 13:30:36"
+      "CreationTime": "Mar 20 2021 13:45:28"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": 96,
+      "Position.Y": 80,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2263,6 +2263,30 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 20 2021 13:30:50"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 112,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Spikes",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:38"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 128,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Bottomless Abyss",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 20 2021 13:45:45"
     }
   ]
 }

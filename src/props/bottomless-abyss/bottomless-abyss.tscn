@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Area2D
+
+onready var particles: = $CPUParticles2D
+onready var deathZone: = $CollisionShape2D
+
+func _ready() -> void:
+	particles.emission_rect_extents = deathZone.shape.extents
+"
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.980392, 0.92549, 0.843137, 1, 0.980392, 0.92549, 0.843137, 0 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 72, 10 )
+
+[node name="BottomlessAbyss" type="Area2D"]
+collision_layer = 2147483776
+collision_mask = 0
+script = SubResource( 2 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 16
+lifetime = 2.0
+preprocess = 0.5
+emission_shape = 2
+emission_rect_extents = Vector2( 10, 0 )
+gravity = Vector2( 0, -50 )
+color_ramp = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 3 )

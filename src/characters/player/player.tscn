@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/characters/player/player.gd" type="Script" id=1]
 [ext_resource path="res://src/props/player-camera/player-camera.tscn" type="PackedScene" id=2]
@@ -157,6 +157,9 @@ tracks/0/keys = {
 "values": [ 16 ]
 }
 
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 4, 7 )
+
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
 script = ExtResource( 1 )
@@ -257,5 +260,13 @@ script = ExtResource( 7 )
 stream = ExtResource( 13 )
 bus = "SFX"
 script = ExtResource( 7 )
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2( 0, -7 )
+shape = SubResource( 8 )
 
 [editable path="WallRaycasts"]
