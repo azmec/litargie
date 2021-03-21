@@ -2344,7 +2344,8 @@
       "Description": "Player Death",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 14:55:12"
+      "CreationTime": "Mar 21 2021 14:55:12",
+      "CompletionTime": "Mar 21 2021 15:46:27"
     }, 
     {
       "BoardIndex": 0,
@@ -2423,13 +2424,14 @@
       "BoardIndex": 0,
       "Position.X": -720,
       "Position.Y": -64,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "FX",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 15:30:27"
+      "CreationTime": "Mar 21 2021 15:30:27",
+      "CompletionTime": "Mar 21 2021 15:46:27"
     }
   ]
 }
