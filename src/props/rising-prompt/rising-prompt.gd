@@ -4,8 +4,8 @@ extends Node2D
 const SPEED: = 0.5 
 
 export var rising_offset: = -16
+export var text: String
 
-var text = "" setget _set_text
 var sitting_position: = Vector2(0, 0) 
 
 onready var textLabel: Label = $Text
@@ -13,10 +13,9 @@ onready var tween: Tween = $RisingTween
 onready var playerDetector: = $PlayerDetector
 
 func _ready() -> void:
+	_set_text(text)
 	playerDetector.connect("object_entered_zone", self, "_on_playerDetector_object_entered_zone")
 	playerDetector.connect("object_left_zone", self, "_on_playerDetector_object_left_zone")
-
-	self.text = "[F] to interact."
 
 func _rise() -> void:
 	var _final_position: = sitting_position

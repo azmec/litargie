@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/environment/base-level.tscn/base-level.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/environment/inner-walls.png" type="Texture" id=2]
 [ext_resource path="res://src/environment/path-findable-tilemap/path-findable-tilemap.gd" type="Script" id=3]
 [ext_resource path="res://assets/user-interface/fonts/monogram_extended.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://src/props/bottomless-abyss/bottomless-abyss.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/props/rising-prompt/rising-prompt.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "inner-walls.png 0"
@@ -94,6 +95,10 @@ stream = null
 
 [node name="Point1" parent="RespawnPoints" index="0"]
 position = Vector2( 176, 168 )
+
+[node name="RisingPrompt" parent="." index="8" instance=ExtResource( 6 )]
+position = Vector2( 408, 168 )
+text = "JUMP_TUT"
 
 [editable path="Player"]
 
