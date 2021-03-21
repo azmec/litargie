@@ -96,9 +96,20 @@ stream = null
 [node name="Point1" parent="RespawnPoints" index="0"]
 position = Vector2( 176, 168 )
 
-[node name="RisingPrompt" parent="." index="8" instance=ExtResource( 6 )]
+[node name="WallJumpTutPrompt" parent="." index="8" instance=ExtResource( 6 )]
+position = Vector2( 864, 136 )
+text = "WALL_TUT"
+bubble_size = 40
+
+[node name="JumpTutPrompt" parent="." index="9" instance=ExtResource( 6 )]
 position = Vector2( 408, 168 )
 text = "JUMP_TUT"
+bubble_size = 40
+
+[node name="DashTutPrompt" parent="." index="10" instance=ExtResource( 6 )]
+position = Vector2( 968, 88 )
+text = "DASH_TUT"
+bubble_size = 40
 
 [editable path="Player"]
 

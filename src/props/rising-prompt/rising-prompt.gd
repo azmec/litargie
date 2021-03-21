@@ -5,18 +5,22 @@ const SPEED: = 0.5
 
 export var rising_offset: = -16
 export var text: String
+export var bubble_size: int = 20
 
 var sitting_position: = Vector2(0, 0) 
 
 onready var textLabel: Label = $Text
 onready var tween: Tween = $RisingTween
 onready var playerDetector: = $PlayerDetector
+onready var detectionBubble: = $PlayerDetector/CollisionShape2D
 
 func _ready() -> void:
 	_set_text(text)
+	detectionBubble.shape.radius = bubble_size
 	playerDetector.connect("object_entered_zone", self, "_on_playerDetector_object_entered_zone")
 	playerDetector.connect("object_left_zone", self, "_on_playerDetector_object_left_zone")
-
+	_fall() 
+	
 func _rise() -> void:
 	var _final_position: = sitting_position
 	_final_position.y += rising_offset
