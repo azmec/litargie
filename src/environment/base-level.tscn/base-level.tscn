@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/environment/path-findable-tilemap/path-findable-tilemap.gd" type="Script" id=1]
 [ext_resource path="res://src/characters/player/player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,10 @@
 [ext_resource path="res://src/environment/funky-background/funky-background-layer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/environment/base-level.tscn/base-level.gd" type="Script" id=5]
 [ext_resource path="res://src/environment/tilemaps/spikes.tres" type="TileSet" id=6]
+[ext_resource path="res://src/props/respawn-point/respawn-point.tscn" type="PackedScene" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24, 24 )
 
 [node name="BaseLevel" type="Node2D"]
 script = ExtResource( 5 )
@@ -39,5 +43,10 @@ direction = Vector2( -1, -1 )
 
 [node name="RespawnPoints" type="Node" parent="."]
 
-[node name="Point1" type="Position2D" parent="RespawnPoints"]
-position = Vector2( 0, -8 )
+[node name="RespawnPoint" parent="RespawnPoints" instance=ExtResource( 7 )]
+position = Vector2( 0, -24 )
+
+[node name="CollisionShape2D" parent="RespawnPoints/RespawnPoint" index="0"]
+shape = SubResource( 1 )
+
+[editable path="RespawnPoints/RespawnPoint"]

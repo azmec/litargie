@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "class_name RespawnPoint
+extends Area2D
+
+signal passed_through(position)
+
+var enabled: bool = false
+
+onready var point: Position2D = $Point
+onready var collision: CollisionShape2D = $CollisionShape2D
+
+func _ready() -> void:
+	var _a: = self.connect(\"body_entered\", self, \"_on_body_detected\")
+	var _b: = self.connect(\"body_exited\", self, \"_on_body_detected\")
+
+func _on_body_detected(_player: Player) -> void:
+	self.enabled = true
+	emit_signal(\"passed_through\", point.global_position)
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="RespawnPoint" type="Area2D"]
+script = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Point" type="Position2D" parent="."]

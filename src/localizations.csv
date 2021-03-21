@@ -6,3 +6,7 @@ LANGUAGE,Language,Idioma
 LAN_EN,English,Ingles
 LAN_ES,Spanish,Espanol
 BACK,Back,Atras
+JUMP_TUT,_ to jump,_ para saltar
+WALL_TUT,_ on a wall to wall jump,en una pared para saltar
+DASH_TUT,SHIFT to dash,SHIFT para dash
+WALK_TUT,A & D to run,A & D para correr

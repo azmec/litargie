@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 607.0525512695312,
-  "Pan.Y": 37.546226501464844,
+  "Pan.X": 446.05255126953125,
+  "Pan.Y": 46.546226501464844,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2375,13 +2375,14 @@
       "BoardIndex": 0,
       "Position.X": -720,
       "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Teaching Jumping -> Wall Jumps",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 14:56:17"
+      "CreationTime": "Mar 21 2021 14:56:17",
+      "CompletionTime": "Mar 21 2021 16:07:18"
     }, 
     {
       "BoardIndex": 0,

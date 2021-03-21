@@ -3,6 +3,7 @@ extends Node2D
 const TRANSITION_SCENE: = preload("res://src/props/transition-effect/transition-effect.tscn")
 
 var _current_transition_instance: TransitionEffect = null 
+var _current_respawn_position: Vector2 
 
 onready var player: = $Player
 onready var canvasLayer: = $CanvasLayer
@@ -10,6 +11,9 @@ onready var respawnPoints: = $RespawnPoints.get_children()
 
 func _ready() -> void:
 	player.connect("died", self, "_on_player_died")
+	for point in respawnPoints:
+		point.connect("passed_through", self, "_on_respawnPoint_passed_through")
+	_current_respawn_position = respawnPoints[0].global_position
 
 func _create_new_transition_instance() -> TransitionEffect: 
 	_destroy_current_transition_instance() 
@@ -32,8 +36,11 @@ func _on_player_died() -> void:
 	_current_transition_instance = _create_new_transition_instance()
 	_current_transition_instance.start_transition(0)
 
+func _on_respawnPoint_passed_through(position: Vector2) -> void:
+	_current_respawn_position = position 
+
 func _on_transition_midpoint_reached() -> void: 
-	player.position = respawnPoints[0].position
+	player.position = _current_respawn_position
 	player.camera.smoothing_enabled = false
 	player.set_process_input(false)
 	player.visible = true
