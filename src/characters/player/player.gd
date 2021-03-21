@@ -8,11 +8,13 @@ enum STATES {
 	FALL,
 	DASH,
 	WALL_SLIDE,
-	HOOKED
+	HOOKED,
+	DEAD
 }
 
 signal died 
 
+const EXPLOSION_SCENE: = preload("res://src/props/explosion/explosion.tscn")
 const MH_ANIMS: = preload("res://assets/actors/player/player-mh-anims.png")
 const BASE_ANIMS: = preload("res://assets/actors/player/player-anims.png")
 
@@ -64,8 +66,8 @@ func _ready():
 	meathook.connect("hooked_onto_something", self, "_on_meathook_hooked_onto_something")
 	dashTimer.connect("timeout", self, "_on_dashTimer_timeout")
 	wallJumpStickyTimer.connect("timeout", self, "_on_wallJumpStickyTimer_timeout")
-	hurtbox.connect("area_entered", self, "_on_hurtbox_area_entered")
-	hurtbox.connect("body_entered", self, "_on_hurtbox_body_entered")
+	hurtbox.connect("area_entered", self, "_on_hurtbox_entered")
+	hurtbox.connect("body_entered", self, "_on_hurtbox_entered")
 	state = change_state_to(STATES.IDLE)
 
 	if has_meathook:
@@ -177,6 +179,9 @@ func _physics_process(delta: float) -> void:
 				state = change_state_to(STATES.FALL)
 			if !jumpTimer.is_stopped():
 				state = change_state_to(STATES.JUMP)
+		STATES.DEAD:
+			velocity.x = lerp(velocity.x, 0, DECCELERATION * delta)
+			velocity.y = _set_gravity(velocity.y, delta)
 
 	if x_input != 0 and state != STATES.WALL_SLIDE:
 		sprite.flip_h = x_input < 0
@@ -233,6 +238,14 @@ func change_state_to(new_state: int) -> int:
 
 		STATES.HOOKED:
 			stateText.text = "hooked"
+		STATES.DEAD:
+			stateText.text = "dead"
+
+			var new_explosion = EXPLOSION_SCENE.instance()
+			new_explosion.connect("explosion_finished", self, "_on_explosion_finished", [new_explosion])
+			get_parent().add_child(new_explosion)
+			new_explosion.global_position = self.global_position
+			self.visible = false
 
 	previous_state = state
 	return new_state
@@ -264,10 +277,12 @@ func _on_wallJumpStickyTimer_timeout() -> void:
 	if state == STATES.WALL_SLIDE:
 		state = change_state_to(STATES.FALL)
 
-func _on_hurtbox_area_entered(_area) -> void:
-	emit_signal("died")
-	sounds.library.Fall.play()
+func _on_hurtbox_entered(_entering_object) -> void:
+	state = change_state_to(STATES.DEAD)
+	self.set_process_input(false)
 
-func _on_hurtbox_body_entered(_body) -> void:
+func _on_explosion_finished(explosion) -> void:
+	explosion.disconnect("explosion_finished", self, "_on_explosion_finished")
+	explosion.queue_free()
 	emit_signal("died")
-	sounds.library.Fall.play()
+

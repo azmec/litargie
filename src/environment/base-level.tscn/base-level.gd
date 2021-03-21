@@ -36,8 +36,10 @@ func _on_transition_midpoint_reached() -> void:
 	player.position = respawnPoints[0].position
 	player.camera.smoothing_enabled = false
 	player.set_process_input(false)
+	player.visible = true
 
 func _on_transition_finished() -> void:
 	_destroy_current_transition_instance()
 	player.camera.smoothing_enabled = true
 	player.set_process_input(true)
+	player.state = player.change_state_to(player.STATES.IDLE)
