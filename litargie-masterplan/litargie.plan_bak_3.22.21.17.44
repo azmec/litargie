@@ -4,9 +4,9 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 145.28720092773438,
-  "Pan.Y": 50.928077697753906,
-  "ZoomLevel": 3,
+  "Pan.X": 282.880126953125,
+  "Pan.Y": 30.135433197021484,
+  "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -2364,7 +2364,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": -16,
+      "Position.Y": -0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2478,14 +2478,15 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Position.Y": 16,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Proper NuclearThrone Camera Movement",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 19:45:01"
+      "CreationTime": "Mar 21 2021 19:45:01",
+      "CompletionTime": "Mar 22 2021 17:30:19"
     }, 
     {
       "BoardIndex": 0,
@@ -2503,13 +2504,14 @@
       "BoardIndex": 0,
       "Position.X": -496,
       "Position.Y": -80,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "See ConnectionPoint Errors",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 19:45:36"
+      "CreationTime": "Mar 21 2021 19:45:36",
+      "CompletionTime": "Mar 22 2021 17:19:46"
     }, 
     {
       "BoardIndex": 0,
@@ -2526,7 +2528,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": -48,
+      "Position.Y": -16,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2534,6 +2536,42 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 21 2021 19:46:11"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -512,
+      "Position.Y": 32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "There's a few problems I perceive with this.\nOne is that it may conflict with the tweening, but we'll\njust have to find out.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Mar 22 2021 17:21:28"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -512,
+      "Position.Y": -48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Take away UI input in game.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 22 2021 17:38:42"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -512,
+      "Position.Y": -32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Take away input during dialogue.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 22 2021 17:38:51"
     }
   ]
 }
