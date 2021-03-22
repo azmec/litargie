@@ -23,6 +23,8 @@ func _on_body_detected(_player: Player) -> void:
 [sub_resource type="RectangleShape2D" id=2]
 
 [node name="RespawnPoint" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
 script = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

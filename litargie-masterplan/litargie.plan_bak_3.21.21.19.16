@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 513.0525512695312,
-  "Pan.Y": 11.046226501464844,
+  "Pan.X": 563.9993896484375,
+  "Pan.Y": 37.1709098815918,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2345,12 +2345,12 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 21 2021 14:55:12",
-      "CompletionTime": "Mar 21 2021 15:46:27"
+      "CompletionTime": "Mar 21 2021 18:49:52"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -736,
-      "Position.Y": -48,
+      "Position.Y": -32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2362,7 +2362,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -736,
-      "Position.Y": 16,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2374,7 +2374,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -720,
-      "Position.Y": -32,
+      "Position.Y": -16,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2387,7 +2387,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -720,
-      "Position.Y": -16,
+      "Position.Y": 0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2399,7 +2399,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -720,
-      "Position.Y": 0,
+      "Position.Y": 16,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2433,6 +2433,19 @@
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 21 2021 15:30:27",
       "CompletionTime": "Mar 21 2021 15:46:27"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -736,
+      "Position.Y": -48,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Proper Respawn points",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 21 2021 18:49:43",
+      "CompletionTime": "Mar 21 2021 18:50:01"
     }
   ]
 }

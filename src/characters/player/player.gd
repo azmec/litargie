@@ -34,6 +34,7 @@ const WALL_STICKINESS: float = 0.2
 export var has_meathook: bool = true 
 
 var active: = true
+var killable: bool = true
 var velocity: Vector2 = Vector2.ZERO
 var x_input: int = 0
 var wall_direction: int = 0
@@ -240,6 +241,7 @@ func change_state_to(new_state: int) -> int:
 			stateText.text = "hooked"
 		STATES.DEAD:
 			stateText.text = "dead"
+			killable = false
 
 			var new_explosion = EXPLOSION_SCENE.instance()
 			new_explosion.connect("explosion_finished", self, "_on_explosion_finished", [new_explosion])
@@ -278,6 +280,8 @@ func _on_wallJumpStickyTimer_timeout() -> void:
 		state = change_state_to(STATES.FALL)
 
 func _on_hurtbox_entered(_entering_object) -> void:
+	if not killable: return
+
 	state = change_state_to(STATES.DEAD)
 	self.set_process_input(false)
 

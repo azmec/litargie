@@ -62,3 +62,4 @@ func _on_transition_finished() -> void:
 	player.camera.smoothing_enabled = true
 	player.set_process_input(true)
 	player.state = player.change_state_to(player.STATES.IDLE)
+	player.killable = true
