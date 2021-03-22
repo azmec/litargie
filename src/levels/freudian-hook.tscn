@@ -112,22 +112,24 @@ shape = SubResource( 4 )
 [node name="Point" parent="RespawnPoints/RespawnPoint2" index="1"]
 position = Vector2( 0, 56 )
 
-[node name="WallJumpTutPrompt" parent="." index="8" instance=ExtResource( 6 )]
+[node name="TutorialPrompts" type="Node" parent="." index="8"]
+
+[node name="WallJumpTutPrompt" parent="TutorialPrompts" index="0" instance=ExtResource( 6 )]
 position = Vector2( 864, 136 )
 text = "WALL_TUT"
 bubble_size = 40
 
-[node name="JumpTutPrompt" parent="." index="9" instance=ExtResource( 6 )]
+[node name="JumpTutPrompt" parent="TutorialPrompts" index="1" instance=ExtResource( 6 )]
 position = Vector2( 408, 168 )
 text = "JUMP_TUT"
 bubble_size = 40
 
-[node name="DashTutPrompt" parent="." index="10" instance=ExtResource( 6 )]
+[node name="DashTutPrompt" parent="TutorialPrompts" index="2" instance=ExtResource( 6 )]
 position = Vector2( 968, 88 )
 text = "DASH_TUT"
 bubble_size = 40
 
-[node name="WalkTutPrompt" parent="." index="11" instance=ExtResource( 6 )]
+[node name="WalkTutPrompt" parent="TutorialPrompts" index="3" instance=ExtResource( 6 )]
 position = Vector2( 176, 160 )
 text = "WALK_TUT"
 
