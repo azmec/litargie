@@ -36,12 +36,12 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 resource_local_to_scene = true
 size = 12
 font_data = ExtResource( 4 )
 
-[sub_resource type="GDScript" id=2]
+[sub_resource type="GDScript" id=3]
 script/source = "extends Area2D
 
 onready var particles: = $CPUParticles2D
@@ -51,10 +51,10 @@ func _ready() -> void:
 	particles.emission_rect_extents = deathZone.shape.extents
 "
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 152, 10 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 48, 56 )
 
 [node name="FreudianHook" instance=ExtResource( 1 )]
@@ -81,7 +81,7 @@ tile_data = PoolIntArray( -720744, 0, 196611, 131208, 0, 196611, 196715, 0, 1966
 tile_data = PoolIntArray( -130930, -1073741824, 0, -65393, -1073741824, 0, 143, -1073741824, 0, 65678, -1073741824, 0, 131214, -1073741824, 0, 196674, 1610612736, 0, 196675, 1610612736, 0, 196676, 1610612736, 0, 196750, -1073741824, 0, 262285, -1073741824, 0, 327821, -1073741824, 0, 393282, 0, 0, 393283, 0, 0, 393284, 0, 0, 458851, -1610612736, 0, 458867, -1073741824, 0, 524387, -1610612736, 0, 524403, -1073741824, 0, 589923, -1610612736, 0, 589939, -1073741824, 0, 655459, -1610612736, 0, 655475, -1073741824, 0, 720959, 0, 0, 720960, 0, 0, 720961, 0, 0, 720965, 0, 0, 720966, 0, 0, 720967, 0, 0, 720995, -1610612736, 0, 721011, -1073741824, 0, 786531, -1610612736, 0, 786547, -1073741824, 0, 852067, -1610612736, 0, 852083, -1073741824, 0, 917603, -1610612736, 0, 917619, -1073741824, 0, 983139, -1610612736, 0, 983155, -1073741824, 0, 1048675, -1610612736, 0, 1048691, -1073741824, 0 )
 
 [node name="Player" parent="." index="4"]
-position = Vector2( 1360, 128 )
+position = Vector2( 176, 176 )
 has_meathook = false
 
 [node name="Sprite" parent="Player" index="0"]
@@ -94,7 +94,7 @@ position = Vector2( 0, -400 )
 position = Vector2( 2880, 224 )
 
 [node name="StateText" parent="Player" index="5"]
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 
 [node name="WallSlide" parent="Player/Sounds" index="4"]
 stream = null
@@ -103,7 +103,7 @@ stream = null
 
 [node name="BottomlessAbyss" parent="BottomlessAbysses" index="0" instance=ExtResource( 5 )]
 position = Vector2( 456, 264 )
-script = SubResource( 2 )
+script = SubResource( 3 )
 
 [node name="BottomlessAbyss2" parent="BottomlessAbysses" index="1" instance=ExtResource( 5 )]
 position = Vector2( 640, 264 )
@@ -112,7 +112,7 @@ position = Vector2( 640, 264 )
 position = Vector2( 1720, 264 )
 
 [node name="CollisionShape2D" parent="BottomlessAbysses/BottomlessAbyss3" index="1"]
-shape = SubResource( 5 )
+shape = SubResource( 4 )
 
 [node name="TutorialPrompts" type="Node" parent="." index="8"]
 
@@ -145,7 +145,7 @@ position = Vector2( 0, 24 )
 position = Vector2( 1360, 72 )
 
 [node name="CollisionShape2D" parent="RespawnPoints/RespawnPoint2" index="0"]
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="Point" parent="RespawnPoints/RespawnPoint2" index="1"]
 position = Vector2( 0, 56 )

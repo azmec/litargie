@@ -10,12 +10,6 @@ var _current_link_instance: Line2D = null
 onready var playerDetector: = $PlayerDetector
 onready var linkDetector: = $LinkDetector
 
-func _ready() -> void:
-	playerDetector.connect("object_entered_zone", self, "_on_playerDetector_entered_zone")
-	playerDetector.connect("object_left_zone", self, "_on_playerDetector_exited_zone")
-
-	linkDetector.connect("area_entered", self, "_on_linkDetector_area_entered")
-
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("interact") and playerDetector.detects_body():
 		if linkDetector.detects_area():
@@ -29,8 +23,9 @@ func _process(_delta: float) -> void:
 					_detected_link.starting_point_parent = self
 				elif _detected_area.name == "EndingPointArea2D":
 					_detected_link.ending_point_parent = self
-
-				DialogueGod.queue_sequence_to_message_stack(sequence_path)
+				
+				if sequence_path != "":
+					DialogueGod.queue_sequence_to_message_stack(sequence_path)
 		else:
 			_create_link()
 
