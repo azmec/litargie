@@ -8,12 +8,17 @@ var _current_respawn_position: Vector2
 onready var player: = $Player
 onready var canvasLayer: = $CanvasLayer
 onready var respawnPoints: = $RespawnPoints.get_children()
+onready var collectables: = $Collectables.get_children()
 
 func _ready() -> void:
 	player.connect("died", self, "_on_player_died")
+
 	for point in respawnPoints:
 		point.connect("passed_through", self, "_on_respawnPoint_passed_through")
 	_current_respawn_position = respawnPoints[0].global_position
+
+	for item in collectables:
+		item.connect("made_contact", self, "_on_collectable_made_contact")
 
 func _create_new_transition_instance() -> TransitionEffect: 
 	_destroy_current_transition_instance() 
@@ -38,6 +43,13 @@ func _on_player_died() -> void:
 
 func _on_respawnPoint_passed_through(position: Vector2) -> void:
 	_current_respawn_position = position 
+
+func _on_collectable_made_contact(collectable_id: String) -> void:
+	match collectable_id:
+		"meathook": 
+			player.has_meathook = true
+			player.meathook.enabled = true
+			player.sprite.texture = player.MH_ANIMS 
 
 func _on_transition_midpoint_reached() -> void: 
 	player.position = _current_respawn_position

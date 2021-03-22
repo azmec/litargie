@@ -49,4 +49,6 @@ position = Vector2( 0, -24 )
 [node name="CollisionShape2D" parent="RespawnPoints/RespawnPoint" index="0"]
 shape = SubResource( 1 )
 
+[node name="Collectables" type="Node" parent="."]
+
 [editable path="RespawnPoints/RespawnPoint"]

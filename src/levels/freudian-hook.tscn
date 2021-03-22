@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/environment/base-level.tscn/base-level.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/environment/inner-walls.png" type="Texture" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://src/props/bottomless-abyss/bottomless-abyss.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/props/rising-prompt/rising-prompt.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/props/respawn-point/respawn-point.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/props/floating-object/floating-object.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/floating-meathook.png" type="Texture" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "inner-walls.png 0"
@@ -132,6 +134,12 @@ bubble_size = 40
 [node name="WalkTutPrompt" parent="TutorialPrompts" index="3" instance=ExtResource( 6 )]
 position = Vector2( 176, 160 )
 text = "WALK_TUT"
+
+[node name="FloatingObject" parent="Collectables" index="0" instance=ExtResource( 8 )]
+position = Vector2( 1360, 72 )
+id = "meathook"
+destroy_on_contact = true
+sprite = ExtResource( 9 )
 
 [editable path="Player"]
 
