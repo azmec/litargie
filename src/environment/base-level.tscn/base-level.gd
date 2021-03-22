@@ -10,6 +10,8 @@ onready var canvasLayer: = $CanvasLayer
 onready var respawnPoints: = $RespawnPoints.get_children()
 onready var collectables: = $Collectables.get_children()
 
+onready var main: Control = $CanvasLayer/Main
+
 func _ready() -> void:
 	player.connect("died", self, "_on_player_died")
 
@@ -19,6 +21,8 @@ func _ready() -> void:
 
 	for item in collectables:
 		item.connect("made_contact", self, "_on_collectable_made_contact")
+
+	DialogueGod.set_parent(main)
 
 func _create_new_transition_instance() -> TransitionEffect: 
 	_destroy_current_transition_instance() 

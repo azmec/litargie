@@ -47,6 +47,13 @@ direction = Vector2( -1, -1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Main" type="Control" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="RespawnPoints" type="Node" parent="."]
 
 [node name="RespawnPoint" parent="RespawnPoints" instance=ExtResource( 7 )]

@@ -1,0 +1,26 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "root": {
+            "ENG": "... {p=0.5}by a thread.",
+            "SPN": "... {p=0.5}by a thread."
+        },
+        "branches": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "root": {
+            "ENG": "I don't... {p=0.5}know what happened.",
+            "SPN": "I don't... {p=0.5}know what happened."
+        },
+        "branches": {}
+    }
+}

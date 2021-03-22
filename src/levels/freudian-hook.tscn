@@ -158,9 +158,11 @@ sprite = ExtResource( 9 )
 
 [node name="ConnectionPoint" parent="ConnectionPoints" index="0" instance=ExtResource( 10 )]
 position = Vector2( 2648, -256 )
+sequence_path = "res://assets/dialogues/tutorial-end.json"
 
 [node name="ConnectionPoint2" parent="ConnectionPoints" index="1" instance=ExtResource( 10 )]
 position = Vector2( 2808, -272 )
+sequence_path = "res://assets/dialogues/tutorial-end.json"
 
 [editable path="Player"]
 
