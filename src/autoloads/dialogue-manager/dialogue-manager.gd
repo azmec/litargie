@@ -87,6 +87,9 @@ func _show_current() -> void:
 # Iterates the dialogues stack and shows the next piece of
 # dialogue.
 func _advance_dialogue():
+	var events: Dictionary = sequenceParser.get_events(_message_stack[_active_dialogue_offset])
+	eventParser.process_events(events) 
+
 	if _active_dialogue_offset < _message_stack.size() - 1:
 		_active_dialogue_offset += 1
 		_show_current()

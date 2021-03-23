@@ -28,6 +28,9 @@ func split_sequence(sequence: Dictionary) -> Array:
 func get_branches(deviant_branch: Dictionary) -> Dictionary:
 	return deviant_branch.branches
 
+func get_events(sequence: Dictionary) -> Dictionary:
+	return sequence.events 
+
 # Returns the conditions required to reach a particular root.
 func get_conditions(branch_set: Dictionary) -> Array:
 	var _res: = []
