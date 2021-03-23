@@ -54,6 +54,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/characters/enemy/enemy-body/enemy.gd"
 }, {
+"base": "Node",
+"class": "EventParser",
+"language": "GDScript",
+"path": "res://src/helpers/event-parser/event-parser.gd"
+}, {
 "base": "Node2D",
 "class": "FloatingObject",
 "language": "GDScript",
@@ -149,6 +154,7 @@ _global_script_class_icons={
 "DialogueManager": "",
 "DialogueNameHandle": "",
 "Enemy": "",
+"EventParser": "",
 "FloatingObject": "",
 "Game": "",
 "GitAPI": "",

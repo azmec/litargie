@@ -24,7 +24,7 @@ var _current_dialogueBox_instance: DialogueBox
 var _active_dialogue_offset: int = 0
 
 onready var sequenceParser: SequenceParser = $SequenceParser
-onready var moveTween: Tween = $MoveTween
+onready var eventParser: EventParser = $EventParser
 
 func _ready() -> void:
 	pass 
