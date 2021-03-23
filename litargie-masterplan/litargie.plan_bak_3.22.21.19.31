@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 373.844482421875,
-  "Pan.Y": -45.050987243652344,
+  "Pan.X": 339.880126953125,
+  "Pan.Y": 73.13543701171875,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2364,7 +2364,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": -32,
+      "Position.Y": -0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2478,14 +2478,15 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": -16,
-      "Checkbox.Checked": false,
+      "Position.Y": 16,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Proper NuclearThrone Camera Movement",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 19:45:01"
+      "CreationTime": "Mar 21 2021 19:45:01",
+      "CompletionTime": "Mar 22 2021 17:30:19"
     }, 
     {
       "BoardIndex": 0,
@@ -2527,7 +2528,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": -48,
+      "Position.Y": -16,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2539,14 +2540,38 @@
     {
       "BoardIndex": 0,
       "Position.X": -512,
-      "Position.Y": 0,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "There's a few problems I perceive with this.\nOne is that it may conflict with the tweening, but we'll\njust have to find out.",
-      "Selected": true,
+      "Selected": false,
       "TaskType.CurrentChoice": 2,
       "CreationTime": "Mar 22 2021 17:21:28"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -512,
+      "Position.Y": -48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Take away UI input in game.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 22 2021 17:38:42"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -512,
+      "Position.Y": -32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Take away input during dialogue.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 22 2021 17:38:51"
     }
   ]
 }

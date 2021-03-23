@@ -9,7 +9,8 @@
             "ENG": "... {p=0.5}by a thread.",
             "SPN": "... {p=0.5}by a thread."
         },
-        "branches": {}
+        "branches": {},
+        "events": {}
     },
     "002": {
         "character": "Id",
@@ -21,6 +22,9 @@
             "ENG": "I don't... {p=0.5}know what happened.",
             "SPN": "I don't... {p=0.5}know what happened."
         },
-        "branches": {}
+        "branches": {},
+        "events": {
+            "change_scene": "res://src/dev-world/dev-world.tscn"
+        }
     }
 }
