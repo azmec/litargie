@@ -1,4 +1,4 @@
-extends Control
+extends CanvasLayer
 
 const TRANSITION_SCENE: = preload("res://src/props/transition-effect/transition-effect.tscn")
 

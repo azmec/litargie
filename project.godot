@@ -185,6 +185,7 @@ config/icon="res://icon.png"
 AStarPathfinder="*res://src/autoloads/a-star-pathfinder/a-star-pathfinder.tscn"
 DialogueGod="*res://src/autoloads/dialogue-manager/dialogue-manager.tscn"
 Settings="*res://src/autoloads/settings/settings.tscn"
+SceneTransition="*res://src/props/scene-transition/scene-transition.tscn"
 
 [debug]
 

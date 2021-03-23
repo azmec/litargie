@@ -7,4 +7,6 @@ func process_events(events: Dictionary) -> void:
 	for event in events:
 		match event:
 			"change_scene":
-				print('Changing scene to "' + str(events[event]) + '"')
+				SceneTransition.start_scene_transition(get_node("/root/Game"),
+														get_node("/root/Game").currentLevel,
+														load(events[event]))
