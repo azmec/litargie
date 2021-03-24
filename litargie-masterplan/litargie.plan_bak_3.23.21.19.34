@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 339.880126953125,
-  "Pan.Y": 73.13543701171875,
+  "Pan.X": 473.380126953125,
+  "Pan.Y": 241.63543701171875,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2363,8 +2363,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": -0,
+      "Position.X": -592,
+      "Position.Y": -144,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2453,20 +2453,21 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -528,
-      "Position.Y": -128,
+      "Position.X": -592,
+      "Position.Y": -368,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "TODO 03-22-21",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 19:44:45"
+      "CreationTime": "Mar 21 2021 19:44:45",
+      "CompletionTime": "Mar 22 2021 19:55:22"
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": -112,
+      "Position.X": -592,
+      "Position.Y": -224,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2477,8 +2478,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": 16,
+      "Position.X": -576,
+      "Position.Y": -320,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2490,8 +2491,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -496,
-      "Position.Y": -96,
+      "Position.X": -576,
+      "Position.Y": -208,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2502,8 +2503,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -496,
-      "Position.Y": -80,
+      "Position.X": -576,
+      "Position.Y": -352,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2515,20 +2516,21 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": -64,
-      "Checkbox.Checked": false,
+      "Position.X": -576,
+      "Position.Y": -336,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Create Level Transitions",
-      "Selected": true,
+      "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 19:45:54"
+      "CreationTime": "Mar 21 2021 19:45:54",
+      "CompletionTime": "Mar 22 2021 19:55:04"
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": -16,
+      "Position.X": -592,
+      "Position.Y": -160,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2539,20 +2541,20 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": 32,
+      "Position.X": -608,
+      "Position.Y": -256,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "There's a few problems I perceive with this.\nOne is that it may conflict with the tweening, but we'll\njust have to find out.",
+      "Description": "TODO 03-23-21",
       "Selected": false,
-      "TaskType.CurrentChoice": 2,
-      "CreationTime": "Mar 22 2021 17:21:28"
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 22 2021 20:00:58"
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": -48,
+      "Position.X": -592,
+      "Position.Y": -192,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2563,8 +2565,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -512,
-      "Position.Y": -32,
+      "Position.X": -592,
+      "Position.Y": -176,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2572,6 +2574,18 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 22 2021 17:38:51"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": -240,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Polish Scene Transition",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 22 2021 20:01:13"
     }
   ]
 }
