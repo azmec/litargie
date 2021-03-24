@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 473.380126953125,
-  "Pan.Y": 241.63543701171875,
+  "Pan.X": 244.74197387695312,
+  "Pan.Y": 165.4379119873047,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2363,8 +2363,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -592,
-      "Position.Y": -144,
+      "Position.X": -560,
+      "Position.Y": -192,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2466,8 +2466,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -592,
-      "Position.Y": -224,
+      "Position.X": 336,
+      "Position.Y": 256,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2491,8 +2491,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -576,
-      "Position.Y": -208,
+      "Position.X": 352,
+      "Position.Y": 272,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2529,8 +2529,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -592,
-      "Position.Y": -160,
+      "Position.X": -560,
+      "Position.Y": -208,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2541,8 +2541,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -608,
-      "Position.Y": -256,
+      "Position.X": -576,
+      "Position.Y": -240,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2553,8 +2553,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -592,
-      "Position.Y": -192,
+      "Position.X": 336,
+      "Position.Y": 288,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2565,8 +2565,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -592,
-      "Position.Y": -176,
+      "Position.X": 336,
+      "Position.Y": 304,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2577,15 +2577,16 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -592,
-      "Position.Y": -240,
-      "Checkbox.Checked": false,
+      "Position.X": -560,
+      "Position.Y": -224,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Polish Scene Transition",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 22 2021 20:01:13"
+      "CreationTime": "Mar 22 2021 20:01:13",
+      "CompletionTime": "Mar 23 2021 19:43:29"
     }
   ]
 }
