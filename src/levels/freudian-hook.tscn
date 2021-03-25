@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://src/environment/base-level.tscn/base-level.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/environment/inner-walls.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/props/floating-object/floating-object.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/floating-meathook.png" type="Texture" id=9]
 [ext_resource path="res://src/environment/connection-point/connection-point.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/environment/small-tree-painter/small-tree-painter.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "inner-walls.png 0"
@@ -103,7 +104,10 @@ tile_data = PoolIntArray( -720744, 0, 196611, -65408, 0, 196611, 196715, 0, 1966
 [node name="Spikes" parent="." index="3"]
 tile_data = PoolIntArray( -851818, -1610612736, 0, -851813, -1073741824, 0, -786282, -1610612736, 0, -786277, -1073741824, 0, -720746, -1610612736, 0, -720741, -1073741824, 0, -655210, -1610612736, 0, -655206, -1073741824, 0, -589674, -1610612736, 0, -589670, -1073741824, 0, -524138, -1610612736, 0, -524134, -1073741824, 0, -262002, 0, 0, -262001, 0, 0, -262000, 0, 0, -261999, 0, 0, -261998, 0, 0, -261997, 0, 0, -261996, 0, 0, -261995, 0, 0, -261994, 0, 0, -261993, 0, 0, -261992, 0, 0, -261991, 0, 0, -261990, 0, 0, 196674, 1610612736, 0, 196675, 1610612736, 0, 196676, 1610612736, 0, 393282, 0, 0, 393283, 0, 0, 393284, 0, 0, 458851, -1610612736, 0, 458867, -1073741824, 0, 524387, -1610612736, 0, 524403, -1073741824, 0, 589923, -1610612736, 0, 589939, -1073741824, 0, 655459, -1610612736, 0, 655475, -1073741824, 0, 720959, 0, 0, 720960, 0, 0, 720961, 0, 0, 720965, 0, 0, 720966, 0, 0, 720967, 0, 0, 720995, -1610612736, 0, 721011, -1073741824, 0, 786531, -1610612736, 0, 786547, -1073741824, 0, 852067, -1610612736, 0, 852083, -1073741824, 0, 917603, -1610612736, 0, 917619, -1073741824, 0, 983139, -1610612736, 0, 983155, -1073741824, 0, 1048675, -1610612736, 0, 1048691, -1073741824, 0 )
 
-[node name="Player" parent="." index="4"]
+[node name="SmallTreePainter" parent="." index="4" instance=ExtResource( 11 )]
+tile_data = PoolIntArray( 327696, 0, 0, 327697, 0, 0 )
+
+[node name="Player" parent="." index="5"]
 position = Vector2( 176, 176 )
 has_meathook = false
 
@@ -122,7 +126,7 @@ custom_fonts/font = SubResource( 2 )
 [node name="WallSlide" parent="Player/Sounds" index="4"]
 stream = null
 
-[node name="BottomlessAbysses" type="Node" parent="." index="7"]
+[node name="BottomlessAbysses" type="Node" parent="." index="8"]
 
 [node name="BottomlessAbyss" parent="BottomlessAbysses" index="0" instance=ExtResource( 5 )]
 position = Vector2( 456, 264 )
@@ -137,7 +141,7 @@ position = Vector2( 1720, 264 )
 [node name="CollisionShape2D" parent="BottomlessAbysses/BottomlessAbyss3" index="1"]
 shape = SubResource( 4 )
 
-[node name="TutorialPrompts" type="Node" parent="." index="8"]
+[node name="TutorialPrompts" type="Node" parent="." index="9"]
 
 [node name="WallJumpTutPrompt" parent="TutorialPrompts" index="0" instance=ExtResource( 6 )]
 position = Vector2( 864, 136 )
