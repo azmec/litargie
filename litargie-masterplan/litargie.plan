@@ -2368,7 +2368,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 32,
+      "Position.Y": 48,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2634,7 +2634,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 48,
+      "Position.Y": 64,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2653,8 +2653,7 @@
       "Description": "Tree(s)",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:47:41",
-      "CompletionTime": "Mar 25 2021 17:54:50"
+      "CreationTime": "Mar 25 2021 17:47:41"
     }, 
     {
       "BoardIndex": 0,
@@ -2685,7 +2684,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -64,
+      "Position.Y": -48,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2697,7 +2696,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -48,
+      "Position.Y": -32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2709,7 +2708,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -32,
+      "Position.Y": -16,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2721,7 +2720,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -16,
+      "Position.Y": -0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2733,7 +2732,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": 0,
+      "Position.Y": 16,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2745,7 +2744,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 16,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2753,6 +2752,18 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 25 2021 17:49:01"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": -64,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Be able to \"paint\" trees in with tilemap",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:55:50"
     }
   ]
 }
