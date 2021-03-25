@@ -1,12 +1,12 @@
 {
   "Version": "0.6.1-3",
   "LockProject": false,
-  "BoardIndex": 1,
+  "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -3220.455078125,
-  "Pan.Y": 337.385498046875,
-  "ZoomLevel": 2,
+  "Pan.X": 361.8258972167969,
+  "Pan.Y": 2.343048095703125,
+  "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -116,13 +116,14 @@
       "BoardIndex": 0,
       "Position.X": 352,
       "Position.Y": 48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Level 1: Freudian Hook",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:08:19"
+      "CreationTime": "Mar 13 2021 12:08:19",
+      "CompletionTime": "Mar 24 2021 20:34:37"
     }, 
     {
       "BoardIndex": 0,
@@ -667,13 +668,14 @@
       "BoardIndex": 0,
       "Position.X": 688,
       "Position.Y": 288,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Dying",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:17:22"
+      "CreationTime": "Mar 13 2021 12:17:22",
+      "CompletionTime": "Mar 24 2021 20:34:29"
     }, 
     {
       "BoardIndex": 0,
@@ -716,13 +718,14 @@
       "BoardIndex": 0,
       "Position.X": 352,
       "Position.Y": 160,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Main Menu",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 12:18:33"
+      "CreationTime": "Mar 13 2021 12:18:33",
+      "CompletionTime": "Mar 24 2021 20:34:46"
     }, 
     {
       "BoardIndex": 0,
@@ -1842,13 +1845,14 @@
       "BoardIndex": 0,
       "Position.X": 672,
       "Position.Y": 48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Create sprite art",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 13 2021 18:54:54"
+      "CreationTime": "Mar 13 2021 18:54:54",
+      "CompletionTime": "Mar 24 2021 20:34:21"
     }, 
     {
       "BoardIndex": 0,
@@ -2363,8 +2367,8 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -560,
-      "Position.Y": -192,
+      "Position.X": -592,
+      "Position.Y": 32,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2529,27 +2533,29 @@
     }, 
     {
       "BoardIndex": 0,
-      "Position.X": -560,
-      "Position.Y": -208,
-      "Checkbox.Checked": false,
+      "Position.X": -576,
+      "Position.Y": -192,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Create Level Scenery Art",
-      "Selected": true,
+      "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 19:46:11"
+      "CreationTime": "Mar 21 2021 19:46:11",
+      "CompletionTime": "Mar 24 2021 20:33:18"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -240,
+      "Position.Y": -272,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "TODO 03-23-21",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 22 2021 20:00:58"
+      "CreationTime": "Mar 22 2021 20:00:58",
+      "CompletionTime": "Mar 24 2021 20:33:20"
     }, 
     {
       "BoardIndex": 0,
@@ -2578,7 +2584,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -560,
-      "Position.Y": -224,
+      "Position.Y": -256,
       "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2587,6 +2593,164 @@
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 22 2021 20:01:13",
       "CompletionTime": "Mar 23 2021 19:43:29"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": -208,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "WHAT I DID 03-24-21",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 24 2021 20:33:24",
+      "CompletionTime": "Mar 24 2021 20:33:38"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -608,
+      "Position.Y": -144,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "TODO 03-25-21",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 24 2021 20:33:40"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": -128,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Implement Level Scenery Art from Canvas",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 24 2021 20:33:50"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": 48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Create Hook Graphics",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 24 2021 20:34:00"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -112,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Tree(s)",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:47:41"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": -96,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Large Trees",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:47:48",
+      "CompletionTime": "Mar 25 2021 17:49:14"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": -80,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Small Trees/Bushes",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:47:53"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -64,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Connection Point",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:48:03"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Columns",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:48:26"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Table",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:48:29"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": -16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Lamppost",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:48:31"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -576,
+      "Position.Y": 0,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Campfire",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:48:45"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -592,
+      "Position.Y": 16,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Something to signify you've reached a checkpoint",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 17:49:01"
     }
   ]
 }
