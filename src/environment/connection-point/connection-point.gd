@@ -7,13 +7,14 @@ export var sequence_path: String
 
 var _current_link_instance: Line2D = null 
 
+onready var sprite: = $Sprite
 onready var playerDetector: = $PlayerDetector
 onready var linkDetector: = $LinkDetector
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("interact") and playerDetector.detects_body():
 		if linkDetector.detects_area():
-			print("AAA")
+			sprite.frame = 1
 			# SCUFFED CODE
 			var _detected_area = linkDetector.get_area()
 			var _detected_link = _detected_area.get_parent() 
@@ -28,6 +29,7 @@ func _process(_delta: float) -> void:
 					DialogueGod.queue_sequence_to_message_stack(sequence_path)
 		else:
 			_create_link()
+			sprite.frame = 1
 
 func _create_link() -> void:
 	if _current_link_instance:

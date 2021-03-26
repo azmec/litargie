@@ -109,7 +109,7 @@ tile_data = PoolIntArray( -851818, -1610612736, 0, -851813, -1073741824, 0, -786
 tile_data = PoolIntArray( -655279, 0, 0, -655276, 0, 0, -655274, 0, 0, -327612, 0, 0, -327610, 0, 0, 327696, 0, 0, 327697, 0, 0 )
 
 [node name="TreePainter" parent="." index="5" instance=ExtResource( 12 )]
-tile_data = PoolIntArray( -196575, 0, 0, 65557, 0, 0, 65570, 0, 0, 131083, 0, 0 )
+tile_data = PoolIntArray( -196575, 0, 0, 65557, 0, 0, 65570, 0, 0 )
 
 [node name="Player" parent="." index="6"]
 position = Vector2( 176, 176 )

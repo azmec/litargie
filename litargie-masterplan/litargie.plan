@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 361.8258972167969,
-  "Pan.Y": 2.343048095703125,
+  "Pan.X": 371.3258972167969,
+  "Pan.Y": 18.343048095703125,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2653,7 +2653,8 @@
       "Description": "Tree(s)",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:47:41"
+      "CreationTime": "Mar 25 2021 17:47:41",
+      "CompletionTime": "Mar 25 2021 18:16:04"
     }, 
     {
       "BoardIndex": 0,
@@ -2685,13 +2686,14 @@
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": -48,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Connection Point",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:48:03"
+      "CreationTime": "Mar 25 2021 17:48:03",
+      "CompletionTime": "Mar 25 2021 19:07:31"
     }, 
     {
       "BoardIndex": 0,
@@ -2757,13 +2759,26 @@
       "BoardIndex": 0,
       "Position.X": -560,
       "Position.Y": -64,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Be able to \"paint\" trees in with tilemap",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:55:50"
+      "CreationTime": "Mar 25 2021 17:55:50",
+      "CompletionTime": "Mar 25 2021 18:16:04"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -832,
+      "Position.Y": -64,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Randomiz z-index of scenery",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 25 2021 18:16:07"
     }
   ]
 }
