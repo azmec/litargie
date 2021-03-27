@@ -23,7 +23,7 @@ func _process(_delta: float) -> void:
 		collision2D.shape.radius = detection_radius
 		
 func _on_body_entered(_body) -> void:
-	if self.off:
+	if not self.on:
 		animationPlayer.play("turn_on")
 		self.on = true
 

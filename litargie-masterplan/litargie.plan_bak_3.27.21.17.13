@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 457.8258972167969,
-  "Pan.Y": 19.343048095703125,
+  "Pan.X": 385.3258972167969,
+  "Pan.Y": -33.156951904296875,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2368,14 +2368,15 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 48,
-      "Checkbox.Checked": false,
+      "Position.Y": 96,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Start Writing Story",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 21 2021 14:56:05"
+      "CreationTime": "Mar 21 2021 14:56:05",
+      "CompletionTime": "Mar 27 2021 16:13:47"
     }, 
     {
       "BoardIndex": 0,
@@ -2614,7 +2615,7 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "TODO 03-25-21",
+      "Description": "TODO",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 24 2021 20:33:40"
@@ -2634,7 +2635,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 64,
+      "Position.Y": 112,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2699,13 +2700,14 @@
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Columns",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:48:26"
+      "CreationTime": "Mar 25 2021 17:48:26",
+      "CompletionTime": "Mar 27 2021 15:11:07"
     }, 
     {
       "BoardIndex": 0,
@@ -2741,19 +2743,21 @@
       "Description": "Campfire",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:48:45"
+      "CreationTime": "Mar 25 2021 17:48:45",
+      "CompletionTime": "Mar 27 2021 16:13:33"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 32,
-      "Checkbox.Checked": false,
+      "Position.Y": 80,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Something to signify you've reached a checkpoint",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:49:01"
+      "CreationTime": "Mar 25 2021 17:49:01",
+      "CompletionTime": "Mar 27 2021 16:13:39"
     }, 
     {
       "BoardIndex": 0,
@@ -2779,6 +2783,45 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 25 2021 18:16:07"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 32,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Make animation",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 27 2021 15:17:31",
+      "CompletionTime": "Mar 27 2021 16:13:29"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 48,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Have it activate on player walking by",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 27 2021 15:17:36",
+      "CompletionTime": "Mar 27 2021 16:13:31"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 64,
+      "Checkbox.Checked": true,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Activation particles?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 27 2021 15:17:42",
+      "CompletionTime": "Mar 27 2021 16:13:33"
     }
   ]
 }
