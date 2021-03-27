@@ -6,7 +6,6 @@
 
 [node name="Column" type="Node2D"]
 script = ExtResource( 1 )
-height = -40
 
 [node name="ColumnTop" type="Sprite" parent="."]
 position = Vector2( 0, -40 )

@@ -11,12 +11,11 @@ func _ready() -> void:
 	pass
 
 func _process(_delta: float) -> void: 
-	if Engine.editor_hint: 
-		columnTop.position.y = height
+	columnTop.position.y = height
 
-		columnMid.position.y = (height / 2) - 4
+	columnMid.position.y = (height / 2) - 4
 
-		var distance_between_ends: float = columnTop.position.distance_to(columnBottom.position)
-		columnMid.region_rect.size.y = distance_between_ends
+	var distance_between_ends: float = columnTop.position.distance_to(columnBottom.position)
+	columnMid.region_rect.size.y = distance_between_ends
 
-		property_list_changed_notify()
+	property_list_changed_notify()

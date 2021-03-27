@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 380.3258972167969,
-  "Pan.Y": 16.843048095703125,
+  "Pan.X": 357.3258972167969,
+  "Pan.Y": 48.843048095703125,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2703,7 +2703,7 @@
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Columns",
-      "Selected": false,
+      "Selected": true,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 25 2021 17:48:26"
     }, 
@@ -2722,7 +2722,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -0,
+      "Position.Y": 0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/environment/path-findable-tilemap/path-findable-tilemap.gd" type="Script" id=1]
 [ext_resource path="res://src/characters/player/player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://src/environment/tilemaps/spikes.tres" type="TileSet" id=6]
 [ext_resource path="res://src/props/respawn-point/respawn-point.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/environment/tilemaps/boring-hookable-tilemap.tres" type="TileSet" id=8]
+[ext_resource path="res://src/environment/small-tree-painter/small-tree-painter.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/environment/tree-painter/tree-painter.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24, 24 )
@@ -65,5 +67,15 @@ shape = SubResource( 1 )
 [node name="Collectables" type="Node" parent="."]
 
 [node name="ConnectionPoints" type="Node" parent="."]
+
+[node name="AbritraryScenery" type="Node" parent="."]
+
+[node name="SmallTreePainter" parent="AbritraryScenery" instance=ExtResource( 9 )]
+
+[node name="TreePainter" parent="AbritraryScenery" instance=ExtResource( 10 )]
+
+[node name="Columns" type="Node" parent="AbritraryScenery"]
+
+[node name="Lamps" type="Node" parent="AbritraryScenery"]
 
 [editable path="RespawnPoints/RespawnPoint"]
