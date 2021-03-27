@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 380.3258972167969,
-  "Pan.Y": 16.843048095703125,
+  "Pan.X": 361.3258972167969,
+  "Pan.Y": -6.656951904296875,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2368,7 +2368,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 48,
+      "Position.Y": 96,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2614,7 +2614,7 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "TODO 03-25-21",
+      "Description": "TODO",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 24 2021 20:33:40"
@@ -2634,7 +2634,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 64,
+      "Position.Y": 112,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2699,13 +2699,14 @@
       "BoardIndex": 0,
       "Position.X": -576,
       "Position.Y": -32,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Columns",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 25 2021 17:48:26"
+      "CreationTime": "Mar 25 2021 17:48:26",
+      "CompletionTime": "Mar 27 2021 15:11:07"
     }, 
     {
       "BoardIndex": 0,
@@ -2722,7 +2723,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -576,
-      "Position.Y": -0,
+      "Position.Y": 0,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2746,7 +2747,7 @@
     {
       "BoardIndex": 0,
       "Position.X": -592,
-      "Position.Y": 32,
+      "Position.Y": 80,
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
@@ -2779,6 +2780,42 @@
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 25 2021 18:16:07"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 32,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Make animation",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 27 2021 15:17:31"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 48,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Have it activate on player walking by",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 27 2021 15:17:36"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -560,
+      "Position.Y": 64,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Activation particles?",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Mar 27 2021 15:17:42"
     }
   ]
 }

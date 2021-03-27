@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://src/environment/base-level.tscn/base-level.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/environment/inner-walls.png" type="Texture" id=2]
@@ -57,10 +57,42 @@ func _ready() -> void:
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 152, 10 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="GDScript" id=5]
+script/source = "tool
+extends Node2D
+
+export var process_editor: bool = false
+export var on: bool = false
+export var detection_radius: int = 10
+
+onready var area2D: = $Area2D
+onready var collision2D: = $Area2D/CollisionShape2D 
+onready var animationPlayer: = $AnimationPlayer
+
+func _ready() -> void:
+	var _i = area2D.connect(\"body_entered\", self, \"_on_body_entered\")
+	var _b = animationPlayer.connect(\"animation_finished\", self, \"_on_animation_finished\")
+
+func _process(_delta: float) -> void:
+	if Engine.editor_hint and process_editor:
+		if self.on:
+			animationPlayer.play(\"burning\")
+		else:
+			animationPlayer.play(\"off\")
+
+		collision2D.shape.radius = detection_radius
+		
+func _on_body_entered(_body) -> void:
+	animationPlayer.play(\"turn_on\")
+
+func _on_animation_finished(anim_name: String) -> void:
+	if anim_name == \"turn_on\":
+		animationPlayer.play(\"burning\")"
+
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 48, 56 )
 
-[sub_resource type="GDScript" id=6]
+[sub_resource type="GDScript" id=7]
 script/source = "class_name RespawnPoint
 extends Area2D
 
@@ -80,7 +112,7 @@ func _on_body_detected(_player: Player) -> void:
 	emit_signal(\"passed_through\", point.global_position)
 "
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 48, 56 )
 
 [node name="FreudianHook" instance=ExtResource( 1 )]
@@ -173,23 +205,35 @@ position = Vector2( 160, 152 )
 [node name="Point" parent="RespawnPoints/RespawnPoint" index="1"]
 position = Vector2( 0, 24 )
 
+[node name="Campfire" parent="RespawnPoints/RespawnPoint" index="2"]
+position = Vector2( 0, 24 )
+script = SubResource( 5 )
+on = true
+detection_radius = 10
+
 [node name="RespawnPoint2" parent="RespawnPoints" index="1" instance=ExtResource( 7 )]
 position = Vector2( 1360, 72 )
 
 [node name="CollisionShape2D" parent="RespawnPoints/RespawnPoint2" index="0"]
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="Point" parent="RespawnPoints/RespawnPoint2" index="1"]
 position = Vector2( 0, 56 )
 
+[node name="Campfire" parent="RespawnPoints/RespawnPoint2" index="2"]
+position = Vector2( 0, 56 )
+
 [node name="RespawnPoint3" parent="RespawnPoints" index="2" instance=ExtResource( 7 )]
 position = Vector2( 2224, -184 )
-script = SubResource( 6 )
+script = SubResource( 7 )
 
 [node name="CollisionShape2D" parent="RespawnPoints/RespawnPoint3" index="0"]
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Point" parent="RespawnPoints/RespawnPoint3" index="1"]
+position = Vector2( 0, 56 )
+
+[node name="Campfire" parent="RespawnPoints/RespawnPoint3" index="2"]
 position = Vector2( 0, 56 )
 
 [node name="FloatingObject" parent="Collectables" index="0" instance=ExtResource( 8 )]
