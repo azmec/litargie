@@ -14,7 +14,9 @@ func _process(_delta: float) -> void:
 	if Engine.editor_hint: 
 		columnTop.position.y = height
 
-		columnMid.position.y = int(height / 2) 
-		#columnMid.region_rect.h 
+		columnMid.position.y = (height / 2) - 4
+
+		var distance_between_ends: float = columnTop.position.distance_to(columnBottom.position)
+		columnMid.region_rect.size.y = distance_between_ends
 
 		property_list_changed_notify()
