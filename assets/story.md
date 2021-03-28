@@ -52,12 +52,25 @@ The player platforms through the level, encountering difficulties throughout. Th
 As the player meets the second, third, or fifth fire, the two extremes reveal more of the host's predicament. 
 
 #### Id Dialogues
+1. "For what there is, it's not what I want."
+2. "Why should I be led by you again? Even chained here, I can profess my desires."
+3. "You can't even lead yourself."
+4. "Our host wants what I want; neither of you are up to task."
 
 #### Super-Ego Dialogues
+1. "What has the world taught you? You can't even walk on your own two feet."
+2. "You can't even meet my standards--and they're on the ground."
+3. "You can't balance yourself; how could you balance the id and I!"
 
 #### The Ideal.
 Upon reaching the twin, unlit points, the player must link them. They don't have a choice this time: but it's a happy memory.
 
+> You show the id and super-ego a memory. A coin with one side--it's a happy memory. The momentary joy of a friendly interaction; the shared disdain for the daily toils with them. Niether you nor them are satisfied, but you have each other. 
+> The id and super-ego ponder.
+
+They pondered. 
+"Keep coming."
+"Stop. Don't move further. You tighten the binds."
 
 ### Chapter 3: Futility.
 The world reveals a great chasm, with the player in it. Snow hurls itself from above, reminding the player of just how high they are in the plains. 
