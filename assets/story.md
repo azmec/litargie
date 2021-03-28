@@ -79,9 +79,21 @@ They are met with a new mechanic: wind. It troubles them; the super ego notes th
 
 Soon enough, the player reaches two additional points and connects them. They are met with two choices: "Friends." or "Family."
 
+You can feel the super-ego has closed their ears; the id, however, listens.
+
 #### Branch A: Friends
+> You show the id a memory: the camraderie of those around you. 
+> It may have been some time since you've last talked to them. Finnancial and social worries have pervaded your friendships... but these memories... is it not worth replicating them? 
+> The id agrees. These are to be cherished, but it would be a shame to have only these.
+
+You two resolve to share this with the host when the time comes.
 
 #### Branch B: Family
+> You show the id a memory: the foundation of family ties.
+> You may not like all of them--some may even be worth cutting off. But there's one you can look in the eyes. They're someone you can rely on.
+> The id, relunctantly, agrees. It's a pragmatic, agreement at least.
+
+You two resolve to share this with the host when the time comes.
 
 ### Chapter 4: Reality...?
 Revealed before the player is a series of abysses, dotted by hooking points. 
