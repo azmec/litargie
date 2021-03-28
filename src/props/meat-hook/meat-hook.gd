@@ -24,11 +24,11 @@ var _target_position: Vector2 = Vector2.ZERO
 onready var hook: Area2D = $Hook
 
 func _ready() -> void:
-	hook.connect("body_entered", self, "_on_hook_body_entered")
+	var _hook_connected = hook.connect("area_entered", self, "_on_hook_area_entered")
 
 	state = change_state_to(STATES.IDLE)
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not enabled: 
 		return
 	
@@ -95,7 +95,7 @@ func _calculate_pull_force() -> Vector2:
 
 	return direction * FORCE_MULTIPLIER 
 
-func _on_hook_body_entered(body) -> void:
+func _on_hook_area_entered(_area) -> void:
 	if state == STATES.SHOOTING:
 		var pull_force = _calculate_pull_force()
 		emit_signal("hooked_onto_something", pull_force, _target_position)

@@ -290,6 +290,7 @@ interact={
 2d_physics/layer_6="enemy-collision"
 2d_physics/layer_7="link-end"
 2d_physics/layer_8="death-zone"
+2d_physics/layer_9="hook"
 
 [locale]
 
