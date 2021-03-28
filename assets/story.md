@@ -23,10 +23,26 @@ Upon the final peak, they are met with two empty pillars. A chain is piled befor
 The player's actions confront them in dialogue: "Which memory?" Three options stare back: "The anticipation.", "The guilt.", and "The futility."
 
 #### Branch A: The Anticipation
+> You show the id a memory: the overbearing anxiety of a new face. 
+> The world recoils. You show the converse; the overwhelming kindness of that face.
+> The id ponders...
 
 #### Branch B: The Guilt
+> You show the id a memory: the waves of guilt proceeding a failed interaction.
+> Even you feel momentary regret for dragging this moment back up--but you show the converse.
+> A friend who forgives.
+> The id ponders...
 
 #### Branch C: The Futility
+> You show the id a memory: the sisyphesian dread of doing it all over again.
+> The id is revolted; such rigid repetitions day-in and day-out, suppressing its inner-most desires.
+> There's no converse. 
+> ...
+> But, the id recognizes the routine interactions: a friends who checks in, a family member who visits.
+> The id ponders...
+
+#### Conclusion
+The id pondered. "Fine. I'm here. Get to me."
 
 ### Chapter 2: Reality.
 Whether it be following anticipation, guilt, or futility, the second world is revealed: Reality--the reflection thereof, at least. 
