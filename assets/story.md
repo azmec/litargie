@@ -1,19 +1,22 @@
 # LITARGIE Story
+## Prompt
+> In the midst of COVID-19, and social distancing, it is more important than ever to connect with friends and family, find ways to manage your stress, and take good care of yourself. Make a game that addresses one of these issues.
+
 ## Synopsis
-- The player is playing as their Freudian Ego, helping the Id reconnect its memories and motivations in the face of the COVID-19 Pandemic.
-- The Host has been out of a job, not had time to interact with friends or family, and is at a lost of motivation. 
-- The Id, being made of innate, carnal desires, wants to sloth away. The Super Ego, being the society within us, yearns for the cultural goals despite not having the means.
-- It is the task of the Ego to take control, make decisions, and connect the Id, Super Ego, and Host to their past. 
+The player plays as their Ego, derived from the Freudian concepts of the Id, Ego, and Super-Ego.
+> The Id is the set of uncoordinated instinctual desires; the super-ego plays the critical and moralizing role; and the ego is the organized, realistic agent that mediates between the instinctual desires of the id and the critical super ego.
 
-## Freudian Hook
-- Ego is waiting by the campfire while the player navigates menu.
-- Upon selecting "Control your Ego", menu tweens away and Ego is avaliable to control.
-- Tutorial Sequence and Instructions
-- Dialogue @ End of Tutorial:
-    - Id: ... I remember that now...
-    - Id: Was that really before the pandemic?
-    - Id: ...
-    - Id: Guess so... how long has it been?
+You play within the host, attempting to steer the id and super-ego back into check by connecting past memories. Every chapter deals with a particular memory, one that generally reveals something positive of the host and they're friends and family. At each turn, however, the super-ego marks the [negatives] of the host and the id notes the futility of it all, reminding the ego of their real situation: the host is out of a job. 
 
-## Chapter 1: Boredom.
-- 
+## Chapters
+### Chapter 1: Hook!
+
+### Chapter 2: Reality.
+
+### Chapter 3: Futility.
+
+### Chapter 4: Reality...?
+
+### Chapter 5: Restraint.
+
+### Chapter 6: It is Done.
