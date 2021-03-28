@@ -10,6 +10,23 @@ You play within the host, attempting to steer the id and super-ego back into che
 
 ## Chapters
 ### Chapter 1: Hook!
+The player is presented with a menu: "Control your ego."
+
+They press it; the world reveals to them a white, humanoid mass dropping above a campfire.
+
+They press forward, becoming concious of the world they are with. The hook is presented before them, hovering above. Suddenly, they match its position: they have been bestowed the hook.
+
+The player is taught to interact with the world and hook; they cannot be with the world without it, and the world cannot be with them. 
+
+Upon the final peak, they are met with two empty pillars. A chain is piled before the first, a link left dangling on the second. The player brings the first's chain to the second, lighting both with a surreal, bright light. 
+
+The player's actions confront them in dialogue: "Which memory?" Three options stare back: "The anticipation.", "The guilt.", and "The futility."
+
+#### Branch A: The Anticipation
+
+#### Branch B: The Guilt
+
+#### Branch C: The Futility
 
 ### Chapter 2: Reality.
 
