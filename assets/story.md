@@ -136,3 +136,45 @@ Oops! Shoot em up with hooking tendencies!
 The super-ego contained; the id tamed. The ego can now interact directly with the host.
 
 #### The Host.
+Host:
+"... Why should I?"
+
+super-ego:
+"It's been weeks, man."
+
+Host:
+"But I make good money... being here."
+
+super-ego:
+"What good is being in this 500sqft apartment doing you? You haven't *been outside* in **weeks**."
+
+Host/id:
+"... Don't tell me how to live."
+
+ego:
+"Id. Shut up."
+id:
+"Fine."
+
+ego:
+"No one's tell you how to live. We're you. You're primal desires, you concious, the *society within you.*"
+id:
+"You know us to be right. We're just trying to maximize our human experience here."
+
+Host:
+"But it's been weeks. They're probably caught up in there lives."
+ego:
+"As are you... but you want to talk to them anyway."
+
+ego:
+"We're not telling you how to live. You set these boundaries on yourself, some born from society and others from you midguided passions."
+
+id:
+"You tell yourself how to live; you prevent yourself from living."
+
+ego:
+"Make the call."
+
+Host:
+"..."
+"Alright."
