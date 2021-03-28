@@ -29,6 +29,19 @@ The player's actions confront them in dialogue: "Which memory?" Three options st
 #### Branch C: The Futility
 
 ### Chapter 2: Reality.
+Whether it be following anticipation, guilt, or futility, the second world is revealed: Reality--the reflection thereof, at least. 
+
+The player platforms through the level, encountering difficulties throughout. The super-ego chastises them for their deaths, and the id questions their guidance. 
+
+As the player meets the second, third, or fifth fire, the two extremes reveal more of the host's predicament. 
+
+#### Id Dialogues
+
+#### Super-Ego Dialogues
+
+#### The Ideal.
+Upon reaching the twin, unlit points, the player must link them. They don't have a choice this time: but it's a happy memory.
+
 
 ### Chapter 3: Futility.
 
