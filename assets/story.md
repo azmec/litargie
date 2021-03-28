@@ -98,6 +98,12 @@ You two resolve to share this with the host when the time comes.
 ### Chapter 4: Reality...?
 Revealed before the player is a series of abysses, dotted by hooking points. 
 
+Throughout these gaps, the id converses with you, warning of the binds they are within.
+
+1. "These are tight chains, originating from a tigher lock."
+2. "The key will be above, swarmed by that which destroys."
+3. "The host wakes. This is the last day they've planned for."
+
 ### Chapter 5: Restraint.
 Chained before the player is the id. It's formlessness contained; the primal drives of the host clouded. Nothing can be done in this situation with the id; the player must release it.
 
@@ -108,12 +114,25 @@ The player has attained the key; the id is released. Nothing stops it but the re
 They make one final link: one reminder of [Friends] or [Family].
 
 #### Branch A: Friends 2
+> You retrieve a memory, not being shown to any specific facet of your self-concept.
+> You're surrounded by co-workers who may not share the tightest bonds with you, but value your presence.
+> You value theirs. Is that not enough?
+
+Together, you and the id show this to the host. You feel the world relax.
 
 #### Branch B: Family 2
+> You retrieve a memory, not being shown to any specific facet of your self-concept.
+> You're surrounded by family. Their bickering never leaves your ears, but it's familiar. 
+> The older ones call you over, wishing to hear your young antics.
+> You may not cherish them as they'd expect, but they're pleasant. Is that not enough?
+
+Together, you and the id show this to the host. While it initially stiffens, you feel the world relax.
 
 ### Chapter 6: Until It is Done.
 Freed before the player is the super-ego. It's form freed: the critical, oppressive weight of society burdgeoning upon the host. The ego must contain it.
 
 Oops! Shoot em up with hooking tendencies!
 
-The super-ego contained; the id tamed. The ego can now interact with the host.
+The super-ego contained; the id tamed. The ego can now interact directly with the host.
+
+#### The Host.
