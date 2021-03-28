@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 385.3258972167969,
-  "Pan.Y": -33.156951904296875,
+  "Pan.X": -667.0022583007812,
+  "Pan.Y": -80.72816467285156,
   "ZoomLevel": 4,
   "ColorTheme": "Cloudy",
   "TaskTransparency": 5,
@@ -2636,13 +2636,14 @@
       "BoardIndex": 0,
       "Position.X": -592,
       "Position.Y": 112,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Create Hook Graphics",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 24 2021 20:34:00"
+      "CreationTime": "Mar 24 2021 20:34:00",
+      "CompletionTime": "Mar 28 2021 13:18:18"
     }, 
     {
       "BoardIndex": 0,
