@@ -44,9 +44,35 @@ Upon reaching the twin, unlit points, the player must link them. They don't have
 
 
 ### Chapter 3: Futility.
+The world reveals a great chasm, with the player in it. Snow hurls itself from above, reminding the player of just how high they are in the plains. 
+
+They are met with a new mechanic: wind. It troubles them; the super ego notes the player's attempts to go against the currents and pressures the player to be governed by it. The id questions the use of it all at each death.
+
+Soon enough, the player reaches two additional points and connects them. They are met with two choices: "Friends." or "Family."
+
+#### Branch A: Friends
+
+#### Branch B: Family
 
 ### Chapter 4: Reality...?
+Revealed before the player is a series of abysses, dotted by hooking points. 
 
 ### Chapter 5: Restraint.
+Chained before the player is the id. It's formlessness contained; the primal drives of the host clouded. Nothing can be done in this situation with the id; the player must release it.
 
-### Chapter 6: It is Done.
+Oops! Dodge random bullets and missiles!
+
+The player has attained the key; the id is released. Nothing stops it but the reins placed by the ego. The player rides upon the id, freed from gravity.
+
+They make one final link: one reminder of [Friends] or [Family].
+
+#### Branch A: Friends 2
+
+#### Branch B: Family 2
+
+### Chapter 6: Until It is Done.
+Freed before the player is the super-ego. It's form freed: the critical, oppressive weight of society burdgeoning upon the host. The ego must contain it.
+
+Oops! Shoot em up with hooking tendencies!
+
+The super-ego contained; the id tamed. The ego can now interact with the host.
