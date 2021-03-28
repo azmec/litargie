@@ -74,6 +74,11 @@ _global_script_classes=[ {
 "language": "NativeScript",
 "path": "res://git_api.gdns"
 }, {
+"base": "Node2D",
+"class": "HookPoint",
+"language": "GDScript",
+"path": "res://src/environment/hook-point/hook-point.gd"
+}, {
 "base": "Line2D",
 "class": "Link",
 "language": "GDScript",
@@ -168,6 +173,7 @@ _global_script_class_icons={
 "FloatingObject": "",
 "Game": "",
 "GitAPI": "",
+"HookPoint": "",
 "Link": "",
 "Meathook": "",
 "PathFindableTileMap": "",

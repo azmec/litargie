@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/environment/path-findable-tilemap/path-findable-tilemap.gd" type="Script" id=1]
 [ext_resource path="res://src/characters/player/player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/environment/tilemaps/boring-hookable-tilemap.tres" type="TileSet" id=8]
 [ext_resource path="res://src/environment/small-tree-painter/small-tree-painter.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/environment/tree-painter/tree-painter.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/environment/scenery-painter/scenery-painter.gd" type="Script" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24, 24 )
@@ -28,6 +29,8 @@ script = ExtResource( 1 )
 tile_set = ExtResource( 8 )
 cell_size = Vector2( 16, 16 )
 format = 1
+script = ExtResource( 11 )
+variable_scenery_path = "res://src/environment/hook-point/hook-point.tscn"
 
 [node name="Spikes" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
