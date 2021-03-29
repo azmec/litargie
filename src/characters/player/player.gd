@@ -79,6 +79,7 @@ func _ready():
 		sprite.texture = BASE_ANIMS
 
 func _physics_process(delta: float) -> void:
+	camera.is_looking_at_mouse = active
 	if not active: 
 		return
 

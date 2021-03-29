@@ -5,6 +5,14 @@ extends Control
 
 signal game_started 
 
+# The array we passed is structured like this:
+# res: = [
+#	main_menu: bool,
+#	settings: bool
+# ]
+# Should settings be false, we either moved the main_menu inscreen or everything offscreen. 
+signal finished_transition(array)
+
 onready var HORIZONTAL_CONSTANT: = get_viewport_rect().size.x * .6
 
 onready var playGameButton: = $PlayGame
@@ -22,6 +30,8 @@ onready var selectSFX: = $SelectSFX
 
 
 func _ready() -> void:
+	tween.connect("tween_all_completed", self, "_on_tween_all_completed") 
+
 	playGameButton.connect("pressed", self, "_on_playGameButton_pressed")
 	settingsButton.connect("pressed", self, "_on_settingsButton_pressed")
 
@@ -68,6 +78,11 @@ func _move_inscreen(rect: Control, delay: float = 0.0) -> void:
 
 	tween.interpolate_property(rect, "rect_position", _current_position, _new_position, 0.5, Tween.TRANS_CUBIC, Tween.EASE_OUT, delay)
 	tween.start()
+
+func _on_tween_all_completed() -> void:
+	var showing_menu: bool = main_buttons[0].rect_position.x == HORIZONTAL_CONSTANT
+	var showing_settings: bool = settings_buttons[0].rect_position.x == HORIZONTAL_CONSTANT
+	emit_signal("finished_transition", [showing_menu, showing_settings])
 
 func _on_playGameButton_pressed() -> void: 
 	selectSFX.play()
