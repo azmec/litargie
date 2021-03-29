@@ -21,5 +21,5 @@
 
 [node name="SmallTreePainter" instance=ExtResource( 1 )]
 tile_set = SubResource( 1 )
-cell_size = Vector2( 32, 32 )
+cell_size = Vector2( 16, 16 )
 variable_scenery_path = "res://src/environment/small-variant-tree/small-variant-tree.tscn"

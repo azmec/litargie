@@ -21,4 +21,5 @@
 
 [node name="TreePainter" instance=ExtResource( 1 )]
 tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
 variable_scenery_path = "res://src/environment/variant-tree/variant-tree.tscn"

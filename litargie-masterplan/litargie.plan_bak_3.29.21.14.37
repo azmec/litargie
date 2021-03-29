@@ -4,9 +4,9 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -520,
-  "Pan.Y": 312,
-  "ZoomLevel": 4,
+  "Pan.X": -571.4024658203125,
+  "Pan.Y": 161.87557983398438,
+  "ZoomLevel": 3,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -1844,53 +1844,49 @@
       "BoardIndex": 0,
       "Position.X": 400,
       "Position.Y": -384,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Provide Space to Learn to Jump",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 14:12:10",
-      "CompletionTime": "Mar 29 2021 14:46:03"
+      "CreationTime": "Mar 29 2021 14:12:10"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 400,
       "Position.Y": -368,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Test Ability to Jump",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 14:12:21",
-      "CompletionTime": "Mar 29 2021 14:46:05"
+      "CreationTime": "Mar 29 2021 14:12:21"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 400,
       "Position.Y": -352,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Provide Space to Learn to Dash",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 14:12:26",
-      "CompletionTime": "Mar 29 2021 14:46:07"
+      "CreationTime": "Mar 29 2021 14:12:26"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 400,
       "Position.Y": -336,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Test Ability to Dash and Jump",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 14:12:31",
-      "CompletionTime": "Mar 29 2021 14:46:09"
+      "CreationTime": "Mar 29 2021 14:12:31"
     }, 
     {
       "BoardIndex": 0,
@@ -1900,7 +1896,7 @@
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Provide Space to Learn to Wall Jump",
-      "Selected": true,
+      "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 29 2021 14:12:49"
     }, 
