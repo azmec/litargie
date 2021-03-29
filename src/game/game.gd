@@ -3,7 +3,7 @@
 class_name Game 
 extends Node 
 
-onready var currentLevel: = $FreudianHook
+onready var currentLevel: = $BaseLevel
 onready var mainMenu: = $CanvasLayer/MainMenu 
 
 onready var player: Player = currentLevel.player

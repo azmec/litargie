@@ -106,7 +106,7 @@
       "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
-      "Description": "Create Itch Page",
+      "Description": "Create Promotional Art",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
       "DeadlineDaySpinner.Number": 14,
@@ -2469,40 +2469,37 @@
       "BoardIndex": 0,
       "Position.X": 96,
       "Position.Y": 288,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "1-2 Paragraph Description; describe what screenshots and trailer can't do",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 15:49:48",
-      "CompletionTime": "Mar 29 2021 16:18:52"
+      "CreationTime": "Mar 29 2021 15:49:48"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 96,
       "Position.Y": 304,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Find a Good Font",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 15:50:27",
-      "CompletionTime": "Mar 29 2021 16:18:54"
+      "CreationTime": "Mar 29 2021 15:50:27"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 96,
       "Position.Y": 320,
-      "Checkbox.Checked": true,
+      "Checkbox.Checked": false,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Relevant Tags",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 15:50:50",
-      "CompletionTime": "Mar 29 2021 16:18:57"
+      "CreationTime": "Mar 29 2021 15:50:50"
     }
   ]
 }
