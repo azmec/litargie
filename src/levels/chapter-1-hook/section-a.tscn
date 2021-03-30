@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://src/environment/base-level.tscn/base-level.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/user-interface/fonts/monogram_extended.ttf" type="DynamicFontData" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://assets/keyboard/move_tut.png" type="Texture" id=6]
 [ext_resource path="res://assets/keyboard/shift.png" type="Texture" id=7]
 [ext_resource path="res://assets/keyboard/spacebar.png" type="Texture" id=8]
+[ext_resource path="res://assets/keyboard/d-arrow.png" type="Texture" id=9]
+[ext_resource path="res://assets/keyboard/a-arrow.png" type="Texture" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
@@ -74,7 +76,52 @@ tile_data = PoolIntArray( 1638399, 0, 0, 1572864, 0, 1, 1572865, 0, 1, 1572866, 
 [node name="Spikes" parent="." index="3"]
 tile_data = PoolIntArray( 2424902, 0, 0, 2424903, 0, 0, 2424904, 0, 0, 2424905, 0, 0, 2687079, 0, 0, 2687080, 0, 0, 2687081, 0, 0, 2687082, 0, 0, 2687083, 0, 0, 2687084, 0, 0, 2687085, 0, 0, 2687086, 0, 0, 2687087, 0, 0, 3211356, 0, 0, 3211357, 0, 0, 3211358, 0, 0, 3211359, 0, 0, 3211360, 0, 0, 3211361, 0, 0, 3211362, 0, 0, 3211363, 0, 0, 3211364, 0, 0 )
 
-[node name="Player" parent="." index="4"]
+[node name="TutorialAssets" type="Node2D" parent="." index="4"]
+
+[node name="MoveTut" parent="TutorialAssets" index="0" instance=ExtResource( 5 )]
+position = Vector2( 192, 688 )
+image = ExtResource( 6 )
+proximity = 30
+
+[node name="JumpTut" parent="TutorialAssets" index="1" instance=ExtResource( 5 )]
+position = Vector2( 424, 680 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="JumpTut2" parent="TutorialAssets" index="2" instance=ExtResource( 5 )]
+position = Vector2( 544, 664 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="JumpTut3" parent="TutorialAssets" index="3" instance=ExtResource( 5 )]
+position = Vector2( 592, 632 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="JumpTut4" parent="TutorialAssets" index="4" instance=ExtResource( 5 )]
+position = Vector2( 736, 640 )
+image = ExtResource( 8 )
+proximity = 100
+
+[node name="DashTut" parent="TutorialAssets" index="5" instance=ExtResource( 5 )]
+position = Vector2( 736, 624 )
+image = ExtResource( 7 )
+proximity = 100
+
+[node name="WallTut" parent="TutorialAssets" index="6" instance=ExtResource( 5 )]
+position = Vector2( 1152, 576 )
+image = ExtResource( 9 )
+proximity = 60
+fade_offset = Vector2( 24, 32 )
+starting_position = Vector2( 24, 0 )
+
+[node name="WallTut2" parent="TutorialAssets" index="7" instance=ExtResource( 5 )]
+position = Vector2( 1128, 528 )
+image = ExtResource( 10 )
+proximity = 60
+fade_offset = Vector2( -24, 32 )
+
+[node name="Player" parent="." index="5"]
 position = Vector2( 192, 656 )
 has_meathook = false
 
@@ -143,39 +190,6 @@ height = -120
 [node name="Column4" parent="AbritraryScenery/Columns" index="3" instance=ExtResource( 3 )]
 position = Vector2( 992, 624 )
 height = -88
-
-[node name="TutorialAssets" type="Node" parent="." index="11"]
-
-[node name="MoveTut" parent="TutorialAssets" index="0" instance=ExtResource( 5 )]
-position = Vector2( 192, 688 )
-image = ExtResource( 6 )
-proximity = 30
-
-[node name="JumpTut" parent="TutorialAssets" index="1" instance=ExtResource( 5 )]
-position = Vector2( 424, 680 )
-image = ExtResource( 8 )
-proximity = 30
-
-[node name="JumpTut2" parent="TutorialAssets" index="2" instance=ExtResource( 5 )]
-position = Vector2( 544, 664 )
-image = ExtResource( 8 )
-proximity = 30
-
-[node name="JumpTut3" parent="TutorialAssets" index="3" instance=ExtResource( 5 )]
-position = Vector2( 592, 632 )
-image = ExtResource( 8 )
-proximity = 30
-
-[node name="JumpTut4" parent="TutorialAssets" index="4" instance=ExtResource( 5 )]
-position = Vector2( 648, 632 )
-image = ExtResource( 8 )
-proximity = 30
-
-[node name="DashTut" parent="TutorialAssets" index="5" instance=ExtResource( 5 )]
-position = Vector2( 648, 632 )
-image = ExtResource( 7 )
-proximity = 30
-fade_offset = Vector2( 0, 48 )
 
 [editable path="Player"]
 

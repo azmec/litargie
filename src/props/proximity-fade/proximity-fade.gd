@@ -39,7 +39,7 @@ func _process(_delta: float) -> void:
 		_update_editor_variables()
 
 func fade_out() -> void:
-	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position, starting_position + fade_offset, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
+	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position + fade_offset, starting_position, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	var _b: = tween.interpolate_property(fadingObjects, "modulate", _visible, _invisible, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 
 	var _started: = tween.start()
@@ -48,7 +48,7 @@ func fade_out() -> void:
 	emit_signal("faded_out")
 
 func fade_in() -> void:
-	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position + fade_offset, starting_position, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
+	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position, starting_position + fade_offset, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	var _b: = tween.interpolate_property(fadingObjects, "modulate", _invisible, _visible, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 
 	var _started: = tween.start()
