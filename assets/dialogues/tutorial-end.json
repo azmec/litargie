@@ -24,7 +24,7 @@
         },
         "branches": {},
         "events": {
-            "change_scene": "res://src/dev-world/dev-world.tscn"
+            "change_scene": "res://src/levels/chapter-1-hook/section-a.tscn"
         }
     }
 }

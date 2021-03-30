@@ -74,19 +74,14 @@ func _on_objectDetector_entered(_object: CollisionObject2D) -> void:
 	fade_in()
 
 func _on_objectDetector_exited(_object: CollisionObject2D) -> void:
-	fade_out()"
+	fade_out()
+"
 
 [sub_resource type="CircleShape2D" id=2]
 resource_local_to_scene = true
 
 [node name="ProximityFade" type="Node2D"]
 script = SubResource( 1 )
-image = null
-message = ""
-proximity = 10
-fade_duration = 0.5
-fade_offset = Vector2( 0, 32 )
-starting_position = Vector2( 0, 0 )
 
 [node name="FadingObjects" type="Node2D" parent="."]
 modulate = Color( 1, 1, 1, 0 )

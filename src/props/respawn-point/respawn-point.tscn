@@ -23,6 +23,7 @@ func _on_body_detected(_player: Player) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id=2]
+resource_local_to_scene = true
 
 [node name="RespawnPoint" type="Area2D"]
 collision_layer = 0
