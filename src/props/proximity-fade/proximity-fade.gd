@@ -46,7 +46,6 @@ func fade_out() -> void:
 
 	yield(get_tree().create_timer(fade_duration), "timeout")
 	emit_signal("faded_out")
-	print("Faded out!")
 
 func fade_in() -> void:
 	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position + fade_offset, starting_position, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
@@ -56,7 +55,6 @@ func fade_in() -> void:
 
 	yield(get_tree().create_timer(fade_duration), "timeout")
 	emit_signal("faded_in")
-	print("Faded in!")
 
 func _update_editor_variables() -> void:
 	sprite.texture = image

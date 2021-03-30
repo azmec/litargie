@@ -35,3 +35,4 @@ shape = SubResource( 2 )
 [node name="Point" type="Position2D" parent="."]
 
 [node name="Campfire" parent="." instance=ExtResource( 1 )]
+on = false

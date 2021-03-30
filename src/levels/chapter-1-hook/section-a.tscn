@@ -1,9 +1,13 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/environment/base-level.tscn/base-level.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/user-interface/fonts/monogram_extended.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://src/environment/column/column.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/props/respawn-point/respawn-point.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/props/proximity-fade/proximity-fade.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/keyboard/move_tut.png" type="Texture" id=6]
+[ext_resource path="res://assets/keyboard/shift.png" type="Texture" id=7]
+[ext_resource path="res://assets/keyboard/spacebar.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
@@ -104,7 +108,6 @@ position = Vector2( 0, 48 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint2" index="2"]
 position = Vector2( 0, 48 )
-on = false
 
 [node name="RespawnPoint3" parent="RespawnPoints" index="2" instance=ExtResource( 4 )]
 position = Vector2( 1328, 536 )
@@ -118,7 +121,6 @@ position = Vector2( 0, 104 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint3" index="2"]
 position = Vector2( 0, 104 )
-on = false
 
 [node name="SmallTreePainter" parent="AbritraryScenery" index="0"]
 tile_data = PoolIntArray( 2752542, 0, 0, 2752545, 0, 0 )
@@ -143,6 +145,37 @@ position = Vector2( 992, 624 )
 height = -88
 
 [node name="TutorialAssets" type="Node" parent="." index="11"]
+
+[node name="MoveTut" parent="TutorialAssets" index="0" instance=ExtResource( 5 )]
+position = Vector2( 192, 688 )
+image = ExtResource( 6 )
+proximity = 30
+
+[node name="JumpTut" parent="TutorialAssets" index="1" instance=ExtResource( 5 )]
+position = Vector2( 424, 680 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="JumpTut2" parent="TutorialAssets" index="2" instance=ExtResource( 5 )]
+position = Vector2( 544, 664 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="JumpTut3" parent="TutorialAssets" index="3" instance=ExtResource( 5 )]
+position = Vector2( 592, 632 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="JumpTut4" parent="TutorialAssets" index="4" instance=ExtResource( 5 )]
+position = Vector2( 648, 632 )
+image = ExtResource( 8 )
+proximity = 30
+
+[node name="DashTut" parent="TutorialAssets" index="5" instance=ExtResource( 5 )]
+position = Vector2( 648, 632 )
+image = ExtResource( 7 )
+proximity = 30
+fade_offset = Vector2( 0, 48 )
 
 [editable path="Player"]
 
