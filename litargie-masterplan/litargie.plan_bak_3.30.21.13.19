@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -301.08734130859375,
-  "Pan.Y": -228.43917846679688,
+  "Pan.X": -478.904541015625,
+  "Pan.Y": 299.961669921875,
   "ZoomLevel": 4,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
@@ -2421,13 +2421,14 @@
       "BoardIndex": 0,
       "Position.X": 96,
       "Position.Y": 208,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Create Logo",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 15:47:28"
+      "CreationTime": "Mar 29 2021 15:47:28",
+      "CompletionTime": "Mar 29 2021 16:32:17"
     }, 
     {
       "BoardIndex": 0,
@@ -2445,13 +2446,14 @@
       "BoardIndex": 0,
       "Position.X": 96,
       "Position.Y": 256,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Background Image",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 15:49:00"
+      "CreationTime": "Mar 29 2021 15:49:00",
+      "CompletionTime": "Mar 29 2021 16:48:04"
     }, 
     {
       "BoardIndex": 0,
