@@ -13,9 +13,11 @@ func _ready() -> void:
 	mainMenu.connect("finished_transition", self, "_on_mainMenu_finished_transition")
 
 	player.active = false 
+	player.visible = false
 
 func _on_mainMenu_game_started() -> void:
 	player.active = true
+	player.visible = true
 
 func _on_mainMenu_finished_transition(values: Array) -> void:
 	if values.size() != 2: return
