@@ -63,6 +63,11 @@ func _update_editor_variables() -> void:
 	collision.shape.radius = proximity
 	startingPositionMarker.position = starting_position
 	text.text = message
+	_align_text() 
+	
+func _align_text() -> void:
+	var text_size = text.rect_size.x
+	text.rect_position.x = -text_size / 2 
 
 func _on_objectDetector_entered(_object: CollisionObject2D) -> void:
 	fade_in()

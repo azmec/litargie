@@ -6,14 +6,24 @@
 
 [node name="ProximityFade" type="Node2D"]
 script = ExtResource( 1 )
+image = null
+message = ""
+proximity = 10
+fade_duration = 0.5
+fade_offset = Vector2( 0, -32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="FadingObjects" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, -32 )
 
 [node name="Sprite" type="Sprite" parent="FadingObjects"]
 
 [node name="Text" type="Label" parent="FadingObjects"]
-margin_right = 40.0
+margin_left = -17.5
+margin_right = 17.5
 margin_bottom = 14.0
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
