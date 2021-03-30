@@ -11,7 +11,7 @@ export var message: String
 
 export var proximity: int = 10
 export var fade_duration: float = 0.5
-export var fade_offset: Vector2 = Vector2(0, -32)
+export var fade_offset: Vector2 = Vector2(0, 32)
 export var starting_position: Vector2 = Vector2.ZERO
 
 onready var fadingObjects: Node2D = $FadingObjects
@@ -32,28 +32,31 @@ func _ready() -> void:
 	var _d: = objectDetector.connect("body_exited", self, "_on_objectDetector_exited")
 
 	_update_editor_variables()
+	fade_out()
 
 func _process(_delta: float) -> void:
 	if Engine.editor_hint:
 		_update_editor_variables()
 
-func fade_in() -> void:
+func fade_out() -> void:
 	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position, starting_position + fade_offset, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	var _b: = tween.interpolate_property(fadingObjects, "modulate", _visible, _invisible, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 
 	var _started: = tween.start()
 
 	yield(get_tree().create_timer(fade_duration), "timeout")
-	emit_signal("faded_in")
+	emit_signal("faded_out")
+	print("Faded out!")
 
-func fade_out() -> void:
+func fade_in() -> void:
 	var _a: = tween.interpolate_property(fadingObjects, "position", starting_position + fade_offset, starting_position, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	var _b: = tween.interpolate_property(fadingObjects, "modulate", _invisible, _visible, fade_duration, Tween.TRANS_EXPO, Tween.EASE_OUT)
 
 	var _started: = tween.start()
 
 	yield(get_tree().create_timer(fade_duration), "timeout")
-	emit_signal("faded_out")
+	emit_signal("faded_in")
+	print("Faded in!")
 
 func _update_editor_variables() -> void:
 	sprite.texture = image

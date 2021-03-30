@@ -114,6 +114,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/props/player-camera/player-camera.gd"
 }, {
+"base": "Node2D",
+"class": "ProximityFade",
+"language": "GDScript",
+"path": "res://src/props/proximity-fade/proximity-fade.gd"
+}, {
 "base": "Area2D",
 "class": "RespawnPoint",
 "language": "GDScript",
@@ -181,6 +186,7 @@ _global_script_class_icons={
 "PauseCalculator": "",
 "Player": "",
 "PlayerCamera": "",
+"ProximityFade": "",
 "RespawnPoint": "",
 "RisingPrompt": "",
 "SceneButton": "",
