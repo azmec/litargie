@@ -142,6 +142,8 @@ height = -120
 position = Vector2( 992, 624 )
 height = -88
 
+[node name="TutorialAssets" type="Node" parent="." index="11"]
+
 [editable path="Player"]
 
 [editable path="Player/PlayerCamera"]
