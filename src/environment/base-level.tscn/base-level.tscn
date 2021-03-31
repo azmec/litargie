@@ -88,4 +88,6 @@ shape = SubResource( 1 )
 
 [node name="Lamps" type="Node" parent="AbritraryScenery"]
 
+[node name="BottomlessAbysses" type="Node" parent="."]
+
 [editable path="RespawnPoints/RespawnPoint"]
