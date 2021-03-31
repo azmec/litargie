@@ -106,7 +106,7 @@
         },
         "branches": {},
         "events": {
-            "change_scene": "res://src/levels/chapter-1-hook/section-a.tscn"
+            "change_scene": "res://src/levels/chapter-2-reality/reality.tscn"
         }
     }
 }

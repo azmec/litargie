@@ -92,50 +92,83 @@ tile_data = PoolIntArray( 2424902, 0, 0, 2424903, 0, 0, 2424904, 0, 0, 2424905, 
 [node name="MoveTut" parent="TutorialAssets" index="0" instance=ExtResource( 5 )]
 position = Vector2( 192, 688 )
 image = ExtResource( 6 )
+message = ""
 proximity = 30
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="JumpTut" parent="TutorialAssets" index="1" instance=ExtResource( 5 )]
 position = Vector2( 424, 680 )
 image = ExtResource( 8 )
+message = ""
 proximity = 30
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="JumpTut2" parent="TutorialAssets" index="2" instance=ExtResource( 5 )]
 position = Vector2( 544, 664 )
 image = ExtResource( 8 )
+message = ""
 proximity = 30
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="JumpTut3" parent="TutorialAssets" index="3" instance=ExtResource( 5 )]
 position = Vector2( 592, 632 )
 image = ExtResource( 8 )
+message = ""
 proximity = 30
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="JumpTut4" parent="TutorialAssets" index="4" instance=ExtResource( 5 )]
 position = Vector2( 736, 640 )
 image = ExtResource( 8 )
+message = ""
 proximity = 100
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="DashTut" parent="TutorialAssets" index="5" instance=ExtResource( 5 )]
 position = Vector2( 736, 624 )
 image = ExtResource( 7 )
+message = ""
 proximity = 100
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="WallTut" parent="TutorialAssets" index="6" instance=ExtResource( 5 )]
 position = Vector2( 1152, 576 )
 image = ExtResource( 9 )
+message = ""
 proximity = 60
+fade_duration = 0.5
 fade_offset = Vector2( 24, 32 )
 starting_position = Vector2( 24, 0 )
 
 [node name="WallTut2" parent="TutorialAssets" index="7" instance=ExtResource( 5 )]
 position = Vector2( 1128, 528 )
 image = ExtResource( 10 )
+message = ""
 proximity = 60
+fade_duration = 0.5
 fade_offset = Vector2( -24, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="MeathookTut" parent="TutorialAssets" index="8" instance=ExtResource( 5 )]
 position = Vector2( 1960, 528 )
 image = ExtResource( 13 )
+message = ""
 proximity = 20
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
+starting_position = Vector2( 0, 0 )
 
 [node name="Player" parent="." index="5"]
 position = Vector2( 192, 656 )
