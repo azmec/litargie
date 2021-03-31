@@ -4,9 +4,9 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -478.904541015625,
-  "Pan.Y": 299.961669921875,
-  "ZoomLevel": 4,
+  "Pan.X": -868.6953735351562,
+  "Pan.Y": 234.2820587158203,
+  "ZoomLevel": 3,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
   "OutlineTasks": true,
@@ -1567,13 +1567,14 @@
       "BoardIndex": 0,
       "Position.X": 112,
       "Position.Y": -224,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Redesign Tutorial Prompts",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 12:11:54"
+      "CreationTime": "Mar 29 2021 12:11:54",
+      "CompletionTime": "Mar 30 2021 14:40:10"
     }, 
     {
       "BoardIndex": 0,
@@ -1909,13 +1910,14 @@
       "BoardIndex": 0,
       "Position.X": 400,
       "Position.Y": -304,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Test Ability to Jump, Dash, and Wall Jump",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 14:12:55"
+      "CreationTime": "Mar 29 2021 14:12:55",
+      "CompletionTime": "Mar 30 2021 14:40:06"
     }, 
     {
       "BoardIndex": 0,
