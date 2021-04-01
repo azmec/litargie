@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -388.1354675292969,
-  "Pan.Y": 59.53277587890625,
+  "Pan.X": 528.1998291015625,
+  "Pan.Y": 154.72998046875,
   "ZoomLevel": 4,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
@@ -2512,6 +2512,44 @@
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Mar 29 2021 15:50:50",
       "CompletionTime": "Mar 29 2021 16:18:57"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -912,
+      "Position.Y": -400,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "What do we want to do with the Wind bit?\n1. Dynamically alter direction.\n2. Dynamically alter strength.\n3. Reflect this change visually.\n4. Query if the Wind is active.\n5. Change the space in which the snow emits.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Apr 1 2021 14:03:38"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -784,
+      "Position.Y": -304,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "",
+      "Selected": false,
+      "TaskType.CurrentChoice": 6,
+      "CreationTime": "Apr 1 2021 14:04:54",
+      "BezierLines": false,
+      "LineEndings": [-784, -240]
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": -896,
+      "Position.Y": -224,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "CPUParticles2D limits us.\nIn order to change the direction effectively,\nwe have to change where the particles emit from.\nWe want to keep the snow CONSTANT throughout the level;\ni.e. it should maintain the same height regardless of where we are.",
+      "Selected": false,
+      "TaskType.CurrentChoice": 2,
+      "CreationTime": "Apr 1 2021 14:04:59"
     }
   ]
 }

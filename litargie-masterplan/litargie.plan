@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": 528.1998291015625,
-  "Pan.Y": 178.72998046875,
+  "Pan.X": -621.8499145507812,
+  "Pan.Y": -145.25143432617188,
   "ZoomLevel": 4,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
@@ -2550,6 +2550,78 @@
       "Selected": false,
       "TaskType.CurrentChoice": 2,
       "CreationTime": "Apr 1 2021 14:04:59"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 608,
+      "Position.Y": 96,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Points of Polish",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Apr 1 2021 16:11:41"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 624,
+      "Position.Y": 112,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Shooting/Retracting SFX for Hook",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Apr 1 2021 16:11:48"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 624,
+      "Position.Y": 128,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Title Card Displaying Level Name",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Apr 1 2021 16:12:08"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 624,
+      "Position.Y": 144,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Better Rope Between Connection Points",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Apr 1 2021 16:12:19"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 624,
+      "Position.Y": 160,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Conjoining Connection Points as Twins",
+      "Selected": false,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Apr 1 2021 16:12:37"
+    }, 
+    {
+      "BoardIndex": 0,
+      "Position.X": 624,
+      "Position.Y": 176,
+      "Checkbox.Checked": false,
+      "Progression.Current": 0,
+      "Progression.Max": 0,
+      "Description": "Animating Hookpoints",
+      "Selected": true,
+      "TaskType.CurrentChoice": 0,
+      "CreationTime": "Apr 1 2021 16:13:00"
     }
   ]
 }
