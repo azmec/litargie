@@ -6,9 +6,9 @@
 resource_local_to_scene = true
 
 [node name="DialogueSpot" type="Area2D"]
+collision_layer = 2147483648
+collision_mask = 2
 script = ExtResource( 1 )
-sequence_path = ""
-radius = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

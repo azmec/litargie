@@ -90,4 +90,6 @@ shape = SubResource( 1 )
 
 [node name="BottomlessAbysses" type="Node" parent="."]
 
+[node name="DialogueSpots" type="Node" parent="."]
+
 [editable path="RespawnPoints/RespawnPoint"]
