@@ -163,6 +163,11 @@ _global_script_classes=[ {
 "class": "VariableSFXPlayer",
 "language": "GDScript",
 "path": "res://src/props/variable-sfx-player/variable-sfx-player.gd"
+}, {
+"base": "Node",
+"class": "Wind",
+"language": "GDScript",
+"path": "res://src/props/wind.gd"
 } ]
 _global_script_class_icons={
 "AreaDetector": "",
@@ -195,7 +200,8 @@ _global_script_class_icons={
 "StartSequence": "",
 "State": "",
 "TransitionEffect": "",
-"VariableSFXPlayer": ""
+"VariableSFXPlayer": "",
+"Wind": ""
 }
 
 [application]

@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -302.8464050292969,
-  "Pan.Y": 90.68806457519531,
+  "Pan.X": -388.1354675292969,
+  "Pan.Y": 59.53277587890625,
   "ZoomLevel": 4,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
@@ -1619,13 +1619,14 @@
       "BoardIndex": 0,
       "Position.X": 128,
       "Position.Y": -64,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Interlace Dialogue throughout level",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 12:12:41"
+      "CreationTime": "Mar 29 2021 12:12:41",
+      "CompletionTime": "Apr 1 2021 13:06:15"
     }, 
     {
       "BoardIndex": 0,
