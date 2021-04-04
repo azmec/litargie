@@ -154,6 +154,7 @@ radius = 12
 [node name="Turret" parent="." index="14" instance=ExtResource( 8 )]
 position = Vector2( 152, 480 )
 fire_type = 1
+targeting_time = 1.0
 vision = 200
 
 [editable path="Player"]

@@ -38,5 +38,9 @@ process_mode = 0
 one_shot = true
 
 [node name="TargetingTimer" type="Timer" parent="."]
+one_shot = true
 
 [node name="TargetingFlashTimer" type="Timer" parent="."]
+
+[node name="HoldTargetTimer" type="Timer" parent="."]
+one_shot = true
