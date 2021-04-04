@@ -1,6 +1,12 @@
 tool
 extends Node2D
 
+enum STATES {
+	SCANNING,
+	SHOOTING,
+	TARGETING
+}
+
 const ROTATION_SPEED: = 5
 
 const BULLET_SCENE: Resource = preload("res://src/props/turret-objects/bullet/bullet.tscn")
