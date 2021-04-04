@@ -47,7 +47,7 @@ func _process(_delta: float) -> void:
 			_match_targetingFlash_to_target(player.global_position)
 
 			if fireTimer.is_stopped():
-				_shoot(player.global_position)
+				_shoot(bodyPivot.rotation)
 
 
 # Rotates the body such that it is looking at the player.
@@ -65,8 +65,9 @@ func _look_to_player() -> Player:
 
 	return player
 
-func _shoot(target_position: Vector2) -> void:
-	var dir_to_target: = self.global_position.direction_to(target_position)
+func _shoot(angle: float) -> void:
+	angle = angle + deg2rad(90)
+	var dir_to_target: = Vector2(cos(angle), sin(angle))
 	var new_projectile: Node = projectile.instance()
 	
 	new_projectile.velocity = dir_to_target * new_projectile.speed
