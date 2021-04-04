@@ -4,6 +4,7 @@ extends Node2D
 const ROTATION_SPEED: = 5
 
 const BULLET_SCENE: Resource = preload("res://src/props/turret-objects/bullet/bullet.tscn")
+const MISSILE_SCENE: Resource = preload("res://src/props/turret-objects/missile/missile.tscn")
 
 export var body_rotation: float = 0
 export(int, "Bullets", "Missiles") var fire_type: = 0 
@@ -63,4 +64,4 @@ func _update_fire_type() -> void:
 		0:
 			projectile = BULLET_SCENE
 		1:
-			projectile = null
+			projectile = MISSILE_SCENE
