@@ -28,7 +28,7 @@ func _process(_delta: float) -> void:
 	else:
 		var player = _look_to_player()
 
-		if fireTimer.is_stopped():
+		if fireTimer.is_stopped() and player != null:
 			_shoot(player.global_position)
 
 # Rotates the body such that it is looking at the player.
@@ -47,7 +47,7 @@ func _shoot(target_position: Vector2) -> void:
 	var dir_to_target: = self.global_position.direction_to(target_position)
 	var new_projectile: Node = projectile.instance()
 
-	new_projectile.velocity = dir_to_target * new_projectile.SPEED
+	new_projectile.velocity = dir_to_target * new_projectile.speed
 	new_projectile.global_position = firingPoint.global_position
 	get_parent().add_child(new_projectile)
 

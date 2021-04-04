@@ -1,6 +1,6 @@
 extends Node2D
 
-const SPEED: = 100
+export var speed: = 100
 
 var velocity: Vector2 = Vector2.ZERO 
 
