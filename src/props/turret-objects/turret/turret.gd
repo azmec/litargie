@@ -15,6 +15,7 @@ const MISSILE_SCENE: Resource = preload("res://src/props/turret-objects/missile/
 const TARGETED_SPRITE: Texture = preload("res://assets/turret-assets/turret-targeted.png")
 const TARGETING_SPRITE: Texture = preload("res://assets/turret-assets/turret-targeting.png")
 
+export (int, "Seek", "Constant") var fire_mode: = 0
 export var body_rotation: float = 0
 export(int, "Bullets", "Missiles") var fire_type: = 0 
 export var fire_rate: float = 1.0
@@ -52,7 +53,7 @@ func _process(_delta: float) -> void:
 func _look_to_player() -> Player:
 	var player = detector.get_body()
 
-	if detector.detects_body():
+	if detector.detects_body() and fire_mode == 0:
 		bodyPivot.rotation = self.get_angle_to(Vector2(
 			player.global_position.x,
 			player.global_position.y - 16
