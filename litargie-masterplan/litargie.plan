@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -621.8499145507812,
-  "Pan.Y": -145.25143432617188,
+  "Pan.X": -382.0560302734375,
+  "Pan.Y": -53.615875244140625,
   "ZoomLevel": 4,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
@@ -1740,25 +1740,27 @@
       "BoardIndex": 0,
       "Position.X": 128,
       "Position.Y": 112,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Create Missile Mechanic",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 12:15:13"
+      "CreationTime": "Mar 29 2021 12:15:13",
+      "CompletionTime": "Apr 4 2021 12:22:16"
     }, 
     {
       "BoardIndex": 0,
       "Position.X": 128,
       "Position.Y": 128,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Random Bullets Mechanic",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 12:15:32"
+      "CreationTime": "Mar 29 2021 12:15:32",
+      "CompletionTime": "Apr 4 2021 12:22:13"
     }, 
     {
       "BoardIndex": 0,
@@ -2619,7 +2621,7 @@
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Animating Hookpoints",
-      "Selected": true,
+      "Selected": false,
       "TaskType.CurrentChoice": 0,
       "CreationTime": "Apr 1 2021 16:13:00"
     }
