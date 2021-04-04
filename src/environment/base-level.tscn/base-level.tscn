@@ -86,6 +86,8 @@ shape = SubResource( 1 )
 
 [node name="Lamps" type="Node2D" parent="AbritraryScenery"]
 
+[node name="Turrets" type="Node2D" parent="."]
+
 [node name="NormalGround" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 16, 16 )
