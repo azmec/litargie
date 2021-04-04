@@ -11,13 +11,14 @@ const ROTATION_SPEED: = 5
 
 const BULLET_SCENE: Resource = preload("res://src/props/turret-objects/bullet/bullet.tscn")
 const MISSILE_SCENE: Resource = preload("res://src/props/turret-objects/missile/missile.tscn")
+const HOOKABLE_BULLET_SCENE: Resource = preload("res://src/props/turret-objects/safe-bullet/safe-bullet.tscn")
 
 const TARGETED_SPRITE: Texture = preload("res://assets/turret-assets/turret-targeted.png")
 const TARGETING_SPRITE: Texture = preload("res://assets/turret-assets/turret-targeting.png")
 
 export (int, "Seek", "Constant") var fire_mode: = 0
 export var body_rotation: float = 0
-export(int, "Bullets", "Missiles") var fire_type: = 0 
+export(int, "Bullets", "Missiles", "Hookable Bullets") var fire_type: = 0 
 export var fire_rate: float = 1.0
 export var vision: int = 10
 
@@ -94,3 +95,6 @@ func _update_fire_type() -> void:
 		1:
 			projectile = MISSILE_SCENE
 			targetingFlash.visible = true
+		2: 
+			projectile = HOOKABLE_BULLET_SCENE
+			targetingFlash.visible = false
