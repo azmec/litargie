@@ -95,6 +95,10 @@ func _physics_process(delta: float) -> void:
 
 	if dashCooldownTimer.is_stopped() and Input.is_action_just_pressed("dash"):
 		state = change_state_to(STATES.DASH)
+
+	# We can generally assume we're not grounded if this:
+	if velocity.y < -JUMP_STRENGTH * 1.5:
+		state = change_state_to(STATES.FALL)
 	
 	match state:
 		STATES.IDLE:
