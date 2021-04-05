@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/props/spring/spring.gd" type="Script" id=1]
 [ext_resource path="res://assets/environment/spring.png" type="Texture" id=2]
+[ext_resource path="res://assets/sounds-music/spring.wav" type="AudioStream" id=3]
+[ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7, 4 )
@@ -53,3 +55,7 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 playback_speed = 3.0
 anims/spring = SubResource( 2 )
+
+[node name="VariableSFXPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+script = ExtResource( 4 )
