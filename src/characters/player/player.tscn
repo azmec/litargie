@@ -157,8 +157,9 @@ tracks/0/keys = {
 "values": [ 16 ]
 }
 
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 4, 7 )
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 3.5
+height = 6.0
 
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
