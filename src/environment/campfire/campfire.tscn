@@ -97,7 +97,6 @@ anims/turn_on = SubResource( 4 )
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2( 0, -8 )
-z_index = -1
 emitting = false
 amount = 16
 lifetime = 1.5
