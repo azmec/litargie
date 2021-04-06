@@ -13,10 +13,10 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	if starting_point_parent != null:
 		self.points[0] = to_local(starting_point_parent.global_position)
-		self.points[0].y -= 8
+		self.points[0].y -= 12
 	if ending_point_parent != null:
 		self.points[-1] = to_local(ending_point_parent.global_position) 
-		self.points[-1].y -= 8
+		self.points[-1].y -= 12
 
 	startingPointArea2D.position = self.points[0]
 	endingPointArea2D.position = self.points[-1]

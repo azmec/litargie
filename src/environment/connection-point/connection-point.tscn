@@ -28,5 +28,8 @@ collision_mask = 64
 [node name="ProximityFade" parent="." instance=ExtResource( 6 )]
 position = Vector2( 0, -8 )
 image = ExtResource( 4 )
+message = ""
 proximity = 20
+fade_duration = 0.5
+fade_offset = Vector2( 0, 32 )
 starting_position = Vector2( 0, -16 )
