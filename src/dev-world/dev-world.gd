@@ -12,6 +12,8 @@ onready var fpsLabel: Label = $CanvasLayer/Main/FPSLabel
 
 func _ready() -> void:
 	DialogueGod.set_parent(mainUI)
+	#yield(get_tree().create_timer(0.5), "timeout")
+	#DialogueGod.show_messages(TEST_SEQUENCE_PATH, dialogueSpot)
 
 	AStarPathfinder.foster_tilemap(boringTileMap)
 
