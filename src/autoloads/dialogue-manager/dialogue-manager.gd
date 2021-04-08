@@ -23,14 +23,12 @@ var _working_sequence: Dictionary = {}
 var _current_dialogueBox_instance: DialogueBox
 var _active_dialogue_offset: int = 0
 
-<<<<<<< HEAD
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var eventParser: EventParser = $EventParser
 
-=======
->>>>>>> cf7367b... Fixed merge conflict.
 func _ready() -> void:
-	_load_dialogue(TEST_
+	pass 
+
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogueBox_instance.dialogue.message_is_fully_visible() and !_is_waiting_for_choice:
 		_advance_dialogue()
@@ -96,6 +94,7 @@ func _advance_dialogue():
 		_active_dialogue_offset += 1
 		_show_current()
 	else:
+		_message_stack = []
 		_hide()
 
 # Hides the current dialogue instance and resets private
