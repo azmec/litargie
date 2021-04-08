@@ -1,3 +1,6 @@
+# Area2D that waits for contact with a valid entity 
+# and raises a given message or sprite with a tween. 
+
 tool
 
 class_name ProximityFade

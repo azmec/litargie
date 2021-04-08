@@ -1,3 +1,6 @@
+# Node2D extension that carries an ID and waits for 
+# contact with player. "Hovers" when given an image.
+
 class_name FloatingObject
 extends Node2D
 

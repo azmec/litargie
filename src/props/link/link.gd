@@ -1,3 +1,5 @@
+# Line2D who's endpoints we can assignt to a 
+# 'parent.'
 class_name Link
 extends Line2D
 

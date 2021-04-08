@@ -1,3 +1,6 @@
+# Camera2D that tracks the mouse and is limited by 
+# positionable Position2D nodes. 
+
 class_name PlayerCamera
 extends Camera2D
 

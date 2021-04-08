@@ -1,3 +1,4 @@
+# Configurable area2D with a "damage" parameter.
 tool
 extends Area2D
 

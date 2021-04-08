@@ -1,3 +1,7 @@
+# When fired, shoots a "Hook" area2D from which
+# we calculate pulling force and pass into signal when
+# the hook makes contact with a valid entity. 
+
 class_name Meathook
 extends Node2D
 
