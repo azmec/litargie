@@ -26,10 +26,10 @@ var _visible = Color(1, 1, 1, 1)
 var _invisible = Color(1, 1, 1, 0)
 
 func _ready() -> void:
-	var _a: = objectDetector.connect("area_entered", self, "_on_objectDetector_entered")
-	var _b: = objectDetector.connect("area_exited", self, "_on_objectDetector_exited")
-	var _c: = objectDetector.connect("body_entered", self, "_on_objectDetector_entered")
-	var _d: = objectDetector.connect("body_exited", self, "_on_objectDetector_exited")
+	objectDetector.connect("area_entered", self, "_on_objectDetector_entered")
+	objectDetector.connect("area_exited", self, "_on_objectDetector_exited")
+	objectDetector.connect("body_entered", self, "_on_objectDetector_entered")
+	objectDetector.connect("body_exited", self, "_on_objectDetector_exited")
 
 	_update_editor_variables()
 	fade_out()

@@ -17,7 +17,7 @@ func _ready() -> void:
 
 	AStarPathfinder.foster_tilemap(boringTileMap)
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	fpsLabel.text = ("FPS: " + str(Engine.get_frames_per_second()))
 	var from = boringTileMap.global_to_tile(enemy.global_position)
 	var to = boringTileMap.global_to_tile(player.global_position)

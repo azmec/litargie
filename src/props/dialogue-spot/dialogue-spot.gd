@@ -1,3 +1,7 @@
+# Configurable Area2D node we can place in a level.
+# When the player walks into it, we send the
+# assigned seqeunce to the DialogueManager.
+
 tool
 extends Area2D
 
@@ -9,7 +13,7 @@ var _has_been_activated: bool = false
 onready var collisionShape2D: = $CollisionShape2D 
 
 func _ready() -> void:
-	var _a = self.connect("body_entered", self, "_on_body_entered")
+	self.connect("body_entered", self, "_on_body_entered")
 
 	collisionShape2D.shape.radius = radius 
 
