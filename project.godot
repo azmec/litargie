@@ -49,11 +49,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/user-interface/dialogue-name-handle/dialogue-name-handle.gd"
 }, {
-"base": "KinematicBody2D",
-"class": "Enemy",
-"language": "GDScript",
-"path": "res://src/characters/enemy/enemy-body/enemy.gd"
-}, {
 "base": "Node",
 "class": "EventParser",
 "language": "GDScript",
@@ -173,7 +168,6 @@ _global_script_class_icons={
 "DialogueButton": "",
 "DialogueManager": "",
 "DialogueNameHandle": "",
-"Enemy": "",
 "EventParser": "",
 "FloatingObject": "",
 "Game": "",
