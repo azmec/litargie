@@ -89,11 +89,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/props/meat-hook/meat-hook.gd"
 }, {
-"base": "TileMap",
-"class": "PathFindableTileMap",
-"language": "GDScript",
-"path": "res://src/environment/path-findable-tilemap/path-findable-tilemap.gd"
-}, {
 "base": "Reference",
 "class": "Pause",
 "language": "GDScript",
@@ -123,11 +118,6 @@ _global_script_classes=[ {
 "class": "RespawnPoint",
 "language": "GDScript",
 "path": "res://src/props/respawn-point/respawn-point.gd"
-}, {
-"base": "Node2D",
-"class": "RisingPrompt",
-"language": "GDScript",
-"path": "res://src/props/rising-prompt/rising-prompt.gd"
 }, {
 "base": "Button",
 "class": "SceneButton",
@@ -191,14 +181,12 @@ _global_script_class_icons={
 "HookPoint": "",
 "Link": "",
 "Meathook": "",
-"PathFindableTileMap": "",
 "Pause": "",
 "PauseCalculator": "",
 "Player": "",
 "PlayerCamera": "",
 "ProximityFade": "",
 "RespawnPoint": "",
-"RisingPrompt": "",
 "SceneButton": "",
 "SceneryPainter": "",
 "SequenceParser": "",
@@ -218,7 +206,6 @@ config/icon="res://icon.png"
 
 [autoload]
 
-AStarPathfinder="*res://src/autoloads/a-star-pathfinder/a-star-pathfinder.tscn"
 DialogueGod="*res://src/autoloads/dialogue-manager/dialogue-manager.tscn"
 Settings="*res://src/autoloads/settings/settings.tscn"
 SceneTransition="*res://src/autoloads/scene-transition/scene-transition.tscn"
