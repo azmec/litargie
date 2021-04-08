@@ -1,3 +1,6 @@
+# Node2D meant to serve the Meathook as a "hooking" point. 
+# Primarily instanced through a specifc SceneryPainter.
+
 class_name HookPoint
 extends Node2D
 

@@ -1,3 +1,6 @@
+# TileMap that replaces its painted tiles with instances 
+# of the given scene. 
+
 class_name SceneryPainter
 extends TileMap
 
