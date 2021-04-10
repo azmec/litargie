@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/props/bottomless-abyss/bottomless-abyss.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.980392, 0.92549, 0.843137, 1, 0.980392, 0.92549, 0.843137, 0 )
+
+[sub_resource type="RectangleShape2D" id=2]
+resource_local_to_scene = true
+
+[node name="BottomlessAbyss" type="Area2D"]
+z_index = -1
+collision_layer = 2147483776
+collision_mask = 0
+script = ExtResource( 1 )
+extents = Vector2( 10, 10 )
+particle_duration = 2.0
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 24
+lifetime = 2.0
+preprocess = 0.5
+emission_shape = 2
+emission_rect_extents = Vector2( 10, 10 )
+gravity = Vector2( 0, -50 )
+color_ramp = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )

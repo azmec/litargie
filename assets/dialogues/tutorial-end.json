@@ -1,0 +1,112 @@
+{
+    "001": {
+        "character": "",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "root": {
+            "ENG": "You step to the structure, it's glowing orb instructing you.",
+            "SPN": "... {p=0.5}by a thread."
+        },
+        "branches": {
+            "001": {
+                "character": "",
+                "condition": {
+                    "ENG": "Show anticipation.",
+                    "SPN": ""
+                },
+                "root": {
+                    "ENG": "You show the [color=yellow]id[/color] a [color=green]memory[/color]: the overbearing anxiety of a new face.",
+                    "SPN": ""
+                },
+                "branches": {
+                    "001": {
+                        "character": "",
+                        "condition": {
+                            "ENG": "You wait for response.",
+                            "SPN": ""
+                        },
+                        "root": {
+                            "ENG": "The world recoils.{p=0.5} You continue: contrasting anxiety with the friendly kindness that follows.",
+                            "SPN": ""
+                        },
+                        "branches": {},
+                        "events": {}
+                    }
+                },
+                "events": {}
+            },
+            "002": {
+                "character": "",
+                "condition": {
+                    "ENG": "Show guilt.",
+                    "SPN": ""
+                },
+                "root": {
+                    "ENG": "You show the [color=yellow]id[/color] a [color=green]memory[/color]: the waves of guilt proceeding failure.",
+                    "SPN": ""
+                },
+                "branches": {
+                    "001": {
+                        "character": "",
+                        "condition": {
+                            "ENG": "Even you feel regret.",
+                            "SPN": ""
+                        },
+                        "root": {
+                            "ENG": "You continue, contrasting that endless tide with the relief of a friend who can forgive.",
+                            "SPN": ""
+                        },
+                        "branches": {},
+                        "events": {}
+                    }
+                },
+                "events": {}
+            },
+            "003": {
+                "character": "",
+                "condition": {
+                    "ENG": "Show futility.",
+                    "SPN": ""
+                },
+                "root": {
+                    "ENG": "You show the [color=yellow]id[/color] a [color=green]memory[/color]: the sisyphesian dread of doing it all over again.",
+                    "SPN": ""
+                },
+                "branches": {
+                    "001": {
+                        "character": "",
+                        "condition": {
+                            "ENG": "It bears on you too.",
+                            "SPN": ""
+                        },
+                        "root": {
+                            "ENG": "The [color=yellow]id[/color] is revolted.{p=0.2} Yet, even they recognize the spirit of it all.",
+                            "SPN": ""
+                        },
+                        "branches": {},
+                        "events": {}
+                    }
+                },
+                "events": {}
+            }
+        },
+        "events": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "root": {
+            "ENG": "... {p=0.5}Fine.{p=0.5} Find me.{p=0.5} Free me.{p=0.5} We must balance the host.",
+            "SPN": ""
+        },
+        "branches": {},
+        "events": {
+            "change_scene": "res://src/levels/chapter-2-reality/reality.tscn"
+        }
+    }
+}

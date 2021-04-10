@@ -1,18 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/user-interface/pause-calculator/pause-calculator.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/user-interface/fonts/default-font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://assets/user-interface/blinker.png" type="Texture" id=3]
 [ext_resource path="res://src/user-interface/dialogue/dialogue.gd" type="Script" id=4]
 [ext_resource path="res://assets/user-interface/dialogue_background.png" type="Texture" id=5]
+[ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/user-interface/dialogue-name-handle/dialogue-name-handle.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/sounds-music/working-sound-blurb.wav" type="AudioStream" id=8]
 
 [node name="Dialogue" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 56.0
-margin_top = 128.0
-margin_right = -56.0
-margin_bottom = -16.0
+margin_right = -112.0
+margin_bottom = -144.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true,
@@ -40,13 +43,15 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -101.0
-margin_top = -33.0
-margin_right = 101.0
-margin_bottom = -3.0
+margin_left = -99.0
+margin_top = -31.0
+margin_right = 99.0
+margin_bottom = -5.0
 custom_fonts/normal_font = ExtResource( 2 )
 custom_colors/default_color = Color( 1, 0.941176, 0.839216, 1 )
 bbcode_enabled = true
+bbcode_text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
@@ -72,3 +77,11 @@ __meta__ = {
 one_shot = true
 
 [node name="BlinkerTimer" type="Timer" parent="."]
+
+[node name="DialogueNameHandle" parent="." instance=ExtResource( 7 )]
+margin_top = -12.0
+margin_right = -208.0
+margin_bottom = -48.0
+
+[node name="DialogueVoicePlayer" parent="." instance=ExtResource( 6 )]
+stream = ExtResource( 8 )

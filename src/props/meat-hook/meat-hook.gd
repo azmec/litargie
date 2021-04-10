@@ -1,3 +1,7 @@
+# When fired, shoots a "Hook" area2D from which
+# we calculate pulling force and pass into signal when
+# the hook makes contact with a valid entity. 
+
 class_name Meathook
 extends Node2D
 
@@ -14,22 +18,24 @@ const HOOK_DISTANCE: int = 75
 const IDLE_HOOK_POSITION_X: int = 12
 const FORCE_MULTIPLIER: int = 400
 
+var enabled: bool = true setget _set_enabled
 var state: int = 0
 var flip_h: bool = false setget _set_flip_h
 var flip_v: bool = false setget _set_flip_v
 
 var _target_position: Vector2 = Vector2.ZERO
 
-onready var label: Label = $Node/Label 
 onready var hook: Area2D = $Hook
 
 func _ready() -> void:
-	hook.connect("body_entered", self, "_on_hook_body_entered")
+	var _hook_connected = hook.connect("area_entered", self, "_on_hook_area_entered")
 
 	state = change_state_to(STATES.IDLE)
 
-func _physics_process(delta: float) -> void:
-	label.text = "rotation_degrees: " + str(self.rotation_degrees)
+func _physics_process(_delta: float) -> void:
+	if not enabled: 
+		return
+	
 	match state:
 		STATES.IDLE:
 			_look_to_mouse()
@@ -55,6 +61,10 @@ func change_state_to(new_state: int) -> int:
 			pass
 	
 	return new_state
+
+func _set_enabled(value: bool) -> void:
+	self.visible = value
+	enabled = value
 
 # Mimic Sprite.flip_h with Node2D.scale.x 
 func _set_flip_h(value: bool) -> void:
@@ -89,7 +99,7 @@ func _calculate_pull_force() -> Vector2:
 
 	return direction * FORCE_MULTIPLIER 
 
-func _on_hook_body_entered(body) -> void:
+func _on_hook_area_entered(_area) -> void:
 	if state == STATES.SHOOTING:
 		var pull_force = _calculate_pull_force()
 		emit_signal("hooked_onto_something", pull_force, _target_position)

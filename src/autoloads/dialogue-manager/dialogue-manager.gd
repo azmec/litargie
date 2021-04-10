@@ -10,71 +10,84 @@ signal message_completed()
 
 signal finished() 
 
-const TEST_SEQUENCE_PATH: = "res://assets/dialogues/test-sequence.json"
-const DIALOGUE_SCENE: = preload("res://src/user-interface/dialogue/dialogue.tscn")
-const CHARACTER_LIMIT: = 140
+const DIALOGUE_BOX_SCENE: = preload("res://src/user-interface/dialogue-box/dialogue-box.tscn")
 
-<<<<<<< HEAD
-=======
 const LANGUAGE: = "ENG" 
 
 onready var opacityTween: Tween = $OpacityTween
 
->>>>>>> 4f94ea5... please god 2
 var _messages: = {}
 var _keys: = []
 var _active_dialogue_offset: = 0
 var _is_active: = false 
 var _current_dialogue_instance: Dialogue
+var _parent: Control
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+var _is_active: bool = false 
+var _is_waiting_for_choice: bool = false
+
+var _message_stack: Array = []
+var _working_sequence: Dictionary = {}
+
+var _current_dialogueBox_instance: DialogueBox
+var _active_dialogue_offset: int = 0
+
 onready var sequenceParser: SequenceParser = $SequenceParser
-onready var opacityTween: Tween = $OpacityTween
+onready var eventParser: EventParser = $EventParser
 
 func _ready() -> void:
-	var _test_dialogue: = sequenceParser._load_dialogue(TEST_SEQUENCE_PATH)
+	pass 
 
-
-=======
 func _ready() -> void:
 	_load_dialogue(TEST_
->>>>>>> 870f606... required commit
-=======
 func _ready() -> void:
 	_load_dialogue(TEST_
->>>>>>> 4f94ea5... please god 2
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogue_instance._message_is_fully_visible():
-		if _active_dialogue_offset < _messages.size() - 1:
-			_active_dialogue_offset += 1 
-			_show_current()
-		else: 
-			_hide()
-		
-func show_messages(sequence_string: String, parent: Control) -> void:
+	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogueBox_instance.dialogue.message_is_fully_visible() and !_is_waiting_for_choice:
+		_advance_dialogue()
+
+func set_parent(new_parent: Control) -> void:
+	_parent = new_parent
+
+# Translates the given JSON into a Dictionary, breaks it into roots, and queues
+# them to the message stack. 
+func queue_sequence_to_message_stack(json_path: String) -> void:
+	_working_sequence = sequenceParser.load_dialogue(json_path)
+	var _stack: Array = sequenceParser.split_sequence(_working_sequence)
+	for root in _stack:
+		_queue_root_to_message_stack(root)
+
+	_show_dialogue(_message_stack)
+
+func get_dialogueBox() -> DialogueBox:
+	return _current_dialogueBox_instance 
+
+# Queues the given root to the message stack.
+func _queue_root_to_message_stack(root: Dictionary) -> void:
+	var _message: = sequenceParser.get_root_text(root)
+	_message_stack.push_back(root)
+
+# Start the dialogue process and spawn the dialogue instance. 
+func _show_dialogue(_message_list: Array) -> void:
 	if _is_active:
 		return
 	_is_active = true
 
-	_messages = _load_dialogue(sequence_string)
-	_keys = _messages.keys()
 	_active_dialogue_offset = 0
-	assert(_dialogue_below_character_limit(_messages) == true)
 
-	var _dialogue: = DIALOGUE_SCENE.instance() 
-	_dialogue.connect("message_completed", self, "_on_message_completed")
-	parent.add_child(_dialogue)
-	
-	_current_dialogue_instance = _dialogue
+	var _dialogueBox: = DIALOGUE_BOX_SCENE.instance()
+	_dialogueBox.connect("message_completed", self, "_on_message_completed")
+	_parent.add_child(_dialogueBox)
+
+	_current_dialogueBox_instance = _dialogueBox
 
 	_show_current()
 
+# Iterate along the message_stack and display the text and applicable choices.
 func _show_current() -> void:
 	emit_signal("message_requested")
-	var _message: String = _messages[_keys[_active_dialogue_offset]].text
-	_current_dialogue_instance.update_text(_message)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 # Parses the given JSON file path and converts it into a Godot-friendly dictionary.
@@ -88,21 +101,42 @@ func _load_dialogue(file_path: String) -> Dictionary:
 	
 	return dialogue
 >>>>>>> 4f94ea5... please god 2
+=======
+	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
+>>>>>>> cleanup
 
-func _dialogue_below_character_limit(dialogue: Dictionary) -> bool:
-	var _res: = true
-	for _k in dialogue:
-		if dialogue[_k].text.length() > 140:
-			print_debug("Given dialogue is greater than 140 characters!")
-			_res = false
-	
-	return _res
+	if sequenceParser.root_is_deviant(_current_trunk):
+		_current_dialogueBox_instance.adjust_for_devaincy()
+	else:
+		_current_dialogueBox_instance.move_dialogue(_current_dialogueBox_instance.normal_dialogue_position)
 
+	var _message: = sequenceParser.get_root_text(_current_trunk)
+	_current_dialogueBox_instance.update_dialogue_text(_current_trunk.character, _message)
+
+# Iterates the dialogues stack and shows the next piece of
+# dialogue.
+func _advance_dialogue():
+	var events: Dictionary = sequenceParser.get_events(_message_stack[_active_dialogue_offset])
+	eventParser.process_events(events) 
+
+	if _active_dialogue_offset < _message_stack.size() - 1:
+		_active_dialogue_offset += 1
+		_show_current()
+	else:
+		_message_stack = []
+		_hide()
+
+# Hides the current dialogue instance and resets private
+# properties for the next sequence.
 func _hide() -> void:
-	_current_dialogue_instance.disconnect("message_completed", self, "_on_message_completed")
-	_current_dialogue_instance.queue_free() 
-	_current_dialogue_instance = null
+	_current_dialogueBox_instance.buttonContainer.clear_buttons()
+
+	_current_dialogueBox_instance.disconnect("message_completed", self, "_on_message_completed")
+	_current_dialogueBox_instance.queue_free() 
+	_current_dialogueBox_instance = null
+
 	_is_active = false
+
 	emit_signal("finished") 
 
 func _extract_messages(sequence_set: Dictionary) -> void:
@@ -113,5 +147,20 @@ func _extract_messages(sequence_set: Dictionary) -> void:
 			print("This sequence has no branches.")
 
 func _on_message_completed() -> void:
+	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
+
+	if sequenceParser.root_is_deviant(_current_trunk):
+		_is_waiting_for_choice = true
+	
+		var _branches = sequenceParser.get_branches(_current_trunk)
+		_branches = sequenceParser.split_sequence(_branches)
+		_current_dialogueBox_instance.update_dialogue_options(_branches)
+
 	emit_signal("message_completed") 
 	
+func _on_condition_choosen(branch: Dictionary) -> void: 
+	_is_waiting_for_choice = false	
+	_current_dialogueBox_instance.buttonContainer.clear_buttons()
+
+	_message_stack.insert(_active_dialogue_offset + 1, branch)
+	_advance_dialogue()

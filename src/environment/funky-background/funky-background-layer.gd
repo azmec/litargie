@@ -3,13 +3,13 @@
 
 extends ParallaxLayer
 
-var DIRECTION: = Vector2(1, -1)
-var SCROLLING_SPEED: = 5
+export var direction: Vector2 = Vector2(1, -1)
+export var scrolling_speed: int = 5
 
 onready var backgroundSprite: Sprite = $BackgroundSprite
 
 func _process(delta: float) -> void:
-	backgroundSprite.region_rect.position.x += (DIRECTION.x * SCROLLING_SPEED) * delta
-	backgroundSprite.region_rect.position.y += (DIRECTION.y * SCROLLING_SPEED) * delta
+	backgroundSprite.region_rect.position.x += (direction.x * scrolling_speed) * delta
+	backgroundSprite.region_rect.position.y += (direction.y * scrolling_speed) * delta
 
 

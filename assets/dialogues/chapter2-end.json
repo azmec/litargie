@@ -1,0 +1,17 @@
+{
+    "001": {
+        "character": "",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "root": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "branches": {},
+        "events": {
+            "change_scene": "res://src/levels/chapter-3/chapter3.tscn"
+        }
+    }
+}

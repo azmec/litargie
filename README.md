@@ -1,50 +1,23 @@
-# LITARGIE: Control your ego.
-Restraint. Until it is done.
+# LITARGIE: Control Your Ego.
+Refrain. Until it is done.
 
-## What is this project?
-This is an entry into a scholarship game jam.
+## About :mag_right:
+LITARGIE is a 2D, story-based platformer created for the [2021 Games for Change Challenge Competition](http://gamesforchange.org/studentchallenge/) and the chosen theme: [Resiliance through Games](http://gamesforchange.org/studentchallenge/resilience-through-games/). 
+> In the midst of COVID-19, and social distancing, it is more important than ever to connect with friends and family, find ways to manage your stress, and take good care of yourself. Make a game that addresses one of these issues.
 
-## TODO
-### Technical
-[] Create Dialogue System
-    [x] Display and progressively type out text
-    [x] Queue successive messages
-    [] Determine and limit character length
-    [] Integrate JSON parsing and use
-    [] Add dialogue options
-        [] Format trees?
-        [] Display options based on amount?
-    [] Sound blurbs
-    [] Character Avatars?
-[] Basic UI
-    [] Main Menu
-    [] Pause Menu
-    [] Graphics Settings
-    [] Sound Settings
-    [] Keybindings
-    [] Accessebility Settings
-[] Core Loop
-    [x] Player Movement
-        [x] Basics
-        [x] Dash
-        [x] Walljump
-    [] Meathook
-        [x] Shoot and pull player
-        [] Actual rope shooting
-        [] Tether mode
-    [x] Polish Camera
-### Art
-[] Create Player Asset
-    [x] Base Sprite
-    [x] Walking Anim
-    [x] Idle Anim
-    [] Jumping Anim
-    [] Double Jump Anim
-    [] Falling Anim
-    [] Dashing Anim
-    [] Wall Sliding Anim
-    [] Wall Jumping Anim
-    [] Death Anim
-[] Create Level Tileset
-[] Create Id
-[] Create Superego
+## What's in Here :floppy_disk:
+You'll probably find that this is a Godot Engine project, which you can find [here](https://godotengine.org/). Digging a little further into this code, you'll find a bunch of assets I've made using [BFXR](https://www.bfxr.net/) and [Asesprite](https://www.aseprite.org/).
+
+## How to Fiddle With It :wrench:
+If you're looking to mess with this project, download the Godot engine and select the project.godot file with it. To start with, take a look at the player scene and .gd file; you'll find movement and state code here. If you're looking to mess with the meathook, you'll find the scene instanced within the player.
+
+If you're looking to learn something from this project, the only potentially useful portion would be the dialogue series of nodes and scripts. Start in DialogueManager in /src/autoloads.
+
+## TODO :heavy_check_mark:
+There's still somethings to be done, even post morterm (such as writing a post mortem.)
+- [ ] Finish the game.
+- [ ] Create Itch.io assets.
+- [ ] Release the game.
+- [ ] Submit to G4C.
+- [ ] Document the project.
+- [ ] Write post mortem!

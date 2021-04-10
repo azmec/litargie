@@ -19,5 +19,3 @@ position = Vector2( -168, -96 )
 
 [node name="BottomRight" type="Position2D" parent="Limits"]
 position = Vector2( 168, 96 )
-
-[node name="ShiftTween" type="Tween" parent="."]

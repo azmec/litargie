@@ -7,9 +7,16 @@ enum STATES {
 	JUMP,
 	FALL,
 	DASH,
-	WALL_JUMP,
-	HOOKED
+	WALL_SLIDE,
+	HOOKED,
+	DEAD
 }
+
+signal died 
+
+const EXPLOSION_SCENE: = preload("res://src/props/explosion/explosion.tscn")
+const MH_ANIMS: = preload("res://assets/actors/player/player-mh-anims.png")
+const BASE_ANIMS: = preload("res://assets/actors/player/player-anims.png")
 
 const MAX_SPEED: int = 150
 const TERMINAL_VELOCITY: int = 600
@@ -21,9 +28,13 @@ const COYOTE_TIME: float = 0.1
 const JUMP_TIME: float = 0.1
 const DASH_TIME: float = 0.2
 const DASH_COOLDOWN: float = 2.0
-const WALL_JUMP_COOLDOWN: float = 0.2
+const WALL_SLIDE_COOLDOWN: float = 0.2
 const WALL_STICKINESS: float = 0.2
 
+export var has_meathook: bool = true 
+
+var active: = true
+var killable: bool = true
 var velocity: Vector2 = Vector2.ZERO
 var x_input: int = 0
 var wall_direction: int = 0
@@ -36,12 +47,14 @@ var max_jumps: int = 2
 var _hook_pull_force: Vector2 = Vector2.ZERO
 var _hook_target_position: Vector2 = Vector2.ZERO
 
-
+onready var camera: = $PlayerCamera
 onready var sprite: Sprite = $Sprite
 onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 onready var meathook: Meathook = $Meathook
 onready var wallRaycasts: Node2D = $WallRaycasts
+onready var hurtbox: Area2D = $Hurtbox
 onready var stateText: Label = $StateText
+onready var sounds: = $Sounds
 
 onready var coyoteTimer: Timer = $Timers/CoyoteTimer
 onready var jumpTimer: Timer = $Timers/JumpTimer
@@ -54,9 +67,22 @@ func _ready():
 	meathook.connect("hooked_onto_something", self, "_on_meathook_hooked_onto_something")
 	dashTimer.connect("timeout", self, "_on_dashTimer_timeout")
 	wallJumpStickyTimer.connect("timeout", self, "_on_wallJumpStickyTimer_timeout")
+	hurtbox.connect("area_entered", self, "_on_hurtbox_entered")
+	hurtbox.connect("body_entered", self, "_on_hurtbox_entered")
 	state = change_state_to(STATES.IDLE)
 
+	if has_meathook:
+		meathook.enabled = true
+		sprite.texture = MH_ANIMS
+	else:
+		meathook.enabled = false
+		sprite.texture = BASE_ANIMS
+
 func _physics_process(delta: float) -> void:
+	camera.is_looking_at_mouse = active
+	if not active: 
+		return
+
 	x_input = get_input()
 	wall_direction = wallRaycasts.get_wall_direction(x_input) 
 
@@ -69,6 +95,10 @@ func _physics_process(delta: float) -> void:
 
 	if dashCooldownTimer.is_stopped() and Input.is_action_just_pressed("dash"):
 		state = change_state_to(STATES.DASH)
+
+	# We can generally assume we're not grounded if this:
+	if velocity.y < -JUMP_STRENGTH * 1.5:
+		state = change_state_to(STATES.FALL)
 	
 	match state:
 		STATES.IDLE:
@@ -114,20 +144,21 @@ func _physics_process(delta: float) -> void:
 			if !jumpTimer.is_stopped() and current_jumps > 0:
 				state = change_state_to(STATES.JUMP)
 			if is_on_floor():
+				sounds.library.Fall.play() 
 				if x_input == 0:
 					state = change_state_to(STATES.IDLE)
 				else:
 					state = change_state_to(STATES.RUN)
 			
 			if wall_direction != 0 and wallJumpCooldownTimer.is_stopped():
-				state = change_state_to(STATES.WALL_JUMP) 
+				state = change_state_to(STATES.WALL_SLIDE) 
 	
 			velocity.y = _set_gravity(velocity.y, delta)
 			
 		STATES.DASH:
 			velocity.y = 0
 
-		STATES.WALL_JUMP:
+		STATES.WALL_SLIDE:
 			velocity.y += 200 * delta
 			velocity.y = clamp(velocity.y, -GRAVITY, GRAVITY)
 
@@ -154,8 +185,11 @@ func _physics_process(delta: float) -> void:
 				state = change_state_to(STATES.FALL)
 			if !jumpTimer.is_stopped():
 				state = change_state_to(STATES.JUMP)
+		STATES.DEAD:
+			velocity.x = lerp(velocity.x, 0, DECCELERATION * delta)
+			velocity.y = _set_gravity(velocity.y, delta)
 
-	if x_input != 0:
+	if x_input != 0 and state != STATES.WALL_SLIDE:
 		sprite.flip_h = x_input < 0
 	velocity = move_and_slide(velocity, Vector2.UP)
 
@@ -165,10 +199,10 @@ func get_input() -> int:
 
 # perform logic that runs only when we enter a state
 func change_state_to(new_state: int) -> int:
-	if previous_state == STATES.WALL_JUMP:
-		wallJumpCooldownTimer.start(WALL_JUMP_COOLDOWN) 
+	sounds.library.WallSlide.stop()
+	if previous_state == STATES.WALL_SLIDE:
+		wallJumpCooldownTimer.start(WALL_SLIDE_COOLDOWN) 
 
-	previous_state = state
 	match new_state:
 		STATES.IDLE:
 			stateText.text = "idle"
@@ -180,25 +214,47 @@ func change_state_to(new_state: int) -> int:
 
 		STATES.JUMP:
 			stateText.text = "jump"
+			
+			if previous_state == STATES.WALL_SLIDE:
+				animationPlayer.play("dash")
+			else:
+				animationPlayer.play("jump") 
+		
 			jumpTimer.stop()
 			velocity.y = -JUMP_STRENGTH
 			current_jumps -= 1
 
 		STATES.FALL:
 			stateText.text = "fall"
+			animationPlayer.play("fall")
 
 		STATES.DASH:
 			stateText.text = "dash"
+			animationPlayer.play("dash") 
+
 			dashTimer.start(DASH_TIME)
 			velocity.x = 400 * x_input
 		
-		STATES.WALL_JUMP:
+		STATES.WALL_SLIDE:
 			stateText.text = "wall slide"
+			animationPlayer.play("wallSlide")
+			sounds.library.WallSlide.play() 
+
 			velocity.y = 0
 
 		STATES.HOOKED:
 			stateText.text = "hooked"
+		STATES.DEAD:
+			stateText.text = "dead"
+			killable = false
 
+			var new_explosion = EXPLOSION_SCENE.instance()
+			new_explosion.connect("explosion_finished", self, "_on_explosion_finished", [new_explosion])
+			get_parent().add_child(new_explosion)
+			new_explosion.global_position = self.global_position
+			self.visible = false
+
+	previous_state = state
 	return new_state
 
 # accelerates the given value according to GRAVITY
@@ -225,6 +281,17 @@ func _on_dashTimer_timeout() -> void:
 	state = change_state_to(previous_state)
 
 func _on_wallJumpStickyTimer_timeout() -> void:
-	if state == STATES.WALL_JUMP:
+	if state == STATES.WALL_SLIDE:
 		state = change_state_to(STATES.FALL)
+
+func _on_hurtbox_entered(_entering_object) -> void:
+	if not killable: return
+
+	state = change_state_to(STATES.DEAD)
+	self.set_process_input(false)
+
+func _on_explosion_finished(explosion) -> void:
+	explosion.disconnect("explosion_finished", self, "_on_explosion_finished")
+	explosion.queue_free()
+	emit_signal("died")
 

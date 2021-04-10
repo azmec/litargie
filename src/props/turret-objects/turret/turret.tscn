@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/turret-assets/turret-body.png" type="Texture" id=1]
+[ext_resource path="res://assets/turret-assets/turret-stand.png" type="Texture" id=2]
+[ext_resource path="res://src/props/turret-objects/turret/turret.gd" type="Script" id=3]
+[ext_resource path="res://src/helpers/detector/detector.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/turret-assets/turret-targeting.png" type="Texture" id=5]
+
+[node name="Turret" type="Node2D"]
+script = ExtResource( 3 )
+fire_mode = 0
+body_rotation = 0.0
+fire_type = 0
+fire_rate = 1.0
+vision = 10
+
+[node name="Stand" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+offset = Vector2( 1, 8 )
+
+[node name="BodyPivot" type="Position2D" parent="."]
+position = Vector2( 0.5, 6 )
+
+[node name="TargetingFlash" type="Sprite" parent="BodyPivot"]
+visible = false
+position = Vector2( -0.5, 14 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Body" type="Sprite" parent="BodyPivot"]
+position = Vector2( 0, 2 )
+texture = ExtResource( 1 )
+
+[node name="FiringPoint" type="Position2D" parent="BodyPivot"]
+position = Vector2( 0, 6 )
+
+[node name="Detector" parent="." instance=ExtResource( 4 )]
+collision_layer = 0
+collision_mask = 2
+
+[node name="FireTimer" type="Timer" parent="."]
+one_shot = true
