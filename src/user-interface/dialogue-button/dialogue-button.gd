@@ -7,6 +7,9 @@ signal condition_choosen(branch)
 
 var _condition: String = ""
 var _root_text: String = ""
+
+# This holds the *entirety* of a the branch--including
+# additional messages after the initial choice. 
 var _branch: Dictionary = {}
 
 onready var patchRect: NinePatchRect = $Background
@@ -16,8 +19,8 @@ func _ready() -> void:
 	_set_child_rect_sizes()
 
 func initialize(branched_sequence: Dictionary) -> void:
-	_condition = branched_sequence.condition[Settings.language]
-	_root_text = branched_sequence.message[Settings.language]
+	_condition = branched_sequence["001"].condition[Settings.language]
+	_root_text = branched_sequence["001"].message[Settings.language]
 	_branch = branched_sequence
 
 	if _is_above_character_limit(_condition):
