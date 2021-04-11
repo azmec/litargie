@@ -70,7 +70,7 @@ func get_conditions(branch_set: Dictionary) -> Array:
 
 # Returns the actual "message" of a root.
 func get_root_text(sequence: Dictionary) -> String:
-	return sequence.root[Settings.language] 
+	return sequence.message[Settings.language] 
 
 # Determins if a root is itself deviant.
 func root_is_deviant(root: Dictionary) -> bool:
