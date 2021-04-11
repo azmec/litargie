@@ -1,0 +1,82 @@
+{
+    "001": {
+        "character": "Character",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "message": {
+            "ENG": "This is a sentence.",
+            "SPN": "This is a sentence, but allegedly in Spanish."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "Character",
+                    "condition": {
+                        "ENG": "This is a condition of branch A.",
+                        "SPN": "This is a condition of branch A, but allegedly in Spanish."
+                    },
+                    "message": {
+                        "ENG": "This is a sentence of branch A.",
+                        "SPN": "This is a sentence of branch A, but allegedly in Spanish."
+                    },
+                    "branches": {}
+                }
+            },
+            "B": {
+                "001": {
+                    "character": "Character",
+                    "condition": {
+                        "ENG": "This is a condition of branch B.",
+                        "SPN": "This is a condition of branch B, but allegedly in Spanish."
+                    },
+                    "message": {
+                        "ENG": "This is a sentence of branch B.",
+                        "SPN": "This is a sentence of branch B, but allegedly in Spanish."
+                    },
+                    "branches": {}
+                },
+                "002": {
+                    "character": "Character",
+                    "condition": {
+                        "ENG": "This is a condition of branch B sequence 002.",
+                        "SPN": "This is a condition of branch B sequence 002, but allegedly in Spanish."
+                    },
+                    "message": {
+                        "ENG": "This is a sentence of branch B sequence 002.",
+                        "SPN": "This is a sentence of branch B sequence 002, but allegedly in Spanish."
+                    },
+                    "branches": {}
+                }
+            },
+            "C": {
+                "001": {
+                    "character": "Character",
+                    "condition": {
+                        "ENG": "This is a condition of branch C.",
+                        "SPN": "This is a condition of branch C, but allegedly in Spanish."
+                    },
+                    "message": {
+                        "ENG": "This is a sentence of branch C.",
+                        "SPN": "This is a sentence of branch C, but allegedly in Spanish."
+                    },
+                    "branches": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "002": {
+        "character": "Character",
+        "condition": {
+            "ENG": "",
+            "SPN": ""
+        },
+        "message": {
+            "ENG": "This is a sentence of sequence 002.",
+            "SPN": "This is a sentence of sequence 002, but allegedly in Spanish."
+        },
+        "branches": {}
+    }
+}

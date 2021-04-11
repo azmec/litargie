@@ -5,6 +5,15 @@
 class_name SequenceParser
 extends Node
 
+func _ready() -> void:
+	var ideal_json: Dictionary = load_dialogue("res://assets/dialogues/ideal-dialogue-format.json")
+	var ideal: Array = split_sequence(ideal_json)
+	var branch_set: Dictionary = get_branches(ideal[0])
+	var conditions: Array = get_all_conditions(branch_set)
+	for condition in conditions:
+		print(condition)
+
+
 # Parses the given JSON file path and converts it into a Godot-friendly dictionary.
 func load_dialogue(file_path: String) -> Dictionary:
 	var file = File.new() 
@@ -21,17 +30,37 @@ func split_sequence(sequence: Dictionary) -> Array:
 	var _res: = []
 	
 	for trunk in sequence:
-		_res.push_back(sequence[trunk])
+		_res.append(sequence[trunk])
 
 	return _res
+
 # Returns all branches of a root.
 func get_branches(deviant_branch: Dictionary) -> Dictionary:
 	return deviant_branch.branches
 
+# Returns all events under the "events" key.
 func get_events(sequence: Dictionary) -> Dictionary:
 	return sequence.events 
 
-# Returns the conditions required to reach a particular root.
+# Returns ALL of the conditions of the "branches" key.
+func get_all_conditions(branch_set: Dictionary) -> Array:
+	var res = []
+
+	for branch in branch_set:
+		var condition = get_branch_condition(branch_set[branch])
+		res.append(condition)
+
+	return res
+
+# Returns the condition of a specific branch within "branches."
+func get_branch_condition(branch: Dictionary) -> Dictionary:
+	if not branch["001"]:
+		return {}
+	else:
+		return branch["001"]["condition"] 
+
+# Returns the conditions required to reach the individual 
+# paths of a branch set.
 func get_conditions(branch_set: Dictionary) -> Array:
 	var _res: = []
 	for branch in branch_set:
