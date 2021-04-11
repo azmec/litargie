@@ -21,7 +21,8 @@
                         "ENG": "This is a sentence of branch A.",
                         "SPN": "This is a sentence of branch A, but allegedly in Spanish."
                     },
-                    "branches": {}
+                    "branches": {},
+                    "events": {}
                 }
             },
             "B": {
@@ -35,7 +36,8 @@
                         "ENG": "This is a sentence of branch B.",
                         "SPN": "This is a sentence of branch B, but allegedly in Spanish."
                     },
-                    "branches": {}
+                    "branches": {},
+                    "events": {}
                 },
                 "002": {
                     "character": "Character",
@@ -47,7 +49,8 @@
                         "ENG": "This is a sentence of branch B sequence 002.",
                         "SPN": "This is a sentence of branch B sequence 002, but allegedly in Spanish."
                     },
-                    "branches": {}
+                    "branches": {},
+                    "events": {}
                 }
             },
             "C": {
@@ -61,7 +64,8 @@
                         "ENG": "This is a sentence of branch C.",
                         "SPN": "This is a sentence of branch C, but allegedly in Spanish."
                     },
-                    "branches": {}
+                    "branches": {},
+                    "events": {}
                 }
             }
         },
@@ -77,6 +81,7 @@
             "ENG": "This is a sentence of sequence 002.",
             "SPN": "This is a sentence of sequence 002, but allegedly in Spanish."
         },
-        "branches": {}
+        "branches": {},
+        "events": {}
     }
 }

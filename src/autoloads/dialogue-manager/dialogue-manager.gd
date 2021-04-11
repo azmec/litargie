@@ -32,7 +32,8 @@ onready var sequenceParser: SequenceParser = $SequenceParser
 onready var eventParser: EventParser = $EventParser
 
 func _ready() -> void:
-	pass 
+	yield(get_tree().create_timer(0.5), "timeout")
+	queue_sequence_to_message_stack("res://assets/dialogues/ideal-dialogue-format.json")
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogueBox_instance.dialogue.message_is_fully_visible() and !_is_waiting_for_choice:

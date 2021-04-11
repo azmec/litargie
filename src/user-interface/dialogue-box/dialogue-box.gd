@@ -30,7 +30,7 @@ func update_dialogue_options(branches: Array) -> void:
 	buttonContainer.clear_buttons()
 
 	for branch in branches:
-		buttonContainer.add_button(branch)
+		buttonContainer.add_button(branch["001"])
 
 func toggle_panel(value: bool) -> void:
 	dialogue.toggle_panel(value) 

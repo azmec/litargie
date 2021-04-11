@@ -5,15 +5,6 @@
 class_name SequenceParser
 extends Node
 
-func _ready() -> void:
-	var ideal_json: Dictionary = load_dialogue("res://assets/dialogues/ideal-dialogue-format.json")
-	var ideal: Array = split_sequence(ideal_json)
-	var branch_set: Dictionary = get_branches(ideal[0])
-	var conditions: Array = get_all_conditions(branch_set)
-	for condition in conditions:
-		print(condition)
-
-
 # Parses the given JSON file path and converts it into a Godot-friendly dictionary.
 func load_dialogue(file_path: String) -> Dictionary:
 	var file = File.new() 
