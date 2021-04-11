@@ -139,6 +139,9 @@ func _on_condition_choosen(branch: Dictionary) -> void:
 	_is_waiting_for_choice = false	
 	_current_dialogueBox_instance.buttonContainer.clear_buttons()
 
+	var i = 1
 	for sequence in branch:
-		_message_stack.insert(_active_dialogue_offset + 1, branch[sequence])
+		_message_stack.insert(_active_dialogue_offset + i, branch[sequence])
+		i += 1 
+	
 	_advance_dialogue()
