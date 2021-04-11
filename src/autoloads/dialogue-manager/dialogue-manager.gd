@@ -14,8 +14,6 @@ const DIALOGUE_BOX_SCENE: = preload("res://src/user-interface/dialogue-box/dialo
 
 const LANGUAGE: = "ENG" 
 
-onready var opacityTween: Tween = $OpacityTween
-
 var _messages: = {}
 var _keys: = []
 var _active_dialogue_offset: = 0
@@ -23,14 +21,12 @@ var _is_active: = false
 var _current_dialogue_instance: Dialogue
 var _parent: Control
 
-var _is_active: bool = false 
 var _is_waiting_for_choice: bool = false
 
 var _message_stack: Array = []
 var _working_sequence: Dictionary = {}
 
 var _current_dialogueBox_instance: DialogueBox
-var _active_dialogue_offset: int = 0
 
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var eventParser: EventParser = $EventParser
@@ -38,10 +34,6 @@ onready var eventParser: EventParser = $EventParser
 func _ready() -> void:
 	pass 
 
-func _ready() -> void:
-	_load_dialogue(TEST_
-func _ready() -> void:
-	_load_dialogue(TEST_
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogueBox_instance.dialogue.message_is_fully_visible() and !_is_waiting_for_choice:
 		_advance_dialogue()
@@ -87,23 +79,7 @@ func _show_dialogue(_message_list: Array) -> void:
 func _show_current() -> void:
 	emit_signal("message_requested")
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# Parses the given JSON file path and converts it into a Godot-friendly dictionary.
-func _load_dialogue(file_path: String) -> Dictionary:
-	var file = File.new() 
-	assert(file.file_exists(file_path))
-
-	file.open(file_path, file.READ)
-	var dialogue: Dictionary = parse_json(file.get_as_text())
-	assert(dialogue.size() > 0)
-	
-	return dialogue
->>>>>>> 4f94ea5... please god 2
-=======
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
->>>>>>> cleanup
 
 	if sequenceParser.root_is_deviant(_current_trunk):
 		_current_dialogueBox_instance.adjust_for_devaincy()

@@ -4,8 +4,8 @@
   "BoardIndex": 0,
   "BoardCount": 3,
   "AutoSave": false,
-  "Pan.X": -274.8099060058594,
-  "Pan.Y": -100.71914672851562,
+  "Pan.X": -272.1988525390625,
+  "Pan.Y": -199.18060302734375,
   "ZoomLevel": 4,
   "ColorTheme": "Event Horizon",
   "TaskTransparency": 5,
@@ -2468,13 +2468,14 @@
       "BoardIndex": 0,
       "Position.X": 112,
       "Position.Y": 336,
-      "Checkbox.Checked": false,
+      "Checkbox.Checked": true,
       "Progression.Current": 0,
       "Progression.Max": 0,
       "Description": "Enough Screenshots to Match Description",
       "Selected": false,
       "TaskType.CurrentChoice": 0,
-      "CreationTime": "Mar 29 2021 15:49:14"
+      "CreationTime": "Mar 29 2021 15:49:14",
+      "CompletionTime": "Apr 6 2021 20:32:43"
     }, 
     {
       "BoardIndex": 0,
