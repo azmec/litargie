@@ -306,7 +306,7 @@ tile_data = PoolIntArray( 102, 0, 0, 103, 0, 1, 104, 0, 1, 105, 0, 1, 106, 0, 1,
 
 [node name="DialogueSpot" parent="DialogueSpots" index="0" instance=ExtResource( 15 )]
 position = Vector2( 960, 576 )
-sequence_path = ""
+sequence_path = "res://assets/dialogues/ideal-dialogue-format.json"
 radius = 50
 
 [node name="DialogueSpot2" parent="DialogueSpots" index="1" instance=ExtResource( 15 )]
