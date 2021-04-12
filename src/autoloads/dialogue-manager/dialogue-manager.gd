@@ -14,11 +14,8 @@ const DIALOGUE_BOX_SCENE: = preload("res://src/user-interface/dialogue-box/dialo
 
 const LANGUAGE: = "ENG" 
 
-var _messages: = {}
-var _keys: = []
 var _active_dialogue_offset: = 0
 var _is_active: = false 
-var _current_dialogue_instance: Dialogue
 var _parent: Control
 
 var _is_waiting_for_choice: bool = false
@@ -30,10 +27,6 @@ var _current_dialogueBox_instance: DialogueBox
 
 onready var sequenceParser: SequenceParser = $SequenceParser
 onready var eventParser: EventParser = $EventParser
-
-func _ready() -> void:
-	yield(get_tree().create_timer(0.5), "timeout")
-	queue_sequence_to_message_stack("res://assets/dialogues/ideal-dialogue-format.json")
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and _is_active and _current_dialogueBox_instance.dialogue.message_is_fully_visible() and !_is_waiting_for_choice:
@@ -115,13 +108,6 @@ func _hide() -> void:
 	_is_active = false
 
 	emit_signal("finished") 
-
-func _extract_messages(sequence_set: Dictionary) -> void:
-	for sequence in sequence_set:
-		if sequence.branches:
-			print("This sequence has branches!")
-		else:
-			print("This sequence has no branches.")
 
 func _on_message_completed() -> void:
 	var _current_trunk: Dictionary = _message_stack[_active_dialogue_offset]
