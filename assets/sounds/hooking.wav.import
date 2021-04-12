@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/explosion.wav-ea9ff2e45085d7c93736a469be3add8e.sample"
+path="res://.import/hooking.wav-1b68e3b20d036cb80f0659bfee8eb0df.sample"
 
 [deps]
 
-source_file="res://assets/sounds-music/explosion.wav"
-dest_files=[ "res://.import/explosion.wav-ea9ff2e45085d7c93736a469be3add8e.sample" ]
+source_file="res://assets/sounds/hooking.wav"
+dest_files=[ "res://.import/hooking.wav-1b68e3b20d036cb80f0659bfee8eb0df.sample" ]
 
 [params]
 

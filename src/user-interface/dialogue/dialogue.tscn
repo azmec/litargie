@@ -7,7 +7,8 @@
 [ext_resource path="res://assets/user-interface/dialogue_background.png" type="Texture" id=5]
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/user-interface/dialogue-name-handle/dialogue-name-handle.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/sounds-music/working-sound-blurb.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/working-sound-blurb.wav" type="AudioStream" id=8]
+
 
 [node name="Dialogue" type="Control"]
 anchor_right = 1.0

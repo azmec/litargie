@@ -2,7 +2,8 @@
 
 [ext_resource path="res://src/props/turret-objects/bullet/bullet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/turret-assets/turret-safe-bullet.png" type="Texture" id=2]
-[ext_resource path="res://assets/sounds-music/shoot-hookable.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/shoot-hookable.wav" type="AudioStream" id=3]
+
 
 [node name="SafeBullet" instance=ExtResource( 1 )]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/ui-hover.wav-38cdca9ea6ed7a329ea2d919fd586e9b.sample"
+path="res://.import/spring.wav-9ac94fa7ea98d2f923663feabe7d8363.sample"
 
 [deps]
 
-source_file="res://assets/sounds-music/ui-hover.wav"
-dest_files=[ "res://.import/ui-hover.wav-38cdca9ea6ed7a329ea2d919fd586e9b.sample" ]
+source_file="res://assets/sounds/spring.wav"
+dest_files=[ "res://.import/spring.wav-9ac94fa7ea98d2f923663feabe7d8363.sample" ]
 
 [params]
 

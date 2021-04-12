@@ -2,8 +2,9 @@
 
 [ext_resource path="res://src/props/spring/spring.gd" type="Script" id=1]
 [ext_resource path="res://assets/environment/spring.png" type="Texture" id=2]
-[ext_resource path="res://assets/sounds-music/spring.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/spring.wav" type="AudioStream" id=3]
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=4]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7, 4 )

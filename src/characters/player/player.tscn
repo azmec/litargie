@@ -7,12 +7,13 @@
 [ext_resource path="res://src/props/meat-hook/meat-hook.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/actors/player/player-mh-anims.png" type="Texture" id=6]
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=7]
-[ext_resource path="res://assets/sounds-music/working-step.wav" type="AudioStream" id=8]
-[ext_resource path="res://assets/sounds-music/working-fall.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/sounds/working-step.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/working-fall.wav" type="AudioStream" id=9]
 [ext_resource path="res://src/helpers/sounds.gd" type="Script" id=10]
-[ext_resource path="res://assets/sounds-music/working-jump.wav" type="AudioStream" id=11]
-[ext_resource path="res://assets/sounds-music/working-dash.wav" type="AudioStream" id=12]
-[ext_resource path="res://assets/sounds-music/working-wallslide.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/sounds/working-jump.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/sounds/working-dash.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/sounds/working-wallslide.wav" type="AudioStream" id=13]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4, 7 )

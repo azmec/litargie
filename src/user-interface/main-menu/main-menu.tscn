@@ -2,9 +2,10 @@
 
 [ext_resource path="res://src/user-interface/main-theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/user-interface/main-menu/main-menu.gd" type="Script" id=2]
-[ext_resource path="res://assets/sounds-music/ui-select.wav" type="AudioStream" id=3]
-[ext_resource path="res://assets/sounds-music/ui-hover.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sounds/ui-select.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/ui-hover.wav" type="AudioStream" id=4]
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=5]
+
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
