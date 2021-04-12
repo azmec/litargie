@@ -8,10 +8,10 @@ extends Control
 
 signal message_completed 
 
-const DEVIANT_OFFSET: int = -56
+const DEVIANT_OFFSET: int = -48
 const MOVE_SPEED: float = 0.5
 
-var normal_dialogue_position: Vector2 = Vector2(56, 0) setget _set_normal_dialogue_position
+var normal_dialogue_position: Vector2 = Vector2(48, 0) setget _set_normal_dialogue_position
 
 onready var dialogue: Dialogue = $Dialogue
 onready var buttonContainer: Control = $ButtonsContainer
