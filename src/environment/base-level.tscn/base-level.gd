@@ -24,6 +24,8 @@ func _ready() -> void:
 		item.connect("made_contact", self, "_on_collectable_made_contact")
 
 	DialogueGod.set_parent(main)
+	DialogueGod.connect("message_requested", self, "_on_DialogueGod_message_requested")
+	DialogueGod.connect("finished", self, "_on_DialogueGod_finished") 
 
 func _create_new_transition_instance() -> TransitionEffect: 
 	_destroy_current_transition_instance() 
@@ -68,3 +70,9 @@ func _on_transition_finished() -> void:
 	player.set_process_input(true)
 	player.state = player.change_state_to(player.STATES.IDLE)
 	player.killable = true
+
+func _on_DialogueGod_message_requested() -> void:
+	player.active = false
+
+func _on_DialogueGod_finished() -> void:
+	player.active = true
