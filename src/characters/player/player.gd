@@ -254,6 +254,8 @@ func change_state_to(new_state: int) -> int:
 			new_explosion.global_position = self.global_position
 			self.visible = false
 
+			ScreenShaker.start(6.0, 0.5, 1.41)
+
 	previous_state = state
 	return new_state
 

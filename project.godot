@@ -197,6 +197,7 @@ config/icon="res://icon.png"
 DialogueGod="*res://src/autoloads/dialogue-manager/dialogue-manager.tscn"
 Settings="*res://src/autoloads/settings/settings.tscn"
 SceneTransition="*res://src/autoloads/scene-transition/scene-transition.tscn"
+ScreenShaker="*res://src/autoloads/screen-shaker/screen-shaker.tscn"
 
 [debug]
 

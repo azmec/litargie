@@ -13,6 +13,7 @@ onready var collectables: = $Collectables.get_children()
 onready var main: Control = $CanvasLayer/Main
 
 func _ready() -> void:
+	ScreenShaker.change_camera(player.camera)
 	player.connect("died", self, "_on_player_died")
 
 	for point in respawnPoints:
