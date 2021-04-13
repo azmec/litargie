@@ -72,7 +72,7 @@ func _on_transition_finished() -> void:
 	player.killable = true
 
 func _on_DialogueGod_message_requested() -> void:
-	player.active = false
+	player.input_active = false
 
 func _on_DialogueGod_finished() -> void:
-	player.active = true
+	player.input_active = true

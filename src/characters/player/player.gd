@@ -33,6 +33,7 @@ const WALL_STICKINESS: float = 0.2
 
 export var has_meathook: bool = true 
 
+var input_active: = true
 var active: = true
 var killable: bool = true
 var velocity: Vector2 = Vector2.ZERO
@@ -89,9 +90,6 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor(): 
 		current_jumps = max_jumps
 		coyoteTimer.start(COYOTE_TIME)
-
-	if Input.is_action_just_pressed("jump"):
-		jumpTimer.start(JUMP_TIME)
 
 	if dashCooldownTimer.is_stopped() and Input.is_action_just_pressed("dash"):
 		state = change_state_to(STATES.DASH)
@@ -195,6 +193,13 @@ func _physics_process(delta: float) -> void:
 
 # Return 1 if player is pressing left, -1 if right, 0 if neither
 func get_input() -> int:
+	camera.is_looking_at_mouse = input_active
+	
+	if not input_active: return 0
+	
+	if Input.is_action_just_pressed("jump"):
+		jumpTimer.start(JUMP_TIME)
+	
 	return int(Input.get_action_strength("move_right")) - int(Input.get_action_strength("move_left"))
 
 # perform logic that runs only when we enter a state
