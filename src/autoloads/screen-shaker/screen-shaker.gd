@@ -22,6 +22,8 @@ func _ready() -> void:
 	timer.connect("timeout", self, "_on_timer_timeout") 
 
 func _process(_delta: float) -> void:
+	if _current_camera == null: return
+		
 	var damping: = ease(timer.time_left / timer.wait_time, damp_easing) 
 	_current_camera.offset = Vector2(
 		rand_range(amplitude, -amplitude) * damping,
