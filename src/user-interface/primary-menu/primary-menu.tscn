@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/user-interface/main-theme.tres" type="Theme" id=1]
+[ext_resource path="res://src/user-interface/primary-menu/primary-menu.gd" type="Script" id=2]
+
+[node name="PrimaryMenu" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 72.0
+margin_right = -72.0
+theme = ExtResource( 1 )
+alignment = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 82.0
+margin_top = 69.0
+margin_right = 94.0
+margin_bottom = 88.0
+size_flags_horizontal = 4
+
+[node name="SettingsButton" type="Button" parent="."]
+margin_left = 82.0
+margin_top = 92.0
+margin_right = 94.0
+margin_bottom = 111.0
+size_flags_horizontal = 4

@@ -26,7 +26,7 @@ func _on_masterSlider_value_changed(value: float) -> void:
 func _on_sfxSlider_value_changed(value: float) -> void:
 	Settings.sfx_volume = value
 
-func _on__on_bgmSlider_value_changed(value: float) -> void:
+func _on_bgmSlider_value_changed(value: float) -> void:
 	Settings.bgm_volume = value
 
 func _on_backButton_pressed() -> void:
