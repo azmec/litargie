@@ -8,7 +8,7 @@ signal slide_completed()
 
 const RIGHT_EDGE = 320
 export (bool) var start_onscreen: bool = true
-export (float) var resting_x_position = RIGHT_EDGE / 2
+export (float) var resting_x_position = 64
 export (float) var sliding_duration: = 0.5
 export (float) var sliding_speed: = 0.05
 
@@ -128,7 +128,7 @@ func _queue_tween_visibility(node: Control, value: bool, delay: float) -> void:
 
 func _on_tween_all_completed() -> void:
 	is_sliding = false
-	if not is_onscreen():
-		self.visible = false 
+	#if not is_onscreen():
+	#		self.visible = false 
 
 	emit_signal("slide_completed")
