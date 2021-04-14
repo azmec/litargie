@@ -53,6 +53,17 @@ func slide_offscreen() -> void:
 func is_on_onscreen() -> bool:
 	return sliders[0].rect_position.x == get_viewport_rect().size.x
 
+# We assume whatever nodes we add under "Sliders" contains
+# additional, *useful* nodes too; we also assume that the 
+# container node exacts its own behavior, so we're really 
+# only looking to slide its children.
+func _get_sliding_children() -> Array:
+	var res: = []
+	for child in sliding.get_children():
+		res.append(child)
+	
+	return res
+
 func _slide(node: Control, offscreen: bool, delay: float) -> void:
 	var current_position: = node.rect_position
 
