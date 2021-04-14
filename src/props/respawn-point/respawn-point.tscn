@@ -37,4 +37,3 @@ shape = SubResource( 2 )
 
 [node name="Campfire" parent="." instance=ExtResource( 1 )]
 z_index = 0
-on = false

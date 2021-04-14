@@ -14,7 +14,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SettignsMenu" parent="." instance=ExtResource( 3 )]
+[node name="SettingsMenu" parent="." instance=ExtResource( 3 )]
+start_onscreen = false
 
 [node name="MainMenu" parent="." instance=ExtResource( 2 )]
 
@@ -27,6 +28,7 @@ margin_right = 192.0
 margin_bottom = 111.0
 
 [node name="PauseMenu" parent="." instance=ExtResource( 2 )]
+start_onscreen = false
 
 [node name="PauseMenu" parent="PauseMenu/Sliding" index="0" instance=ExtResource( 4 )]
 anchor_left = 0.0
