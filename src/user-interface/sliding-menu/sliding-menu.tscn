@@ -6,6 +6,7 @@
 [node name="SlidingMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 1
 theme = ExtResource( 1 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -15,5 +16,8 @@ __meta__ = {
 [node name="Tween" type="Tween" parent="."]
 
 [node name="Sliding" type="VBoxContainer" parent="."]
-anchor_right = 1.0
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
+margin_left = -96.0
+margin_right = 96.0
