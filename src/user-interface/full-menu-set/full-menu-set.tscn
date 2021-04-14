@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/user-interface/full-menu-set/full-menu-set.gd" type="Script" id=1]
+[ext_resource path="res://src/user-interface/sliding-menu/sliding-menu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/user-interface/settings-menu/settings-menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/user-interface/pause-menu/pause-menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/user-interface/primary-menu/primary-menu.tscn" type="PackedScene" id=5]
+
+[node name="FullMenuSet" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SettignsMenu" parent="." instance=ExtResource( 3 )]
+
+[node name="MainMenu" parent="." instance=ExtResource( 2 )]
+
+[node name="PrimaryMenu" parent="MainMenu/Sliding" index="0" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 69.0
+margin_right = 192.0
+margin_bottom = 111.0
+
+[node name="PauseMenu" parent="." instance=ExtResource( 2 )]
+
+[node name="PauseMenu" parent="PauseMenu/Sliding" index="0" instance=ExtResource( 4 )]
+anchor_left = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 46.0
+margin_right = 192.0
+margin_bottom = 134.0
+
+[editable path="MainMenu"]
+
+[editable path="PauseMenu"]

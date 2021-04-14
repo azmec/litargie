@@ -33,8 +33,10 @@ __meta__ = {
 
 [node name="Hover" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+bus = "SFX"
 script = ExtResource( 3 )
 
 [node name="Pressed" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+bus = "SFX"
 script = ExtResource( 3 )
