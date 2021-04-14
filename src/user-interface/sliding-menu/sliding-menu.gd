@@ -8,7 +8,7 @@ signal slide_completed()
 
 export (float) var resting_x_position = get_viewport_rect().size.x * .6
 export (float) var sliding_duration: = 0.5
-export (float) var sliding_speed: = 0.5 
+export (float) var sliding_speed: = 0.05
 
 var is_sliding: bool = false
 
@@ -19,7 +19,7 @@ onready var tween: Tween = $Tween
 
 # Container for nodes we want to slide on request.
 onready var sliding: VBoxContainer = $Sliding
-onready var sliders: Array = sliding.get_children()
+onready var sliders: Array = _get_sliding_children()
 
 func _ready() -> void:
 	tween.connect("tween_all_completed", self, "_on_tween_all_completed") 
@@ -59,8 +59,9 @@ func is_on_onscreen() -> bool:
 # only looking to slide its children.
 func _get_sliding_children() -> Array:
 	var res: = []
-	for child in sliding.get_children():
-		res.append(child)
+	for container in sliding.get_children():
+		for node in container.get_children():
+			res.append(node)
 	
 	return res
 
