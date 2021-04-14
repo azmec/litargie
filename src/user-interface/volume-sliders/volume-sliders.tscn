@@ -22,6 +22,7 @@ margin_right = 192.0
 margin_bottom = 70.0
 max_value = 1.0
 step = 0.05
+value = 1.0
 parameter = "Master"
 
 [node name="SFX" parent="." instance=ExtResource( 1 )]
@@ -30,6 +31,7 @@ margin_right = 192.0
 margin_bottom = 98.0
 max_value = 1.0
 step = 0.05
+value = 1.0
 parameter = "Sound Effects"
 
 [node name="BGM" parent="." instance=ExtResource( 1 )]
@@ -38,4 +40,5 @@ margin_right = 192.0
 margin_bottom = 126.0
 max_value = 1.0
 step = 0.05
+value = 1.0
 parameter = "Music"
