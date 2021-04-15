@@ -2,9 +2,9 @@
 
 extends Node
 
-const POSSIBLE_LANGUAGES = ["ENG", "SPN"]
+const POSSIBLE_LANGUAGES = ["en", "es"]
 
-var language: String = "ENG"
+var language: String = "en" setget _set_language
 
 var master_volume: float = 1.0 setget _set_master_volume
 var sfx_volume: float = 1.0 setget _set_sfx_volume
@@ -14,9 +14,12 @@ onready var master_id = AudioServer.get_bus_index("Master")
 onready var sfx_id = AudioServer.get_bus_index("SFX")
 onready var bgm_id = AudioServer.get_bus_index("BGM") 
 
-func set_language(desired_language: String) -> void:
-	if POSSIBLE_LANGUAGES.find(desired_language) == -1:
-		print_debug("Invalid language!")
+func _set_language(value: String) -> void:
+	if POSSIBLE_LANGUAGES.find(value) == -1:
+		print_debug('"' + value + '" is not a valid language.')
+
+	TranslationServer.set_locale(value)
+	language = value
 
 func _set_master_volume(value: float) -> void:
 	_set_volume(master_id, value) 
