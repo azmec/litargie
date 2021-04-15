@@ -5,10 +5,13 @@
 [ext_resource path="res://src/user-interface/full-menu-set/full-menu-set.tscn" type="PackedScene" id=4]
 
 [node name="Game" type="Node"]
+pause_mode = 2
 script = ExtResource( 1 )
 
 [node name="BaseLevel" parent="." instance=ExtResource( 2 )]
+pause_mode = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="FullMenuSet" parent="CanvasLayer" instance=ExtResource( 4 )]
+pause_mode = 2
