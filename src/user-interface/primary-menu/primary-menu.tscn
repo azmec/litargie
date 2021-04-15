@@ -21,6 +21,7 @@ margin_left = 54.0
 margin_top = 69.0
 margin_right = 121.0
 margin_bottom = 88.0
+mouse_filter = 1
 size_flags_horizontal = 4
 text = "CONTROL_EGO"
 
@@ -29,5 +30,6 @@ margin_left = 62.0
 margin_top = 92.0
 margin_right = 114.0
 margin_bottom = 111.0
+mouse_filter = 1
 size_flags_horizontal = 4
 text = "SETTINGS"

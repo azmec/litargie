@@ -20,6 +20,7 @@ margin_left = 75.0
 margin_top = 46.0
 margin_right = 117.0
 margin_bottom = 65.0
+mouse_filter = 1
 size_flags_horizontal = 4
 text = "RESUME"
 
@@ -28,6 +29,7 @@ margin_left = 70.0
 margin_top = 69.0
 margin_right = 122.0
 margin_bottom = 88.0
+mouse_filter = 1
 size_flags_horizontal = 4
 text = "SETTINGS"
 
@@ -36,6 +38,7 @@ margin_left = 72.0
 margin_top = 92.0
 margin_right = 119.0
 margin_bottom = 111.0
+mouse_filter = 1
 size_flags_horizontal = 4
 text = "RESTART"
 
@@ -44,5 +47,6 @@ margin_left = 57.0
 margin_top = 115.0
 margin_right = 134.0
 margin_bottom = 134.0
+mouse_filter = 1
 size_flags_horizontal = 4
 text = "SUPER_RESTART"

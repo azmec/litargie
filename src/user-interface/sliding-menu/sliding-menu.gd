@@ -8,7 +8,7 @@ signal slide_completed()
 
 const RIGHT_EDGE = 320
 export (bool) var start_onscreen: bool = true
-export (float) var resting_x_position = 64
+export (float) var resting_x_position = 0
 export (float) var sliding_duration: = 0.5
 export (float) var sliding_speed: = 0.05
 
@@ -24,14 +24,13 @@ onready var sliding: VBoxContainer = $Sliding
 onready var sliders: Array = _get_sliding_children()
 
 func _ready() -> void:
-	tween.connect("tween_all_completed", self, "_on_tween_all_completed") 
+	tween.connect("tween_started", self, "_on_tween_started")
+	tween.connect("tween_completed", self, "_on_tween_completed")
 
 	if start_onscreen:
 		_set_sliders_positions(resting_x_position)
-		self.visible = true
 	else:
 		_set_sliders_positions(RIGHT_EDGE)
-		self.visible = false
 		
 # You'll notice there's little difference between
 # slide_(on/off)screen; I just need what I'm doing
@@ -40,7 +39,6 @@ func _ready() -> void:
 func slide_onscreen() -> void:
 	if is_sliding: return
 	is_sliding = true
-	self.visible = true
 	
 	var delay: = 0.0
 	for node in sliders:
@@ -82,7 +80,7 @@ func _slide(node: Control, offscreen: bool, delay: float) -> void:
 
 	var new_position: = Vector2(0, node.rect_position.y)
 	if offscreen:
-		new_position.x = get_viewport_rect().size.x
+		new_position.x = RIGHT_EDGE
 	else:
 		new_position.x = resting_x_position
 
@@ -114,21 +112,12 @@ func _set_sliders_positions(x_position: float) -> void:
 		)
 	tween.start()
 
-func _queue_tween_visibility(node: Control, value: bool, delay: float) -> void:
-	tween.interpolate_property(
-		node, 
-		"visible",
-		not value,
-		value, 
-		sliding_duration,
-		tween_trans,
-		tween_ease,
-		delay
-	)
-
-func _on_tween_all_completed() -> void:
+func _on_tween_completed(node: Control, _key: NodePath):
+	if node.rect_position.x == RIGHT_EDGE:
+		self.visible = false
+	
 	is_sliding = false
-	#if not is_onscreen():
-	#		self.visible = false 
 
-	emit_signal("slide_completed")
+func _on_tween_started(node: Control, _key: NodePath):
+	if node.rect_position.x == RIGHT_EDGE:
+		self.visible = true

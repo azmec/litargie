@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/user-interface/labeled-slider/labeled-slider.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/user-interface/volume-sliders/volume-sliders.gd" type="Script" id=2]
+[ext_resource path="res://src/user-interface/audible-button/audible-button.tscn" type="PackedScene" id=3]
 
 [node name="VolumeSliders" type="VBoxContainer"]
 anchor_left = 0.5
@@ -20,6 +21,7 @@ __meta__ = {
 margin_top = 38.0
 margin_right = 192.0
 margin_bottom = 54.0
+mouse_filter = 1
 max_value = 1.0
 step = 0.05
 value = 1.0
@@ -29,6 +31,7 @@ parameter = "Master"
 margin_top = 66.0
 margin_right = 192.0
 margin_bottom = 82.0
+mouse_filter = 1
 max_value = 1.0
 step = 0.05
 value = 1.0
@@ -38,12 +41,13 @@ parameter = "Sound Effects"
 margin_top = 94.0
 margin_right = 192.0
 margin_bottom = 110.0
+mouse_filter = 1
 max_value = 1.0
 step = 0.05
 value = 1.0
 parameter = "Music"
 
-[node name="BackButton" type="Button" parent="."]
+[node name="BackButton" parent="." instance=ExtResource( 3 )]
 margin_left = 75.0
 margin_top = 122.0
 margin_right = 117.0

@@ -8,7 +8,7 @@ onready var pressedSFX: = $Pressed
 
 func _ready() -> void:
 	self.connect("pressed", self, "_on_pressed")
-	self.connect("mouse_entered", self," _on_mouse_entered") 
+	self.connect("mouse_entered", self, "_on_mouse_entered")
 
 func _on_pressed() -> void:
 	pressedSFX.play()
