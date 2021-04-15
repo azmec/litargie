@@ -2,24 +2,24 @@
     "001": {
         "character": "Character",
         "condition": {
-            "ENG": "",
-            "SPN": ""
+            "en": "",
+            "es": ""
         },
         "message": {
-            "ENG": "This is a sentence.",
-            "SPN": "This is a sentence, but allegedly in Spanish."
+            "en": "This is a sentence.",
+            "es": "This is a sentence, but allegedly in Spanish."
         },
         "branches": {
             "A": {
                 "001": {
                     "character": "Character",
                     "condition": {
-                        "ENG": "This is a condition of branch A.",
-                        "SPN": "This is a condition of branch A, but allegedly in Spanish."
+                        "en": "This is a condition of branch A.",
+                        "es": "This is a condition of branch A, but allegedly in Spanish."
                     },
                     "message": {
-                        "ENG": "This is a sentence of branch A.",
-                        "SPN": "This is a sentence of branch A, but allegedly in Spanish."
+                        "en": "This is a sentence of branch A.",
+                        "es": "This is a sentence of branch A, but allegedly in Spanish."
                     },
                     "branches": {},
                     "events": {}
@@ -29,12 +29,12 @@
                 "001": {
                     "character": "Character",
                     "condition": {
-                        "ENG": "This is a condition of branch B.",
-                        "SPN": "This is a condition of branch B, but allegedly in Spanish."
+                        "en": "This is a condition of branch B.",
+                        "es": "This is a condition of branch B, but allegedly in Spanish."
                     },
                     "message": {
-                        "ENG": "This is a sentence of branch B.",
-                        "SPN": "This is a sentence of branch B, but allegedly in Spanish."
+                        "en": "This is a sentence of branch B.",
+                        "es": "This is a sentence of branch B, but allegedly in Spanish."
                     },
                     "branches": {},
                     "events": {}
@@ -42,12 +42,12 @@
                 "002": {
                     "character": "Character",
                     "condition": {
-                        "ENG": "This is a condition of branch B sequence 002.",
-                        "SPN": "This is a condition of branch B sequence 002, but allegedly in Spanish."
+                        "en": "This is a condition of branch B sequence 002.",
+                        "es": "This is a condition of branch B sequence 002, but allegedly in Spanish."
                     },
                     "message": {
-                        "ENG": "This is a sentence of branch B sequence 002.",
-                        "SPN": "This is a sentence of branch B sequence 002, but allegedly in Spanish."
+                        "en": "This is a sentence of branch B sequence 002.",
+                        "es": "This is a sentence of branch B sequence 002, but allegedly in Spanish."
                     },
                     "branches": {},
                     "events": {}
@@ -57,12 +57,12 @@
                 "001": {
                     "character": "Character",
                     "condition": {
-                        "ENG": "This is a condition of branch C.",
-                        "SPN": "This is a condition of branch C, but allegedly in Spanish."
+                        "en": "This is a condition of branch C.",
+                        "es": "This is a condition of branch C, but allegedly in Spanish."
                     },
                     "message": {
-                        "ENG": "This is a sentence of branch C.",
-                        "SPN": "This is a sentence of branch C, but allegedly in Spanish."
+                        "en": "This is a sentence of branch C.",
+                        "es": "This is a sentence of branch C, but allegedly in Spanish."
                     },
                     "branches": {},
                     "events": {}
@@ -74,12 +74,12 @@
     "002": {
         "character": "Character",
         "condition": {
-            "ENG": "",
-            "SPN": ""
+            "en": "",
+            "es": ""
         },
         "message": {
-            "ENG": "This is a sentence of sequence 002.",
-            "SPN": "This is a sentence of sequence 002, but allegedly in Spanish."
+            "en": "This is a sentence of sequence 002.",
+            "es": "This is a sentence of sequence 002, but allegedly in Spanish."
         },
         "branches": {},
         "events": {}
