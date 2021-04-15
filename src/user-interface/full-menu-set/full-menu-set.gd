@@ -19,10 +19,13 @@ func _ready() -> void:
 	mainMenuSettingsButton.connect("pressed", self, "_on_mainMenuSettingsButton_pressed")
 	settingsBackButton.connect("pressed", self, "_on_settingsBackButton_pressed")
 
+func _all_offscreen() -> bool:
+	return mainMenu.is_offscreen() and settingsMenu.is_offscreen() and pauseMenu.is_offscreen()
+
 func _on_mainMenu_slide_completed() -> void:
 	# If all of these are offscreen then we know we're
 	# just playing the game.
-	if mainMenu.is_offscreen() and settingsMenu.is_offscreen() and pauseMenu.is_offscreen():
+	if _all_offscreen():
 		self.visible = false 
 
 func _on_mainMenuPlayButton_pressed() -> void:
