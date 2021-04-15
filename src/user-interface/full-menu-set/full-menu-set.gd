@@ -14,9 +14,16 @@ onready var mainMenuSettingsButton: = $MainMenu/Sliding/PrimaryMenu/SettingsButt
 onready var pauseMenu: = $PauseMenu
 
 func _ready() -> void:
+	mainMenu.connect("slide_completed", self, "_on_mainMenu_slide_completed")
 	mainMenuPlayButton.connect("pressed", self, "_on_mainMenuPlayButton_pressed")
 	mainMenuSettingsButton.connect("pressed", self, "_on_mainMenuSettingsButton_pressed")
 	settingsBackButton.connect("pressed", self, "_on_settingsBackButton_pressed")
+
+func _on_mainMenu_slide_completed() -> void:
+	# If all of these are offscreen then we know we're
+	# just playing the game.
+	if mainMenu.is_offscreen() and settingsMenu.is_offscreen() and pauseMenu.is_offscreen():
+		self.visible = false 
 
 func _on_mainMenuPlayButton_pressed() -> void:
 	mainMenu.slide_offscreen() 

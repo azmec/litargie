@@ -59,7 +59,7 @@ func slide_offscreen() -> void:
 	emit_signal("slide_started") 
 
 # Checks if the bottom-most slider is off the screen.
-func is_onscreen() -> bool:
+func is_offscreen() -> bool:
 	return sliders[-1].rect_position.x == RIGHT_EDGE
 
 # We assume whatever nodes we add under "Sliders" contains
@@ -117,6 +117,7 @@ func _on_tween_completed(node: Control, _key: NodePath):
 		self.visible = false
 	
 	is_sliding = false
+	emit_signal("slide_completed")
 
 func _on_tween_started(node: Control, _key: NodePath):
 	if node.rect_position.x == RIGHT_EDGE:
