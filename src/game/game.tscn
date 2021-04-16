@@ -12,6 +12,7 @@ script = ExtResource( 1 )
 pause_mode = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
 
 [node name="FullMenuSet" parent="CanvasLayer" instance=ExtResource( 4 )]
 pause_mode = 2
