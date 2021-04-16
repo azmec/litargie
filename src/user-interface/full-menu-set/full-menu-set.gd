@@ -28,7 +28,7 @@ onready var pauseMenuSettingsButton: = $PauseMenu/Sliding/PauseMenu/SettingsButt
 onready var pauseMenuRestartLevelButton: = $PauseMenu/Sliding/PauseMenu/RestartLevel
 
 func _ready() -> void:
-	mainMenu.connect("slide_completed", self, "_slide_completed")	
+	mainMenu.connect("slide_completed", self, "_on_slide_completed")	
 	mainMenuPlayButton.connect("pressed", self, "_on_mainMenuPlayButton_pressed")
 	mainMenuSettingsButton.connect("pressed", self, "_on_mainMenuSettingsButton_pressed")
 	
@@ -74,8 +74,6 @@ func _on_mainMenuPlayButton_pressed() -> void:
 
 	_previous_menu = mainMenu
 	_current_menu = null
-
-	self.visible = false
 
 func _on_mainMenuSettingsButton_pressed() -> void:
 	_switch(mainMenu, settingsMenu)
