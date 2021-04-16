@@ -135,6 +135,11 @@ _global_script_classes=[ {
 "path": "res://src/helpers/sequence-parser/sequence-parser.gd"
 }, {
 "base": "Control",
+"class": "SlidingMenu",
+"language": "GDScript",
+"path": "res://src/user-interface/sliding-menu/sliding-menu.gd"
+}, {
+"base": "Control",
 "class": "StartSequence",
 "language": "GDScript",
 "path": "res://src/user-interface/start-sequence/start-sequence.gd"
@@ -153,11 +158,6 @@ _global_script_classes=[ {
 "class": "VariableSFXPlayer",
 "language": "GDScript",
 "path": "res://src/props/variable-sfx-player/variable-sfx-player.gd"
-}, {
-"base": "Node2D",
-"class": "VariantTree",
-"language": "GDScript",
-"path": "res://src/environment/variant-tree/variant-tree.gd"
 }, {
 "base": "Node",
 "class": "Wind",
@@ -190,11 +190,11 @@ _global_script_class_icons={
 "SceneButton": "",
 "SceneryPainter": "",
 "SequenceParser": "",
+"SlidingMenu": "",
 "StartSequence": "",
 "State": "",
 "TransitionEffect": "",
 "VariableSFXPlayer": "",
-"VariantTree": "",
 "Wind": ""
 }
 

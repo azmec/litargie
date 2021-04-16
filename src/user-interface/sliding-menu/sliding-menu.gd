@@ -1,6 +1,7 @@
 # Contains other control nodes that we want to "slide"
 # and slides them on request.
 
+class_name SlidingMenu
 extends Control
 
 signal slide_started()
