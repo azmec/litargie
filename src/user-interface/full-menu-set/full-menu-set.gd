@@ -75,6 +75,8 @@ func _on_mainMenuPlayButton_pressed() -> void:
 	_previous_menu = mainMenu
 	_current_menu = null
 
+	self.visible = false
+
 func _on_mainMenuSettingsButton_pressed() -> void:
 	_switch(mainMenu, settingsMenu)
 
