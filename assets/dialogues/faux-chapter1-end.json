@@ -2,12 +2,12 @@
     "001": {
         "character": "",
         "condition": {
-            "ENG": "",
-            "SPN": ""
+            "en": "",
+            "es": ""
         },
         "message": {
-            "ENG": "",
-            "SPN": ""
+            "en": "",
+            "es": ""
         },
         "branches": {},
         "events": {
