@@ -17,3 +17,4 @@ func _ready() -> void:
 
 func _on_animationPlayer_animation_finished(_anim_name: String) -> void: 
 	emit_signal("explosion_finished")
+	self.queue_free()

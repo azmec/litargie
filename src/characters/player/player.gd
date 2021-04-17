@@ -299,6 +299,5 @@ func _on_hurtbox_entered(_entering_object) -> void:
 
 func _on_explosion_finished(explosion) -> void:
 	explosion.disconnect("explosion_finished", self, "_on_explosion_finished")
-	explosion.queue_free()
 	emit_signal("died")
 

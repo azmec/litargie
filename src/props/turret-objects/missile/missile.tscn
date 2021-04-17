@@ -13,6 +13,7 @@ height = 3.0
 
 [node name="Missile" instance=ExtResource( 1 )]
 speed = 350
+explode_on_impact = true
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="." index="0"]
 amount = 32
