@@ -1,0 +1,15 @@
+{
+    "001": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "[color=#ee8695]That[/color]{p=0.5} is yours. {p=0.7}Take it.",
+            "es": "[color=#ee8695]That[/color]{p=0.5} is yours. {p=0.7}Take it."
+        },
+        "branches": {},
+        "events": {}
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "001": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "These are [color=#ee8695]connection points[/color]. {p=0.5}They send [color=#fbbbad]memories[/color] to our [color=#ee8695]host[/color].",
+            "es": "These are [color=#ee8695]connection points[/color]. {p=0.5}They send [color=#fbbbad]memories[/color] to our [color=#ee8695]host[/color]."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "Which memories?",
+                        "es": "Which memories?"
+                    },
+                    "message": {
+                        "en": "Whichever ones you pick.",
+                        "es": "Whichever ones you pick."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "Go on.{p=0.5} Pick one.",
+                        "es": "Go on.{p=0.5} Pick one."
+                    },
+                    "branches": {
+                        "A": {
+                            "001": {
+                                "character": "MEMORY",
+                                "condition": {
+                                    "en": "Friends.",
+                                    "es": "Friends."
+                                },
+                                "message": {
+                                    "en": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their past friends.",
+                                    "es": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their past friends."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "MEMORY",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "The joy of their company,{p=0.2} the support they bring:{p=0.2} it [color=#fbbbad]comforts[/color] the host.",
+                                    "es": "The joy of their company,{p=0.2} the support they bring:{p=0.2} it [color=#fbbbad]comforts[/color] the host."
+                                },
+                                "branches": {},
+                                "events": {}
+                            }
+                        },
+                        "B": {
+                            "001": {
+                                "character": "MEMORY",
+                                "condition": {
+                                    "en": "Family.",
+                                    "es": "Family."
+                                },
+                                "message": {
+                                    "en": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their family.",
+                                    "es": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their family."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "MEMORY",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "The comfort they bring,{p=0.2} the unconditional love they provide:{p=0.2} it [color=#fbbbad]soothes[/color] the host.",
+                                    "es": "The comfort they bring,{p=0.2} the unconditional love they provide:{p=0.2} it [color=#fbbbad]soothes[/color] the host."
+                                },
+                                "branches": {},
+                                "events": {}
+                            }
+                        },
+                        "C": {
+                            "001": {
+                                "character": "MEMORY",
+                                "condition": {
+                                    "en": "Self.",
+                                    "es": "Self."
+                                },
+                                "message": {
+                                    "en": "The [color=#ee8695]host[/color] sees themselves--a reflection of how others perceive them.",
+                                    "es": "The [color=#ee8695]host[/color] sees themselves--a reflection of how others perceive them."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "MEMORY",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Within the mirror is a distant,{p=0.2} tired adult.{p=0.5} Yet,{p=0.2} [color=#ee8695]they[/color] are brimming with potential.",
+                                    "es": "Within the mirror is a distant,{p=0.2} tired adult.{p=0.5} Yet,{p=0.2} [color=#ee8695]they[/color] are brimming with potential."
+                                },
+                                "branches": {},
+                                "events": {}
+                            }
+                        }
+                    },
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "002": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "See?{p=0.5} Simple.{p=0.7} Go on,{p=0.2} find more.",
+            "es": "See?{p=0.5} Simple.{p=0.7} Go on,{p=0.2} find more."
+        },
+        "branches": {},
+        "events": {
+            "change_scene": "res://src/levels/chapter-2-reality/reality.tscn"
+        }
+    }
+}

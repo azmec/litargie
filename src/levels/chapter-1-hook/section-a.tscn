@@ -175,7 +175,7 @@ tile_data = PoolIntArray( 786554, 0, 196611, 1245306, 0, 196611, 1835130, 0, 196
 tile_data = PoolIntArray( 2424902, 0, 0, 2424903, 0, 0, 2424904, 0, 0, 2424905, 0, 0, 2687079, 0, 0, 2687080, 0, 0, 2687081, 0, 0, 2687082, 0, 0, 2687083, 0, 0, 2687084, 0, 0, 2687085, 0, 0, 2687086, 0, 0, 2687087, 0, 0, 3211356, 0, 0, 3211357, 0, 0, 3211358, 0, 0, 3211359, 0, 0, 3211360, 0, 0, 3211361, 0, 0, 3211362, 0, 0, 3211363, 0, 0, 3211364, 0, 0 )
 
 [node name="Player" parent="." index="7"]
-position = Vector2( 192, 656 )
+position = Vector2( 1848, 536 )
 has_meathook = false
 
 [node name="TopLeft" parent="Player/PlayerCamera/Limits" index="0"]
@@ -242,11 +242,11 @@ sprite = ExtResource( 11 )
 
 [node name="ConnectionPoint" parent="ConnectionPoints" index="0" instance=ExtResource( 14 )]
 position = Vector2( 1872, 192 )
-sequence_path = "res://assets/dialogues/faux-chapter1-end.json"
+sequence_path = "res://assets/dialogues/chapter-1d.json"
 
 [node name="ConnectionPoint2" parent="ConnectionPoints" index="1" instance=ExtResource( 14 )]
 position = Vector2( 2056, 192 )
-sequence_path = "res://assets/dialogues/faux-chapter1-end.json"
+sequence_path = "res://assets/dialogues/chapter-1d.json"
 
 [node name="SmallTreePainter" parent="AbritraryScenery" index="0"]
 tile_data = PoolIntArray( 1245300, 0, 0, 1245312, 0, 0, 1704053, 0, 0, 1704063, 0, 0, 2752542, 0, 0, 2752545, 0, 0 )
@@ -314,6 +314,11 @@ radius = 20
 position = Vector2( 960, 576 )
 sequence_path = "res://assets/dialogues/chapter-1b.json"
 radius = 50
+
+[node name="1C" parent="DialogueSpots" index="2" instance=ExtResource( 15 )]
+position = Vector2( 1912, 512 )
+sequence_path = "res://assets/dialogues/chapter-1c.json"
+radius = 30
 
 [editable path="Player"]
 
