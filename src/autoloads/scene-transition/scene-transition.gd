@@ -14,11 +14,8 @@ func change_scene_to(path: String, delay: float = 0.5, transition: int = 0) -> v
 	yield(get_tree().create_timer(delay), "timeout") 
 
 	var game: = get_node("/root/Game") 
-	match transition:
-		TRANSITIONS.SWEEP:
-			animationPlayer.play("sweep_left")
-		TRANSITIONS.FADE:
-			animationPlayer.play("fade")
+	
+	_play_first_half(transition)
 
 	yield(animationPlayer, "animation_finished")
 	game.currentLevel.queue_free()
@@ -27,11 +24,20 @@ func change_scene_to(path: String, delay: float = 0.5, transition: int = 0) -> v
 	game.add_child(next_scence)
 	game.currentLevel = next_scence
 
+	_play_second_half(transition)
+	
+	emit_signal("scene_changed")
 
+func _play_first_half(transition: int = 0) -> void:
+	match transition:
+		TRANSITIONS.SWEEP:
+			animationPlayer.play("sweep_left")
+		TRANSITIONS.FADE:
+			animationPlayer.play("fade")
+
+func _play_second_half(transition: int = 0) -> void:
 	match transition:
 		TRANSITIONS.SWEEP:
 			animationPlayer.play_backwards("sweep_right")
 		TRANSITIONS.FADE:
 			animationPlayer.play_backwards("fade")
-	
-	emit_signal("scene_changed")

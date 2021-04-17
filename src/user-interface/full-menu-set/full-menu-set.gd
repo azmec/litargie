@@ -99,6 +99,7 @@ func _on_pauseMenuResumeButton_pressed() -> void:
 	_current_menu = null
 
 func _on_pauseMenuRestartButton_pressed() -> void:
+	emit_signal("pause_exited")
 	emit_signal("restart_requested") 
 
 func _on_pauseMenuSettingsButton_pressed() -> void:
