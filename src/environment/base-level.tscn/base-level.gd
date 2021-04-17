@@ -2,6 +2,9 @@ extends Node2D
 
 const TRANSITION_SCENE: = preload("res://src/props/transition-effect/transition-effect.tscn")
 
+# Used exclusively for the purposes of "Restarting Level."
+export (String) var level_path
+
 var _current_transition_instance: TransitionEffect = null 
 var _current_respawn_position: Vector2 
 

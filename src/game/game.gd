@@ -9,6 +9,8 @@ onready var mainMenu: = $CanvasLayer/FullMenuSet
 onready var player: Player = currentLevel.player
 
 func _ready() -> void:
+	SceneTransition.connect("scene_changed", self, "_on_SceneTransition_scene_changed") 
+
 	mainMenu.connect("playButton_pressed", self, "_on_mainMenu_playButton_pressed")
 
 	mainMenu.connect("pause_requested", self, "_on_mainMenu_pause_requested") 
@@ -20,6 +22,9 @@ func _ready() -> void:
 	player.active = false 
 	player.visible = false
 
+func _on_SceneTransition_scene_changed() -> void:
+	get_tree().paused = false 
+	
 func _on_mainMenu_playButton_pressed() -> void:
 	player.active = true
 	player.visible = true
@@ -34,6 +39,5 @@ func _on_mainMenu_restart_requested() -> void:
 	get_tree().reload_current_scene()
 
 func _on_mainMenu_level_restart_requested() -> void:
-	# We need the access the directory of the CURRENT level. 
-	# Then, we can call SceneTransition appropiately.
-	pass
+	var level_path: String = currentLevel.level_path
+	SceneTransition.change_scene_to(level_path)

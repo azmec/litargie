@@ -106,4 +106,9 @@ func _on_pauseMenuSettingsButton_pressed() -> void:
 	_switch(pauseMenu, settingsMenu)
 
 func _on_pauseMenuRestartLevelButton_pressed() -> void:
+	pauseMenu.slide_offscreen()
+	_current_menu = null
+	_previous_menu = pauseMenu
+	
+	emit_signal("pause_exited")
 	emit_signal("level_restart_requested")

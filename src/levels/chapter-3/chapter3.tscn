@@ -28,6 +28,7 @@ resource_local_to_scene = true
 extents = Vector2( 40, 39.9999 )
 
 [node name="BaseLevel" instance=ExtResource( 1 )]
+level_path = "res://src/levels/chapter-3/chapter3.tscn"
 
 [node name="Snow" parent="." index="2"]
 position = Vector2( 752, -952 )
@@ -160,6 +161,10 @@ height = -32
 
 [node name="Turret" parent="Turrets" index="0" instance=ExtResource( 3 )]
 position = Vector2( -560, -96 )
+fire_mode = 0
+body_rotation = 0.0
+fire_type = 0
+fire_rate = 1.0
 vision = 200
 
 [node name="Turret2" parent="Turrets" index="1" instance=ExtResource( 3 )]
@@ -167,6 +172,7 @@ position = Vector2( -224, -2 )
 fire_mode = 1
 body_rotation = 3.142
 fire_type = 2
+fire_rate = 1.0
 vision = 150
 
 [node name="Turret3" parent="Turrets" index="2" instance=ExtResource( 3 )]
@@ -174,22 +180,30 @@ position = Vector2( -224, -2 )
 fire_mode = 1
 body_rotation = 3.142
 fire_type = 2
+fire_rate = 1.0
 vision = 150
 
 [node name="Turret4" parent="Turrets" index="3" instance=ExtResource( 3 )]
 position = Vector2( 192, -56 )
+fire_mode = 0
+body_rotation = 0.0
 fire_type = 1
+fire_rate = 1.0
 vision = 250
 
 [node name="Turret5" parent="Turrets" index="4" instance=ExtResource( 3 )]
 position = Vector2( 736, -504 )
+fire_mode = 0
+body_rotation = 0.0
 fire_type = 1
+fire_rate = 1.0
 vision = 200
 
 [node name="Turret6" parent="Turrets" index="5" instance=ExtResource( 3 )]
 position = Vector2( 808, -464 )
 fire_mode = 1
 body_rotation = -1.57
+fire_type = 0
 fire_rate = 0.5
 vision = 200
 
@@ -197,6 +211,7 @@ vision = 200
 position = Vector2( 1368, -656 )
 fire_mode = 1
 body_rotation = 3.142
+fire_type = 0
 fire_rate = 0.5
 vision = 150
 
@@ -204,6 +219,7 @@ vision = 150
 position = Vector2( 1464, -656 )
 fire_mode = 1
 body_rotation = 3.142
+fire_type = 0
 fire_rate = 0.5
 vision = 150
 
