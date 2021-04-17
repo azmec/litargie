@@ -8,10 +8,11 @@ export var detection_radius: int = 10
 onready var area2D: = $Area2D
 onready var collision2D: = $Area2D/CollisionShape2D 
 onready var animationPlayer: = $AnimationPlayer
+onready var soundEffect: = $VariableSFXPlayer
 
 func _ready() -> void:
-	var _i = area2D.connect("body_entered", self, "_on_body_entered")
-	var _b = animationPlayer.connect("animation_finished", self, "_on_animation_finished")
+	area2D.connect("body_entered", self, "_on_body_entered")
+	animationPlayer.connect("animation_finished", self, "_on_animation_finished")
 
 func _process(_delta: float) -> void:
 	if Engine.editor_hint and process_editor:
@@ -24,6 +25,7 @@ func _process(_delta: float) -> void:
 		
 func _on_body_entered(_body) -> void:
 	if not self.on:
+		soundEffect.play()
 		animationPlayer.play("turn_on")
 		self.on = true
 
