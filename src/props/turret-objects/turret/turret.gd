@@ -48,7 +48,12 @@ func _process(_delta: float) -> void:
 
 			if fireTimer.is_stopped():
 				_shoot(bodyPivot.rotation)
-
+		# Behavior exclusive to the "missile" turret.
+		if projectile == MISSILE_SCENE:
+			if player == null:
+				targetingFlash.visible = false
+			else:
+				targetingFlash.visible = true
 
 # Rotates the body such that it is looking at the player.
 func _look_to_player() -> Player:
