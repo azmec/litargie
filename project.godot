@@ -213,7 +213,6 @@ ScreenShaker="*res://src/autoloads/screen-shaker/screen-shaker.tscn"
 
 [debug]
 
-settings/stdout/print_fps=true
 gdscript/warnings/return_value_discarded=false
 
 [display]

@@ -41,14 +41,19 @@ func _ready() -> void:
 	pauseMenuRestartLevelButton.connect("pressed", self, "_on_pauseMenuRestartLevelButton_pressed")
 
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("pause") and _all_offscreen():
-		self.visible = true
-		pauseMenu.slide_onscreen()
+	if not pauseMenu.is_sliding:
+		if Input.is_action_just_pressed("pause") and _all_offscreen():
+			self.visible = true
+			pauseMenu.slide_onscreen()
+			_current_menu = pauseMenu
+			
+			emit_signal("pause_requested")
+		elif Input.is_action_just_pressed("pause") and not pauseMenu.is_offscreen():
+			pauseMenu.slide_offscreen()
+			_current_menu = null
+			_previous_menu = pauseMenu
 
-		emit_signal("pause_requested")
-	elif Input.is_action_just_pressed("pause") and not pauseMenu.is_offscreen():
-		pauseMenu.slide_offscreen()
-		emit_signal("pause_exited")
+			emit_signal("pause_exited")
 	
 func _all_offscreen() -> bool:
 	return mainMenu.is_offscreen() and settingsMenu.is_offscreen() and pauseMenu.is_offscreen()
@@ -63,6 +68,11 @@ func _switch(menuA: SlidingMenu, menuB: SlidingMenu) -> void:
 	_current_menu = menuB
 
 func _on_slide_completed() -> void:
+	if pauseMenu.is_offscreen() and _previous_menu == pauseMenu:
+		emit_signal("pause_exited")
+	elif not pauseMenu.is_offscreen() and _current_menu == pauseMenu:
+		emit_signal("pause_requested")
+		
 	# If all of these are offscreen then we know we're
 	# just playing the game.
 	if _all_offscreen():
