@@ -101,6 +101,9 @@ func _calculate_pull_force() -> Vector2:
 
 func _on_hook_area_entered(_area) -> void:
 	if state == STATES.SHOOTING:
+		ScreenShaker.start(2.0, 0.2, 1.41)
+		ScreenShaker.freeze_frame(15)
+
 		var pull_force = _calculate_pull_force()
 		emit_signal("hooked_onto_something", pull_force, _target_position)
 		state = change_state_to(STATES.RETRACTING)
