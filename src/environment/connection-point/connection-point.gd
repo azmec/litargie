@@ -10,6 +10,7 @@ var _current_link_instance: Line2D = null
 onready var sprite: = $Sprite
 onready var playerDetector: = $PlayerDetector
 onready var linkDetector: = $LinkDetector
+onready var soundEffect: = $VariableSFXPlayer
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("interact") and playerDetector.detects_body():
@@ -27,9 +28,12 @@ func _process(_delta: float) -> void:
 				
 				if sequence_path != "":
 					DialogueGod.queue_sequence_to_message_stack(sequence_path)
+
+				soundEffect.play()
 		else:
 			_create_link()
 			sprite.frame = 1
+			soundEffect.play()
 
 func _create_link() -> void:
 	if _current_link_instance:
