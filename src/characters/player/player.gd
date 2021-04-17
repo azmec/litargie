@@ -237,6 +237,9 @@ func change_state_to(new_state: int) -> int:
 			stateText.text = "dash"
 			animationPlayer.play("dash") 
 
+			ScreenShaker.start(3.0, 0.2, 1.41)
+			ScreenShaker.freeze_frame(15)
+
 			dashTimer.start(DASH_TIME)
 			velocity.x = 400 * x_input
 		

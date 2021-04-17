@@ -30,6 +30,9 @@ func _process(_delta: float) -> void:
 		rand_range(amplitude, -amplitude) * damping
 	)
 
+func freeze_frame(delay: int) -> void:
+	OS.delay_msec(delay) 
+
 func start(amp: float, dur: float, damp: float) -> void:
 	if _current_camera == null: return
 	
