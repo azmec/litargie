@@ -1,0 +1,15 @@
+{
+    "001": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "They rest on your shoulders now.",
+            "es": "They rest on your shoulders now."
+        },
+        "branches": {},
+        "events": {}
+    }
+}

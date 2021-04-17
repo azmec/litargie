@@ -1,0 +1,127 @@
+{
+    "001": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Our [color=#ee8695]host[/color]... your absence has damaged them.",
+            "es": "Our [color=#ee8695]host[/color]... your absence has damaged them."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "How?",
+                        "es": "How?"
+                    },
+                    "message": {
+                        "en": "There's been something of a...{p=0.5} [color=#bf6dbf]pandemic[/color] in the real world.",
+                        "es": "There's been something of a...{p=0.5} [color=#bf6dbf]pandemic[/color] in the real world."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "The [color=#ee8695]host[/color] just can't cope.",
+                        "es": "The [color=#ee8695]host[/color] just can't cope."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "002": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "In any case, the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color].",
+            "es": "In any case, the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color]."
+        },
+        "branches": {},
+        "events": {}
+    },
+    "003": {
+        "character": "Uknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "They need people, but they need [color=#fbbbad]reminders[/color] of them first.",
+            "es": "They need people, but they need [color=#fbbbad]reminders[/color] of them first."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "Island?",
+                        "es": "Island?"
+                    },
+                    "message": {
+                        "en": "People are social; friends and family heal all wounds. The [color=#ee8695]host[/color] needs them.",
+                        "es": "People are social; friends and family heal all wounds. The [color=#ee8695]host[/color] needs them."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            },
+            "B": {
+                "001": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "Reminders?",
+                        "es": "Reminders?"
+                    },
+                    "message": {
+                        "en": "Memories. They shine through to the [color=#ee8695]host[/color], absolving them of bitterness and sorrow.",
+                        "es": "Memories. They shine through to the [color=#ee8695]host[/color], absolving them of bitterness and sorrow."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "Unknown",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "Show [color=#ee8695]them[/color] their memories.",
+                        "es": "Show [color=#ee8695]them[/color] their memories."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "004": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Get going now. {p=0.5}You'll find me soon enough.",
+            "es": "Get going now. {p=0.5}You'll find me soon enough."
+        },
+        "branches": {},
+        "events": {}
+    }
+}
