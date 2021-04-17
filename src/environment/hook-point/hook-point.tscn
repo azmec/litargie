@@ -5,7 +5,6 @@
 [ext_resource path="res://assets/sounds/hooking.wav" type="AudioStream" id=3]
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=4]
 
-
 [sub_resource type="Animation" id=1]
 resource_name = "turn"
 length = 0.6
@@ -45,4 +44,5 @@ shape = SubResource( 2 )
 
 [node name="HookingSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+bus = "SFX"
 script = ExtResource( 4 )

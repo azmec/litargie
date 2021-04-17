@@ -6,7 +6,6 @@
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=4]
 [ext_resource path="res://assets/sounds/shoot-bullet.wav" type="AudioStream" id=5]
 
-
 [sub_resource type="CircleShape2D" id=1]
 radius = 2.0
 
@@ -30,4 +29,5 @@ shape = SubResource( 1 )
 
 [node name="VariableSFXPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+bus = "SFX"
 script = ExtResource( 4 )

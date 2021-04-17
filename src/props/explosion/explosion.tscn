@@ -5,7 +5,6 @@
 [ext_resource path="res://src/props/explosion/explosion.gd" type="Script" id=3]
 [ext_resource path="res://assets/sounds/explosion.wav" type="AudioStream" id=4]
 
-
 [sub_resource type="Animation" id=1]
 resource_name = "explosion"
 length = 0.9
@@ -49,4 +48,5 @@ anims/explosion = SubResource( 1 )
 
 [node name="VariableSFXPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+bus = "SFX"
 script = ExtResource( 2 )

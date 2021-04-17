@@ -4,7 +4,6 @@
 [ext_resource path="res://assets/turret-assets/turret-safe-bullet.png" type="Texture" id=2]
 [ext_resource path="res://assets/sounds/shoot-hookable.wav" type="AudioStream" id=3]
 
-
 [node name="SafeBullet" instance=ExtResource( 1 )]
 
 [node name="Sprite" parent="." index="0"]

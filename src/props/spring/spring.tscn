@@ -5,7 +5,6 @@
 [ext_resource path="res://assets/sounds/spring.wav" type="AudioStream" id=3]
 [ext_resource path="res://src/props/variable-sfx-player/variable-sfx-player.gd" type="Script" id=4]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7, 4 )
 
@@ -59,4 +58,5 @@ anims/spring = SubResource( 2 )
 
 [node name="VariableSFXPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+bus = "SFX"
 script = ExtResource( 4 )

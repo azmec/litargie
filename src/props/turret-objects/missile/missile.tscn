@@ -4,7 +4,6 @@
 [ext_resource path="res://assets/turret-assets/turret-missile.png" type="Texture" id=2]
 [ext_resource path="res://assets/sounds/shoot-missile.wav" type="AudioStream" id=3]
 
-
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
