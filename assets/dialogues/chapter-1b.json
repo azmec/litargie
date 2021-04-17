@@ -6,8 +6,8 @@
             "es": ""
         },
         "message": {
-            "en": "Our [color=#ee8695]host[/color]... your absence has damaged them.",
-            "es": "Our [color=#ee8695]host[/color]... your absence has damaged them."
+            "en": "Our [color=#ee8695]host[/color]...{p=0.5} your absence has damaged them.",
+            "es": "Our [color=#ee8695]host[/color]...{p=0.5} your absence has damaged them."
         },
         "branches": {
             "A": {
@@ -48,8 +48,8 @@
             "es": ""
         },
         "message": {
-            "en": "In any case, the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color].",
-            "es": "In any case, the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color]."
+            "en": "In any case,{p=0.2} the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color].",
+            "es": "In any case,{p=0.2} the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color]."
         },
         "branches": {},
         "events": {}
@@ -61,8 +61,8 @@
             "es": ""
         },
         "message": {
-            "en": "They need people, but they need [color=#fbbbad]reminders[/color] of them first.",
-            "es": "They need people, but they need [color=#fbbbad]reminders[/color] of them first."
+            "en": "They need people,{p=0.2} but they need [color=#fbbbad]reminders[/color] of them first.",
+            "es": "They need people,{p=0.2} but they need [color=#fbbbad]reminders[/color] of them first."
         },
         "branches": {
             "A": {
@@ -73,8 +73,8 @@
                         "es": "Island?"
                     },
                     "message": {
-                        "en": "People are social; friends and family heal all wounds. The [color=#ee8695]host[/color] needs them.",
-                        "es": "People are social; friends and family heal all wounds. The [color=#ee8695]host[/color] needs them."
+                        "en": "People are social;{p=0.2} friends and family heal all wounds.{p=0.5} The [color=#ee8695]host[/color] needs them.",
+                        "es": "People are social;{p=0.2} friends and family heal all wounds.{p=0.5} The [color=#ee8695]host[/color] needs them."
                     },
                     "branches": {},
                     "events": {}
@@ -88,8 +88,8 @@
                         "es": "Reminders?"
                     },
                     "message": {
-                        "en": "Memories. They shine through to the [color=#ee8695]host[/color], absolving them of bitterness and sorrow.",
-                        "es": "Memories. They shine through to the [color=#ee8695]host[/color], absolving them of bitterness and sorrow."
+                        "en": "Memories.{p=0.5} They shine through to the [color=#ee8695]host[/color],{p=0.2} absolving them of bitterness and sorrow.",
+                        "es": "Memories.{p=0.5} They shine through to the [color=#ee8695]host[/color],{p=0.2} absolving them of bitterness and sorrow."
                     },
                     "branches": {},
                     "events": {}
