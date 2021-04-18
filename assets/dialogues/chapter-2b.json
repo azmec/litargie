@@ -1,0 +1,31 @@
+{
+    "001": {
+        "character": "Unknown",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Despite the conditions,{p=0.2} though,{p=0.2} the [color=#ee8695]host[/color] lives.{p=0.5} It's our job to keep it that way.",
+            "es": "Despite the conditions,{p=0.2} though,{p=0.2} the [color=#ee8695]host[/color] lives.{p=0.5} It's our job to keep it that way."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "The Id",
+                    "condition": {
+                        "en": "Who's we?",
+                        "es": "Who's we?"
+                    },
+                    "message": {
+                        "en": "[color=#ee8695]We[/color]{p=0.5} are a part of them:{p=0.5} the [color=#ee8695]host[/color].",
+                        "es": "[color=#ee8695]We[/color]{p=0.5} are a part of them:{p=0.5} the [color=#ee8695]host[/color]."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "001": {
+        "character": "The Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "We're nearing a [color=#ee8695]connection point[/color].{p=0.5} Keep going.",
+            "es": "We're nearing a [color=#ee8695]connection point[/color].{p=0.5} Keep going."
+        },
+        "branches": {},
+        "events": {}
+    }
+}

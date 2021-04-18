@@ -62,6 +62,7 @@ position = Vector2( 0, 24 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint" index="2"]
 position = Vector2( 0, 24 )
+on = false
 
 [node name="RespawnPoint2" parent="RespawnPoints" index="1" instance=ExtResource( 3 )]
 position = Vector2( 792, 496 )
@@ -74,6 +75,7 @@ position = Vector2( -6.10352e-05, 32 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint2" index="2"]
 position = Vector2( -6.10352e-05, 32 )
+on = false
 
 [node name="RespawnPoint3" parent="RespawnPoints" index="2" instance=ExtResource( 3 )]
 position = Vector2( 1344, 296 )
@@ -86,6 +88,7 @@ position = Vector2( -0.00012207, 40 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint3" index="2"]
 position = Vector2( -0.00012207, 40 )
+on = false
 
 [node name="RespawnPoint4" parent="RespawnPoints" index="3" instance=ExtResource( 3 )]
 position = Vector2( 1696, 64 )
@@ -98,6 +101,7 @@ position = Vector2( 0, 32 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint4" index="2"]
 position = Vector2( 0, 32 )
+on = false
 
 [node name="ConnectionPoint" parent="ConnectionPoints" index="0" instance=ExtResource( 6 )]
 position = Vector2( 2280, 448 )
@@ -137,20 +141,20 @@ position = Vector2( 1000, 664 )
 extents = Vector2( 152, 24 )
 particle_duration = 2.5
 
-[node name="DialogueSpot" parent="DialogueSpots" index="0" instance=ExtResource( 7 )]
-position = Vector2( 792, 520 )
-sequence_path = ""
-radius = 12
+[node name="2A" parent="DialogueSpots" index="0" instance=ExtResource( 7 )]
+position = Vector2( 512, 528 )
+sequence_path = "res://assets/dialogues/chapter-2a.json"
+radius = 20
 
-[node name="DialogueSpot2" parent="DialogueSpots" index="1" instance=ExtResource( 7 )]
-position = Vector2( 1344, 328 )
-sequence_path = ""
-radius = 12
+[node name="2B" parent="DialogueSpots" index="1" instance=ExtResource( 7 )]
+position = Vector2( 864, 488 )
+sequence_path = "res://assets/dialogues/chapter-2b.json"
+radius = 40
 
-[node name="DialogueSpot3" parent="DialogueSpots" index="2" instance=ExtResource( 7 )]
-position = Vector2( 1696, 88 )
-sequence_path = ""
-radius = 12
+[node name="2C" parent="DialogueSpots" index="2" instance=ExtResource( 7 )]
+position = Vector2( 1696, 64 )
+sequence_path = "res://assets/dialogues/chapter-2c.json"
+radius = 30
 
 [editable path="Player"]
 
