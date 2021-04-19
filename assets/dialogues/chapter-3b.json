@@ -189,6 +189,8 @@
             "es": "There can't be much left.{p=0.5} Let's keep going."
         },
         "branches": {},
-        "events": {}
+        "events": {
+            "change_scene": "res://src/levels/chapter-1-hook/section-a.tscn"
+        }
     }
 }

@@ -195,6 +195,7 @@ shape = SubResource( 2 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint" index="2"]
 position = Vector2( 0, 32 )
+on = false
 
 [node name="RespawnPoint2" parent="RespawnPoints" index="1" instance=ExtResource( 4 )]
 position = Vector2( 960, 576 )
@@ -208,6 +209,7 @@ position = Vector2( 0, 48 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint2" index="2"]
 position = Vector2( 0, 48 )
+on = false
 
 [node name="RespawnPoint3" parent="RespawnPoints" index="2" instance=ExtResource( 4 )]
 position = Vector2( 1328, 536 )
@@ -221,6 +223,7 @@ position = Vector2( 0, 104 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint3" index="2"]
 position = Vector2( 0, 104 )
+on = false
 
 [node name="RespawnPoint4" parent="RespawnPoints" index="3" instance=ExtResource( 4 )]
 position = Vector2( 1960, 512 )
@@ -233,6 +236,7 @@ position = Vector2( -0.00012207, 32 )
 
 [node name="Campfire" parent="RespawnPoints/RespawnPoint4" index="2"]
 position = Vector2( -0.00012207, 32 )
+on = false
 
 [node name="FloatingObject" parent="Collectables" index="0" instance=ExtResource( 12 )]
 position = Vector2( 1960, 496 )

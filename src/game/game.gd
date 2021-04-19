@@ -3,14 +3,14 @@
 class_name Game 
 extends Node 
 
+const MAIN_THEME: = "res://assets/music/main-test.ogg"
+
 onready var currentLevel: = $BaseLevel
 onready var mainMenu: = $CanvasLayer/FullMenuSet
 
 onready var player: Player = currentLevel.player
 
 func _ready() -> void:
-	SceneTransition.connect("scene_changed", self, "_on_SceneTransition_scene_changed") 
-
 	mainMenu.connect("playButton_pressed", self, "_on_mainMenu_playButton_pressed")
 
 	mainMenu.connect("pause_requested", self, "_on_mainMenu_pause_requested") 
@@ -22,12 +22,11 @@ func _ready() -> void:
 	player.active = false 
 	player.visible = false
 
-func _on_SceneTransition_scene_changed() -> void:
-	get_tree().paused = false 
-	
 func _on_mainMenu_playButton_pressed() -> void:
 	player.active = true
 	player.visible = true
+
+	MusicPlayer.play_song(MAIN_THEME)
 
 func _on_mainMenu_pause_requested() -> void:
 	get_tree().paused = true
