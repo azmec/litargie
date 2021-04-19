@@ -1,0 +1,28 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "As you'll soon tell,{p=0.2} the more introspective we make the [color=#ee8695]host[/color],{p=0.2} the more hostile the mind gets.",
+            "es": "As you'll soon tell,{p=0.2} the more introspective we make the [color=#ee8695]host[/color],{p=0.2} the more hostile the mind gets."
+        },
+        "branches": {},
+        "events": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Keep moving forward.",
+            "es": "Keep moving forward."
+        },
+        "branches": {},
+        "events": {}
+    }
+}
