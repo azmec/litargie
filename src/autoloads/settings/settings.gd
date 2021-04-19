@@ -8,7 +8,7 @@ var language: String = "en" setget _set_language
 
 var master_volume: float = 1.0 setget _set_master_volume
 var sfx_volume: float = 1.0 setget _set_sfx_volume
-var bgm_volume: float = 1.0 setget _set_sfx_volume
+var bgm_volume: float = 1.0 setget _set_bgm_volume
 
 onready var master_id = AudioServer.get_bus_index("Master")
 onready var sfx_id = AudioServer.get_bus_index("SFX")
@@ -27,7 +27,7 @@ func _set_master_volume(value: float) -> void:
 func _set_sfx_volume(value: float) -> void:
 	_set_volume(sfx_id, value)
 
-func set_bgm_volume(value: float) -> void:
+func _set_bgm_volume(value: float) -> void:
 	_set_volume(bgm_id, value)
 
 func _set_volume(bus_id: int, new_volume: float) -> void:
