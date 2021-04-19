@@ -6,8 +6,8 @@
             "es": ""
         },
         "message": {
-            "en": "Our [color=#ee8695]host[/color]...{p=0.5} your absence has damaged them.",
-            "es": "Our [color=#ee8695]host[/color]...{p=0.5} your absence has damaged them."
+            "en": "Our [color=#ee8695]host[/color]...{p=0.5} your absence has damaged [color=#ee8695]them[/color].",
+            "es": "Our [color=#ee8695]host[/color]...{p=0.5} your absence has damaged [color=#ee8695]them[/color]."
         },
         "branches": {
             "A": {
@@ -48,8 +48,8 @@
             "es": ""
         },
         "message": {
-            "en": "In any case,{p=0.2} the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color].",
-            "es": "In any case,{p=0.2} the [color=#ee8695]host[/color] has forgotten that they are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color]."
+            "en": "In any case,{p=0.2} the [color=#ee8695]host[/color] has forgotten that [color=#ee8695]they[/color] are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color].",
+            "es": "In any case,{p=0.2} the [color=#ee8695]host[/color] has forgotten that [color=#ee8695]they[/color] are, {p=0.2}in fact{p=0.2}, not an [color=#fbbbad]island[/color]."
         },
         "branches": {},
         "events": {}
@@ -61,8 +61,8 @@
             "es": ""
         },
         "message": {
-            "en": "They need people,{p=0.2} but they need [color=#fbbbad]reminders[/color] of them first.",
-            "es": "They need people,{p=0.2} but they need [color=#fbbbad]reminders[/color] of them first."
+            "en": "[color=#ee8695]They[/color] need people,{p=0.2} but [color=#ee8695]they[/color] need [color=#fbbbad]reminders[/color] of them first.",
+            "es": "[color=#ee8695]They[/color] need people,{p=0.2} but [color=#ee8695]they[/color] need [color=#fbbbad]reminders[/color] of them first."
         },
         "branches": {
             "A": {

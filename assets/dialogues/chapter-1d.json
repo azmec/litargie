@@ -43,8 +43,8 @@
                                     "es": "Friends."
                                 },
                                 "message": {
-                                    "en": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their past friends.",
-                                    "es": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their past friends."
+                                    "en": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees [color=#ee8695]their[/color] past friends.",
+                                    "es": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees [color=#ee8695]their[/color] past friends."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -56,8 +56,8 @@
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "The joy of their company,{p=0.2} the support they bring:{p=0.2} it [color=#fbbbad]comforts[/color] the host.",
-                                    "es": "The joy of their company,{p=0.2} the support they bring:{p=0.2} it [color=#fbbbad]comforts[/color] the host."
+                                    "en": "The joy of their company,{p=0.2} the support they bring:{p=0.2} it [color=#fbbbad]comforts[/color] the [color=#ee8695]host[/color].",
+                                    "es": "The joy of their company,{p=0.2} the support they bring:{p=0.2} it [color=#fbbbad]comforts[/color] the [color=#ee8695]host[/color]."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -71,8 +71,8 @@
                                     "es": "Family."
                                 },
                                 "message": {
-                                    "en": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their family.",
-                                    "es": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees their family."
+                                    "en": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees [color=#ee8695]their[/color] family.",
+                                    "es": "In [color=#ee8695]their[/color] mind's eye,{p=0.2} the [color=#ee8695]host[/color] sees [color=#ee8695]their[/color] family."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -84,8 +84,8 @@
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "The comfort they bring,{p=0.2} the unconditional love they provide:{p=0.2} it [color=#fbbbad]soothes[/color] the host.",
-                                    "es": "The comfort they bring,{p=0.2} the unconditional love they provide:{p=0.2} it [color=#fbbbad]soothes[/color] the host."
+                                    "en": "The comfort they bring,{p=0.2} the unconditional love they provide:{p=0.2} it [color=#fbbbad]soothes[/color] the [color=#ee8695]host[/color].",
+                                    "es": "The comfort they bring,{p=0.2} the unconditional love they provide:{p=0.2} it [color=#fbbbad]soothes[/color] the [color=#ee8695]host[/color]."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -99,8 +99,8 @@
                                     "es": "Self."
                                 },
                                 "message": {
-                                    "en": "The [color=#ee8695]host[/color] sees themselves--a reflection of how others perceive them.",
-                                    "es": "The [color=#ee8695]host[/color] sees themselves--a reflection of how others perceive them."
+                                    "en": "The [color=#ee8695]host[/color] sees themselves--a reflection of how others perceive [color=#ee8695]them[/color].",
+                                    "es": "The [color=#ee8695]host[/color] sees themselves--a reflection of how others perceive [color=#ee8695]them[/color]."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -112,8 +112,8 @@
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "Within the mirror is a distant,{p=0.2} tired adult.{p=0.5} Yet,{p=0.2} [color=#ee8695]they[/color] are brimming with potential.",
-                                    "es": "Within the mirror is a distant,{p=0.2} tired adult.{p=0.5} Yet,{p=0.2} [color=#ee8695]they[/color] are brimming with potential."
+                                    "en": "Within the mirror is a distant,{p=0.2} tired adult.{p=0.5} Yet,{p=0.2} [color=#ee8695]they[/color] are brimming with [color=#fbbbad]potential[/color].",
+                                    "es": "Within the mirror is a distant,{p=0.2} tired adult.{p=0.5} Yet,{p=0.2} [color=#ee8695]they[/color] are brimming with [color=#fbbbad]potential[/color]."
                                 },
                                 "branches": {},
                                 "events": {}
