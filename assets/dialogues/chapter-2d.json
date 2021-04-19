@@ -73,8 +73,8 @@
                         "es": "Pride"
                     },
                     "message": {
-                        "en": "You remind the host of their past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped into their hobby projects.",
-                        "es": "You remind the host of their past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped into their hobbies."
+                        "en": "You remind the [color=#ee8695]host[/color] of [color=#ee8695]their[/color] past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped [color=#ee8695]their[/color] their hobbies.",
+                        "es": "You remind the [color=#ee8695]host[/color] of [color=#ee8695]their[/color] past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped [color=#ee8695]their[/color] their hobbies."
                     },
                     "branches": {},
                     "events": {}
@@ -86,8 +86,8 @@
                         "es": ""
                     },
                     "message": {
-                        "en": "Seeing what they're capable of,{p=0.2} the [color=#ee8695]host[/color] is filled with [color=#fbbbad]determination[/color].",
-                        "es": "Seeing what they're capable of,{p=0.2} the [color=#ee8695]host[/color] is filled with [color=#fbbbad]determination[/color]."
+                        "en": "Seeing what [color=#ee8695]they're[/color] capable of,{p=0.2} the [color=#ee8695]host[/color] is filled with [color=#fbbbad]determination[/color].",
+                        "es": "Seeing what [color=#ee8695]they're[/color] capable of,{p=0.2} the [color=#ee8695]host[/color] is filled with [color=#fbbbad]determination[/color]."
                     },
                     "branches": {},
                     "events": {}
@@ -114,8 +114,8 @@
                         "es": ""
                     },
                     "message": {
-                        "en": "You remind the [color=#ee8695]host[/color] that they have someone to depend on--someone to trust.",
-                        "es": "You remind the [color=#ee8695]host[/color] that they have someone to depend on--someone to trust."
+                        "en": "You remind the [color=#ee8695]host[/color] that [color=#ee8695]they[/color] have someone to depend on--someone to trust.",
+                        "es": "You remind the [color=#ee8695]host[/color] that [color=#ee8695]they[/color] have someone to depend on--someone to trust."
                     },
                     "branches": {},
                     "events": {}
@@ -142,8 +142,8 @@
                         "es": "Security"
                     },
                     "message": {
-                        "en": "You remind the host that while they've gone through this before,{p=0.2} it's safer with others.",
-                        "es": "You remind the host that while they've gone through this before,{p=0.2} it's safer with others."
+                        "en": "You remind the [color=#ee8695]host[/color] that while [color=#ee8695]they've[/color] gone through this before,{p=0.2} it's safer with others.",
+                        "es": "You remind the [color=#ee8695]host[/color] that while [color=#ee8695]they've[/color] gone through this before,{p=0.2} it's safer with others."
                     },
                     "branches": {},
                     "events": {}
