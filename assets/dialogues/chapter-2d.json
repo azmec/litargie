@@ -1,0 +1,196 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "This one is real.{p=0.5} The last point was simple,{p=0.2} this one not so much.",
+            "es": "This one is real.{p=0.5} The last point was simple,{p=0.2} this one not so much."
+        },
+        "branches": {},
+        "events": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "But press on:{p=0.2} help the [color=#ee8695]host[/color] with [color=#ee8695]their[/color] own [color=#fbbbad]memories[/color].",
+            "es": "But press on:{p=0.2} help the [color=#ee8695]host[/color] with [color=#ee8695]their[/color] own [color=#fbbbad]memories[/color]."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Use the point.",
+                        "es": "Use the point."
+                    },
+                    "message": {
+                        "en": "You peer into the [color=#ee8695]point's[/color] orb and see the [color=#ee8695]host[/color] clung to a corner of [color=#ee8695]their[/color] room. ",
+                        "es": ""
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "003": {
+        "character": "TERMINAL",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Strung on the ground is an assortment of pictures,{p=0.2} bills,{p=0.2} and prescription bottles.",
+            "es": "Strung on the ground is an assortment of pictures,{p=0.2} bills,{p=0.2} and prescription bottles."
+        },
+        "branches": {},
+        "events": {}
+    },
+    "004": {
+        "character": "TERMINAL",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "What would you like to [color=#fbbbad]remind[/color] the [color=#ee8695]host[/color] of?",
+            "es": ""
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Pride",
+                        "es": "Pride"
+                    },
+                    "message": {
+                        "en": "You remind the host of their past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped into their hobby projects.",
+                        "es": "You remind the host of their past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped into their hobbies."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "Seeing what they're capable of,{p=0.2} the [color=#ee8695]host[/color] is filled with [color=#fbbbad]determination[/color].",
+                        "es": "Seeing what they're capable of,{p=0.2} the [color=#ee8695]host[/color] is filled with [color=#fbbbad]determination[/color]."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            },
+            "B": {
+                "001": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Trust",
+                        "es": "Trust"
+                    },
+                    "message": {
+                        "en": "Peering closer into the orb,{p=0.2} you see a polaroid of the [color=#ee8695]host[/color] and a significant other.",
+                        "es": "Peering closer into the orb,{p=0.2} you see a polaroid of the [color=#ee8695]host[/color] and a significant other."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "You remind the [color=#ee8695]host[/color] that they have someone to depend on--someone to trust.",
+                        "es": "You remind the [color=#ee8695]host[/color] that they have someone to depend on--someone to trust."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "003": {
+                    "character": "",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "Picking up the polaroid,{p=0.2} the [color=#ee8695]host[/color] is overcome with a sense of [color=#fbbbad]comfort[/color].",
+                        "es": "Picking up the polaroid,{p=0.2} the [color=#ee8695]host[/color] is overcome with a sense of [color=#fbbbad]comfort[/color]."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            },
+            "C": {
+                "001": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Security",
+                        "es": "Security"
+                    },
+                    "message": {
+                        "en": "You remind the host that while they've gone through this before,{p=0.2} it's safer with others.",
+                        "es": "You remind the host that while they've gone through this before,{p=0.2} it's safer with others."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "You manifest on image of [color=#ee8695]their[/color] mother.",
+                        "es": "You manifest on image of [color=#ee8695]their[/color] mother."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "003": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "Dialing [color=#ee8695]their[/color] mother's phone number,{p=0.2} the [color=#ee8695]host[/color] is blanketed with a feeling of [color=#fbbbad]safety[/color].",
+                        "es": "Dialing [color=#ee8695]their[/color] mother's phone number,{p=0.2} the [color=#ee8695]host[/color] is blanketed with a feeling of [color=#fbbbad]safety[/color]."
+                    },
+                    "branches": {},
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "005": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Well done.{p=0.5} Let's move on.",
+            "es": "Well done.{p=0.5} Let's move on."
+        },
+        "branches": {},
+        "events": {
+            "change_scene": "res://src/levels/chapter-3/chapter3.tscn"
+        }
+    }
+}

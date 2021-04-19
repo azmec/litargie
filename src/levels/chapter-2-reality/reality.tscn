@@ -105,11 +105,11 @@ on = false
 
 [node name="ConnectionPoint" parent="ConnectionPoints" index="0" instance=ExtResource( 6 )]
 position = Vector2( 2280, 448 )
-sequence_path = "res://assets/dialogues/chapter2-end.json"
+sequence_path = "res://assets/dialogues/chapter-2d.json"
 
 [node name="ConnectionPoint2" parent="ConnectionPoints" index="1" instance=ExtResource( 6 )]
 position = Vector2( 2488, 448 )
-sequence_path = "res://assets/dialogues/chapter2-end.json"
+sequence_path = "res://assets/dialogues/chapter-2d.json"
 
 [node name="SmallTreePainter" parent="AbritraryScenery" index="0"]
 tile_data = PoolIntArray( 2162719, 0, 0 )
