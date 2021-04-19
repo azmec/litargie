@@ -1,0 +1,41 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Trying,{p=0.2} failing,{p=0.2} trying again...",
+            "es": "Trying,{p=0.2} failing,{p=0.2} trying again..."
+        },
+        "branches": {},
+        "events": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "The only reason we're ok with it is cause we're constructs. The [color=#ee8695]host[/color] is actually real!",
+            "es": "The only reason we're ok with it is cause we're constructs. The [color=#ee8695]host[/color] is actually real!"
+        },
+        "branches": {},
+        "events": {}
+    },
+    "003": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Such struggle...{p=0.2} [color=#ee8695]they[/color] ought to feel validated for that alone.",
+            "es": "Such struggle...{p=0.2} [color=#ee8695]they[/color] ought to feel validated for that alone."
+        },
+        "branches": {},
+        "events": {}
+    }
+}

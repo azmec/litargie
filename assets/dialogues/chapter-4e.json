@@ -1,0 +1,28 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "This is it!{p=0.2} It's now or never!",
+            "es": "This is it!{p=0.2} It's now or never!"
+        },
+        "branches": {},
+        "events": {}
+    },
+    "002": {
+        "character": "TERMINAL",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "What [color=#fbbbad]memory[/color] would you finally like to instill?",
+            "es": "What [color=#fbbbad]memory[/color] would you finally like to instill?"
+        },
+        "branches": {},
+        "events": {}
+    }
+}

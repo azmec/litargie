@@ -1,0 +1,28 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "This is it.{p=0.5} The proverbial 'gauntlet.'",
+            "es": "This is it.{p=0.5} The proverbial 'gauntlet.'"
+        },
+        "branches": {},
+        "events": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Keep.{p=0.5} Moving.{p=0.5} Forward.",
+            "es": "Keep.{p=0.5} Moving.{p=0.5} Forward."
+        },
+        "branches": {},
+        "events": {}
+    }
+}

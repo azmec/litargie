@@ -1,0 +1,15 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "In some way,{p=0.2} this is what the [color=#ee8695]host[/color] goes through...{p=0.2} right?",
+            "es": "In some way,{p=0.2} this is what the [color=#ee8695]host[/color] goes through...{p=0.2} right?"
+        },
+        "branches": {},
+        "events": {}
+    }
+}

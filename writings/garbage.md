@@ -1,24 +1,21 @@
-Chapter 3 ought to something of a peak in severity.
+Chapter 4! It's now or never.
 
-We'll keep the "things get more dangerous the farther you go" bit.
+# Dialogue 4A
+Id: This is it. The proverbial "gauntlet."
+Id: Keep. Moving. Forward.
 
-But we need to change the primary purpose of this, which ought to just be another example of how important it is to connect with friends and family during the pandemic.
+# Dialogue 4B
+Id: Not so bad, is it? You're halfway there!
 
-Here's the final dialogue bit:
-- TERMINAL: "..."
-    + "Use the point."
-- TERMINAL: "Peering into the orb, you assume the perspective of the host."
-- TERMINAL: "They're watching a news broadcast. Another statistic, another riot, another life lost."
-- TERMINAL: "... It... weighs heavily upon the host."
-- TERMINAL: "What do you remind them of?"
-    + "Work."
-        * "You remind the host they're an autonomous agent--that they're with the world."
-        * "Realizing they can work to effect change, the host feels emboldened."
-    + "Friends."
-        * "You remind the host that they can find relief in others--that they're capable of experiencing joy."
-        * "Being on the cusp of a weekend, the host feels excited to meet others."
-    + "Solidarity."
-        * "You remind the host that such turmoil can be braced with others: friends and family alike."
-        * "Perhaps even a shared consciousness."
-        * "Feeling as if they're backed by a community, the host is reinvigorated."
-- Id: "The host should feel they're capable of being proactive now. We can effect change! Keep going."
+# Dialogue 4C
+Id: In some way, this is what the host goes through... right?
+
+# Dialogue 4D
+Id: Trying, failing, trying again...
+Id: The only reason we're okay with it is cause we're constructs. The host is actually real!
+Id: Such struggle... they ought to feel validated from that alone.
+
+# Dialogue 4E
+Id: This is it! It's now or never.
+
+TERMINAL: What memory would you like to finally instill?

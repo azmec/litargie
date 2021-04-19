@@ -1,0 +1,15 @@
+{
+    "001": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "Not so bad,{p=0.2} is it?{p=0.5} You're halfway there!",
+            "es": "Not so bad,{p=0.2} is it?{p=0.5} You're halfway there!"
+        },
+        "branches": {},
+        "events": {}
+    }
+}
