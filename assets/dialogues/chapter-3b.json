@@ -57,8 +57,8 @@
                         "es": ""
                     },
                     "message": {
-                        "en": "What do you [color=#fbbbad]remind[/color] them of?",
-                        "es": "What do you [color=#fbbbad]remind[/color] them of?"
+                        "en": "What do you [color=#fbbbad]remind[/color] [color=#ee8695]them[/color] of?",
+                        "es": "What do you [color=#fbbbad]remind[/color] [color=#ee8695]them[/color] of?"
                     },
                     "branches": {
                         "A": {
@@ -69,8 +69,8 @@
                                     "es": "Work."
                                 },
                                 "message": {
-                                    "en": "You remind the [color=#ee8695]host[/color] that they're an autonomous agent--that they're with the world.",
-                                    "es": "You remind the [color=#ee8695]host[/color] that they're an autonomous agent--that they're with the world."
+                                    "en": "You remind the [color=#ee8695]host[/color] that [color=#ee8695]they're[/color] an autonomous agent--that [color=#ee8695]they're[/color] with the world.",
+                                    "es": "You remind the [color=#ee8695]host[/color] that [color=#ee8695]they're[/color] an autonomous agent--that [color=#ee8695]they're[/color] with the world."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -97,8 +97,8 @@
                                     "es": "Friends."
                                 },
                                 "message": {
-                                    "en": "You remind the [color=#ee8695]host[/color] that they can find relief in others--that [color=#ee8695]they're[/color] capable of experiencing joy.",
-                                    "es": "You remind the [color=#ee8695]host[/color] that they can find relief in others--that [color=#ee8695]they're[/color] capable of experiencing joy."
+                                    "en": "You remind the [color=#ee8695]host[/color] that [color=#ee8695]they[/color] can find relief in others--that [color=#ee8695]they're[/color] capable of experiencing joy.",
+                                    "es": "You remind the [color=#ee8695]host[/color] that [color=#ee8695]they[/color] can find relief in others--that [color=#ee8695]they're[/color] capable of experiencing joy."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -151,8 +151,8 @@
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "Feeling as if they're backed by a community,{p=0.2} the [color=#ee8695]host[/color] is [color=#fbbbad]reinvigorated[/color].",
-                                    "es": "Feeling as if they're backed by a community,{p=0.2} the [color=#ee8695]host[/color] is [color=#fbbbad]reinvigorated[/color]."
+                                    "en": "Feeling as if [color=#ee8695]they're[/color] backed by a community,{p=0.2} the [color=#ee8695]host[/color] is [color=#fbbbad]reinvigorated[/color].",
+                                    "es": "Feeling as if [color=#ee8695]they're[/color] backed by a community,{p=0.2} the [color=#ee8695]host[/color] is [color=#fbbbad]reinvigorated[/color]."
                                 },
                                 "branches": {},
                                 "events": {}
