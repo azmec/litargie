@@ -1,16 +1,14 @@
 # Various TODOs
 
-- [x] Screenshake
-- [x] Better Menu
-- [x] Audio System
-- [x] Missile Explosion
-- [x] Dash Feedback
-- [x] Campfire Feedback
-- [x] Connection Point Feedback
-- [x] Release for Playtesting
-- [ ] Dialogues / Story
-    - [x] Chapter 1
-    - [ ] Chapter 2
-    - [x] Chapter 3
-    - [ ] Chapter 4 
-- [x] Freeze Player During Dialogues
+- [ ] Finish the Fucking Game
+    + [ ] Redraft Story
+    + [ ] Integrate Story to Current Chapters
+        - [ ] Chapter 1
+        - [ ] Chapter 2
+        - [ ] Chapter 3
+    + [ ] Create Level 4
+    + [ ] Integrate Story to Level 4
+    + [ ] Music
+        - [ ] Primary Track
+        - [ ] Fun Track
+        - [ ] Ambient Track  
