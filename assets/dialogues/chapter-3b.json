@@ -1,0 +1,194 @@
+{
+    "001": {
+        "character": "TERMINAL",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "...",
+            "es": "..."
+        },
+        "branches": {
+            "A": {
+                "001": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Use the point.",
+                        "es": "Use the point."
+                    },
+                    "message": {
+                        "en": "Peering into the orb,{p=0.2} you assume the perspective of the [color=#ee8695]host[/color].",
+                        "es": "Peering into the orb,{p=0.2} you assume the perspective of the [color=#ee8695]host[/color]."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "[color=#ee8695]They're[/color] watching a news broadcast.{p=0.5} Another statistic,{p=0.2} another protest,{p=0.2} another life lost.",
+                        "es": "[color=#ee8695]They're[/color] watching a news broadcast.{p=0.5} Another statistic,{p=0.2} another protest,{p=0.2} another life lost."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "003": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "...{p=0.5} It...{p=0.5} weighs heavily upon the [color=#ee8695]host[/color].",
+                        "es": "...{p=0.5} It...{p=0.5} weighs heavily upon the [color=#ee8695]host[/color]."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "004": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "message": {
+                        "en": "What do you [color=#fbbbad]remind[/color] them of?",
+                        "es": "What do you [color=#fbbbad]remind[/color] them of?"
+                    },
+                    "branches": {
+                        "A": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Work.",
+                                    "es": "Work."
+                                },
+                                "message": {
+                                    "en": "You remind the [color=#ee8695]host[/color] that they're an autonomous agent--that they're with the world.",
+                                    "es": "You remind the [color=#ee8695]host[/color] that they're an autonomous agent--that they're with the world."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Realizing [color=#ee8695]they[/color] can work to effect change,{p=0.2} the [color=#ee8695]host[/color] feels [color=#fbbbad]emboldened[/color].",
+                                    "es": "Realizing [color=#ee8695]they[/color] can work to effect change,{p=0.2} the [color=#ee8695]host[/color] feels [color=#fbbbad]emboldened[/color]."
+                                },
+                                "branches": {},
+                                "events": {}
+                            }
+                        },
+                        "B": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Friends.",
+                                    "es": "Friends."
+                                },
+                                "message": {
+                                    "en": "You remind the [color=#ee8695]host[/color] that they can find relief in others--that [color=#ee8695]they're[/color] capable of experiencing joy.",
+                                    "es": "You remind the [color=#ee8695]host[/color] that they can find relief in others--that [color=#ee8695]they're[/color] capable of experiencing joy."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Being on the cusp of a weekend,{p=0.2} the [color=#ee8695]host[/color] feels [color=#fbbbad]excited[/color] to meet others.",
+                                    "es": "Being on the cusp of a weekend,{p=0.2} the [color=#ee8695]host[/color] feels [color=#fbbbad]excited[/color] to meet others."
+                                },
+                                "branches": {},
+                                "events": {}
+                            }
+                        },
+                        "C": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Solidarity",
+                                    "es": "Solidarity"
+                                },
+                                "message": {
+                                    "en": "You remind the [color=#ee8695]host[/color] that such turmoil can be braced with others:{p=0.2} friends and family alike.",
+                                    "es": "You remind the [color=#ee8695]host[/color] that such turmoil can be braced with others:{p=0.2} friends and family alike."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Perhaps,{p=0.2} they could identify some shared,{p=0.2} communal consciousness.",
+                                    "es": "Perhaps,{p=0.2} they could identify some shared,{p=0.2} communal consciousness."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "003": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Feeling as if they're backed by a community,{p=0.2} the [color=#ee8695]host[/color] is [color=#fbbbad]reinvigorated[/color].",
+                                    "es": "Feeling as if they're backed by a community,{p=0.2} the [color=#ee8695]host[/color] is [color=#fbbbad]reinvigorated[/color]."
+                                },
+                                "branches": {},
+                                "events": {}
+                            }
+                        }
+                    },
+                    "events": {}
+                }
+            }
+        },
+        "events": {}
+    },
+    "002": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "The [color=#ee8695]host[/color] is being proactive now...{p=0.2} We can effect change!",
+            "es": "The [color=#ee8695]host[/color] is being proactive now...{p=0.2} We can effect change!"
+        },
+        "branches": {},
+        "events": {}
+    },
+    "003": {
+        "character": "Id",
+        "condition": {
+            "en": "",
+            "es": ""
+        },
+        "message": {
+            "en": "There can't be much left.{p=0.5} Let's keep going.",
+            "es": "There can't be much left.{p=0.5} Let's keep going."
+        },
+        "branches": {},
+        "events": {}
+    }
+}
