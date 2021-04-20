@@ -10,6 +10,7 @@
 custom_constants/separation = 16
 
 [node name="MiscOptions" parent="Sliding" index="0" instance=ExtResource( 3 )]
+visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 20.0
@@ -22,6 +23,6 @@ anchor_left = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 0.0
-margin_top = 56.0
+margin_top = 38.0
 margin_right = 192.0
-margin_bottom = 159.0
+margin_bottom = 141.0

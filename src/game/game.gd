@@ -15,14 +15,9 @@ func _ready() -> void:
 
 	mainMenu.connect("pause_requested", self, "_on_mainMenu_pause_requested") 
 	mainMenu.connect("pause_exited", self, "_on_mainMenu_pause_exited") 
-<<<<<<< HEAD
 	
 	mainMenu.connect("restart_requested", self, "_on_mainMenu_restart_requested")
 	mainMenu.connect("level_restart_requested", self, "_on_mainMenu_level_restart_requested") 
-=======
-	mainMenu.connect("restart_requested", self, "_on_mainMenu_restart_requested") 
-	mainMenu.connect("level_restart_requested", self, "_on_mainMenu_level_restart_requested")
->>>>>>> 80e43d1... Pulling.
 
 	player.active = false 
 	player.visible = false
@@ -40,15 +35,8 @@ func _on_mainMenu_pause_exited() -> void:
 	get_tree().paused = false
 
 func _on_mainMenu_restart_requested() -> void:
-<<<<<<< HEAD
 	get_tree().reload_current_scene()
 
 func _on_mainMenu_level_restart_requested() -> void:
 	var level_path: String = currentLevel.level_path
 	SceneTransition.change_scene_to(level_path)
-=======
-	pass 
-
-func _on_mainMenu_level_restart_requested() -> void:
-	pass
->>>>>>> 80e43d1... Pulling.

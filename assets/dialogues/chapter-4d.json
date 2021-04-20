@@ -19,8 +19,8 @@
             "es": ""
         },
         "message": {
-            "en": "The only reason we're ok with it is cause we're constructs. The [color=#ee8695]host[/color] is actually real!",
-            "es": "The only reason we're ok with it is cause we're constructs. The [color=#ee8695]host[/color] is actually real!"
+            "en": "The only reason we're ok with it is cause we're constructs.{p=0.5} The [color=#ee8695]host[/color] is actually real!",
+            "es": "The only reason we're ok with it is cause we're constructs.{p=0.5} The [color=#ee8695]host[/color] is actually real!"
         },
         "branches": {},
         "events": {}

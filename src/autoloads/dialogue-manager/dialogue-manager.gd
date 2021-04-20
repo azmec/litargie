@@ -17,7 +17,6 @@ const LANGUAGE: = "ENG"
 var _active_dialogue_offset: = 0
 var _is_active: = false 
 var _parent: Control
-
 var _is_waiting_for_choice: bool = false
 
 var _message_stack: Array = []

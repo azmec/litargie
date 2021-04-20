@@ -45,8 +45,8 @@
             "es": ""
         },
         "message": {
-            "en": "The [color=#bf6dbf]pandemic[/color] has rippled throughout society,{p=0.2} stripping the [color=#ee8695]host[/color] of their previous job and social opportunities.",
-            "es": "The [color=#bf6dbf]pandemic[/color] has rippled throughout society,{p=0.2} stripping the [color=#ee8695]host[/color] of their previous job and social opportunities."
+            "en": "The [color=#bf6dbf]pandemic[/color] has rippled throughout society,{p=0.2} stripping the [color=#ee8695]host[/color] of their previous job.",
+            "es": "The [color=#bf6dbf]pandemic[/color] has rippled throughout society,{p=0.2} stripping the [color=#ee8695]host[/color] of their previous job."
         },
         "branches": {},
         "events": {}
@@ -54,12 +54,12 @@
     "005": {
         "character": "TERMINAL",
         "condition": {
-            "en": "The [color=#ee8695]host[/color] believes it to be [color=#ee8695]their[/color] first step to normal life...{p=0.2} if only [color=#ee8695]they'd[/color] take it.",
-            "es": "The [color=#ee8695]host[/color] believes it to be [color=#ee8695]their[/color] first step to normal life...{p=0.2} if only [color=#ee8695]they'd[/color] take it."
-        },
-        "message": {
             "en": "",
             "es": ""
+        },
+        "message": {
+            "en": "The [color=#ee8695]host[/color] believes it to be [color=#ee8695]their[/color] first step to normal life...{p=0.2} if only [color=#ee8695]they'd[/color] take it.",
+            "es": "The [color=#ee8695]host[/color] believes it to be [color=#ee8695]their[/color] first step to normal life...{p=0.2} if only [color=#ee8695]they'd[/color] take it."
         },
         "branches": {},
         "events": {}
@@ -83,8 +83,8 @@
                         "es": "Hope."
                     },
                     "message": {
-                        "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
-                        "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                        "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet.",
+                        "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet."
                     },
                     "branches": {},
                     "events": {}
@@ -134,8 +134,8 @@
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
-                                    "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                    "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real.",
+                                    "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -268,14 +268,15 @@
                                                 "es": ""
                                             },
                                             "message": {
-                                                "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
-                                                "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                                "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real.",
+                                                "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real."
                                             },
                                             "branches": {},
                                             "events": {}
                                         }
                                     }
-                                }
+                                },
+                                "events": {}
                             }
                         }
                     },
@@ -303,8 +304,8 @@
                         "es": ""
                     },
                     "message": {
-                        "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
-                        "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                        "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real.",
+                        "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real."
                     },
                     "branches": {},
                     "events": {}
@@ -328,8 +329,8 @@
                                     "es": "Hope."
                                 },
                                 "message": {
-                                    "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
-                                    "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                    "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet.",
+                                    "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -446,12 +447,12 @@
                             "004": {
                                 "character": "TERMINAL",
                                 "condition": {
-                                    "en": "Select a [color=#fbbbad]memory[/color].",
-                                    "es": "Select a [color=#fbbbad]memory[/color]."
-                                },
-                                "message": {
                                     "en": "",
                                     "es": ""
+                                },
+                                "message": {
+                                    "en": "Select a [color=#fbbbad]memory[/color].",
+                                    "es": "Select a [color=#fbbbad]memory[/color]."
                                 },
                                 "branches": {
                                     "A": {
@@ -462,8 +463,8 @@
                                                 "es": "Hope."
                                             },
                                             "message": {
-                                                "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
-                                                "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                                "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet.",
+                                                "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet."
                                             },
                                             "branches": {},
                                             "events": {}
@@ -533,13 +534,12 @@
                 "004": {
                     "character": "TERMINAL",
                     "condition": {
-                        "en": "Select a [color=#fbbbad]memory[/color].",
-                        "es": "Select a [color=#fbbbad]memory[/color]."
-                    },
-                    "message": {
                         "en": "",
                         "es": ""
                     },
+                    "message": {
+                        "en": "Select a [color=#fbbbad]memory[/color].",
+                        "es": "Select a [color=#fbbbad]memory[/color].",
                     "branches": {
                         "A": {
                             "001": {
@@ -549,8 +549,8 @@
                                     "es": "Hope."
                                 },
                                 "message": {
-                                    "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
-                                    "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                    "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet.",
+                                    "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -587,8 +587,8 @@
                                                 "es": ""
                                             },
                                             "message": {
-                                                "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
-                                                "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                                "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real.",
+                                                "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real."
                                             },
                                             "branches": {},
                                             "events": {}
@@ -619,8 +619,8 @@
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
-                                    "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                    "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real.",
+                                    "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that's real."
                                 },
                                 "branches": {},
                                 "events": {}
@@ -644,8 +644,8 @@
                                                 "es": "Hope."
                                             },
                                             "message": {
-                                                "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
-                                                "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                                "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet.",
+                                                "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet."
                                             },
                                             "branches": {},
                                             "events": {}
@@ -746,8 +746,8 @@
                         "es": ""
                     },
                     "message": {
-                        "en": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]you[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world,{p=0.2} [color=#ee8695]you[/color] are free to live happily.",
-                        "es": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]you[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world,{p=0.2} [color=#ee8695]you[/color] are free to live happily."
+                        "en": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]you[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world.",
+                        "es": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]you[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world."
                     },
                     "branches": {},
                     "events": {}
@@ -789,12 +789,13 @@
             "es": ""
         },
         "message": {
-            "en": "For a moment,{p=0.2} you feel {p=0.2}[color=#fbbbad]determined.[/color]",
-            "es": "For a moment,{p=0.2} you feel {p=0.2}[color=#fbbbad]determined.[/color]"
+            "en": "For a moment,{p=0.2} you feel {p=0.5}[color=#fbbbad]determined.[/color]",
+            "es": "For a moment,{p=0.2} you feel {p=0.5}[color=#fbbbad]determined.[/color]"
         },
         "branches": {},
         "events": {
-            "change_scene": "res://src/levels/chapter-1-hook/section-a.tscn"
+            "change_scene": "res://src/levels/chapter-5/chapter-5.tscn"
         }
     }
+}
 }
