@@ -198,17 +198,84 @@
                         },
                         "B": {
                             "001": {
-                                "character": "",
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Determination.",
+                                    "es": "Determination."
+                                },
+                                "message": {
+                                    "en": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past.",
+                                    "es": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
                                 "condition": {
                                     "en": "",
                                     "es": ""
                                 },
                                 "message": {
-                                    "en": "",
-                                    "es": ""
+                                    "en": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad.",
+                                    "es": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad."
                                 },
                                 "branches": {},
                                 "events": {}
+                            },
+                            "003": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?",
+                                    "es": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?"
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "004": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Select a [color=#fbbbad]memory[/color].",
+                                    "es": "Select a [color=#fbbbad]memory[/color]."
+                                },
+                                "branches": {
+                                    "A": {
+                                        "001": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "Compassion.",
+                                                "es": "Compassion."
+                                            },
+                                            "message": {
+                                                "en": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter.",
+                                                "es": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        },
+                                        "002": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "",
+                                                "es": ""
+                                            },
+                                            "message": {
+                                                "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
+                                                "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        }
+                                    }
+                                }
                             }
                         }
                     },
@@ -217,31 +284,391 @@
             },
             "B": {
                 "001": {
-                    "character": "",
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Compassion.",
+                        "es": "Compassion."
+                    },
+                    "message": {
+                        "en": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter.",
+                        "es": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "TERMINAL",
                     "condition": {
                         "en": "",
                         "es": ""
                     },
                     "message": {
+                        "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
+                        "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "003": {
+                    "character": "TERMINAL",
+                    "condition": {
                         "en": "",
                         "es": ""
                     },
-                    "branches": {},
+                    "message": {
+                        "en": "Select a [color=#fbbbad]memory[/color].",
+                        "es": "Select a [color=#fbbbad]memory[/color]."
+                    },
+                    "branches": {
+                        "A": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Hope.",
+                                    "es": "Hope."
+                                },
+                                "message": {
+                                    "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
+                                    "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "...{p=0.5} But doing that every day?",
+                                    "es": "...{p=0.5} But doing that every day?"
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "003": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "Select a [color=#fbbbad]memory[/color].",
+                                    "es": "Select a [color=#fbbbad]memory[/color]."
+                                },
+                                "branches": {
+                                    "A": {
+                                        "001": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "Determination.",
+                                                "es": "Determination."
+                                            },
+                                            "message": {
+                                                "en": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past.",
+                                                "es": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        },
+                                        "002": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "",
+                                                "es": ""
+                                            },
+                                            "message": {
+                                                "en": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad.",
+                                                "es": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        },
+                                        "003": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "",
+                                                "es": ""
+                                            },
+                                            "message": {
+                                                "en": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?",
+                                                "es": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?"
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        }
+                                    }
+                                },
+                                "events": {}
+                            }
+                        },
+                        "B": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Determination.",
+                                    "es": "Determination."
+                                },
+                                "message": {
+                                    "en": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past.",
+                                    "es": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad.",
+                                    "es": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "003": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?",
+                                    "es": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?"
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "004": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Select a [color=#fbbbad]memory[/color].",
+                                    "es": "Select a [color=#fbbbad]memory[/color]."
+                                },
+                                "message": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "branches": {
+                                    "A": {
+                                        "001": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "Hope.",
+                                                "es": "Hope."
+                                            },
+                                            "message": {
+                                                "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
+                                                "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        },
+                                        "002": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "",
+                                                "es": ""
+                                            },
+                                            "message": {
+                                                "en": "...{p=0.5} But doing that every day?",
+                                                "es": "...{p=0.5} But doing that every day?"
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        }
+                                    }
+                                },
+                                "events": {}
+                            }
+                        }
+                    },
                     "events": {}
                 }
             },
             "C": {
                 "001": {
-                    "character": "",
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Determination.",
+                        "es": "Determination."
+                    },
+                    "message": {
+                        "en": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past.",
+                        "es": "Looking at the offer,{p=0.2} the [color=#ee8695]host[/color] is reminded of the what [color=#ee8695]they've[/color] done in the past."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "002": {
+                    "character": "TERMINAL",
                     "condition": {
                         "en": "",
                         "es": ""
                     },
                     "message": {
+                        "en": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad.",
+                        "es": "[color=#ee8695]They've[/color] been through worse--this shouldn't be that bad."
+                    },
+                    "branches": {},
+                    "events": {}
+                },
+                "003": {
+                    "character": "TERMINAL",
+                    "condition": {
                         "en": "",
                         "es": ""
                     },
+                    "message": {
+                        "en": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?",
+                        "es": "...{p=0.2} But was that really [color=#ee8695]them[/color],{p=0.5} back then?"
+                    },
                     "branches": {},
+                    "events": {}
+                },
+                "004": {
+                    "character": "TERMINAL",
+                    "condition": {
+                        "en": "Select a [color=#fbbbad]memory[/color].",
+                        "es": "Select a [color=#fbbbad]memory[/color]."
+                    },
+                    "message": {
+                        "en": "",
+                        "es": ""
+                    },
+                    "branches": {
+                        "A": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Hope.",
+                                    "es": "Hope."
+                                },
+                                "message": {
+                                    "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
+                                    "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "...{p=0.5} But doing that every day?",
+                                    "es": "...{p=0.5} But doing that every day?"
+                                },
+                                "branches": {
+                                    "A": {
+                                        "001": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "Compassion.",
+                                                "es": "Compassion."
+                                            },
+                                            "message": {
+                                                "en": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter.",
+                                                "es": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        },
+                                        "002": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "",
+                                                "es": ""
+                                            },
+                                            "message": {
+                                                "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
+                                                "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        }
+                                    }
+                                },
+                                "events": {}
+                            }
+                        },
+                        "B": {
+                            "001": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Compassion.",
+                                    "es": "Compassion."
+                                },
+                                "message": {
+                                    "en": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter.",
+                                    "es": "Looking at the offer,{p=0.2} [color=#ee8695]they[/color] feel like [color=#ee8695]they're[/color] not meant for it.{p=0.5} Like an imposter."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "002": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "message": {
+                                    "en": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real.",
+                                    "es": "The [color=#ee8695]host[/color] attempts to be compassionate to [color=#ee8695]themselves[/color],{p=0.2} but questions if that in of itself is real."
+                                },
+                                "branches": {},
+                                "events": {}
+                            },
+                            "003": {
+                                "character": "TERMINAL",
+                                "condition": {
+                                    "en": "Select a [color=#fbbbad]memory[/color].",
+                                    "es": "Select a [color=#fbbbad]memory[/color]."
+                                },
+                                "message": {
+                                    "en": "",
+                                    "es": ""
+                                },
+                                "branches": {
+                                    "A": {
+                                        "001": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "Hope.",
+                                                "es": "Hope."
+                                            },
+                                            "message": {
+                                                "en": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide.",
+                                                "es": "Looking at the offer, the [color=#ee8695]host[/color] is reminded of the people [color=#ee8695]they[/color] could meet,{p=0.2} career opportunities,{p=0.2} and structure it could provide."
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        },
+                                        "002": {
+                                            "character": "TERMINAL",
+                                            "condition": {
+                                                "en": "",
+                                                "es": ""
+                                            },
+                                            "message": {
+                                                "en": "...{p=0.5} But doing that every day?",
+                                                "es": "...{p=0.5} But doing that every day?"
+                                            },
+                                            "branches": {},
+                                            "events": {}
+                                        }
+                                    }
+                                },
+                                "events": {}
+                            }
+                        }
+                    },
                     "events": {}
                 }
             }
