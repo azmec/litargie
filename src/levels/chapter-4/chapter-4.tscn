@@ -144,13 +144,18 @@ tile_data = PoolIntArray( 917541, 0, 0, 917542, 0, 1, 917543, 0, 1, 917544, 0, 1
 position = Vector2( -936, 1672 )
 extents = Vector2( 100, 10 )
 
-[node name="DialogueSpot" parent="DialogueSpots" index="0" instance=ExtResource( 6 )]
-position = Vector2( -32, 1000 )
-sequence_path = ""
-radius = 70
+[node name="4A" parent="DialogueSpots" index="0" instance=ExtResource( 6 )]
+position = Vector2( -1064, 1600 )
+sequence_path = "res://assets/dialogues/chapter-4a.json"
+radius = 20
 
-[node name="DialogueSpot2" parent="DialogueSpots" index="1" instance=ExtResource( 6 )]
+[node name="4B" parent="DialogueSpots" index="1" instance=ExtResource( 6 )]
 position = Vector2( 728, 296 )
+sequence_path = "res://assets/dialogues/chapter-4b.json"
+radius = 30
+
+[node name="4C" parent="DialogueSpots" index="2" instance=ExtResource( 6 )]
+position = Vector2( 792, 296 )
 sequence_path = ""
 radius = 30
 
