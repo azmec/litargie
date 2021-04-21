@@ -73,8 +73,8 @@
                         "es": "Pride"
                     },
                     "message": {
-                        "en": "You remind the [color=#ee8695]host[/color] of [color=#ee8695]their[/color] past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped [color=#ee8695]their[/color] their hobbies.",
-                        "es": "You remind the [color=#ee8695]host[/color] of [color=#ee8695]their[/color] past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped [color=#ee8695]their[/color] their hobbies."
+                        "en": "You remind the [color=#ee8695]host[/color] of [color=#ee8695]their[/color] past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped [color=#ee8695]their[/color] hobbies.",
+                        "es": "You remind the [color=#ee8695]host[/color] of [color=#ee8695]their[/color] past work:{p=0.2} the blood,{p=0.2} sweat,{p=0.2} and tears dumped [color=#ee8695]their[/color] hobbies."
                     },
                     "branches": {},
                     "events": {}

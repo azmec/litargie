@@ -11,6 +11,7 @@ onready var mainMenu: = $CanvasLayer/FullMenuSet
 onready var player: Player = currentLevel.player
 
 func _ready() -> void:
+	SceneTransition.game = self
 	mainMenu.connect("playButton_pressed", self, "_on_mainMenu_playButton_pressed")
 
 	mainMenu.connect("pause_requested", self, "_on_mainMenu_pause_requested") 

@@ -670,7 +670,8 @@
                         }
                     },
                     "events": {}
-                }
+                    }
+                }  
             }
         },
         "events": {}
@@ -746,8 +747,8 @@
                         "es": ""
                     },
                     "message": {
-                        "en": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]you[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world.",
-                        "es": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]you[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world."
+                        "en": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]they[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world.",
+                        "es": "[color=#ee8695]You[/color] remind [color=#ee8695]them[/color] that [color=#ee8695]they[/color] are,{p=0.2} in fact,{p=0.2} worth time and energy.{p=0.5} By being born into this world."
                     },
                     "branches": {},
                     "events": {}
@@ -763,8 +764,8 @@
             "es": ""
         },
         "message": {
-            "en": "The [color=#ee8695]host[/color] eyes the paper one last time.",
-            "es": "The [color=#ee8695]host[/color] eyes the paper one last time."
+            "en": "[color=#ee8695]You[/color]{p=0.5} eye the paper one last time.",
+            "es": "[color=#ee8695]You[/color]{p=0.5} eye the paper one last time."
         },
         "branches": {},
         "events": {}
@@ -789,13 +790,12 @@
             "es": ""
         },
         "message": {
-            "en": "For a moment,{p=0.2} you feel {p=0.5}[color=#fbbbad]determined.[/color]",
-            "es": "For a moment,{p=0.2} you feel {p=0.5}[color=#fbbbad]determined.[/color]"
+            "en": "For a moment,{p=0.2} [color=#ee8695]you[/color] feel {p=0.5}[color=#fbbbad]determined.[/color]",
+            "es": "For a moment,{p=0.2} [color=#ee8695]you[/color] feel {p=0.5}[color=#fbbbad]determined.[/color]"
         },
         "branches": {},
         "events": {
             "change_scene": "res://src/levels/chapter-5/chapter-5.tscn"
         }
     }
-}
 }

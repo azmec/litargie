@@ -159,11 +159,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/props/variable-sfx-player/variable-sfx-player.gd"
 }, {
-"base": "Node2D",
-"class": "VariantTree",
-"language": "GDScript",
-"path": "res://src/environment/variant-tree/variant-tree.gd"
-}, {
 "base": "Node",
 "class": "Wind",
 "language": "GDScript",
@@ -200,7 +195,6 @@ _global_script_class_icons={
 "State": "",
 "TransitionEffect": "",
 "VariableSFXPlayer": "",
-"VariantTree": "",
 "Wind": ""
 }
 

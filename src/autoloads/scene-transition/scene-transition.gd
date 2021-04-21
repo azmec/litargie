@@ -7,13 +7,13 @@ enum TRANSITIONS {
 	FADE
 }
 
+var game: Node = null 
+
 onready var animationPlayer: = $AnimationPlayer
 onready var colorRect: = $Control/ColorRect
 
 func change_scene_to(path: String, delay: float = 0.5, transition: int = 0) -> void:
 	yield(get_tree().create_timer(delay), "timeout") 
-
-	var game: = get_node("/root/Game") 
 	
 	_play_first_half(transition)
 
