@@ -1,5 +1,5 @@
 # LITARGIE: Control Your Ego.
-Refrain. Until it is done.
+A game [available on Itch](https://aldats.itch.io/litargie)!
 
 ## About :mag_right:
 LITARGIE is a 2D, story-based platformer created for the [2021 Games for Change Challenge Competition](http://gamesforchange.org/studentchallenge/) and the chosen theme: [Resiliance through Games](http://gamesforchange.org/studentchallenge/resilience-through-games/). 
@@ -13,11 +13,3 @@ If you're looking to mess with this project, download the Godot engine and selec
 
 If you're looking to learn something from this project, the only potentially useful portion would be the dialogue series of nodes and scripts. Start in DialogueManager in /src/autoloads.
 
-## TODO :heavy_check_mark:
-There's still somethings to be done, even post morterm (such as writing a post mortem.)
-- [ ] Finish the game.
-- [ ] Create Itch.io assets.
-- [ ] Release the game.
-- [ ] Submit to G4C.
-- [ ] Document the project.
-- [ ] Write post mortem!
